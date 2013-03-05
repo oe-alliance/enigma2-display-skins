@@ -66,6 +66,7 @@ skins/display220/Black64_7/Makefile
 skins/display220/Black64_7/meta/Makefile
 skins/display220/Black64_8/Makefile
 skins/display220/Black64_8/meta/Makefile
+skins/display255/Makefile
 skins/display255/Black64_1/Makefile
 skins/display255/Black64_1/meta/Makefile
 skins/display255/Black64_2/Makefile
