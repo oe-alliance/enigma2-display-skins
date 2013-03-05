@@ -1,0 +1,1 @@
+SUBDIRS = Black64_1 Black64_2 Black64_3 Black64_4 Black64_5 Black64_6 Black64_7 Black64_8
