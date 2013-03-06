@@ -40,7 +40,7 @@
 		</widget>
 	</screen>	
 	<screen name="InfoBarSummary" position="0,0" size="256,64" id="1">
-		<widget source="session.CurrentService" render="LcdPicon" position="5,0" size="132,46" zPosition="1" >
+		<widget source="session.CurrentService" render="LcdLcdPicon" position="5,0" size="132,46" zPosition="1" >
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="5,0" size="132,46" zPosition="0" font="VFD;18" halign="center" valign="center">
