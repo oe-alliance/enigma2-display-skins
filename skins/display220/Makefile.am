@@ -1,1 +1,1 @@
-SUBDIRS = Black64_1 Black64_2 Black64_3 Black64_4 Black64_5 Black64_6 Black64_7 Black64_8
+SUBDIRS = AAF_LCDSkin_1 AAF_LCDSkin_2 AAF_LCDSkin_3 AAF_LCDSkin_4 AAF_LCDSkin_5 AAF_LCDSkin_6 AAF_LCDSkin_7 AAF_LCDSkin_8
