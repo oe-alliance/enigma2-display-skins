@@ -1,2 +1,2 @@
 installdir = $(datadir)/meta/
-dist_install_DATA = skin_aaf_lcds_2.xml
+dist_install_DATA = skin_aaf_lcdskin_2.xml
