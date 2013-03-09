@@ -11,6 +11,6 @@
 	</info>
 
 	<files type="package"> <!-- without version, without .ipk -->
-		<file type="package" name="enigma2-display-aaf_lcdskin_3" />
+		<file type="package" name="enigma2-display-aaf-lcdskin_3" />
 	</files>
 </default>
