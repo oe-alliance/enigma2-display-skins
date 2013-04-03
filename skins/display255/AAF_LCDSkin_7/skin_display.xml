@@ -16,7 +16,7 @@
 	</windowstyle>
 	<fonts>
 		<font filename="nmsbd.ttf" name="VFD" scale="90"/>
-		<font filename="nmsbd.ttf" name="FdLcD" scale="100"/>		
+		<font filename="nmsbd.ttf" name="FdLcD" scale="100"/>
 	</fonts>
 <!-- template -->
 	<screen name="SummaryClockPanel">
@@ -38,9 +38,9 @@
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-	</screen>	
+	</screen>
 	<screen name="InfoBarSummary" position="0,0" size="256,64" id="1">
-		<widget source="session.CurrentService" render="LcdLcdPicon" position="5,0" size="132,46" zPosition="1" >
+		<widget source="session.CurrentService" render="LcdPicon" position="5,0" size="132,46" zPosition="1" >
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="5,0" size="132,46" zPosition="0" font="VFD;18" halign="center" valign="center">
@@ -61,7 +61,7 @@
 		</widget>
 		<widget source="session.RecordState" render="Pixmap" pixmap="rec.png" position="155,0"  size="28,12">
 			<convert type="ConditionalShowHide" />
-		</widget>	
+		</widget>
 		<widget source="session.CurrentService" render="Pixmap" pixmap="crypt.png" position="186,0"  size="10,12">
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide" />
@@ -98,7 +98,7 @@
 		</widget>
 		<widget source="session.RecordState" render="Pixmap" pixmap="rec.png" position="155,0"  size="28,12">
 			<convert type="ConditionalShowHide" />
-		</widget>	
+		</widget>
 		<widget source="session.CurrentService" render="Pixmap" pixmap="crypt.png" position="186,0"  size="10,12">
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide" />
@@ -135,7 +135,7 @@
 		</widget>
 		<widget source="session.RecordState" render="Pixmap" pixmap="rec.png" position="155,0"  size="28,12">
 			<convert type="ConditionalShowHide" />
-		</widget>	
+		</widget>
 		<widget source="session.CurrentService" render="Pixmap" pixmap="crypt.png" position="186,0"  size="10,12">
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide" />
@@ -177,7 +177,7 @@
 		</widget>
 		<widget source="session.RecordState" render="Pixmap" pixmap="rec.png" position="155,0"  size="28,12">
 			<convert type="ConditionalShowHide" />
-		</widget>	
+		</widget>
 		<widget source="session.CurrentService" render="Pixmap" pixmap="crypt.png" position="186,0"  size="10,12">
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide" />
@@ -216,7 +216,7 @@
 		</widget>
 		<widget source="session.RecordState" render="Pixmap" pixmap="rec.png" position="155,0"  size="28,12">
 			<convert type="ConditionalShowHide" />
-		</widget>	
+		</widget>
 		<widget source="session.CurrentService" render="Pixmap" pixmap="crypt.png" position="186,0"  size="10,12">
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide" />
@@ -247,7 +247,7 @@
 		</widget>
 		<widget source="session.RecordState" render="Pixmap" pixmap="rec.png" position="155,0"  size="28,12">
 			<convert type="ConditionalShowHide" />
-		</widget>	
+		</widget>
 		<widget source="session.CurrentService" render="Pixmap" pixmap="crypt.png" position="186,0"  size="10,12">
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide" />
@@ -279,7 +279,7 @@
 		</widget>
 		<widget source="session.RecordState" render="Pixmap" pixmap="rec.png" position="155,0"  size="28,12">
 			<convert type="ConditionalShowHide" />
-		</widget>	
+		</widget>
 		<widget source="session.CurrentService" render="Pixmap" pixmap="crypt.png" position="186,0"  size="10,12">
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide" />
@@ -322,7 +322,7 @@
 		</widget>
 		<widget source="session.RecordState" render="Pixmap" pixmap="rec.png" position="155,0"  size="28,12">
 			<convert type="ConditionalShowHide" />
-		</widget>	
+		</widget>
 		<widget source="session.CurrentService" render="Pixmap" pixmap="crypt.png" position="186,0"  size="10,12">
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide" />
@@ -356,7 +356,7 @@
 		</widget>
 		<widget source="session.RecordState" render="Pixmap" pixmap="rec.png" position="155,0"  size="28,12">
 			<convert type="ConditionalShowHide" />
-		</widget>	
+		</widget>
 		<widget source="session.CurrentService" render="Pixmap" pixmap="crypt.png" position="186,0"  size="10,12">
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide" />
@@ -391,7 +391,7 @@
 		</widget>
 		<widget source="session.RecordState" render="Pixmap" pixmap="rec.png" position="155,0"  size="28,12">
 			<convert type="ConditionalShowHide" />
-		</widget>	
+		</widget>
 		<widget source="session.CurrentService" render="Pixmap" pixmap="crypt.png" position="186,0"  size="10,12">
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide" />
@@ -414,7 +414,7 @@
 	</screen>
 		<!-- LCD screen EMC -->
 	<screen name="EMCMoviePlayerSummary" position="0,0" size="255,64" >
-		<!-- Movie name -->		
+		<!-- Movie name -->
 		<widget source="session.CurrentService" render="Label" position="1,1" size="130,37" font="Regular;16" halign="center">
 			  <convert type="ServiceName">Name</convert>
 		</widget>
@@ -442,5 +442,5 @@
 		</widget>
 		<panel name="SummaryIconsPanel" />
 		<panel name="SummaryClockPanel" />
-	</screen>	
+	</screen>
 </skin>

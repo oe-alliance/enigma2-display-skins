@@ -39,10 +39,10 @@
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-	</screen>	
+	</screen>
 <!-- LCD screen InfoBar -->
 	<screen name="InfoBarSummary" position="0,0" size="256,64">
-		<widget source="session.CurrentService" render="LcdLcdPicon" position="126,0" size="132,46" zPosition="1" >
+		<widget source="session.CurrentService" render="LcdPicon" position="126,0" size="132,46" zPosition="1" >
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="126,0" size="132,46" zPosition="0" font="Myrida;18" halign="center" valign="center">
@@ -204,7 +204,7 @@
 	</screen>
 		<!-- LCD screen EMC -->
 	<screen name="EMCMoviePlayerSummary" position="0,0" size="255,64" >
-		<!-- Movie name -->		
+		<!-- Movie name -->
 		<widget source="session.CurrentService" render="Label" position="1,1" size="130,37" font="Regular;16" halign="center">
 			  <convert type="ServiceName">Name</convert>
 		</widget>
@@ -232,8 +232,8 @@
 		</widget>
 		<panel name="SummaryIconsPanel" />
 		<panel name="SummaryClockPanel" />
-	</screen>	
-</skin> 
+	</screen>
+</skin>
 
 
 
