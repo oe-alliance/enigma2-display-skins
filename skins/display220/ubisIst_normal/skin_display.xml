@@ -108,7 +108,7 @@
 <!-- main-->
 	<screen name="InfoBarSummary" position="0,0" size="140,32" >
 		<widget source="session.CurrentService" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=1,repeat=99,startdelay=2000,always=0,oneshot=1" position="0,10" size="140,20" font="FdLcD;16" halign="left" valign="top" zPosition="1" >
-			<convert type="g16ServiceNameEvent">NameAndEvent</convert>
+			<convert type="ServiceName">NameAndEvent</convert>
 		</widget>
 		<widget source="session.Event_Now" render="Progress" position="0,27" size="60,5" borderWidth="1" zPosition="1" >
 			<convert type="EventTime">Progress</convert>
