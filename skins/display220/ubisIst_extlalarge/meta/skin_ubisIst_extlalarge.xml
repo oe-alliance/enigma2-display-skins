@@ -1,0 +1,16 @@
+<default>
+	<prerequisites>
+		<tag type="Display" />
+	</prerequisites>
+	<info>
+		<author>ubisIst</author>
+		<name>extlalarge</name>
+		<packagename>enigma2-display-ubisIst_extlalarge</packagename>
+		<shortdescription>Custom display skin for LCD</shortdescription>
+		<description>just one line on Infobar. You will see ChannelName followed by Eventname (scrolled on the same line) but the text has the maximal possible fontsize.</description>
+	</info>
+
+	<files type="package"> <!-- without version, without .ipk -->
+		<file type="package" name="enigma2-display-ubisIst_extlalarge" />
+	</files>
+</default>

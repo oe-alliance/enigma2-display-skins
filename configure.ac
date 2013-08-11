@@ -66,6 +66,12 @@ skins/display220/AAF_LCDSkin_7/Makefile
 skins/display220/AAF_LCDSkin_7/meta/Makefile
 skins/display220/AAF_LCDSkin_8/Makefile
 skins/display220/AAF_LCDSkin_8/meta/Makefile
+skins/display220/ubisIst_extlalarge/Makefile
+skins/display220/ubisIst_extlalarge/meta/Makefile
+skins/display220/ubisIst_normal/Makefile
+skins/display220/ubisIst_normal/meta/Makefile
+skins/display220/ubisIst_rotator/Makefile
+skins/display220/ubisIst_rotator/meta/Makefile
 skins/display255/Makefile
 skins/display255/AAF_LCDSkin_1/Makefile
 skins/display255/AAF_LCDSkin_1/meta/Makefile

@@ -1,0 +1,16 @@
+<default>
+	<prerequisites>
+		<tag type="Display" />
+	</prerequisites>
+	<info>
+		<author>ubisIst</author>
+		<name>normal</name>
+		<packagename>enigma2-display-ubisIst_normal</packagename>
+		<shortdescription>Custom display skin for LCD</shortdescription>
+		<description>the Infobar is same as 'Default' but the content you will see is ChannelName followed by Eventname (scrolled on the same line)</description>
+	</info>
+
+	<files type="package"> <!-- without version, without .ipk -->
+		<file type="package" name="enigma2-display-ubisIst_normal" />
+	</files>
+</default>

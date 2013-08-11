@@ -1,0 +1,16 @@
+<default>
+	<prerequisites>
+		<tag type="Display" />
+	</prerequisites>
+	<info>
+		<author>ubisIst</author>
+		<name>rotator</name>
+		<packagename>enigma2-display-ubisIst_rotator</packagename>
+		<shortdescription>Custom display skin for LCD</shortdescription>
+		<description>the Infobar have two lines, the top line will scroll 'ChannelName' only 2 times, the bottom line will scroll and switch between 'EventName' and 'EventDescription'.</description>
+	</info>
+
+	<files type="package"> <!-- without version, without .ipk -->
+		<file type="package" name="enigma2-display-ubisIst_rotator8" />
+	</files>
+</default>
