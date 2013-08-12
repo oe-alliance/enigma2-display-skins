@@ -1,0 +1,1 @@
+SUBDIRS = ubisIst_extlalarge ubisIst_normal ubisIst_rotator

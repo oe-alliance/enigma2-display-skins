@@ -25,6 +25,16 @@ if test x"$withcolorlcd" != xno ; then
 fi
 AM_CONDITIONAL(HAVE_COLORLCD, test x"$withcolorlcd" != xno)
 
+AC_ARG_WITH(bwlcd140,
+	AC_HELP_STRING([--with-bwlcd140], [use 140x32 1bpp black and white display, yes or no]),
+	[[withbwlcd140=$withval]],
+	[[withbwlcd140=no]]
+)
+if test x"$withbwlcd140" != xno ; then
+	AC_DEFINE(HAVE_BWLCD140, 1,[Define when using a 140x32 black and white display device])
+fi
+AM_CONDITIONAL(HAVE_BWLCD140, test x"$withbwlcd140" != xno)
+
 AC_ARG_WITH(colorlcd220,
 	AC_HELP_STRING([--with-colorlcd220], [use 220x176 16bpp color display, yes or no]),
 	[[withcolorlcd220=$withval]],
@@ -49,6 +59,13 @@ AM_CONDITIONAL(HAVE_BWLCD255, test x"$withbwlcd255" != xno)
 AC_OUTPUT([
 Makefile
 skins/Makefile
+skins/display140/Makefile
+skins/display140/ubisIst_extlalarge/Makefile
+skins/display140/ubisIst_extlalarge/meta/Makefile
+skins/display140/ubisIst_normal/Makefile
+skins/display140/ubisIst_normal/meta/Makefile
+skins/display140/ubisIst_rotator/Makefile
+skins/display140/ubisIst_rotator/meta/Makefile
 skins/display220/Makefile
 skins/display220/AAF_LCDSkin_1/Makefile
 skins/display220/AAF_LCDSkin_1/meta/Makefile
@@ -66,12 +83,6 @@ skins/display220/AAF_LCDSkin_7/Makefile
 skins/display220/AAF_LCDSkin_7/meta/Makefile
 skins/display220/AAF_LCDSkin_8/Makefile
 skins/display220/AAF_LCDSkin_8/meta/Makefile
-skins/display220/ubisIst_extlalarge/Makefile
-skins/display220/ubisIst_extlalarge/meta/Makefile
-skins/display220/ubisIst_normal/Makefile
-skins/display220/ubisIst_normal/meta/Makefile
-skins/display220/ubisIst_rotator/Makefile
-skins/display220/ubisIst_rotator/meta/Makefile
 skins/display255/Makefile
 skins/display255/AAF_LCDSkin_1/Makefile
 skins/display255/AAF_LCDSkin_1/meta/Makefile
