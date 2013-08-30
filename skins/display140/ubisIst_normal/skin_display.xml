@@ -25,24 +25,40 @@
 			<convert type="ClockToText"></convert>
 		</widget>
 	</screen>
-
 	<screen name="SummaryIconsPanel">
-		<widget source="session.CurrentService" render="Pixmap" pixmap="hd.png" position="0,0" size="22,10">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/display/ubisIst_normal/hd.png" position="0,0" size="13,9">
 			<convert type="ServiceInfo">VideoWidth</convert>
 			<convert type="ValueRange">721,1980</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="dolby.png" position="25,0" size="14,10">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/display/ubisIst_normal/sd.png" position="0,0" size="13,9">
+			<convert type="ServiceInfo">VideoWidth</convert>
+			<convert type="ValueRange">0,720</convert>
+			<convert type="ConditionalShowHide" />
+    	</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/display/ubisIst_normal/format.png" position="14,0" size="15,9">
+			<convert type="ServiceInfo">IsWidescreen</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/display/ubisIst_normal/dolby.png" position="30,0" size="11,9">
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.RecordState" render="Pixmap" pixmap="rec.png" position="42,0" size="19,10" >
+		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/display/ubisIst_normal/teletext.png" position="42,0" size="8,9">
+			<convert type="ServiceInfo">HasTelext</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/display/ubisIst_normal/crypt.png" position="51,0"  size="7,9">
+			<convert type="ServiceInfo">IsCrypted</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.RecordState" render="Pixmap" pixmap="/usr/share/enigma2/display/ubisIst_normal/rec.png" position="59,0"  size="15,9">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="update.png" position="62,0" size="10,10" >
+		<widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="update.png" position="76,0" size="10,10" >
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="update.png" position="62,0" size="10,10" >
+		<widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="update.png" position="76,0" size="10,10" >
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 	</screen>
@@ -107,35 +123,33 @@
 
 <!-- main-->
 	<screen name="InfoBarSummary" position="0,0" size="140,32" >
-		<widget source="session.CurrentService" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=1,repeat=99,startdelay=2000,always=0,oneshot=1" position="0,10" size="140,20" font="FdLcD;16" halign="left" valign="top" zPosition="1" >
+		<widget source="session.CurrentService" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=1,repeat=99,startdelay=2000,always=0,oneshot=1" position="0,9" size="140,24" font="FdLcD;24" noWrap="1" valign="center" >
 			<convert type="ServiceName">NameAndEvent</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Progress" position="0,27" size="60,5" borderWidth="1" zPosition="1" >
+		<widget source="session.Event_Now" render="Progress" position="120,0" size="20,9" borderWidth="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="70,25" size="70,12" font="FdLcD;12" halign="right" valign="bottom" noWrap="1" zPosition="1" >
+		<widget source="session.Event_Now" render="Label" position="84,0" size="35,10" font="FdLcD;10" halign="right" valign="center" noWrap="1" transparent="1" >
 			<convert type="EventTime">VFDRemaining</convert>
 			<convert type="RemainingToText">VFDNoSeconds</convert>
 		</widget>
 		<panel name="SummaryIconsPanel" />
 		<!-- <panel name="SummaryTunerStatusPanel" /> -->
-		<panel name="SummaryClockPanel" />
 	</screen>
 
 <!-- movieplayer-->
 	<screen name="InfoBarMoviePlayerSummary" position="0,0" size="140,32">
-		<widget name="statusicon_summary" position="0,13" size="11,10" pixmaps="play.png,pause.png,stop.png,forward.png,backward.png,slow.png" zPosition="3" />
-		<widget source="session.CurrentService" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=1,repeat=99,startdelay=2000,always=0,oneshot=1" position="12,10" size="129,20" font="FdLcD;16" halign="left" valign="top" zPosition="1" >
+		<widget name="statusicon_summary" position="0,18" size="11,10" pixmaps="play.png,pause.png,stop.png,forward.png,backward.png,slow.png" zPosition="3" />
+		<widget source="session.CurrentService" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=10,repeat=99,startdelay=2000,always=0,oneshot=1" position="11,9" size="140,24" font="FdLcD;24" noWrap="1" valign="center" >
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Progress" position="0,27" size="60,5" borderWidth="1" zPosition="1" >
+		<widget source="session.CurrentService" render="Progress" position="120,0" size="20,9" borderWidth="1" >
 			<convert type="ServicePosition">VFDPosition</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="70,25" size="70,12" font="FdLcD;12" halign="right" valign="bottom" noWrap="1" zPosition="1" >
+		<widget source="session.CurrentService" render="Label" position="84,0" size="35,10" font="FdLcD;10" halign="right" valign="center" noWrap="1" transparent="1" >
 			<convert type="ServicePosition">VFDPosition</convert>
 		</widget>
 		<panel name="SummaryIconsPanel" />
-		<panel name="SummaryClockPanel" />
 	</screen>
 	<screen name="MovieContextMenuSummary" position="0,0" size="140,32">
 		<widget source="parent.title" render="Label" position="0,10" size="140,16" font="FdLcD;16" halign="center" valign="bottom" zPosition="1" noWrap="1" />
@@ -356,30 +370,22 @@
 	<screen name="NumberZap_summary" position="0,0" size="140,32">
 		<widget source="parent.channel_summary" render="Label" position="0,0" size="160,22" font="FdLcD;18" halign="left" noWrap="1" />
 		<widget source="parent.number_summary" render="Label" position="0,21" size="255,30" font="FdLcD;26" halign="left" noWrap="1" />
-		<panel name="SummaryIconsPanel" />
-		<panel name="SummaryClockPanel" />
 	</screen>
 <!-- ViX -->
 	<screen name="VIXDevicesPanelSummary" position="0,0" size="140,32">
 		<widget source="parent.Title" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=1,repeat=99,startdelay=2000,always=0,oneshot=1" position="0,0" size="160,22" font="FdLcD;18" halign="left" noWrap="1" />
 		<widget source="entry" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=1,repeat=99,startdelay=2000,always=0,oneshot=1" position="0,21" size="255,16" font="FdLcD;14" halign="left" noWrap="1" />
 		<widget source="desc" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=1,repeat=99,startdelay=2000,always=0,oneshot=1" position="0,38" size="255,26" font="FdLcD;12" halign="left" transparent="1" />
-		<panel name="SummaryIconsPanel" />
-		<panel name="SummaryClockPanel" />
 	</screen>
 	<screen name="VIXSwap_summary" position="0,0" size="140,32">
 		<widget source="parent.Title" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=1,repeat=99,startdelay=2000,always=0,oneshot=1" position="0,0" size="160,22" font="FdLcD;18" halign="left" noWrap="1" />
 		<widget source="parent.swapname_summary" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=1,repeat=99,startdelay=2000,always=0,oneshot=1" position="0,21" size="255,18" font="FdLcD;16" halign="left" noWrap="1" />
 		<widget source="parent.swapactive_summary" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=1,repeat=99,startdelay=2000,always=0,oneshot=1" position="0,50" size="255,14" font="FdLcD;12" halign="left" transparent="1" />
-		<panel name="SummaryIconsPanel" />
-		<panel name="SummaryClockPanel" />
 	</screen>
 	<screen name="UpdatePlugin_summary" position="0,0" size="140,32">
 		<widget source="parent.Title" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=1,repeat=99,startdelay=2000,always=0,oneshot=1" position="0,0" size="160,22" font="FdLcD;18" halign="left" noWrap="1" />
 		<widget source="parent.package" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=1,repeat=99,startdelay=2000,always=0,oneshot=1" position="0,21" size="255,18" font="FdLcD;16" halign="left" noWrap="1" />
 		<widget source="parent.status" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=1,repeat=99,startdelay=2000,always=0,oneshot=1" position="0,50" size="255,14" font="FdLcD;12" halign="left" transparent="1" />
-		<panel name="SummaryIconsPanel" />
-		<panel name="SummaryClockPanel" />
 	</screen>
 	<screen name="SoftwareUpdateChanges_summary" position="0,0" size="140,32">
 		<widget source="parent.title_summary" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=1,repeat=99,startdelay=2000,always=0,oneshot=1" position="0,0" size="160,15" font="FdLcD;15" halign="left" noWrap="1" />
