@@ -26,33 +26,33 @@
 		</widget>
 	</screen>
 	<screen name="SummaryIconsPanel">
-		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/display/ubisIst_normal/hd.png" position="0,0" size="13,9">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="hd.png" position="0,0" size="13,9">
 			<convert type="ServiceInfo">VideoWidth</convert>
 			<convert type="ValueRange">721,1980</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/display/ubisIst_normal/sd.png" position="0,0" size="13,9">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="sd.png" position="0,0" size="13,9">
 			<convert type="ServiceInfo">VideoWidth</convert>
 			<convert type="ValueRange">0,720</convert>
 			<convert type="ConditionalShowHide" />
     	</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/display/ubisIst_normal/format.png" position="14,0" size="15,9">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="format.png" position="14,0" size="15,9">
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/display/ubisIst_normal/dolby.png" position="30,0" size="11,9">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="dolby.png" position="30,0" size="11,9">
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/display/ubisIst_normal/teletext.png" position="42,0" size="8,9">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="teletext.png" position="42,0" size="8,9">
 			<convert type="ServiceInfo">HasTelext</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/display/ubisIst_normal/crypt.png" position="51,0"  size="7,9">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="crypt.png" position="51,0"  size="7,9">
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.RecordState" render="Pixmap" pixmap="/usr/share/enigma2/display/ubisIst_normal/rec.png" position="59,0"  size="15,9">
+		<widget source="session.RecordState" render="Pixmap" pixmap="rec.png" position="59,0"  size="15,9">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 		<widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="update.png" position="76,0" size="10,10" >
