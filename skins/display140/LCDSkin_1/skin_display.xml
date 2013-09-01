@@ -1,0 +1,216 @@
+<skin>
+	<fonts>
+		<font filename="analog.ttf" name="VFD" scale="100" />
+		<font filename="nmsbd.ttf" name="VFD_II" scale="100"/>
+	</fonts>
+<!-- LCD screen InfoBar -->
+	<screen name="InfoBarSummary" position="0,0" size="140,32">
+		<widget source="session.Event_Now" render="Progress" position="0,27" size="140,5" borderWidth="1">
+			<convert type="EventTime">Progress</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="5,9" size="130,18" font="VFD_II;16" halign="center" valign="top" >
+			<convert type="ServiceName">Name</convert>
+		</widget>
+                <widget source="session.CurrentService" render="Pixmap" pixmap="vfd_icons/dolby.png" position="25,0" size="10,7">
+			<convert type="ServiceInfo">IsMultichannel</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="vfd_icons/format.png" position="37,0" size="15,7">
+			<convert type="ServiceInfo">IsWidescreen</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="vfd_icons/teletext.png" position="5,0" size="8,7">
+			<convert type="ServiceInfo">HasTelext</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+                <widget source="session.CurrentService" render="Pixmap" pixmap="vfd_icons/crypt.png" position="15,0"  size="8,7">
+			<convert type="ServiceInfo">IsCrypted</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.RecordState" render="FixedLabel" position="54,0" zPosition="3" size="12,7" text=" ">
+			<convert type="ConfigEntryTest">config.usage.blinking_rec_symbol_during_recording,True,CheckSourceBoolean</convert>
+			<convert type="ConditionalShowHide">Blink</convert>
+		</widget>
+                <widget source="session.RecordState" render="Pixmap" pixmap="vfd_icons/rec.png" position="54,0"  size="12,7">
+			<convert type="ConditionalShowHide" />
+		</widget>
+	</screen>
+<!-- LCD screen InfoBarMoviePlayer -->
+	<screen name="InfoBarMoviePlayerSummary" position="0,0" size="140,32">
+                <widget source="session.CurrentService" render="Pixmap" pixmap="vfd_icons/dolby.png" position="25,0" size="10,7">
+			<convert type="ServiceInfo">IsMultichannel</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="vfd_icons/format.png" position="37,0" size="15,7">
+			<convert type="ServiceInfo">IsWidescreen</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="vfd_icons/teletext.png" position="5,0" size="8,7">
+			<convert type="ServiceInfo">HasTelext</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.RecordState" render="FixedLabel" position="54,0" zPosition="3" size="12,7" text=" ">
+			<convert type="ConfigEntryTest">config.usage.blinking_rec_symbol_during_recording,True,CheckSourceBoolean</convert>
+			<convert type="ConditionalShowHide">Blink</convert>
+		</widget>
+		<widget source="session.RecordState" render="Pixmap" pixmap="vfd_icons/rec.png" position="54,0"  size="12,7">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="RollerCharLCDLong" position="0,18" size="140,14" font="VFD;12" noWrap="1" valign="top">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Progress" position="0,10" size="140,6" borderWidth="1">
+			<convert type="ServicePosition">Position</convert>
+		</widget>
+	</screen>
+<!-- LCD screen Channelselection -->
+	<screen name="ChannelSelection_summary" position="0,0" size="140,32">
+		<widget source="parent.ServiceEvent" render="RollerCharLCDLong" position="0,0" size="140,16" font="VFD;14" noWrap="1">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<widget source="parent.ServiceEvent" render="RollerCharLCDLong" position="0,18" size="140,14" font="VFD;12" noWrap="1" >
+			<convert type="EventName">Name</convert>
+		</widget>
+	</screen>
+<!-- LCD screen (menus) -->
+	<screen name="MenuSummary" position="0,0" size="140,32">
+		<widget source="parent.title" render="RollerCharLCDLong" position="0,0" size="140,16" font="VFD;14" noWrap="1" />
+		<widget source="parent.menu" render="RollerCharLCDLong" position="0,18" size="140,14" font="VFD;12" noWrap="1" >
+			<convert type="StringListSelection" />
+		</widget>
+	</screen>
+<!-- LCD screen (dvd player ) -->
+	<screen name="DVDSummary" position="0,0" size="140,32">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="vfd_icons/dolby.png" position="25,0" size="10,7">
+			<convert type="ServiceInfo">IsMultichannel</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="vfd_icons/format.png" position="37,0" size="15,7">
+			<convert type="ServiceInfo">IsWidescreen</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="vfd_icons/teletext.png" position="5,0" size="8,7">
+			<convert type="ServiceInfo">HasTelext</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.RecordState" render="FixedLabel" position="54,0" zPosition="3" size="12,7" text=" ">
+			<convert type="ConfigEntryTest">config.usage.blinking_rec_symbol_during_recording,True,CheckSourceBoolean</convert>
+			<convert type="ConditionalShowHide">Blink</convert>
+		</widget>
+		<widget source="session.RecordState" render="Pixmap" pixmap="vfd_icons/rec.png" position="54,0"  size="12,7">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="RollerCharLCDLong" position="0,18" size="140,14" font="VFD;12" noWrap="1" valign="top">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Progress" position="0,10" size="140,6" borderWidth="1">
+			<convert type="ServicePosition">Position</convert>
+		</widget>
+	</screen>
+<!-- LCD screen Standby -->
+	<screen name="StandbySummary" position="0,0" size="140,32">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="vfd_icons/dolby.png" position="25,0" size="10,7">
+			<convert type="ServiceInfo">IsMultichannel</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="vfd_icons/format.png" position="37,0" size="15,7">
+			<convert type="ServiceInfo">IsWidescreen</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="vfd_icons/teletext.png" position="5,0" size="8,7">
+			<convert type="ServiceInfo">HasTelext</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="vfd_icons/crypt.png" position="15,0"  size="8,7">
+			<convert type="ServiceInfo">IsCrypted</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.RecordState" render="FixedLabel" position="54,0" zPosition="3" size="12,7" text=" ">
+			<convert type="ConfigEntryTest">config.usage.blinking_rec_symbol_during_recording,True,CheckSourceBoolean</convert>
+			<convert type="ConditionalShowHide">Blink</convert>
+		</widget>
+		<widget source="session.RecordState" render="Pixmap" pixmap="vfd_icons/rec.png" position="54,0"  size="12,7">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="0,8" size="130,14" font="VFD;12" halign="center" valign="center">
+			<convert type="ClockToText">Format:%d.%m.%Y - %H:%M</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" font="VFD;10" position="0,22" size="70, 10" halign="left">
+			<convert type="VtiTempFan">FanInfo</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" font="VFD;10" position="71, 22" size="69, 10" halign="right">
+			<convert type="VtiTempFan">TempInfo</convert>
+		</widget>
+		<widget source="session.RecordState" render="FixedLabel" position="0,8" zPosition="1" size="130,14" text=" ">
+			<convert type="ConfigEntryTest">config.usage.blinking_display_clock_during_recording,True,CheckSourceBoolean</convert>
+			<convert type="ConditionalShowHide">Blink</convert>
+		</widget>
+	</screen>
+<!-- LCD screen Service Scan -->
+	<screen name="ServiceScanSummary" position="0,0" size="140,32">
+		<widget name="Title" position="0,0" size="140,10" font="VFD;10" transparent="1" />
+		<widget name="scan_progress" position="0,11" borderWidth="1" size="140,6" />
+		<widget name="Service" position="0,20" size="140,12" font="VFD;12" transparent="1" />
+	</screen>
+<!-- LCD screen Mediaplayer -->
+	<screen name="MediaPlayerLCDScreen" position="0,0" size="140,32" id="1">
+		<widget name="text1" position="0,0" size="140,10" font="VFD;10"/>
+		<widget name="text3" position="0,11" size="140,10" font="VFD;10"/>
+		<widget name="text4" position="0,22" size="140,10" font="VFD;10"/>
+	</screen>
+<!-- LCD screen Simple Summary -->
+	<screen name="SimpleSummary" position="0,0" size="140,32">
+		<widget source="parent.Title" render="RollerCharLCDLong" position="0,0" size="140,32" font="VFD;14" noWrap="1" />
+	</screen>
+<!-- LCD screen PluginBrowser -->
+	<screen name="PluginBrowserSummary" position="0,0" size="140,32">
+		<widget source="entry" render="RollerCharLCDLong" position="0,0" size="140,16" font="VFD;14" noWrap="1" />
+		<widget source="desc" render="RollerCharLCDLong" position="0,17" size="140,15" font="VFD;12" noWrap="1" />
+	</screen>
+<!-- LCD screen Setup -->
+	<screen name="SetupSummary" position="0,0" size="140,32">
+		<widget source="SetupTitle" render="RollerCharLCDLong" position="6,0" size="128,10" font="VFD;10" noWrap="1" />
+		<widget source="SetupEntry" render="RollerCharLCDLong" position="6,11" size="128,10" font="VFD;10" noWrap="1" />
+		<widget source="SetupValue" render="RollerCharLCDLong" position="6,22" size="128,10" font="VFD;10" noWrap="1" />
+	</screen>
+<!-- LCD screen MessageBox -->
+	<screen name="MessageBox_summary" position="0,0" size="140,32" id="1">
+		<widget source="parent.Text" render="RollerCharLCDLong" position="0,0" size="140,16" font="VFD;12" halign="left" noWrap="1" />
+		<widget source="parent.selectedChoice" render="Label" position="0,17" size="140,15" font="VFD;12" halign="center" valign="center" />
+	</screen>
+<!-- LCD screen ChoiceBox -->
+	<screen name="ChoiceBox_summary" position="0,0" size="140,32" id="1">
+		<widget source="parent.summary_list" render="Label" position="6,0" size="128,32" font="VFD;12" />
+	</screen>
+<!-- LCD screen EMC -->
+  	<screen name="EMCMoviePlayerSummary" position="0,0" size="140,32" >
+		<widget source="session.CurrentService" render="Label" position="1,1" size="130,12" font="Regular;10" halign="center">
+			  <convert type="ServiceName">Name</convert>
+		</widget>
+		<widget source="Service" render="Progress" position="1,15" size="130,4" zPosition="2" borderWidth="1">
+			  <convert type="EMCServicePosition">Position</convert>
+		</widget>
+		<widget source="Service" render="Progress" position="1,15" size="130,4" zPosition="1" borderWidth="1">
+			  <convert type="EMCRecordPosition">Position</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="1,22" size="58,25" font="Regular;10" halign="center">
+			  <convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="60,22" size="72,25" font="Regular;10" halign="center">
+			  <convert type="ServicePosition">Remaining,Negate</convert>
+		</widget>
+		<widget source="session.RecordState" render="FixedLabel" text="REC" position="62,22" size="70,25" font="Regular;10" halign="center">
+			  <convert type="ConfigEntryTest">config.usage.blinking_display_clock_during_recording,True,CheckSourceBoolean</convert>
+			  <convert type="ConditionalShowHide">Blink</convert>
+		</widget>
+  </screen>	
+</skin> 
+
+
+
+
+
+
+
+
+

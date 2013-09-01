@@ -1,1 +1,1 @@
-SUBDIRS = ubisIst_extlalarge ubisIst_normal ubisIst_rotator
+SUBDIRS = ubisIst_extlalarge ubisIst_normal ubisIst_rotator LCDSkin_1 LCDSkin_2

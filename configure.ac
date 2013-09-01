@@ -66,6 +66,10 @@ skins/display140/ubisIst_normal/Makefile
 skins/display140/ubisIst_normal/meta/Makefile
 skins/display140/ubisIst_rotator/Makefile
 skins/display140/ubisIst_rotator/meta/Makefile
+skins/display140/LCDSkin_1/Makefile
+skins/display140/LCDSkin_1/meta/Makefile
+skins/display140/LCDSkin_2/Makefile
+skins/display140/LCDSkin_2/meta/Makefile
 skins/display220/Makefile
 skins/display220/AAF_LCDSkin_1/Makefile
 skins/display220/AAF_LCDSkin_1/meta/Makefile
