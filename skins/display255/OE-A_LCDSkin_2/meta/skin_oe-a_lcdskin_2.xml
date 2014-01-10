@@ -5,12 +5,12 @@
 	<info>
 		<author>OE-A Team</author>
 		<name>OE-A LCD Skin2</name>
-		<packagename>enigma2-display-lcdskin_2</packagename>
+		<packagename>enigma2-display-oea-lcdskin_2</packagename>
 		<shortdescription>Custom display skin for LCD</shortdescription>
 		<description>Custom display skin for LCD</description>
 	</info>
 
 	<files type="package"> <!-- without version, without .ipk -->
-		<file type="package" name="enigma2-display-lcdskin_2" />
+		<file type="package" name="enigma2-display-oea-lcdskin_2" />
 	</files>
 </default>
