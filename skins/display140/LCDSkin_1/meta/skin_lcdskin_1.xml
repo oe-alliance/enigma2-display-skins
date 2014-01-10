@@ -3,8 +3,8 @@
 		<tag type="Display" />
 	</prerequisites>
 	<info>
-		<author>ATV team</author>
-		<name>ATV LCD Skin1</name>
+		<author>OE-A Team</author>
+		<name>OE-A LCD Skin1</name>
 		<packagename>enigma2-display-lcdskin_1</packagename>
 		<shortdescription>Custom display skin for LCD</shortdescription>
 		<description>Custom display skin for LCD</description>
