@@ -1,3 +1,7 @@
+if HAVE_COLORLCD400
+SUBDIRS = display400
+endif
+
 if HAVE_COLORLCD220
 SUBDIRS = display220
 endif

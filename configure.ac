@@ -55,6 +55,15 @@ if test x"$withbwlcd255" != xno ; then
 fi
 AM_CONDITIONAL(HAVE_BWLCD255, test x"$withbwlcd255" != xno)
 
+AC_ARG_WITH(colorlcd400,
+	AC_HELP_STRING([--with-colorlcd400], [use 400x240 16bpp color display, yes or no]),
+	[[withcolorlcd400=$withval]],
+	[[withcolorlcd400=no]]
+)
+if test x"$withcolorlcd400" != xno ; then
+	AC_DEFINE(HAVE_COLORLCD400, 1,[Define when using a 400x240 color display device])
+fi
+AM_CONDITIONAL(HAVE_COLORLCD400, test x"$withcolorlcd400" != xno)
 
 AC_OUTPUT([
 Makefile
@@ -104,4 +113,21 @@ skins/display255/OE-A_LCDSkin_7/Makefile
 skins/display255/OE-A_LCDSkin_7/meta/Makefile
 skins/display255/OE-A_LCDSkin_8/Makefile
 skins/display255/OE-A_LCDSkin_8/meta/Makefile
+skins/display400/Makefile
+skins/display400/OE-A_LCDSkin_1/Makefile
+skins/display400/OE-A_LCDSkin_1/meta/Makefile
+skins/display400/OE-A_LCDSkin_2/Makefile
+skins/display400/OE-A_LCDSkin_2/meta/Makefile
+skins/display400/OE-A_LCDSkin_3/Makefile
+skins/display400/OE-A_LCDSkin_3/meta/Makefile
+skins/display400/OE-A_LCDSkin_4/Makefile
+skins/display400/OE-A_LCDSkin_4/meta/Makefile
+skins/display400/OE-A_LCDSkin_5/Makefile
+skins/display400/OE-A_LCDSkin_5/meta/Makefile
+skins/display400/OE-A_LCDSkin_6/Makefile
+skins/display400/OE-A_LCDSkin_6/meta/Makefile
+skins/display400/OE-A_LCDSkin_7/Makefile
+skins/display400/OE-A_LCDSkin_7/meta/Makefile
+skins/display400/OE-A_LCDSkin_8/Makefile
+skins/display400/OE-A_LCDSkin_8/meta/Makefile
 ])
