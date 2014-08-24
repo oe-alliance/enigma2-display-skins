@@ -25,6 +25,16 @@ if test x"$withcolorlcd" != xno ; then
 fi
 AM_CONDITIONAL(HAVE_COLORLCD, test x"$withcolorlcd" != xno)
 
+AC_ARG_WITH(bwlcd128,
+	AC_HELP_STRING([--with-bwlcd128], [use 128x32 1bpp black and white display, yes or no]),
+	[[withbwlcd128=$withval]],
+	[[withbwlcd128=no]]
+)
+if test x"$withbwlcd128" != xno ; then
+	AC_DEFINE(HAVE_BWLCD128, 1,[Define when using a 128x32 black and white display device])
+fi
+AM_CONDITIONAL(HAVE_BWLCD128, test x"$withbwlcd128" != xno)
+
 AC_ARG_WITH(bwlcd140,
 	AC_HELP_STRING([--with-bwlcd140], [use 140x32 1bpp black and white display, yes or no]),
 	[[withbwlcd140=$withval]],
@@ -68,6 +78,17 @@ AM_CONDITIONAL(HAVE_COLORLCD400, test x"$withcolorlcd400" != xno)
 AC_OUTPUT([
 Makefile
 skins/Makefile
+skins/display128/Makefile
+skins/display128/LCDSkin_1/Makefile
+skins/display128/LCDSkin_1/meta/Makefile
+skins/display128/LCDSkin_2/Makefile
+skins/display128/LCDSkin_2/meta/Makefile
+skins/display128/LCDSkin_3/Makefile
+skins/display128/LCDSkin_3/meta/Makefile
+skins/display128/LCDSkin_4/Makefile
+skins/display128/LCDSkin_4/meta/Makefile
+skins/display128/LCDSkin_5/Makefile
+skins/display128/LCDSkin_5/meta/Makefile
 skins/display140/Makefile
 skins/display140/ubisIst_extlalarge/Makefile
 skins/display140/ubisIst_extlalarge/meta/Makefile

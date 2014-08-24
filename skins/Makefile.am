@@ -13,3 +13,7 @@ endif
 if HAVE_BWLCD140
 SUBDIRS = display140
 endif
+
+if HAVE_BWLCD128
+SUBDIRS = display128
+endif
