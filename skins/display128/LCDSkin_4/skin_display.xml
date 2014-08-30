@@ -18,6 +18,8 @@
 	<fonts>
 		<!-- pick a funky name for the font, so we don't conflict  -->
 		<font filename="nmsbd.ttf" name="FdLcD" scale="90"/>
+		<font filename="analog.ttf" name="VFD" scale="90"/>
+		<font filename="lcd.ttf" name="LCD" scale="100"/>
 	</fonts>
 
 <!-- template -->
@@ -44,12 +46,21 @@
 	
 <!-- main-->
 	<screen name="InfoBarSummary" position="0,0" size="128,32">
-		<widget source="session.CurrentService" render="LcdPicon" position="20,0" size="88,30" zPosition="1" valign="center">
+		<widget source="session.CurrentService" render="LcdPicon" position="0,0" size="82,26" zPosition="1" valign="center" path="piconlcd">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
-		
-		<!--panel name="SummaryClockPanel" /-->
-		<!--panel name="SummaryIconsPanel" /-->
+		<widget source="global.CurrentTime" render="Label" position="83,0" size="45,22" font="LCD;22" halign="right">
+			<convert type="ClockToText"/>
+		</widget>
+		<widget source="session.Event_Now" render="Progress" position="0,27" size="82,5" borderWidth="1" zPosition="1" >
+			<convert type="EventTime">Progress</convert>
+		</widget>
+		<widget source="session.Event_Now" render="Label" position="85,22" size="30,10" font="VFD;10" noWrap="1" zPosition="1" >
+			<convert type="EventTime">VFDRemaining</convert>
+			<convert type="RemainingToText">VFDNoSeconds</convert>
+		</widget>
+		<!--panel name="SummaryClockPanel" />
+		<panel name="SummaryIconsPanel" /-->
 	</screen>
 		
 <!-- movieplayer-->
