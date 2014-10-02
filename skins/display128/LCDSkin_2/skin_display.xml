@@ -63,28 +63,30 @@
 		<widget source="session.CurrentService" render="Label" position="12,10" size="129,20" font="FdLcD;16" halign="left" valign="top" zPosition="1" noWrap="1" >
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Progress" position="0,26" size="50,6" borderWidth="1" zPosition="1" >
+		<widget source="session.CurrentService" render="Progress" position="0,26" size="86,6" borderWidth="1" zPosition="1" >
 			<convert type="ServicePosition">VFDPosition</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="58,25" size="70,12" font="FdLcD;12" halign="right" valign="bottom" noWrap="1" zPosition="1" >
+		<widget source="session.CurrentService" render="Label" position="88,25" size="40,12" font="FdLcD;12" halign="right" valign="bottom" noWrap="1" zPosition="1" >
 			<convert type="ServicePosition">VFDPosition</convert>
 		</widget>
 		<panel name="SummaryIconsPanel" />
-		<panel name="SummaryClockPanel" />
+		<!--panel name="SummaryClockPanel" /-->
 	</screen>
+	
+<!-- emc -->
 	<screen name="EMCMoviePlayerSummary" position="0,0" size="128,32">
 		<widget name="statusicon_summary" position="0,13" size="11,10" pixmaps="play.png,pause.png,stop.png,forward.png,backward.png,slow.png" zPosition="3" />
 		<widget source="session.CurrentService" render="Label" position="12,10" size="129,20" font="FdLcD;16" halign="left" valign="top" zPosition="1" >
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Progress" position="0,26" size="50,6" borderWidth="1" zPosition="1" >
+		<widget source="session.CurrentService" render="Progress" position="0,26" size="86,6" borderWidth="1" zPosition="1" >
 			<convert type="ServicePosition">VFDPosition</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="58,25" size="70,12" font="FdLcD;12" halign="right" valign="bottom" noWrap="1" zPosition="1" >
+		<widget source="session.CurrentService" render="Label" position="88,25" size="40,12" font="FdLcD;12" halign="right" valign="bottom" noWrap="1" zPosition="1" >
 			<convert type="ServicePosition">VFDPosition</convert>
 		</widget>
 		<panel name="SummaryIconsPanel" />
-		<panel name="SummaryClockPanel" />
+		<!--panel name="SummaryClockPanel" /-->
 	</screen>
 	<screen name="MovieContextMenuSummary" position="0,0" size="128,32">
 		<widget source="parent.title" render="Label" position="0,10" size="128,16" font="FdLcD;16" halign="center" valign="bottom" zPosition="1" noWrap="1" />
@@ -114,13 +116,6 @@
 		<widget source="parent.ServiceEvent" render="Label" position="0,19" size="128,12" font="FdLcD;12" halign="center" valign="top" zPosition="1" noWrap="1">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<!--widget source="parent.ServiceEvent" render="Progress" position="0,26" size="50,6" borderWidth="1" zPosition="1" >
-			<convert type="EventTime">Progress</convert>
-		</widget-->
-		<!--widget source="parent.ServiceEvent" render="Label" position="58,25" size="70,12" font="FdLcD;12" halign="right" valign="bottom" noWrap="1" zPosition="1" >
-			<convert type="EventTime">VFDRemaining</convert>
-			<convert type="RemainingToText">VFDNoSeconds</convert>
-		</widget-->
 	</screen>
 
 <!-- menus-->
