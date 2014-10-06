@@ -29,8 +29,7 @@
 	
 	<screen name="SummaryIconsPanel">
 		<widget source="session.CurrentService" render="Pixmap" pixmap="hdklein.png" position="92,18" size="13,7">
-			<convert type="ServiceInfo">VideoWidth</convert>
-			<convert type="ValueRange">721,1980</convert>
+			<convert type="ServiceInfo">IsHD</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<widget source="session.CurrentService" render="Pixmap" pixmap="dolbyklein.png" position="106,18" size="10,7">
