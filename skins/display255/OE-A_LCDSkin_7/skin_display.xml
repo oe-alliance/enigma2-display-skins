@@ -446,7 +446,7 @@
 		</widget>
 		<widget source="session.RecordState" render="FixedLabel" text="REC" position="62,44" size="70,20" font="Regular;18" halign="center">
 			  <convert type="ConfigEntryTest">config.usage.blinking_display_clock_during_recording,False,CheckSourceBoolean</convert>
-			  <convert type="ConditionalShowHide"</convert>
+			  <convert type="ConditionalShowHide" />
 		</widget>
 		<panel name="SummaryIconsPanel" />
 		<panel name="SummaryClockPanel" />
