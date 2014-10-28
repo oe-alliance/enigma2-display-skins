@@ -198,7 +198,7 @@
 	</screen>
 <!-- LCD screen Standby -->
 	<screen name="StandbySummary" position="0,0" size="256,64">
-		<widget source="global.CurrentTime" render="Label" position="0,0" size="256,64" font="VFD;74" valign="center" halign="center">
+		<widget source="global.CurrentTime" render="Label" position="0,0" size="256,64" font="VFD;63" valign="center" halign="center">
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
 		<widget source="session.RecordState" render="FixedLabel" position="224,0" zPosition="3" size="32,12" text=" ">
