@@ -304,7 +304,7 @@
 		<panel name="SummaryClockPanel" />
 	</screen>
 
-<screen name="WizardSummary" position="0,0" size="256,64">
+	<screen name="WizardSummary" position="0,0" size="256,64">
 		<widget source="text" render="Label" position="124,0" size="132,46" font="FdLcD;20" halign="center" valgin="top" />
 		<widget source="session.Event_Now" render="Progress" position="0,55" size="256,8" borderWidth="1">
 			<convert type="EventTime">Progress</convert>
@@ -312,11 +312,18 @@
 		<panel name="SummaryClockPanel" />
 	</screen>
 
-<screen name="NetworkServicesSummary" position="0,0" size="255,64">
+	<screen name="NetworkServicesSummary" position="0,0" size="255,64">
 		<widget source="title" render="Label" position="124,0" size="132,46" font="FdLcD;20" halign="center" valgin="top" />
 		<widget source="session.Event_Now" render="Progress" position="0,55" size="256,8" borderWidth="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<panel name="SummaryClockPanel" />
 	</screen>
+
+	<screen name="ServiceScanSummary" position="0,0" size="256,64">
+		<widget source="parent.Title" render="Label" position="124,0" size="132,44" font="FdLcD;20" halign="center" valgin="top" />
+		<widget name="scan_progress" position="0,55" size="256,8" borderWidth="1" zPosition="1" />
+		<panel name="SummaryClockPanel" />
+	</screen>
+	
 </skin>
