@@ -64,28 +64,6 @@
 		<panel name="SummaryClockPanel" />
 	</screen>
 
-<!-- QuickMenu -->
-	<screen name="QuickMenu_summary" position="0,0" size="256,64">
-		<widget source="parent.menu" render="Label" position="124,0" size="132,46" font="FdLcD;20" halign="center" >
-			<convert type="StringListSelection" />
-		</widget>
-		<widget source="session.Event_Now" render="Progress" position="0,55" size="256,8" borderWidth="1">
-			<convert type="EventTime">Progress</convert>
-		</widget>
-		<panel name="SummaryClockPanel" />
-	</screen>
-	
-<!-- Infopanel -->
-	<screen name="Infopanel_summary" position="0,0" size="256,64">
-		<widget source="parent.menu" render="Label" position="124,0" size="132,46" font="FdLcD;20" halign="center" >
-			<convert type="StringListSelection" />
-		</widget>
-		<widget source="session.Event_Now" render="Progress" position="0,55" size="256,8" borderWidth="1">
-			<convert type="EventTime">Progress</convert>
-		</widget>
-		<panel name="SummaryClockPanel" />
-	</screen>
-
 <!-- channelselection -->
 	<screen name="ChannelSelection_summary" position="0,0" size="256,64">
 		<widget source="parent.ServiceEvent" render="LcdPicon" position="124,0" size="132,46" zPosition="1" >
