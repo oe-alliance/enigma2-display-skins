@@ -325,5 +325,21 @@
 		<widget name="scan_progress" position="0,55" size="256,8" borderWidth="1" zPosition="1" />
 		<panel name="SummaryClockPanel" />
 	</screen>
-	
+
+	<screen name="QuickMenu_summary" position="0,0" size="256,64">
+		<widget source="parent.summary_description" render="Label" position="124,0" size="132,44" font="FdLcD;20" halign="center" />
+		<widget source="session.Event_Now" render="Progress" position="0,55" size="256,8" borderWidth="1">
+			<convert type="EventTime">Progress</convert>
+		</widget>
+		<panel name="SummaryClockPanel" />
+	</screen>
+
+	<screen name="Infopanel_summary" position="0,0" size="256,64">
+		<widget source="parent.summary_description" render="Label" position="124,0" size="132,44" font="FdLcD;20" halign="center" />
+		<widget source="session.Event_Now" render="Progress" position="0,55" size="256,8" borderWidth="1">
+			<convert type="EventTime">Progress</convert>
+		</widget>
+		<panel name="SummaryClockPanel" />
+	</screen>
+
 </skin>
