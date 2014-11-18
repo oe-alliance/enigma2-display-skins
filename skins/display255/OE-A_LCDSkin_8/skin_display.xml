@@ -309,6 +309,15 @@
 			<convert type="StringListSelection" />
 		</widget>
 	</screen>
+<!-- ATV -->
+	<screen name="QuickMenu_summary" position="0,0" size="255,64">
+		<widget source="parent.Title" render="Label" position="0,0" size="256,22" font="VFD;22" noWrap="1" halign="center" />
+		<widget source="parent.summary_description" render="Label" position="0,28" size="256,22" font="VFD;20" noWrap="1" halign="center" />
+	</screen>
+	<screen name="Infopanel_summary" position="0,0" size="255,64">
+		<widget source="parent.Title" render="Label" position="0,0" size="256,22" font="VFD;22" noWrap="1" halign="center" />
+		<widget source="parent.summary_description" render="Label" position="0,28" size="256,22" font="VFD;20" noWrap="1" halign="center" />
+	</screen>
 <!-- LCD screen VTIPanel -->
 	<screen name="VTIPanelSummary" position="0,0" size="256,64">
 		<widget source="global.CurrentTime" render="Label" position="180,44" size="58,20" font="VFD;20" halign="right" valign="center" transparent="1">
