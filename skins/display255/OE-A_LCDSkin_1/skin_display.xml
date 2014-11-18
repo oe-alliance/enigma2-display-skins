@@ -377,6 +377,21 @@
 		<panel name="SummaryIconsPanel" />
 		<panel name="SummaryClockPanel" />
 	</screen>
+	
+<!-- ATV -->
+	<screen name="QuickMenu_summary" position="0,0" size="255,64">
+		<widget source="parent.Title" render="Label" position="0,0" size="160,20" font="FdLcD;18" halign="center" />
+		<widget source="parent.summary_description" render="Label" position="0,24" size="160,34" font="FdLcD;16" halign="center" />
+		<panel name="SummaryIconsPanel" />
+		<panel name="SummaryClockPanel" />
+	</screen>
+	<screen name="Infopanel_summary" position="0,0" size="255,64">
+		<widget source="parent.Title" render="Label" position="0,0" size="160,20" font="FdLcD;18" halign="center" />
+		<widget source="parent.summary_description" render="Label" position="0,24" size="160,34" font="FdLcD;16" halign="center" />
+		<panel name="SummaryIconsPanel" />
+		<panel name="SummaryClockPanel" />
+	</screen>
+	
 <!-- ViX -->
 	<screen name="VIXDevicesPanelSummary" position="0,0" size="255,64">
 		<widget source="parent.Title" render="Label" position="0,0" size="160,22" font="FdLcD;18" halign="left" noWrap="1" />

@@ -261,6 +261,15 @@
 		<widget source="entry" render="RollerCharLCDLong" position="0,0" size="256,20" font="VFD;20" noWrap="1" />
 		<widget source="desc" render="RollerCharLCDLong" position="0,21" size="256,20" font="VFD;20" noWrap="1" />
 	</screen>
+<!-- ATV -->
+	<screen name="QuickMenu_summary" position="0,0" size="256,64">
+		<widget source="parent.Title" render="Label" position="0,0" size="256,22" font="VFD;20" halign="center" valgin="bottom" />
+		<widget source="parent.summary_description" render="Label" position="0,24" size="256,42" zPosition="1" font="VFD;20" halign="center" valign="center" />
+	</screen>
+	<screen name="Infopanel_summary" position="0,0" size="256,64">
+		<widget source="parent.Title" render="Label" position="0,0" size="256,22" font="VFD;20" halign="center" valgin="bottom" />
+		<widget source="parent.summary_description" render="Label" position="0,24" size="256,42" zPosition="1" font="VFD;20" halign="center" valign="center" />
+	</screen>
 <!-- LCD screen VTIPanel -->
 	<screen name="VTIPanelSummary" position="0,0" size="256,64">
 		<widget source="entry" render="RollerCharLCDLong" position="0,0" size="256,20" font="VFD;20" noWrap="1" />

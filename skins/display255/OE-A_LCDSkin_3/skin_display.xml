@@ -183,6 +183,21 @@
 		<widget source="entry" render="RollerCharLCDLong" position="6,0" size="256,20" font="Myrida;20" noWrap="1" />
 		<widget source="desc" render="RollerCharLCDLong" position="6,20" size="256,20" font="Myrida;20" noWrap="1" />
 	</screen>
+<!-- ATV -->
+	<screen name="QuickMenu_summary" position="0,0" size="256,64">
+		<widget source="parent.Title" render="Label" position="0,0" size="256,21" font="Myrida;20" halign="center" valgin="bottom" />
+		<widget source="parent.summary_description" render="Label" position="0,22" size="256,21" zPosition="1" font="Myrida;20" halign="center" valign="center" />
+		<widget source="global.CurrentTime" render="Label" position="0,46" size="256,18" font="Myrida;16" halign="center">
+			<convert type="ClockToText">WithSeconds</convert>
+		</widget>
+	</screen>
+	<screen name="Infopanel_summary" position="0,0" size="256,64">
+		<widget source="parent.Title" render="Label" position="0,0" size="256,21" font="Myrida;20" halign="center" valgin="bottom" />
+		<widget source="parent.summary_description" render="Label" position="0,22" size="256,21" zPosition="1" font="Myrida;20" halign="center" valign="center" />
+		<widget source="global.CurrentTime" render="Label" position="0,46" size="256,18" font="Myrida;16" halign="center">
+			<convert type="ClockToText">WithSeconds</convert>
+		</widget>
+	</screen>
 <!-- LCD screen VTIPanel -->
 	<screen name="VTIPanelSummary" position="0,0" size="256,64">
 		<widget source="entry" render="RollerCharLCDLong" position="6,0" size="256,20" font="Myrida;20" noWrap="1" />
