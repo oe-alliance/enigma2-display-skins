@@ -164,7 +164,7 @@
 	</screen>
 
 	<screen name="ChoiceBox_summary" position="0,0" size="256,64">
-		<widget source="parent.summary_list" render="Label" position="124,0" size="136,43" font="FdLcD;20" noWrap="1" />
+		<widget source="parent.summary_list" render="Label" position="124,0" size="136,43" font="FdLcD;20" halign="center" valign="top" />
 		<widget source="session.Event_Now" render="Progress" position="0,55" size="256,8" borderWidth="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
@@ -247,13 +247,17 @@
 		</widget>
 		<panel name="SummaryClockPanel" />
 	</screen>
-	
+
+!-- LanguageSelection -->
 	<screen name="LanguageSelection_summary" position="0,0" size="256,64">
 		<widget source="parent.summarylangsel" render="Label" position="124,0" size="132,46" font="FdLcD;20" halign="center" noWrap="1"  />
 		<widget source="session.Event_Now" render="Progress" position="0,55" size="256,8" borderWidth="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<panel name="SummaryClockPanel" />
+	</screen>
+	<screen name="LanguageWizardSummary" position="0,0" size="256,64">
+		<widget source="parent.summarylangsel" render="Label" position="0,42" size="160,44" font="FdLcD;20" halign="center" valign="top" />
 	</screen>
 
 <!-- setup.-->
@@ -325,6 +329,13 @@
 
 <!-- PowerTimer -->
 	<screen name="PowerTimerEditListSummary" position="0,0" size="256,64">
+		<widget source="parent.summary_description" render="Label" position="124,0" size="132,44" font="FdLcD;20" halign="center" valign="top" />
+		<widget source="session.Event_Now" render="Progress" position="0,55" size="256,8" borderWidth="1">
+			<convert type="EventTime">Progress</convert>
+		</widget>
+		<panel name="SummaryClockPanel" />
+	</screen>
+	<screen name="TimerEntry_summary" position="0,0" size="256,64">
 		<widget source="parent.summary_description" render="Label" position="124,0" size="132,44" font="FdLcD;20" halign="center" valign="top" />
 		<widget source="session.Event_Now" render="Progress" position="0,55" size="256,8" borderWidth="1">
 			<convert type="EventTime">Progress</convert>
