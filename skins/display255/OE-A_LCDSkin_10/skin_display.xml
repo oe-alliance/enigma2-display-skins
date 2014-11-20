@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Skin: LCD mod from mike99.-->
+<!-- Skin: LCD mod from mike99 -->
 <skin>
 	<windowstyle id="1" type="skinned">
 		<color color="#000000" name="Background"/>
@@ -318,7 +318,7 @@
 		<panel name="SummaryClockPanel" />
 	</screen>
 	<screen name="LanguageWizardSummary" position="0,0" size="256,64">
-		<widget source="parent.summarylangsel" render="Label" position="0,42" size="160,44" font="FdLcD;20" halign="center" valign="top" />
+		<widget source="parent.summarylangsel" render="Label" position="0,42" size="256,22" zPosition="1" font="FdLcD;20" halign="center" valign="center" />
 	</screen>
 
 <!-- setup.-->
@@ -387,7 +387,7 @@
 	</screen>
 
 	<screen name="ServiceScanSummary" position="0,0" size="256,64">
-		<widget source="parent.Title" render="Label" position="124,0" size="132,44" font="FdLcD;20" halign="center" valgin="top" />
+		<widget source="parent.Title" render="Label" position="124,0" size="132,44" font="FdLcD;20" halign="center" valign="top" />
 		<widget name="scan_progress" position="0,55" size="190,8" borderWidth="1" zPosition="1" />
 		<panel name="SummaryTunerStatusPanel" />
 		<panel name="SummaryClockPanel" />
