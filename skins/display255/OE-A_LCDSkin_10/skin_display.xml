@@ -26,8 +26,15 @@
 		</widget>
 	</screen>
 
-<!-- template -->
-	<screen name="SummaryTunerStatusPanel">
+<!-- template ClockProgressPanel & TunerStatus -->
+	<screen name="SummaryClockProgressPanel">
+		<widget source="global.CurrentTime" render="Label" position="0,3" size="125,46" font="FdLcD;45" halign="left" valign="bottom" noWrap="1">
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+		<widget source="session.Event_Now" render="Progress" position="0,55" size="190,8" borderWidth="1">
+			<convert type="EventTime">Progress</convert>
+		</widget>
+<!-- screen name="SummaryTunerStatusPanel" -->
 		<widget source="session.TunerInfo" render="FixedLabel" position="196,44" size="16,22" text="A" font="FdLcD;22" halign="center" >
 			<convert type="TunerInfo">TunerUseMask</convert>
 			<convert type="ValueBitTest">1</convert>
@@ -70,26 +77,27 @@
 		</widget>
 	</screen>
 
+<!-- template -->
+	<screen name="SummaryLcdPiconPanel">
+		<widget source="session.CurrentService" render="LcdPicon" position="124,0" size="132,46" zPosition="1" >
+			<convert type="ServiceName">Reference</convert>
+		</widget>
+	</screen>
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
 <!-- misc-->
 	<screen name="SimpleSummary" position="0,0" size="256,64">
-		<widget source="parent.Title" render="Label" position="124,0" size="132,44" font="FdLcD;20" halign="center" valign="top" />
-		<widget source="session.Event_Now" render="Progress" position="0,55" size="190,8" borderWidth="1">
-			<convert type="EventTime">Progress</convert>
-		</widget>
-		<panel name="SummaryTunerStatusPanel" />
-		<panel name="SummaryClockPanel" />
+		<widget source="parent.Title" render="Label" position="124,0" size="132,46" font="FdLcD;20" halign="center" valign="top" />
+		<panel name="SummaryClockProgressPanel" />
 	</screen>
 
 <!-- main -->
 	<screen name="InfoBarSummary" position="0,0" size="256,64">
-		<widget source="session.CurrentService" render="LcdPicon" position="141,0" size="115,40" zPosition="1" >
+		<widget source="session.CurrentService" render="LcdPicon" position="124,0" size="132,46" zPosition="1" >
 			<convert type="ServiceName">Reference</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Progress" position="0,55" size="190,8" borderWidth="1">
-			<convert type="EventTime">Progress</convert>
-		</widget>
-		<panel name="SummaryTunerStatusPanel" />
-		<panel name="SummaryClockPanel" />
+		<panel name="SummaryClockProgressPanel" />
 	</screen>
 
 <!-- JobView -->
@@ -101,79 +109,74 @@
 
 <!-- menus.-->
 	<screen name="MenuSummary" position="0,0" size="256,64">
-		<widget source="parent.menu" render="Label" position="124,0" size="132,44" font="FdLcD;20" halign="center" >
+		<widget source="parent.menu" render="Label" position="120,0" size="136,46" font="FdLcD;20" halign="center" >
 			<convert type="StringListSelection" />
 		</widget>
-		<widget source="session.Event_Now" render="Progress" position="0,55" size="190,8" borderWidth="1">
-			<convert type="EventTime">Progress</convert>
-		</widget>
-		<panel name="SummaryTunerStatusPanel" />
-		<panel name="SummaryClockPanel" />
+		<panel name="SummaryClockProgressPanel" />
 	</screen>
 
 <!-- QuickMenu -->
 	<screen name="QuickMenu_summary" position="0,0" size="256,64">
-		<widget source="parent.summary_description" render="Label" position="124,0" size="132,44" font="FdLcD;20" halign="center" />
-		<widget source="session.Event_Now" render="Progress" position="0,55" size="190,8" borderWidth="1">
-			<convert type="EventTime">Progress</convert>
-		</widget>
-		<panel name="SummaryTunerStatusPanel" />
-		<panel name="SummaryClockPanel" />
+		<widget source="parent.summary_description" render="Label" position="124,0" size="132,46" font="FdLcD;20" halign="center" />
+		<panel name="SummaryClockProgressPanel" />
 	</screen>
 	
 <!-- Infopanel -->
 	<screen name="Infopanel_summary" position="0,0" size="256,64">
-		<widget source="parent.summary_description" render="Label" position="124,0" size="132,44" font="FdLcD;20" halign="center" />
-		<widget source="session.Event_Now" render="Progress" position="0,55" size="190,8" borderWidth="1">
-			<convert type="EventTime">Progress</convert>
-		</widget>
-		<panel name="SummaryTunerStatusPanel" />
-		<panel name="SummaryClockPanel" />
+		<widget source="parent.summary_description" render="Label" position="124,0" size="132,46" font="FdLcD;20" halign="center" />
+		<panel name="SummaryClockProgressPanel" />
 	</screen>
 
 <!-- channelselection -->
 	<screen name="ChannelSelection_summary" position="0,0" size="256,64">
-		<widget source="parent.ServiceEvent" render="LcdPicon" position="141,0" size="115,40" zPosition="1" >
+		<widget source="parent.ServiceEvent" render="LcdPicon" position="124,0" size="132,46" zPosition="1" >
 			<convert type="ServiceName">Reference</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Progress" position="0,55" size="190,8" borderWidth="1">
-			<convert type="EventTime">Progress</convert>
-		</widget>
-		<panel name="SummaryTunerStatusPanel" />
-		<panel name="SummaryClockPanel" />
+		<panel name="SummaryClockProgressPanel" />
 	</screen>
 
-	<screen name="SummaryEpgPanel">
-		<widget source="parent.Service" render="LcdPicon" position="141,0" size="115,40" >
+	<!--screen name="SummaryEpgPanel">
+		<widget source="parent.Service" render="LcdPicon" position="124,0" size="132,46" >
 			<convert type="ServiceName">Reference</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Progress" position="0,55" size="190,8" borderWidth="1">
-			<convert type="EventTime">Progress</convert>
-		</widget>
-		<panel name="SummaryTunerStatusPanel" />
-		<panel name="SummaryClockPanel" />
-	</screen>
+		<panel name="SummaryClockProgressPanel" />
+	</screen-->
 	
 <!-- EPG Screens -->
 	<screen name="EPGSelection_summary" position="0,0" size="256,64">
-		<panel name="SummaryEpgPanel" />
+		<widget source="parent.Service" render="LcdPicon" position="124,0" size="132,46" >
+			<convert type="ServiceName">Reference</convert>
+		</widget>
+		<panel name="SummaryClockProgressPanel" />
 	</screen>
 	<screen name="QuickEPG_summary" position="0,0" size="256,64">
-		<panel name="SummaryEpgPanel" />
+		<widget source="parent.Service" render="LcdPicon" position="124,0" size="132,46" >
+			<convert type="ServiceName">Reference</convert>
+		</widget>
+		<panel name="SummaryClockProgressPanel" />
 	</screen>
 	<screen name="GraphicalEPG_summary" position="0,0" size="256,64">
-		<panel name="SummaryEpgPanel" />
+		<widget source="parent.Service" render="LcdPicon" position="124,0" size="132,46" >
+			<convert type="ServiceName">Reference</convert>
+		</widget>
+		<panel name="SummaryClockProgressPanel" />
 	</screen>
 	<screen name="GraphicalEPGPIG_summary" position="0,0" size="256,64">
-		<panel name="SummaryEpgPanel" />
+		<widget source="parent.Service" render="LcdPicon" position="124,0" size="132,46" >
+			<convert type="ServiceName">Reference</convert>
+		</widget>
+		<panel name="SummaryClockProgressPanel" />
 	</screen>
 	<screen name="GraphicalInfoBarEPG_summary" position="0,0" size="256,64">
-		<panel name="SummaryEpgPanel" />
+		<widget source="parent.Service" render="LcdPicon" position="124,0" size="132,46" >
+			<convert type="ServiceName">Reference</convert>
+		</widget>
+		<panel name="SummaryClockProgressPanel" />
 	</screen>
 
  <!-- movieplayer.-->
 	<screen name="InfoBarMoviePlayerSummary" position="0,0" size="256,64">
-		<widget source="session.CurrentService" render="Label" position="124,0" size="132,44" font="FdLcD;20" halign="center" valign="top" >
+		<widget source="session.CurrentService" render="Label" position="124,0" size="132,46" font="FdLcD;20" halign="center" valign="top" >
 			<convert type="ServiceName">Name</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Progress" position="0,55" size="256,8" borderWidth="1">
@@ -182,20 +185,12 @@
 		<panel name="SummaryClockPanel" />
 	</screen>
 	<screen name="MovieContextMenuSummary" position="0,0" size="256,64">
-		<widget source="selected" render="Label" position="124,0" size="132,44" font="FdLcD;20" halign="center" valign="top" />
-		<widget source="session.Event_Now" render="Progress" position="0,55" size="190,8" borderWidth="1">
-			<convert type="EventTime">Progress</convert>
-		</widget>
-		<panel name="SummaryTunerStatusPanel" />
-		<panel name="SummaryClockPanel" />
+		<widget source="selected" render="Label" position="124,0" size="132,46" font="FdLcD;20" halign="center" valign="top" />
+		<panel name="SummaryClockProgressPanel" />
 	</screen>
 	<screen name="MovieSelectionSummary" position="0,0" size="256,64">
-		<widget source="name" render="Label" position="124,0" size="132,44" font="FdLcD;20" halign="center" valign="top" />
-		<widget source="session.Event_Now" render="Progress" position="0,55" size="190,8" borderWidth="1">
-			<convert type="EventTime">Progress</convert>
-		</widget>
-		<panel name="SummaryTunerStatusPanel" />
-		<panel name="SummaryClockPanel" />
+		<widget source="name" render="Label" position="124,0" size="132,46" font="FdLcD;20" halign="center" valign="top" />
+		<panel name="SummaryClockProgressPanel" />
 	</screen>
 
 <!-- LCD screen Standby -->
@@ -218,11 +213,7 @@
 
 	<screen name="ChoiceBox_summary" position="0,0" size="256,64">
 		<widget source="parent.summary_list" render="Label" position="124,0" size="136,43" font="FdLcD;20" halign="center" valign="top" />
-		<widget source="session.Event_Now" render="Progress" position="0,55" size="190,8" borderWidth="1">
-			<convert type="EventTime">Progress</convert>
-		</widget>
-		<panel name="SummaryTunerStatusPanel" />
-		<panel name="SummaryClockPanel" />
+		<panel name="SummaryClockProgressPanel" />
 	</screen>
 
 	<screen name="MessageBox_summary" position="0,0" size="256,64">
@@ -238,50 +229,34 @@
 	<screen name="AboutSummary" position="0,0" size="256,64">
 		<widget source="AboutText" render="Label" position="0,0" size="256,64" font="FdLcD;26" />
 	</screen>
-	
+
 <!-- Plugin browser -->
 	<screen name="PluginBrowserSummary" position="0,0" size="256,64">
-		<widget source="entry" render="Label" position="124,0" size="132,44" font="FdLcD;20" halign="center" valign="top" />
-		<widget source="session.Event_Now" render="Progress" position="0,55" size="190,8" borderWidth="1">
-			<convert type="EventTime">Progress</convert>
-		</widget>
-		<panel name="SummaryTunerStatusPanel" />
-		<panel name="SummaryClockPanel" />
+		<widget source="entry" render="Label" position="124,0" size="132,46" font="FdLcD;20" halign="center" noWrap="1" />
+		<panel name="SummaryClockProgressPanel" />
 	</screen>
 
 <!-- Laufwerksverwaltung -->
 	<screen name="DevicesPanelSummary" position="0,0" size="256,64">
-		<widget source="entry" render="Label" position="124,0" size="132,44" font="FdLcD;20" halign="center" noWrap="1" />
-		<widget source="session.Event_Now" render="Progress" position="0,55" size="190,8" borderWidth="1">
-			<convert type="EventTime">Progress</convert>
-		</widget>
-		<panel name="SummaryTunerStatusPanel" />
-		<panel name="SummaryClockPanel" />
+		<widget source="entry" render="Label" position="124,0" size="136,43" font="FdLcD;20" halign="center" noWrap="1" />
+		<panel name="SummaryClockProgressPanel" />
 	</screen>
 
 <!-- AudioSelection -->
 	<screen name="AudioSelection_summary" position="0,0" size="256,64">
-		<widget source="parent.summary_description" render="Label" position="124,0" size="132,44" font="FdLcD;20" halign="center" valign="top" />
-		<widget source="session.Event_Now" render="Progress" position="0,55" size="190,8" borderWidth="1">
-			<convert type="EventTime">Progress</convert>
-		</widget>
-		<panel name="SummaryTunerStatusPanel" />
-		<panel name="SummaryClockPanel" />
+		<widget source="parent.summary_description" render="Label" position="124,0" size="132,46" font="FdLcD;20" halign="center" valign="top" />
+		<panel name="SummaryClockProgressPanel" />
 	</screen>
 
 	<screen name="EventView_summary" position="0,0" size="256,64">
-		<widget source="parent.Title"  render="Label" position="124,0" size="132,44" font="FdLcD;20" halign="center" noWrap="1" />
-		<widget source="session.Event_Now" render="Progress" position="0,55" size="190,8" borderWidth="1">
-			<convert type="EventTime">Progress</convert>
-		</widget>
-		<panel name="SummaryTunerStatusPanel" />
-		<panel name="SummaryClockPanel" />
+		<widget source="parent.Title"  render="Label" position="124,0" size="136,43" font="FdLcD;26" halign="center" noWrap="1" />
+		<panel name="SummaryClockProgressPanel" />
 	</screen>
 	
 <!-- EMC -->
 	<screen name="EMCMoviePlayerSummary" position="0,0" size="256,64" >
 <!-- Movie name -->
-		<widget source="session.CurrentService" render="Label" position="124,0" size="132,44" font="FdLcD;20" halign="center">
+		<widget source="session.CurrentService" render="Label" position="124,0" size="132,46" font="FdLcD;20" halign="center">
 			<convert type="ServiceName">Name</convert>
 		</widget>
 <!-- Movie progress -->
@@ -292,30 +267,18 @@
 	</screen>
 <!-- Selection -->
 	<screen name="EMCSelection_summary" position="0,0" size="256,64">
-		<widget source="session.Event_Now" render="Progress" position="0,55" size="190,8" borderWidth="1">
-			<convert type="EventTime">Progress</convert>
-		</widget>
-		<panel name="SummaryTunerStatusPanel" />
-		<panel name="SummaryClockPanel" />
+		<panel name="SummaryClockProgressPanel" />
 	</screen>
 
 	<screen name="TimerEditListSummary" position="0,0" size="256,64">
-		<widget source="name" render="Label" position="124,0" size="132,44" font="FdLcD;20" halign="center" valign="top" />
-		<widget source="session.Event_Now" render="Progress" position="0,55" size="190,8" borderWidth="1">
-			<convert type="EventTime">Progress</convert>
-		</widget>
-		<panel name="SummaryTunerStatusPanel" />
-		<panel name="SummaryClockPanel" />
+		<widget source="name" render="Label" position="124,0" size="132,46" font="FdLcD;20" halign="center" valign="top" />
+		<panel name="SummaryClockProgressPanel" />
 	</screen>
-	
+
 !-- LanguageSelection -->
 	<screen name="LanguageSelection_summary" position="0,0" size="256,64">
-		<widget source="parent.summarylangsel" render="Label" position="124,0" size="132,44" font="FdLcD;20" halign="center" valign="top" />
-		<widget source="session.Event_Now" render="Progress" position="0,55" size="190,8" borderWidth="1">
-			<convert type="EventTime">Progress</convert>
-		</widget>
-		<panel name="SummaryTunerStatusPanel" />
-		<panel name="SummaryClockPanel" />
+		<widget source="parent.summarylangsel" render="Label" position="124,0" size="132,46" font="FdLcD;20" halign="center" noWrap="1"  />
+		<panel name="SummaryClockProgressPanel" />
 	</screen>
 	<screen name="LanguageWizardSummary" position="0,0" size="256,64">
 		<widget source="parent.summarylangsel" render="Label" position="0,42" size="256,22" zPosition="1" font="FdLcD;20" halign="center" valign="center" />
@@ -323,44 +286,27 @@
 
 <!-- setup.-->
 	<screen name="SetupSummary" position="0,0" size="256,64">
-		<widget source="SetupEntry" render="Label" position="124,0" size="132,44" font="FdLcD;20" halign="center" valign="top" />
-		<widget source="session.Event_Now" render="Progress" position="0,55" size="190,8" borderWidth="1">
-			<convert type="EventTime">Progress</convert>
-		</widget>
-		<panel name="SummaryTunerStatusPanel" />
-		<panel name="SummaryClockPanel" />
+		<widget source="SetupEntry" render="Label" position="124,0" size="132,46" font="FdLcD;20" halign="center" valign="top" />
+		<panel name="SummaryClockProgressPanel" />
 	</screen>
 	
 	<screen name="NumberZap_summary" position="0,0" size="256,64">
-		<widget source="session.CurrentService" render="LcdPicon" position="141,0" size="115,40" zPosition="1" >
+		<widget source="session.CurrentService" render="LcdPicon" position="124,0" size="132,46" zPosition="1" >
 			<convert type="ServiceName">Reference</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Progress" position="0,55" size="190,8" borderWidth="1">
-			<convert type="EventTime">Progress</convert>
-		</widget>
-		<panel name="SummaryTunerStatusPanel" />
-		<panel name="SummaryClockPanel" />
+		<panel name="SummaryClockProgressPanel" />
 	</screen>
 
-	<screen name="Console_summary" position="0,0" size="256,64">
-		<widget source="parent.Title" render="Label" position="124,0" size="132,46" font="FdLcD;22" halign="center" valign="top" />
-		<widget source="session.Event_Now" render="Progress" position="0,55" size="190,8" borderWidth="1">
-			<convert type="EventTime">Progress</convert>
-		</widget>
-		
-		<panel name="SummaryClockPanel" />
-	</screen>
-	
 <!-- AutoTimerOverview -->
 	<screen name="AutoTimerOverviewSummary" position="0,0" size="256,64">
-		<widget source="parent.Title" render="Label" position="128,0" size="127,24" font="FdLcD;22" halign="left" noWrap="1" />
+		<widget source="parent.Title" render="Label" position="128,0" size="127,24" font="FdLcD;20" halign="left" noWrap="1" />
 		<widget source="entry" render="Label" position="128,26" size="256,24" font="FdLcD;16" halign="left" noWrap="1" />
 		<panel name="SummaryClockPanel" />
 	</screen> 
 
 <!-- mediaplayer -->
 	<screen name="MediaPlayerLCDScreen" position="0,0" size="256,64">
-		<widget source="session.CurrentService" render="Label" position="124,0" size="132,46" font="FdLcD;22" halign="left" valign="top" >
+		<widget source="session.CurrentService" render="Label" position="124,0" size="132,46" font="FdLcD;20" halign="left" valign="top" >
 			<convert type="ServiceName">Name</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Progress" position="0,55" size="256,8" borderWidth="1">
@@ -369,46 +315,76 @@
 		<panel name="SummaryClockPanel" />
 	</screen>
 
-	<screen name="WizardSummary" position="0,0" size="256,64">
-		<widget source="text" render="Label" position="124,0" size="132,46" font="FdLcD;22" halign="center" valign="top" />
-		<widget source="session.Event_Now" render="Progress" position="0,55" size="190,8" borderWidth="1">
-			<convert type="EventTime">Progress</convert>
-		</widget>
-		<panel name="SummaryClockPanel" />
-	</screen>
-
-	<screen name="NetworkServicesSummary" position="0,0" size="256,64">
-		<widget source="title" render="Label" position="124,0" size="132,44" font="FdLcD;22" halign="center" valign="top" />
-		<widget source="session.Event_Now" render="Progress" position="0,55" size="190,8" borderWidth="1">
-			<convert type="EventTime">Progress</convert>
-		</widget>
-		<panel name="SummaryTunerStatusPanel" />
-		<panel name="SummaryClockPanel" />
+	<screen name="NetworkServicesSummary" position="0,0" size="255,64">
+		<widget source="title" render="Label" position="124,0" size="132,46" font="FdLcD;20" halign="center" valign="top" />
+		<panel name="SummaryClockProgressPanel" />
 	</screen>
 
 	<screen name="ServiceScanSummary" position="0,0" size="256,64">
-		<widget source="parent.Title" render="Label" position="124,0" size="132,44" font="FdLcD;20" halign="center" valign="top" />
-		<widget name="scan_progress" position="0,55" size="190,8" borderWidth="1" zPosition="1" />
-		<panel name="SummaryTunerStatusPanel" />
+		<widget source="parent.Title" render="Label" position="124,0" size="132,46" font="FdLcD;20" halign="center" valign="top" />
+		<widget name="scan_progress" position="0,55" size="256,8" borderWidth="1" zPosition="1" />
 		<panel name="SummaryClockPanel" />
 	</screen>
 
 <!-- PowerTimer -->
 	<screen name="PowerTimerEditListSummary" position="0,0" size="256,64">
-		<widget source="parent.summary_description" render="Label" position="124,0" size="132,44" font="FdLcD;20" halign="center" valign="top" />
-		<widget source="session.Event_Now" render="Progress" position="0,55" size="190,8" borderWidth="1">
-			<convert type="EventTime">Progress</convert>
-		</widget>
-		<panel name="SummaryTunerStatusPanel" />
-		<panel name="SummaryClockPanel" />
+		<widget source="parent.summary_description" render="Label" position="124,0" size="132,46" font="FdLcD;20" halign="center" valign="top" />
+		<panel name="SummaryClockProgressPanel" />
 	</screen>
 	<screen name="TimerEntry_summary" position="0,0" size="256,64">
-		<widget source="parent.summary_description" render="Label" position="124,0" size="132,44" font="FdLcD;20" halign="center" valign="top" />
-		<widget source="session.Event_Now" render="Progress" position="0,55" size="190,8" borderWidth="1">
-			<convert type="EventTime">Progress</convert>
-		</widget>
-		<panel name="SummaryTunerStatusPanel" />
+		<widget source="parent.summary_description" render="Label" position="124,0" size="132,46" font="FdLcD;20" halign="center" valign="top" />
+		<panel name="SummaryClockProgressPanel" />
+	</screen>
+	<screen name="TimerLog_summary" position="0,0" size="256,64">
+		<widget source="parent.Title" render="Label" position="124,0" size="132,40" font="FdLcD;20" halign="center" valgin="bottom" />
+		<widget source="parent.summary_description" render="Label" position="0,42" size="256,22" zPosition="1" font="FdLcD;20" halign="center" valign="center" />
+	</screen>
+
+<!-- wizard -->
+	<screen name="WizardSummary" position="0,0" size="256,64">
+		<panel name="SummaryClockProgressPanel" />
+		<widget source="text" render="Label" position="120,0" size="136,40" font="FdLcD;17" halign="center" valgin="bottom" />
+		<widget source="entry" render="Label" position="0,42" size="256,22" zPosition="1" font="FdLcD;20" halign="center" valign="center" />
+	</screen>
+
+	<screen name="VideoWizardSummary" position="0,0" size="256,64">
 		<panel name="SummaryClockPanel" />
+		<widget source="text" render="Label" position="120,0" size="136,40" font="FdLcD;17" halign="center" valgin="bottom" />
+		<widget source="entry" render="Label" position="0,42" size="256,22" zPosition="1" font="FdLcD;20" halign="center" valign="center" />
+	</screen>
+
+<!-- console -->
+	<screen name="Console_summary" position="0,0" size="256,64">
+		<panel name="SummaryClockProgressPanel" />
+		<widget source="parent.Title" render="Label" position="120,0" size="136,40" font="FdLcD;17" halign="center" valgin="bottom" />
+		<widget source="parent.summary_description" render="Label" position="0,48" size="256,19" font="FdLcD;18" halign="center" noWrap="1" />
+	</screen>
+
+<!-- softwaremanagment -->
+	<screen name="BackupSelection_summary" position="0,0" size="256,64">
+		<panel name="SummaryClockProgressPanel" />
+		<widget source="parent.Title" render="Label" position="120,0" size="136,40" font="FdLcD;17" halign="center" valgin="bottom" />
+		<widget source="parent.summary_description" render="Label" position="0,42" size="256,22" zPosition="1" font="FdLcD;20" halign="center" valign="center" />
+	</screen>
+	<screen name="RestoreScreen_summary" position="0,0" size="256,64">
+		<panel name="SummaryClockProgressPanel" />
+		<widget source="parent.Title" render="Label" position="120,0" size="136,40" font="FdLcD;17" halign="center" valgin="bottom" />
+		<widget source="parent.summary_description" render="Label" position="0,42" size="256,22" zPosition="1" font="FdLcD;20" halign="center" valign="center" />
+	</screen>
+	<screen name="installedPlugins_summary" position="0,0" size="256,64">
+		<panel name="SummaryClockProgressPanel" />
+		<widget source="parent.Title" render="Label" position="120,0" size="136,40" font="FdLcD;17" halign="center" valgin="bottom" />
+		<widget source="parent.summary_description" render="Label" position="0,42" size="256,22" zPosition="1" font="FdLcD;20" halign="center" valign="center" />
+	</screen>
+	<screen name="RestartNetwork_summary" position="0,0" size="256,64">
+		<panel name="SummaryClockProgressPanel" />
+		<widget source="parent.Title" render="Label" position="120,0" size="136,40" font="FdLcD;17" halign="center" valgin="bottom" />
+		<widget source="parent.summary_description" render="Label" position="0,42" size="256,22" zPosition="1" font="FdLcD;20" halign="center" valign="center" />
+	</screen>
+	<screen name="RestorePlugins_summary" position="0,0" size="256,64">
+		<panel name="SummaryClockProgressPanel" />
+		<widget source="parent.Title" render="Label" position="120,0" size="136,40" font="FdLcD;17" halign="center" valgin="bottom" />
+		<widget source="parent.summary_description" render="Label" position="0,42" size="256,22" zPosition="1" font="FdLcD;20" halign="center" valign="center" />
 	</screen>
 
 </skin>
