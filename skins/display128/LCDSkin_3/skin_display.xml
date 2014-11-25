@@ -366,4 +366,52 @@
 		<widget source="parent.summary_action" render="Label" position="0,16" size="128,16" font="FdLcD;14" halign="left" noWrap="1" />
 		<!--<widget source="parent.summary_status" render="Label" position="0,41" size="128,18" font="FdLcD;16" halign="left" noWrap="1" />-->
 	</screen>
+	
+<!-- ATV -->
+	<!-- Quickmenü -->
+	<screen name="QuickMenu_summary" position="0,0" size="128,32">
+		<widget source="parent.Title" render="Label" position="0,0" size="128,14" font="FdLcD;12" halign="center" valign="center" noWrap="1" />
+		<widget source="parent.summary_description" render="Label" position="0,15" size="128,17" zPosition="1" font="FdLcD;16" halign="center" valign="center" noWrap="1" />
+	</screen>
+	
+	<!-- Infopanel -->
+	<screen name="Infopanel_summary" position="0,0" size="128,32">
+		<widget source="parent.Title" render="Label" position="0,0" size="128,14" font="FdLcD;12" halign="center" valign="center" noWrap="1" />
+		<widget source="parent.summary_description" render="Label" position="0,15" size="128,17" zPosition="1" font="FdLcD;16" halign="center" valign="center" noWrap="1" />
+	</screen>
+
+	<!-- AudioSelection -->
+	<screen name="AudioSelection_summary" position="0,0" size="132,32">
+		<widget source="parent.Title" render="Label" position="0,0" size="128,14" font="FdLcD;12" halign="center" valign="center" noWrap="1" />
+		<widget source="parent.summary_description" render="Label" position="0,15" size="128,17" zPosition="1" font="FdLcD;16" halign="center" valign="center" noWrap="1" />
+	</screen>
+
+<!-- console -->
+	<screen name="Console_summary" position="0,0" size="132,32">
+		<widget source="parent.Title" render="Label" position="0,0" size="128,14" font="FdLcD;12" halign="center" valign="center" noWrap="1" />
+		<widget source="parent.summary_description" render="Label" position="0,15" size="128,17" zPosition="1" font="FdLcD;16" halign="center" valign="center" noWrap="1" />
+	</screen>
+
+<!-- softwaremanagment -->
+	<screen name="BackupSelection_summary" position="0,0" size="132,32">
+		<widget source="parent.Title" render="Label" position="0,0" size="128,14" font="FdLcD;12" halign="center" valign="center" noWrap="1" />
+		<widget source="parent.summary_description" render="Label" position="0,15" size="128,17" zPosition="1" font="FdLcD;16" halign="center" valign="center" noWrap="1" />
+	</screen>
+	<screen name="RestoreScreen_summary" position="0,0" size="132,32">
+		<widget source="parent.Title" render="Label" position="0,0" size="128,14" font="FdLcD;12" halign="center" valign="center" noWrap="1" />
+		<widget source="parent.summary_description" render="Label" position="0,15" size="128,17" zPosition="1" font="FdLcD;16" halign="center" valign="center" noWrap="1" />
+	</screen>
+	<screen name="installedPlugins_summary" position="0,0" size="132,32">
+		<widget source="parent.Title" render="Label" position="0,0" size="128,14" font="FdLcD;12" halign="center" valign="center" noWrap="1" />
+		<widget source="parent.summary_description" render="Label" position="0,15" size="128,17" zPosition="1" font="FdLcD;16" halign="center" valign="center" noWrap="1" />
+	</screen>
+	<screen name="RestartNetwork_summary" position="0,0" size="132,32">
+		<widget source="parent.Title" render="Label" position="0,0" size="128,14" font="FdLcD;12" halign="center" valign="center" noWrap="1" />
+		<widget source="parent.summary_description" render="Label" position="0,15" size="128,17" zPosition="1" font="FdLcD;16" halign="center" valign="center" noWrap="1" />
+	</screen>
+	<screen name="RestorePlugins_summary" position="0,0" size="132,32">
+		<widget source="parent.Title" render="Label" position="0,0" size="128,14" font="FdLcD;12" halign="center" valign="center" noWrap="1" />
+		<widget source="parent.summary_description" render="Label" position="0,15" size="128,17" zPosition="1" font="FdLcD;16" halign="center" valign="center" noWrap="1" />
+	</screen>
+	
 </skin>
