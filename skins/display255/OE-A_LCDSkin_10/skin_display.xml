@@ -205,10 +205,10 @@
 		<widget source="global.CurrentTime" render="Label" size="256,60" font="FdLcD;58" halign="center" valign="center" transparent="1">
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
-		<widget source="session.RecordState" render="FixedLabel" position="0,0" zPosition="1" size="256,64" text=" ">
+		<!--widget source="session.RecordState" render="FixedLabel" position="0,0" zPosition="1" size="256,64" text=" ">
 			<convert type="ConfigEntryTest">config.usage.blinking_display_clock_during_recording,True,CheckSourceBoolean</convert>
 			<convert type="ConditionalShowHide">Blink</convert>
-		</widget>
+		</widget-->
 	</screen>
 
 	<screen name="ChoiceBox_summary" position="0,0" size="256,64">
@@ -336,58 +336,58 @@
 		<panel name="SummaryClockProgressPanel" />
 	</screen>
 	<screen name="TimerLog_summary" position="0,0" size="256,64">
-		<widget source="parent.Title" render="Label" position="124,0" size="132,40" font="FdLcD;20" halign="center" valgin="bottom" />
+		<widget source="parent.Title" render="Label" position="124,0" size="132,40" font="FdLcD;20" halign="center" valign="bottom" />
 		<widget source="parent.summary_description" render="Label" position="0,42" size="256,22" zPosition="1" font="FdLcD;20" halign="center" valign="center" />
 	</screen>
 
 <!-- wizard -->
 	<screen name="WizardSummary" position="0,0" size="256,64">
 		<panel name="SummaryClockProgressPanel" />
-		<widget source="text" render="Label" position="120,0" size="136,40" font="FdLcD;17" halign="center" valgin="bottom" />
+		<widget source="text" render="Label" position="120,0" size="136,40" font="FdLcD;17" halign="center" valign="bottom" />
 		<widget source="entry" render="Label" position="0,42" size="256,22" zPosition="1" font="FdLcD;20" halign="center" valign="center" />
 	</screen>
 
 	<screen name="VideoWizardSummary" position="0,0" size="256,64">
 		<panel name="SummaryClockPanel" />
-		<widget source="text" render="Label" position="120,0" size="136,40" font="FdLcD;17" halign="center" valgin="bottom" />
+		<widget source="text" render="Label" position="120,0" size="136,40" font="FdLcD;17" halign="center" valign="bottom" />
 		<widget source="entry" render="Label" position="0,42" size="256,22" zPosition="1" font="FdLcD;20" halign="center" valign="center" />
 	</screen>
 
 <!-- console -->
 	<screen name="Console_summary" position="0,0" size="256,64">
 		<panel name="SummaryClockProgressPanel" />
-		<widget source="parent.Title" render="Label" position="120,0" size="136,40" font="FdLcD;17" halign="center" valgin="bottom" />
+		<widget source="parent.Title" render="Label" position="120,0" size="136,40" font="FdLcD;17" halign="center" valign="bottom" />
 		<widget source="parent.summary_description" render="Label" position="0,48" size="256,19" font="FdLcD;18" halign="center" noWrap="1" />
 	</screen>
 
 <!-- softwaremanagment -->
 	<screen name="BackupSelection_summary" position="0,0" size="256,64">
 		<panel name="SummaryClockProgressPanel" />
-		<widget source="parent.Title" render="Label" position="120,0" size="136,40" font="FdLcD;17" halign="center" valgin="bottom" />
+		<widget source="parent.Title" render="Label" position="120,0" size="136,40" font="FdLcD;17" halign="center" valign="bottom" />
 		<widget source="parent.summary_description" render="Label" position="0,42" size="256,22" zPosition="1" font="FdLcD;20" halign="center" valign="center" />
 	</screen>
 	<screen name="RestoreScreen_summary" position="0,0" size="256,64">
 		<panel name="SummaryClockProgressPanel" />
-		<widget source="parent.Title" render="Label" position="120,0" size="136,40" font="FdLcD;17" halign="center" valgin="bottom" />
+		<widget source="parent.Title" render="Label" position="120,0" size="136,40" font="FdLcD;17" halign="center" valign="bottom" />
 		<widget source="parent.summary_description" render="Label" position="0,42" size="256,22" zPosition="1" font="FdLcD;20" halign="center" valign="center" />
 	</screen>
 	<screen name="installedPlugins_summary" position="0,0" size="256,64">
 		<panel name="SummaryClockProgressPanel" />
-		<widget source="parent.Title" render="Label" position="120,0" size="136,40" font="FdLcD;17" halign="center" valgin="bottom" />
+		<widget source="parent.Title" render="Label" position="120,0" size="136,40" font="FdLcD;17" halign="center" valign="bottom" />
 		<widget source="parent.summary_description" render="Label" position="0,42" size="256,22" zPosition="1" font="FdLcD;20" halign="center" valign="center" />
 	</screen>
 	<screen name="RestartNetwork_summary" position="0,0" size="256,64">
 		<panel name="SummaryClockProgressPanel" />
-		<widget source="parent.Title" render="Label" position="120,0" size="136,40" font="FdLcD;17" halign="center" valgin="bottom" />
+		<widget source="parent.Title" render="Label" position="120,0" size="136,40" font="FdLcD;17" halign="center" valign="bottom" />
 		<widget source="parent.summary_description" render="Label" position="0,42" size="256,22" zPosition="1" font="FdLcD;20" halign="center" valign="center" />
 	</screen>
 	<screen name="RestorePlugins_summary" position="0,0" size="256,64">
 		<panel name="SummaryClockProgressPanel" />
-		<widget source="parent.Title" render="Label" position="120,0" size="136,40" font="FdLcD;17" halign="center" valgin="bottom" />
+		<widget source="parent.Title" render="Label" position="120,0" size="136,40" font="FdLcD;17" halign="center" valign="bottom" />
 		<widget source="parent.summary_description" render="Label" position="0,42" size="256,22" zPosition="1" font="FdLcD;20" halign="center" valign="center" />
 	</screen>
 	<screen name="RestoreMenu_summary" position="0,0" size="256,64">
-		<widget source="parent.Title" render="Label" position="120,0" size="136,40" font="FdLcD;17" halign="center" valgin="bottom" />
+		<widget source="parent.Title" render="Label" position="120,0" size="136,40" font="FdLcD;17" halign="center" valign="bottom" />
 		<widget source="parent.summary_description" render="Label" position="0,42" size="256,22" zPosition="1" font="FdLcD;20" halign="center" valign="center" />
 	</screen>
 
