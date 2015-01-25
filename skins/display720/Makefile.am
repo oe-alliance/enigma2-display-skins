@@ -1,0 +1,1 @@
+SUBDIRS = OE-A_LCDSkin_1 OE-A_LCDSkin_2 OE-A_LCDSkin_3
