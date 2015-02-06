@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Skin: LCD mod from mike99 -->
+<!-- Skin: LCD mod from mike99 ohne Tuneranzeige-->
 <skin>
 	<windowstyle id="1" type="skinned">
 		<color color="#000000" name="Background"/>
@@ -226,6 +226,9 @@
 	</screen>
 <!-- Selection -->
 	<screen name="EMCSelection_summary" position="0,0" size="256,64">
+		<widget source="parent.Service" render="Label" position="124,0" size="132,46" font="FdLcD;20" halign="center">
+			<convert type="ServiceName">Name</convert>
+		</widget>
 		<panel name="SummaryClockProgressPanel" />
 	</screen>
 
