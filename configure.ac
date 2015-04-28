@@ -174,4 +174,6 @@ skins/display720/OE-A_LCDSkin_3/Makefile
 skins/display720/OE-A_LCDSkin_3/meta/Makefile
 skins/display720/OE-A_LCDSkin_4/Makefile
 skins/display720/OE-A_LCDSkin_4/meta/Makefile
+skins/display720/OE-A_LCDSkin_5/Makefile
+skins/display720/OE-A_LCDSkin_5/meta/Makefile
 ])
