@@ -239,7 +239,7 @@
 
 !-- LanguageSelection -->
 	<screen name="LanguageSelection_summary" position="0,0" size="256,64">
-		<widget source="parent.summarylangsel" render="Label" position="124,0" size="132,46" font="FdLcD;20" halign="center" noWrap="1"  />
+		<widget source="parent.summarylangsel" render="Label" position="124,0" size="132,46" font="FdLcD;20" halign="center" noWrap="1" />
 		<panel name="SummaryClockProgressPanel" />
 	</screen>
 	<screen name="LanguageWizardSummary" position="0,0" size="256,64">
@@ -253,9 +253,12 @@
 	</screen>
 	
 	<screen name="NumberZap_summary" position="0,0" size="256,64">
-		<widget source="session.CurrentService" render="LcdPicon" position="124,0" size="132,46" zPosition="1" >
-			<convert type="ServiceName">Reference</convert>
-		</widget>
+		<widget source="parent.service_summary" render="Label" position="120,0" size="136,46" font="FdLcD;20" halign="center" valign="center" />
+		<panel name="SummaryClockProgressPanel" />
+	</screen>
+
+	<screen name="NumberZapExt_summary" position="0,0" size="256,64">
+		<widget source="parent.service" render="Label" position="120,0" size="136,46" font="FdLcD;20" halign="center" valign="center" />
 		<panel name="SummaryClockProgressPanel" />
 	</screen>
 
