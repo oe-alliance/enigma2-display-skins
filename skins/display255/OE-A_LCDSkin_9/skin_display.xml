@@ -258,7 +258,7 @@
 	</screen>
 
 	<screen name="NumberZapExt_summary" position="0,0" size="256,64">
-		<widget source="parent.service" render="Label" position="120,0" size="136,46" font="FdLcD;20" halign="center" valign="center" />
+		<widget source="parent.service_summary" render="Label" position="120,0" size="136,46" font="FdLcD;20" halign="center" valign="center" />
 		<panel name="SummaryClockProgressPanel" />
 	</screen>
 
