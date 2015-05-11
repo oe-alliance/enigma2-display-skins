@@ -134,7 +134,7 @@
 		<panel name="SummaryClockProgressPanel" />
 	</screen>
 
-	<!--screen name="SummaryEpgPanel">
+<!--screen name="SummaryEpgPanel">
 		<widget source="parent.Service" render="LcdPicon" position="124,0" size="132,46" >
 			<convert type="ServiceName">Reference</convert>
 		</widget>
@@ -173,7 +173,7 @@
 		<panel name="SummaryClockProgressPanel" />
 	</screen>
 
- <!-- movieplayer.-->
+<!-- movieplayer.-->
 	<screen name="InfoBarMoviePlayerSummary" position="0,0" size="256,64">
 		<widget source="session.CurrentService" render="Label" position="124,0" size="132,46" font="FdLcD;20" halign="center" valign="top" >
 			<convert type="ServiceName">Name</convert>
@@ -277,7 +277,7 @@
 		<panel name="SummaryClockProgressPanel" />
 	</screen>
 
-!-- LanguageSelection -->
+<!-- LanguageSelection -->
 	<screen name="LanguageSelection_summary" position="0,0" size="256,64">
 		<widget source="parent.summarylangsel" render="Label" position="124,0" size="132,46" font="FdLcD;20" halign="center" noWrap="1" />
 		<panel name="SummaryClockProgressPanel" />
