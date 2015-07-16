@@ -127,6 +127,8 @@ skins/display220/OE-A_LCDSkin_7/Makefile
 skins/display220/OE-A_LCDSkin_7/meta/Makefile
 skins/display220/OE-A_LCDSkin_8/Makefile
 skins/display220/OE-A_LCDSkin_8/meta/Makefile
+skins/display220/OE-A_LCDSkin_9/Makefile
+skins/display220/OE-A_LCDSkin_9/meta/Makefile
 skins/display255/Makefile
 skins/display255/OE-A_LCDSkin_1/Makefile
 skins/display255/OE-A_LCDSkin_1/meta/Makefile
