@@ -20,7 +20,7 @@
 		<font filename="nmsbd.ttf" name="FdLcD" scale="100"/>
 	</fonts>
 
-<!-- template MY V2.5 17.10.2015-->
+<!-- template MY V2.6 20.11.2015-->
 	<screen name="SummaryClockPanel">
 		<widget source="global.CurrentTime" render="Label" position="center,170" size="195,75" font="FdLcD;75" halign="center" noWrap="1" transparent="1">
 			<convert type="ClockToText"></convert>
@@ -39,19 +39,19 @@
 	</screen>
 <!-- Icon Panel -->	
 	<screen name="MeinIconPanel">
-		<widget source="session.CurrentService" render="Pixmap" pixmap="~/dolby.png" position="0,4" zPosition="4" size="33,20" >
+		<widget source="session.CurrentService" render="Pixmap" pixmap="~/dolby.png" position="22,4" zPosition="4" size="33,20" >
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="~/stereo.png" position="0,4" zPosition="4" size="33,20" >
+		<widget source="session.CurrentService" render="Pixmap" pixmap="~/stereo.png" position="22,4" zPosition="4" size="33,20" >
 			<convert type="ServiceInfo">IsStereo</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="~/hd.png" position="63,4" zPosition="3" size="46,20" >
+		<widget source="session.CurrentService" render="Pixmap" pixmap="~/hd.png" position="105,4" zPosition="3" size="46,20" >
 			<convert type="ServiceInfo">IsHD</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="~/wd.png" position="139,4" zPosition="2" size="37,20" >
+		<widget source="session.CurrentService" render="Pixmap" pixmap="~/wd.png" position="197,4" zPosition="2" size="37,20" >
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -101,7 +101,7 @@
 	</screen>	
 <!-- EPG Panel -->	
 	<screen name="MyEPGPanel" position="0,0" size="400,240">
-		<widget source="parent.Service" render="LcdPicon" position="0,0" size="150,90" zPosition="1" alphatest="on">
+		<widget source="parent.Service" render="LcdPicon" position="36,0" size="150,90" zPosition="1" alphatest="on">
 			<convert type="ServiceName">Reference</convert>
 		</widget> 
 		<eLabel position="0,92" size="400,1" backgroundColor="#BDBDBD" />
@@ -109,11 +109,11 @@
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<eLabel position="0,112" size="400,1" backgroundColor="#BDBDBD" />
-		<widget source="parent.Event" render="Label" position="205,0" size="140,45" font="FdLcD;45" foregroundColor="#87CEFA" zPosition="2" transparent="1" valign="center" halign="center">
+		<widget source="parent.Event" render="Label" position="222,0" size="140,45" font="FdLcD;45" foregroundColor="#87CEFA" zPosition="2" transparent="1" valign="center" halign="center">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText"></convert>
 		</widget>
-		<widget source="parent.Event" render="Label" position="205,42" size="140,45" font="FdLcD;45" foregroundColor="#87CEFA" zPosition="2" transparent="1" valign="center" halign="center">
+		<widget source="parent.Event" render="Label" position="222,42" size="140,45" font="FdLcD;45" foregroundColor="#87CEFA" zPosition="2" transparent="1" valign="center" halign="center">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText"></convert>
 		</widget>		
@@ -123,14 +123,14 @@
 	</screen>
 <!-- main-->
 	<screen name="InfoBarSummary" position="0,0" size="400,240">
-		<widget source="session.CurrentService" render="LcdPicon" position="0,28" zPosition="2" size="232,127" alphatest="on">
+		<widget source="session.CurrentService" render="LcdPicon" position="22,28" zPosition="2" size="212,127" alphatest="on">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="280,35" size="120,45" font="FdLcD;45" foregroundColor="#87CEFA" transparent="1" valign="center" halign="center">
+		<widget source="session.Event_Now" render="Label" position="256,35" size="120,45" font="FdLcD;45" foregroundColor="#87CEFA" transparent="1" valign="center" halign="center">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText"></convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="280,95" size="120,45" font="FdLcD;45" foregroundColor="#87CEFA" transparent="1" valign="center" halign="center">
+		<widget source="session.Event_Now" render="Label" position="256,95" size="120,45" font="FdLcD;45" foregroundColor="#87CEFA" transparent="1" valign="center" halign="center">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText"></convert>
 		</widget>	
@@ -139,7 +139,7 @@
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<eLabel position="0,173" size="400,2" backgroundColor="#BDBDBD" zPosition="3" />
-		<widget source="session.Event_Now" render="Label" position="235,188" size="165,55" font="FdLcD;55" zPosition="0" foregroundColor="#87CEFA" halign="right" transparent="1">
+		<widget source="session.Event_Now" render="Label" position="235,188" size="165,55" font="Regular;55" zPosition="0" foregroundColor="#87CEFA" halign="right" transparent="1">
 			<convert type="EventTime">Remaining</convert>
 			<convert type="RemainingToText">OnlyMinute</convert>
 		</widget>
@@ -203,7 +203,7 @@
 	</screen>		
 <!-- channelselection -->
 	<screen name="ChannelSelection_summary" position="0,0" size="400,240">
-		<widget source="parent.Service" render="LcdPicon" position="0,0" size="150,90" zPosition="2" alphatest="on">
+		<widget source="parent.Service" render="LcdPicon" position="36,0" size="150,90" zPosition="2" alphatest="on">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<eLabel position="0,92" size="400,1" backgroundColor="#BDBDBD" />
@@ -211,11 +211,11 @@
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<eLabel position="0,112" size="400,1" backgroundColor="#BDBDBD" />
-		<widget source="parent.ServiceEvent" render="Label" position="205,0" size="140,45" font="FdLcD;45" foregroundColor="#87CEFA" zPosition="2" transparent="1" valign="center" halign="center">
+		<widget source="parent.ServiceEvent" render="Label" position="222,0" size="140,45" font="FdLcD;45" foregroundColor="#87CEFA" zPosition="2" transparent="1" valign="center" halign="center">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText"></convert>
 		</widget>
-		<widget source="parent.ServiceEvent" render="Label" position="205,42" size="140,45" font="FdLcD;45" foregroundColor="#87CEFA" zPosition="2" transparent="1" valign="center" halign="center">
+		<widget source="parent.ServiceEvent" render="Label" position="222,42" size="140,45" font="FdLcD;45" foregroundColor="#87CEFA" zPosition="2" transparent="1" valign="center" halign="center">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText"></convert>
 		</widget>		
@@ -553,7 +553,7 @@
 			<convert type="EMCServicePosition">Position</convert>
 		</widget>
 		<eLabel position="0,173" size="400,2" backgroundColor="#BDBDBD" zPosition="3" />		
-		<widget source="session.CurrentService" render="Label" position="235,188" size="165,55" font="FdLcD;55" zPosition="0" foregroundColor="#87CEFA" halign="right" transparent="1">
+		<widget source="session.CurrentService" render="Label" position="235,188" size="165,55" font="Regular;55" zPosition="0" foregroundColor="#87CEFA" halign="right" transparent="1">
 			<convert type="ServicePosition">Remaining,ShowNoSeconds,OnlyMinute</convert>
 		</widget>
 		<panel name="SummaryClockPanel" />
@@ -561,10 +561,4 @@
 		<panel name="MeinRecordingPanel" />
 		<panel name="MeinTunerInfoPanel" />
 	</screen>
-<!-- Seekbar Screen -->
-<!-- 	<screen name="Seekbar_summary" position="0,0" size="400,240">
-		<widget source="parent.Title" render="Label" position="0,0" size="400,105" font="FdLcD;38" foregroundColor="#87CEFA" halign="center" valign="center" />
-		<eLabel position="0,106" size="400,1" backgroundColor="white" />
-		<widget source="parent.time" render="Label" position="0,107" size="400,133" zPosition="1" font="FdLcD;35" halign="center" valign="center" /> 
-	</screen>  -->
 </skin>
