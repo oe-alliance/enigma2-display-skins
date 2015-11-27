@@ -182,6 +182,8 @@ skins/display400/OE-A_LCDSkin_9/meta/Makefile
 skins/display480/Makefile
 skins/display480/OE-A_LCDSkin_1/Makefile
 skins/display480/OE-A_LCDSkin_1/meta/Makefile
+skins/display480/OE-A_LCDSkin_2/Makefile
+skins/display480/OE-A_LCDSkin_2/meta/Makefile
 skins/display720/Makefile
 skins/display720/OE-A_LCDSkin_1/Makefile
 skins/display720/OE-A_LCDSkin_1/meta/Makefile
