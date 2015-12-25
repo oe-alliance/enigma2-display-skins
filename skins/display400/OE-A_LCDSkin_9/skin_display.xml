@@ -21,7 +21,7 @@
 		<font filename="LiberationSans-Regular.ttf" name="MyLcD" scale="100"/>
 	</fonts>
 
-<!-- template MY V2.6c 21.12.2015-->
+<!-- template MY V2.6d 25.12.2015-->
 	<screen name="SummaryClockPanel">
 		<widget source="global.CurrentTime" render="Label" position="center,170" size="195,75" font="FdLcD;75" halign="center" noWrap="1" transparent="1">
 			<convert type="ClockToText"></convert>
@@ -127,11 +127,11 @@
 		<widget source="session.CurrentService" render="LcdPicon" position="22,28" zPosition="2" size="212,127" alphatest="on">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="256,35" size="120,45" font="FdLcD;45" foregroundColor="#87CEFA" transparent="1" valign="center" halign="center">
+		<widget source="session.Event_Now" render="Label" position="280,35" size="120,45" font="FdLcD;45" foregroundColor="#87CEFA" transparent="1" valign="center" halign="right">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText"></convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="256,95" size="120,45" font="FdLcD;45" foregroundColor="#87CEFA" transparent="1" valign="center" halign="center">
+		<widget source="session.Event_Now" render="Label" position="280,95" size="120,45" font="FdLcD;45" foregroundColor="#87CEFA" transparent="1" valign="center" halign="right">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText"></convert>
 		</widget>	
@@ -140,7 +140,7 @@
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<eLabel position="0,173" size="400,2" backgroundColor="#BDBDBD" zPosition="3" />
-		<widget source="session.Event_Now" render="Label" position="235,188" size="165,55" font="MyLcD;55" zPosition="0" foregroundColor="#87CEFA" halign="right" transparent="1">
+		<widget source="session.Event_Now" render="Label" position="235,178" size="165,55" font="MyLcD;55" zPosition="0" foregroundColor="#87CEFA" halign="right" transparent="1">
 			<convert type="EventTime">Remaining</convert>
 			<convert type="RemainingToText">OnlyMinute</convert>
 		</widget>
@@ -159,7 +159,7 @@
 			<convert type="ServicePosition">Position</convert>
 		</widget>
 		<eLabel position="0,173" size="400,2" backgroundColor="#BDBDBD" zPosition="3" />
-		<widget source="session.CurrentService" render="Label" position="235,188" size="165,55" font="MyLcD;55" zPosition="0" foregroundColor="#87CEFA" halign="right" transparent="1">
+		<widget source="session.CurrentService" render="Label" position="235,178" size="165,55" font="MyLcD;55" zPosition="0" foregroundColor="#87CEFA" halign="right" transparent="1">
 			<convert type="ServicePosition">Remaining,ShowNoSeconds,OnlyMinute</convert>
 		</widget>
 		<panel name="SummaryClockPanel" />
@@ -195,7 +195,7 @@
 			<convert type="ServicePosition">Position</convert>
 		</widget>
 		<eLabel position="0,173" size="400,2" backgroundColor="#BDBDBD" zPosition="3" />
-		<widget source="session.CurrentService" render="Label" position="235,188" size="165,55" font="MyLcD;55" zPosition="0" foregroundColor="#87CEFA" halign="right" transparent="1">
+		<widget source="session.CurrentService" render="Label" position="235,178" size="165,55" font="MyLcD;55" zPosition="0" foregroundColor="#87CEFA" halign="right" transparent="1">
 			<convert type="ServicePosition">Remaining,ShowNoSeconds,OnlyMinute</convert>
 		</widget>
 		<panel name="MeinRecordingPanel" />
@@ -247,17 +247,17 @@
 	</screen>
 <!-- menus-->
 	<screen name="MenuSummary" position="fill">
-		<widget source="parent.title" render="Label" position="top" size="*,119" font="FdLcD;38" foregroundColor="#87CEFA" halign="center" valign="center" />
+		<widget source="parent.title" render="Label" position="top" size="*,119" font="FdLcD;38" halign="center" valign="center" />
 		<eLabel position="top" size="*,1" backgroundColor="white" />
-		<widget source="parent.menu" render="Label" position="top" size="*,119" font="FdLcD;38" halign="center" valign="center">
+		<widget source="parent.menu" render="Label" position="top" size="*,119" font="FdLcD;38" backgroundColor="#0B173B" halign="center" valign="center">
 			<convert type="StringListSelection" />
 		</widget>
 	</screen>
 <!-- Schnellstartmenue -->
-	<screen name="QuickMenu_summary" position="0,0" size="400,240">
-		<widget source="parent.Title" render="Label" position="0,0" size="400,85" font="FdLcD;38" foregroundColor="#87CEFA" halign="center" valign="center" />
-		<eLabel position="0,87" size="400,1" backgroundColor="white" />
-		<widget source="parent.summary_description" render="Label" position="0,88" size="400,152" zPosition="1" font="FdLcD;35" halign="center" valign="center" />
+	<screen name="QuickMenu_summary" position="fill">
+		<widget source="parent.Title" render="Label" position="top" size="*,119" font="FdLcD;41" halign="center" valign="center" />
+		<eLabel position="top" size="*,1" backgroundColor="white" />
+		<widget source="parent.summary_description" render="Label" position="top" size="*,119" font="FdLcD;38" backgroundColor="#0B173B" halign="center" valign="center" zPosition="1"/>
 	</screen>
 <!-- Metrix-Menu -->
 	<screen name="MainSettingsView_summary" position="0,0" size="400,240">
@@ -554,7 +554,7 @@
 			<convert type="EMCServicePosition">Position</convert>
 		</widget>
 		<eLabel position="0,173" size="400,2" backgroundColor="#BDBDBD" zPosition="3" />		
-		<widget source="session.CurrentService" render="Label" position="235,188" size="165,55" font="MyLcD;55" zPosition="0" foregroundColor="#87CEFA" halign="right" transparent="1">
+		<widget source="session.CurrentService" render="Label" position="235,178" size="165,55" font="MyLcD;55" zPosition="0" foregroundColor="#87CEFA" halign="right" transparent="1">
 			<convert type="ServicePosition">Remaining,ShowNoSeconds,OnlyMinute</convert>
 		</widget>
 		<panel name="SummaryClockPanel" />
