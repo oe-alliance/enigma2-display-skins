@@ -21,9 +21,9 @@
 		<font filename="LiberationSans-Regular.ttf" name="MyLcD" scale="100"/>
 	</fonts>
 
-<!-- template MY V2.6d 25.12.2015-->
+<!-- template MY V2.6e 01.01.2016-->
 	<screen name="SummaryClockPanel">
-		<widget source="global.CurrentTime" render="Label" position="center,170" size="195,75" font="FdLcD;75" halign="center" noWrap="1" transparent="1">
+		<widget source="global.CurrentTime" render="Label" position="center,170" size="195,75" font="MyLcD;75" halign="center" noWrap="1" transparent="1">
 			<convert type="ClockToText"></convert>
 		</widget>
 	</screen>
@@ -102,19 +102,19 @@
 	</screen>	
 <!-- EPG Panel -->	
 	<screen name="MyEPGPanel" position="0,0" size="400,240">
-		<widget source="parent.Service" render="LcdPicon" position="36,0" size="150,90" zPosition="1" alphatest="on">
+		<widget source="parent.Service" render="LcdPicon" position="55,0" size="150,90" zPosition="1" alphatest="on">
 			<convert type="ServiceName">Reference</convert>
 		</widget> 
-		<eLabel position="0,92" size="400,1" backgroundColor="#BDBDBD" />
+		<eLabel position="0,92" size="400,1" backgroundColor="#BDBDBD" zPosition="3" />
 		<widget source="parent.Event" render="Progress" position="0,95" size="400,15">
 			<convert type="EventTime">Progress</convert>
 		</widget>
-		<eLabel position="0,112" size="400,1" backgroundColor="#BDBDBD" />
-		<widget source="parent.Event" render="Label" position="222,0" size="140,45" font="FdLcD;45" foregroundColor="#87CEFA" zPosition="2" transparent="1" valign="center" halign="center">
+		<eLabel position="0,112" size="400,1" backgroundColor="#BDBDBD" zPosition="3" />
+		<widget source="parent.Event" render="Label" position="260,0" size="140,45" font="MyLcD;45" foregroundColor="#87CEFA" zPosition="2" transparent="1" valign="center" halign="right">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText"></convert>
 		</widget>
-		<widget source="parent.Event" render="Label" position="222,42" size="140,45" font="FdLcD;45" foregroundColor="#87CEFA" zPosition="2" transparent="1" valign="center" halign="center">
+		<widget source="parent.Event" render="Label" position="260,42" size="140,45" font="MyLcD;45" foregroundColor="#87CEFA" zPosition="2" transparent="1" valign="center" halign="right">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText"></convert>
 		</widget>		
@@ -127,11 +127,11 @@
 		<widget source="session.CurrentService" render="LcdPicon" position="22,28" zPosition="2" size="212,127" alphatest="on">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="280,35" size="120,45" font="FdLcD;45" foregroundColor="#87CEFA" transparent="1" valign="center" halign="right">
+		<widget source="session.Event_Now" render="Label" position="280,35" size="120,45" font="MyLcD;45" foregroundColor="#87CEFA" transparent="1" valign="center" halign="right">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText"></convert>
 		</widget>
-		<widget source="session.Event_Now" render="Label" position="280,95" size="120,45" font="FdLcD;45" foregroundColor="#87CEFA" transparent="1" valign="center" halign="right">
+		<widget source="session.Event_Now" render="Label" position="280,95" size="120,45" font="MyLcD;45" foregroundColor="#87CEFA" transparent="1" valign="center" halign="right">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText"></convert>
 		</widget>	
@@ -204,19 +204,19 @@
 	</screen>		
 <!-- channelselection -->
 	<screen name="ChannelSelection_summary" position="0,0" size="400,240">
-		<widget source="parent.Service" render="LcdPicon" position="36,0" size="150,90" zPosition="2" alphatest="on">
+		<widget source="parent.Service" render="LcdPicon" position="55,0" size="150,90" zPosition="2" alphatest="on">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
-		<eLabel position="0,92" size="400,1" backgroundColor="#BDBDBD" />
+		<eLabel position="0,92" size="400,1" backgroundColor="#BDBDBD" zPosition="3" />
 		<widget source="parent.ServiceEvent" render="Progress" position="0,95" size="400,15">
 			<convert type="EventTime">Progress</convert>
 		</widget>
-		<eLabel position="0,112" size="400,1" backgroundColor="#BDBDBD" />
-		<widget source="parent.ServiceEvent" render="Label" position="222,0" size="140,45" font="FdLcD;45" foregroundColor="#87CEFA" zPosition="2" transparent="1" valign="center" halign="center">
+		<eLabel position="0,112" size="400,1" backgroundColor="#BDBDBD" zPosition="3" />
+		<widget source="parent.ServiceEvent" render="Label" position="260,0" size="140,45" font="MyLcD;45" foregroundColor="#87CEFA" zPosition="2" transparent="1" valign="center" halign="center">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText"></convert>
 		</widget>
-		<widget source="parent.ServiceEvent" render="Label" position="222,42" size="140,45" font="FdLcD;45" foregroundColor="#87CEFA" zPosition="2" transparent="1" valign="center" halign="center">
+		<widget source="parent.ServiceEvent" render="Label" position="260,42" size="140,45" font="MyLcD;45" foregroundColor="#87CEFA" zPosition="2" transparent="1" valign="center" halign="center">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText"></convert>
 		</widget>		
@@ -237,13 +237,13 @@
 	</screen>	
 <!-- Numberzap -->    
 	<screen name="NumberZap_summary" position="0,0" size="400,240">
-		<widget source="parent.number_summary" render="Label" position="0,0" size="400,99" font="FdLcD;105" halign="center" valign="center" transparent="1" />
-		<widget source="parent.service_summary" render="Label" position="0,101" size="400,139" font="FdLcD;55" halign="center" valign="center" transparent="1" />
+		<widget source="parent.number_summary" render="Label" position="0,0" size="400,99" font="MyLcD;105" halign="center" valign="center" transparent="1" />
+		<widget source="parent.service_summary" render="Label" position="0,101" size="400,139" font="MyLcD;55" halign="center" valign="center" transparent="1" />
 	</screen>
 <!-- NumberZapExt -->    
 	<screen name="NumberZapExt_summary" position="0,0" size="400,240">
-		<widget source="parent.number_summary" render="Label" position="0,0" size="400,99" font="FdLcD;105" halign="center" valign="center" transparent="1" />
-		<widget source="parent.service_summary" render="Label" position="0,101" size="400,139" font="FdLcD;55" halign="center" valign="center" transparent="1" />
+		<widget source="parent.number_summary" render="Label" position="0,0" size="400,99" font="MyLcD;105" halign="center" valign="center" transparent="1" />
+		<widget source="parent.service_summary" render="Label" position="0,101" size="400,139" font="MyLcD;55" halign="center" valign="center" transparent="1" />
 	</screen>
 <!-- menus-->
 	<screen name="MenuSummary" position="fill">
@@ -318,11 +318,11 @@
 	</screen>	
 <!-- standby -->
 	<screen name="StandbySummary" position="0,0" size="400,240">
-		<widget source="global.CurrentTime" render="Label" position="center,50" size="225,100" font="FdLcD;85" halign="center" transparent="1" noWrap="1" >
+		<widget source="global.CurrentTime" render="Label" position="center,50" size="225,100" font="MyLcD;85" halign="center" transparent="1" noWrap="1" >
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
 		<eLabel position="100,150" size="200,1" backgroundColor="white" />
-		<widget source="global.CurrentTime" render="Label" position="0,165" size="400,34" font="FdLcD;34" halign="center" transparent="1" noWrap="1">
+		<widget source="global.CurrentTime" render="Label" position="0,165" size="400,34" font="MyLcD;34" halign="center" transparent="1" noWrap="1">
 			<convert type="ClockToText">Format:%d.%m.%Y</convert>
 		</widget>
 		<panel name="MeinRecordingPanel" />
