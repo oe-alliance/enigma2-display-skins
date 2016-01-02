@@ -21,7 +21,7 @@
 		<font filename="LiberationSans-Regular.ttf" name="MyLcD" scale="100"/>
 	</fonts>
 
-<!-- template MY V2.6e 01.01.2016-->
+<!-- template MY V2.6f 02.01.2016-->
 	<screen name="SummaryClockPanel">
 		<widget source="global.CurrentTime" render="Label" position="center,170" size="195,75" font="MyLcD;75" halign="center" noWrap="1" transparent="1">
 			<convert type="ClockToText"></convert>
@@ -106,7 +106,8 @@
 			<convert type="ServiceName">Reference</convert>
 		</widget> 
 		<eLabel position="0,92" size="400,1" backgroundColor="#BDBDBD" zPosition="3" />
-		<widget source="parent.Event" render="Progress" position="0,95" size="400,15">
+		<eLabel position="0,95" size="400,15" backgroundColor="#1C1C1C" zPosition="-1" />
+		<widget source="parent.Event" render="Progress" position="0,95" size="400,15" transparent="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<eLabel position="0,112" size="400,1" backgroundColor="#BDBDBD" zPosition="3" />
@@ -136,6 +137,7 @@
 			<convert type="ClockToText"></convert>
 		</widget>	
 		<eLabel position="0,156" size="400,2" backgroundColor="#BDBDBD" zPosition="3" />
+		<eLabel position="0,158" size="400,15" backgroundColor="#1C1C1C" zPosition="-1" />
 		<widget source="session.Event_Now" render="Progress" position="0,158" size="400,15" transparent="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
@@ -155,6 +157,7 @@
 			<convert type="ServiceName">Name</convert>
 		</widget>
 		<eLabel position="0,156" size="400,2" backgroundColor="#BDBDBD" zPosition="3" />
+		<eLabel position="0,158" size="400,15" backgroundColor="#1C1C1C" zPosition="-1" />
 		<widget source="session.CurrentService" render="Progress" position="0,158" size="400,15" transparent="1">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
@@ -191,6 +194,7 @@
 		<widget name="text3" position="0,35" size="400,32" font="FdLcD;28" noWrap="1" halign="center" valign="center" transparent="1" zPosition="2"/>
 		<widget name="text4" position="0,70" size="400,32" font="FdLcD;28" noWrap="1" halign="center" valign="center" transparent="1" zPosition="2"/>
 		<eLabel position="0,156" size="400,2" backgroundColor="#BDBDBD" zPosition="3" />
+		<eLabel position="0,158" size="400,15" backgroundColor="#1C1C1C" zPosition="-1" />
 		<widget source="session.CurrentService" render="Progress" position="0,158" size="400,15" transparent="1">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
@@ -208,15 +212,16 @@
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<eLabel position="0,92" size="400,1" backgroundColor="#BDBDBD" zPosition="3" />
-		<widget source="parent.ServiceEvent" render="Progress" position="0,95" size="400,15">
+		<eLabel position="0,95" size="400,15" backgroundColor="#1C1C1C" zPosition="-1" />
+		<widget source="parent.ServiceEvent" render="Progress" position="0,95" size="400,15" transparent="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<eLabel position="0,112" size="400,1" backgroundColor="#BDBDBD" zPosition="3" />
-		<widget source="parent.ServiceEvent" render="Label" position="260,0" size="140,45" font="MyLcD;45" foregroundColor="#87CEFA" zPosition="2" transparent="1" valign="center" halign="center">
+		<widget source="parent.ServiceEvent" render="Label" position="260,0" size="140,45" font="MyLcD;45" foregroundColor="#87CEFA" zPosition="2" transparent="1" valign="center" halign="right">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText"></convert>
 		</widget>
-		<widget source="parent.ServiceEvent" render="Label" position="260,42" size="140,45" font="MyLcD;45" foregroundColor="#87CEFA" zPosition="2" transparent="1" valign="center" halign="center">
+		<widget source="parent.ServiceEvent" render="Label" position="260,42" size="140,45" font="MyLcD;45" foregroundColor="#87CEFA" zPosition="2" transparent="1" valign="center" halign="right">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText"></convert>
 		</widget>		
@@ -274,9 +279,9 @@
 	<screen name="SetupSummary" position="fill">
 <!-- 		<widget source="SetupTitle" render="Label" position="top" size="*,85" font="FdLcD;38" foregroundColor="#87CEFA" halign="left"  valign="center" />
 		<eLabel position="top" size="*,1" backgroundColor="white" /> -->
-		<widget source="SetupEntry" render="Label" position="top" size="*,115" font="FdLcD;34" halign="left" valign="center" />
+		<widget source="SetupEntry" render="Label" position="top" size="*,115" font="FdLcD;34" halign="center" valign="center" />
 		<eLabel position="top" size="*,1" backgroundColor="white" />
-		<widget source="SetupValue" render="Label" position="top" size="*,125" font="FdLcD;40" foregroundColor="#F4FA58" halign="left" valign="center" />
+		<widget source="SetupValue" render="Label" position="top" size="*,125" font="FdLcD;40" foregroundColor="#F4FA58" halign="center" valign="center" />
 	</screen>	
 <!-- Servicescan -->
 	<screen name="ServiceScanSummary" position="0,0" size="400,240">
@@ -550,6 +555,7 @@
 			  <convert type="ServiceName">Name</convert>
 		</widget>
 		<eLabel position="0,156" size="400,2" backgroundColor="#BDBDBD" zPosition="3" />
+		<eLabel position="0,158" size="400,15" backgroundColor="#1C1C1C" zPosition="-1" />
 		<widget source="Service" render="Progress" position="0,158" size="400,15" transparent="1">
 			<convert type="EMCServicePosition">Position</convert>
 		</widget>
