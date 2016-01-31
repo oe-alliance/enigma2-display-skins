@@ -21,7 +21,7 @@
 		<font filename="LiberationSans-Regular.ttf" name="MyLcD" scale="100"/>
 	</fonts>
 
-<!-- template MY V2.6f 02.01.2016-->
+<!-- template MY V2.6g 31.01.2016-->
 	<screen name="SummaryClockPanel">
 		<widget source="global.CurrentTime" render="Label" position="center,170" size="195,75" font="MyLcD;75" halign="center" noWrap="1" transparent="1">
 			<convert type="ClockToText"></convert>
@@ -566,6 +566,29 @@
 		<panel name="SummaryClockPanel" />
 		<panel name="MeinIconPanel" />
 		<panel name="MeinRecordingPanel" />
+		<panel name="MeinTunerInfoPanel" />
+	</screen>
+<!-- VMC Screen -->
+	<screen name="VMCBaseSummary" position="0,0" size="400,240"> 
+		<widget source="parent.Title" render="Label" position="0,0" size="400,178" font="FdLcD;38" foregroundColor="#87CEFA" halign="center" valign="center" />
+		<panel name="SummaryClockPanel" />
+	</screen>
+	<screen name="VMCPlayerSummary" position="0,0" size="400,240">
+		<widget source="session.CurrentService" render="Label" position="0,28" size="400,128" font="FdLcD;38" halign="center" valign="center" transparent="1" zPosition="2">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<eLabel position="0,156" size="400,2" backgroundColor="#BDBDBD" zPosition="3" />
+		<eLabel position="0,158" size="400,15" backgroundColor="#1C1C1C" zPosition="-1" />
+		<widget source="session.CurrentService" render="Progress" position="0,158" size="400,15" transparent="1">
+			<convert type="ServicePosition">Position</convert>
+		</widget>
+		<eLabel position="0,173" size="400,2" backgroundColor="#BDBDBD" zPosition="3" />
+		<widget source="session.CurrentService" render="Label" position="235,178" size="165,55" font="MyLcD;55" zPosition="0" foregroundColor="#87CEFA" halign="right" transparent="1">
+			<convert type="ServicePosition">Remaining,ShowNoSeconds,OnlyMinute</convert>
+		</widget>
+		<panel name="SummaryClockPanel" />
+		<panel name="MeinRecordingPanel" />
+		<panel name="MeinIconPanel" />
 		<panel name="MeinTunerInfoPanel" />
 	</screen>
 </skin>
