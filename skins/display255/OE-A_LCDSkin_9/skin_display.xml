@@ -369,7 +369,8 @@
 
 <!-- VMC -->
 	<screen name="VMCBaseSummary" position="0,0" size="256,64">
-		<widget source="parent.Title" render="Label" position="124,0" size="132,46" font="FdLcD;20" halign="center" valign="top" />
+		<eLabel text="VMC" render="Label" position="124,0" size="132,21" font="FdLcD;20" halign="center" valign="top" />
+		<eLabel text="by hmmmdada" render="Label" position="124,23" size="132,21" font="FdLcD;18" halign="center" valign="top" />
 		<panel name="SummaryClockProgressPanel" />
 	</screen>
 	<screen name="VMCPlayerSummary" position="0,0" size="256,64">
