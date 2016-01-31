@@ -407,4 +407,19 @@
 		<widget source="parent.summary_description" render="Label" position="0,42" size="256,22" zPosition="1" font="FdLcD;20" halign="center" valign="center" />
 	</screen>
 
+<!-- VMC -->
+	<screen name="VMCBaseSummary" position="0,0" size="256,64">
+		<widget source="parent.Title" render="Label" position="124,0" size="132,46" font="FdLcD;20" halign="center" valign="top" />
+		<panel name="SummaryClockProgressPanel" />
+	</screen>
+	<screen name="VMCPlayerSummary" position="0,0" size="256,64">
+		<widget source="session.CurrentService" render="Label" position="124,0" size="132,46" font="FdLcD;20" halign="left" valign="top" >
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Progress" position="0,55" size="256,8" borderWidth="1">
+			<convert type="ServicePosition">VFDPosition</convert>
+		</widget>
+		<panel name="SummaryClockPanel" />
+	</screen>
+
 </skin>
