@@ -21,7 +21,7 @@
 		<font filename="LiberationSans-Regular.ttf" name="MyLcD" scale="100"/>
 	</fonts>
 
-<!-- template MY V2.6g 31.01.2016-->
+<!-- template MY V2.6h 08.02.2016-->
 	<screen name="SummaryClockPanel">
 		<widget source="global.CurrentTime" render="Label" position="center,170" size="195,75" font="MyLcD;75" halign="center" noWrap="1" transparent="1">
 			<convert type="ClockToText"></convert>
@@ -374,19 +374,21 @@
 		<widget source="parent.Service" render="Label" position="0,0" size="400,38" foregroundColor="#87CEFA" font="FdLcD;34" transparent="1" halign="center" noWrap="1" >
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<eLabel position="0,38" size="400,1" backgroundColor="white" />
-		<widget source="parent.Event" render="Label" position="0,40" size="400,160" font="FdLcD;36" halign="center" valign="center" >
+		<eLabel position="0,43" size="400,1" backgroundColor="white" />
+		<widget source="parent.Event" render="Label" position="0,60" size="400,120" font="FdLcD;36" halign="center" valign="center" >
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="parent.Event" render="Label" position="0,202" size="400,38" font="FdLcD;38" foregroundColor="#87CEFA" transparent="1" valign="center" halign="left">
+		<widget source="parent.Event" render="Label" position="0,193" size="400,38" font="FdLcD;38" foregroundColor="#87CEFA" transparent="1" valign="center" halign="left">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText"></convert>
 		</widget>
-		<eLabel position="0,201" size="400,1" backgroundColor="white" />
-		<widget source="parent.Event" render="Label" position="0,202" size="400,38" font="FdLcD;38" foregroundColor="#87CEFA" transparent="1" valign="center" halign="right">
+		<widget source="parent.Event" render="Label" position="0,193" size="400,38" font="FdLcD;38" foregroundColor="#87CEFA" transparent="1" valign="center" halign="right">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText"></convert>
-		</widget>		
+		</widget>
+		<widget source="parent.Service" render="LcdPicon" position="159,190" size="83,50" zPosition="1" alphatest="on">
+			<convert type="ServiceName">Reference</convert>
+		</widget> 
 	</screen>
 <!-- IMDbLCDScreen -->
 	<screen name="IMDbLCDScreen" position="0,0" size="400,240">
