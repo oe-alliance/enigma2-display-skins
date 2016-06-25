@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<skin>
+	<fonts>
+		<font filename="nmsbd.ttf" name="VFD" scale="90"/>
+	</fonts>
+	<windowstyle type="skinned" id="1">
+		<color name="Background" color="#ffffff" />
+		<color name="LabelForeground" color="#000000" />
+		<color name="ListboxBackground" color="#ffffff" />
+		<color name="ListboxForeground" color="#000000" />
+		<color name="ListboxSelectedBackground" color="#ffffff" />
+		<color name="ListboxSelectedForeground" color="#000000" />
+		<color name="ListboxMarkedBackground" color="#ffffff" />
+		<color name="ListboxMarkedForeground" color="#000000" />
+		<color name="ListboxMarkedAndSelectedBackground" color="#ffffff" />
+		<color name="ListboxMarkedAndSelectedForeground" color="#000000" />
+		<color name="WindowTitleForeground" color="#000000" />
+		<color name="WindowTitleBackground" color="#ffffff" />
+	</windowstyle>
+	<screen name="InfoBarSummary" position="0,0" size="480,320">
+		<widget source="session.RecordState" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_8/REC.png" position="20,15"  size="55,42" alphatest="blend">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_8/CRYPT.png" position="75,15"  size="55,42" alphatest="blend">
+			<convert type="ServiceInfo">IsCrypted</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_8/TELETEXT.png" position="130,15" size="55,42" alphatest="blend">
+			<convert type="ServiceInfo">HasTelext</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_8/16x9.png" position="185,15" size="55,42" alphatest="blend">
+			<convert type="ServiceInfo">IsWidescreen</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_8/DOLBY.png" position="240,15" size="55,42" alphatest="blend">
+			<convert type="ServiceInfo">IsMultichannel</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="320,10" size="150,35" font="VFD;32" halign="right">
+			<convert type="ClockToText">Format:%d.%m.%Y</convert>
+		</widget>
+
+		<widget source="global.CurrentTime" render="Label" position="320,45" size="150,35" font="VFD;32" halign="right">
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+
+		<widget source="session.CurrentService" render="Label" position="30,90" size="420,75" font="VFD;42" halign="left" valign="center">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<widget source="session.Event_Now" render="Label" position="30,175" size="420,75" font="VFD;40" halign="left" valign="center">
+			<convert type="EventName">Name</convert>
+		</widget>
+		<widget source="session.Event_Now" render="Progress" position="30,260" size="420,40" borderWidth="2">
+			<convert type="EventTime">Progress</convert>
+		</widget>
+	 </screen>
+	 <screen name="ChannelSelection_summary" position="0,0" size="480,320">
+		<widget source="parent.ServiceEvent" render="Label" position="30,90" size="420,75" font="VFD;42" halign="left" valign="center" >
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<widget source="parent.ServiceEvent" render="Label" position="30,175" size="420,75" font="VFD;40" halign="left" valign="center" >
+			<convert type="EventName">Name</convert>
+		</widget>
+		<widget source="session.Event_Now" render="Progress" position="30,260" size="420,40" borderWidth="2">
+			<convert type="EventTime">Progress</convert>
+		</widget>
+		<widget source="session.RecordState" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_8/REC.png" position="20,15"  size="55,42" alphatest="blend">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_8/CRYPT.png" position="75,15"  size="55,42" alphatest="blend">
+			<convert type="ServiceInfo">IsCrypted</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_8/TELETEXT.png" position="130,15" size="55,42" alphatest="blend">
+			<convert type="ServiceInfo">HasTelext</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_8/16x9.png" position="185,15" size="55,42" alphatest="blend">
+			<convert type="ServiceInfo">IsWidescreen</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_8/DOLBY.png" position="240,15" size="55,42" alphatest="blend">
+			<convert type="ServiceInfo">IsMultichannel</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="320,10" size="150,35" font="VFD;32" halign="right">
+			<convert type="ClockToText">Format:%d.%m.%Y</convert>
+		</widget>
+
+		<widget source="global.CurrentTime" render="Label" position="320,45" size="150,35" font="VFD;32" halign="right">
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+	</screen>
+	<screen name="InfoBarMoviePlayerSummary" position="0,0" size="480,320">
+		<widget source="session.CurrentService" render="Label" position="30,90" size="420,170" font="VFD;40" halign="center" valign="center" >
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Progress" position="30,260" size="420,40" borderWidth="2">
+			<convert type="ServicePosition">Position</convert>
+		</widget>
+		<widget source="session.RecordState" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_8/REC.png" position="20,15"  size="55,42" alphatest="blend">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_8/CRYPT.png" position="75,15"  size="55,42" alphatest="blend">
+			<convert type="ServiceInfo">IsCrypted</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_8/TELETEXT.png" position="130,15" size="55,42" alphatest="blend">
+			<convert type="ServiceInfo">HasTelext</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_8/16x9.png" position="185,15" size="55,42" alphatest="blend">
+			<convert type="ServiceInfo">IsWidescreen</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_8/DOLBY.png" position="240,15" size="55,42" alphatest="blend">
+			<convert type="ServiceInfo">IsMultichannel</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="320,10" size="150,35" font="VFD;32" halign="right">
+			<convert type="ClockToText">Format:%d.%m.%Y</convert>
+		</widget>
+
+		<widget source="global.CurrentTime" render="Label" position="320,45" size="150,35" font="VFD;32" halign="right">
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+	</screen>
+	<screen name="ChoiceBox_summary" position="0,0" size="480,320">
+		<widget source="parent.summary_list" render="Label" position="30,20" size="420,280" font="Regular;32" valign="center" />
+	</screen>
+	<screen name="MessageBox_summary" position="0,0" size="480,320">
+		<widget source="parent.Text" render="Label" position="15,10" size="450,200" font="Regular;42" halign="center" valign="center" />
+		<widget source="parent.selectedChoice" render="Label" position="15,210" size="450,90" font="Regular;48" halign="center" valign="center" />
+	</screen>
+	<screen name="MenuSummary" position="0,0" size="480,320">
+		<widget source="parent.title" render="Label" position="15,100" size="450,90" font="VFD;52" halign="center" valign="center"/>
+		<widget source="parent.menu" render="Label" position="15,190" size="450,120" font="VFD;52" halign="center" valign="center">
+			<convert type="StringListSelection" />
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="320,10" size="150,35" font="VFD;32" halign="right">
+			<convert type="ClockToText">Format:%d.%m.%Y</convert>
+		</widget>
+
+		<widget source="global.CurrentTime" render="Label" position="320,45" size="150,35" font="VFD;32" halign="right">
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+		<widget source="session.RecordState" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_8/REC.png" position="20,15"  size="55,42" alphatest="blend">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_8/CRYPT.png" position="75,15"  size="55,42" alphatest="blend">
+			<convert type="ServiceInfo">IsCrypted</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_8/TELETEXT.png" position="130,15" size="55,42" alphatest="blend">
+			<convert type="ServiceInfo">HasTelext</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_8/16x9.png" position="185,15" size="55,42" alphatest="blend">
+			<convert type="ServiceInfo">IsWidescreen</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_8/DOLBY.png" position="240,15" size="55,42" alphatest="blend">
+			<convert type="ServiceInfo">IsMultichannel</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+	</screen>
+	<screen name="ServiceScanSummary" position="0,0" size="480,320">
+		<widget name="Title" position="15,10" size="450,130" font="VFD;48" transparent="1" />
+		<widget name="Service" position="15,140" size="450,150" font="VFD;36" transparent="1" />
+		<widget name="scan_progress" position="0,290" zPosition="1" borderWidth="2" size="480,25" backgroundColor="dark" />
+	</screen>
+	<screen name="SetupSummary" position="0,0" size="480,320">
+		<widget source="SetupTitle" render="Label" position="15,80" size="450,60" font="VFD;52" />
+		<widget source="SetupEntry" render="Label" position="15,140" size="450,120" font="VFD;42" />
+		<widget source="SetupValue" render="Label" position="15,260" size="450,60" font="VFD;42" />
+		<widget source="global.CurrentTime" render="Label" position="320,10" size="150,35" font="VFD;32" halign="right">
+			<convert type="ClockToText">Format:%d.%m.%Y</convert>
+		</widget>
+
+		<widget source="global.CurrentTime" render="Label" position="320,45" size="150,35" font="VFD;32" halign="right">
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+		<widget source="session.RecordState" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_8/REC.png" position="20,15"  size="55,42" alphatest="blend">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_8/CRYPT.png" position="75,15"  size="55,42" alphatest="blend">
+			<convert type="ServiceInfo">IsCrypted</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_8/TELETEXT.png" position="130,15" size="55,42" alphatest="blend">
+			<convert type="ServiceInfo">HasTelext</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_8/16x9.png" position="185,15" size="55,42" alphatest="blend">
+			<convert type="ServiceInfo">IsWidescreen</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_8/DOLBY.png" position="240,15" size="55,42" alphatest="blend">
+			<convert type="ServiceInfo">IsMultichannel</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+	</screen>
+	<screen name="StandbySummary" position="0,0" size="480,320">
+		<widget source="global.CurrentTime" render="Label" position="40,75" size="400,110" font="VFD;72" halign="center">
+			<convert type="ClockToText">Format:%d.%m.%Y</convert>
+		</widget>
+
+		<widget source="global.CurrentTime" render="Label" position="40,185" size="400,110" font="VFD;95" halign="center">
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+		<widget source="session.RecordState" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_8/REC.png" position="20,15"  size="55,42" alphatest="blend">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_8/CRYPT.png" position="75,15"  size="55,42" alphatest="blend">
+			<convert type="ServiceInfo">IsCrypted</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_8/TELETEXT.png" position="130,15" size="55,42" alphatest="blend">
+			<convert type="ServiceInfo">HasTelext</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_8/16x9.png" position="185,15" size="55,42" alphatest="blend">
+			<convert type="ServiceInfo">IsWidescreen</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_8/DOLBY.png" position="240,15" size="55,42" alphatest="blend">
+			<convert type="ServiceInfo">IsMultichannel</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+	</screen>
+	<screen name="SimpleSummary" position="0,0" size="480,320">
+		<widget source="parent.Title" render="Label" position="30,90" size="420,200" font="VFD;52" halign="center" valign="center" />
+		<widget source="global.CurrentTime" render="Label" position="320,10" size="150,35" font="VFD;32" halign="right">
+			<convert type="ClockToText">Format:%d.%m.%Y</convert>
+		</widget>
+
+		<widget source="global.CurrentTime" render="Label" position="320,45" size="150,35" font="VFD;32" halign="right">
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+		<widget source="session.RecordState" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_8/REC.png" position="20,15"  size="55,42" alphatest="blend">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_8/CRYPT.png" position="75,15"  size="55,42" alphatest="blend">
+			<convert type="ServiceInfo">IsCrypted</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_8/TELETEXT.png" position="130,15" size="55,42" alphatest="blend">
+			<convert type="ServiceInfo">HasTelext</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_8/16x9.png" position="185,15" size="55,42" alphatest="blend">
+			<convert type="ServiceInfo">IsWidescreen</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_8/DOLBY.png" position="240,15" size="55,42" alphatest="blend">
+			<convert type="ServiceInfo">IsMultichannel</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+	</screen>
+	<screen name="MediaPlayerLCDScreen" position="0,0" size="480,320">
+		<widget name="text1" position="25,20" size="450,130" font="VFD;48"/>
+		<widget name="text3" position="25,155" size="450,75" font="VFD;36"/>
+		<widget name="text4" position="25,240" size="450,75" font="VFD;36"/>
+	</screen>
+	<screen name="WizardSummary" position="0,0" size="480,320">
+		<widget source="text" render="Label" position="15,10" size="450,80" font="VFD;40" transparent="1" />
+		<widget source="parent.list" render="Label" position="15,100" size="450,220" font="VFD;32">
+			<convert type="StringListSelection" />
+		</widget>
+	</screen>
+</skin>
