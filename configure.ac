@@ -98,6 +98,11 @@ AM_CONDITIONAL(HAVE_COLORLCD720, test x"$withcolorlcd720" != xno)
 AC_OUTPUT([
 Makefile
 skins/Makefile
+skins/display96/Makefile
+skins/display96/LCDSkin_1/Makefile
+skins/display96/LCDSkin_1/meta/Makefile
+skins/display96/LCDSkin_2/Makefile
+skins/display96/LCDSkin_2/meta/Makefile
 skins/display128/Makefile
 skins/display128/LCDSkin_1/Makefile
 skins/display128/LCDSkin_1/meta/Makefile

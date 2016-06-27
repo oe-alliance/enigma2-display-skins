@@ -25,3 +25,7 @@ endif
 if HAVE_BWLCD128
 SUBDIRS = display128
 endif
+
+if HAVE_BWLCD96
+SUBDIRS = display96
+endif
