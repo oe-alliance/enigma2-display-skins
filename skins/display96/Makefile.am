@@ -1,0 +1,1 @@
+SUBDIRS = LCDSkin_1 LCDSkin_2
