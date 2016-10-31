@@ -17,7 +17,7 @@
 	<fonts>
 		<!-- pick a funky name for the font, so we don't conflict  -->
 		<font filename="nmsbd.ttf" name="FdLcD" scale="100"/>
-		<font filename="Roboto-Bold.ttf" name="LCD" scale="100"/>
+		<font filename="Roboto-Bold.ttf" name="MyLCD" scale="100"/>
 	</fonts>
 
 <!-- FullPicon -->
@@ -123,7 +123,7 @@
 			<convert type="ServicePosition">Position</convert>
 		</widget>
 		<eLabel position="0,168" size="400,2" backgroundColor="#BDBDBD" zPosition="3" />
-		<widget source="session.CurrentService" render="Label" position="255,173" size="200,38" font="LCD;38" foregroundColor="#A9E2F3" zPosition="0" halign="right" transparent="1">
+		<widget source="session.CurrentService" render="Label" position="255,173" size="200,38" font="MyLCD;38" foregroundColor="#A9E2F3" zPosition="0" halign="right" transparent="1">
 			<convert type="ServicePosition">Remaining</convert>
 		</widget>
 		<panel name="RecordingPanel" />
@@ -158,7 +158,7 @@
 			<convert type="ServicePosition">Position</convert>
 		</widget>
 		<eLabel position="0,168" size="400,2" backgroundColor="#BDBDBD" zPosition="3" />
-		<widget source="session.CurrentService" render="Label" position="255,173" size="200,38" font="LCD;38" foregroundColor="#A9E2F3" zPosition="0" halign="right" transparent="1">
+		<widget source="session.CurrentService" render="Label" position="255,173" size="200,38" font="MyLCD;38" foregroundColor="#A9E2F3" zPosition="0" halign="right" transparent="1">
 			<convert type="ServicePosition">Remaining</convert>
 		</widget>
 		<panel name="RecordingPanel" />
@@ -505,7 +505,7 @@
 			  <convert type="EMCServicePosition">Position</convert>
 		</widget>
 		<eLabel position="0,168" size="400,2" backgroundColor="#BDBDBD" zPosition="3" />		
-		<widget source="session.CurrentService" render="Label" position="255,173" size="200,38" font="LCD;38" zPosition="0" foregroundColor="#A9E2F3" halign="right" transparent="1">
+		<widget source="session.CurrentService" render="Label" position="255,173" size="200,38" font="MyLCD;38" zPosition="0" foregroundColor="#A9E2F3" halign="right" transparent="1">
 			<convert type="ServicePosition">Remaining</convert>
 		</widget>
 		<panel name="RecordingPanel" />
