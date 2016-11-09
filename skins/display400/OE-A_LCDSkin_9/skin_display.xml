@@ -341,7 +341,7 @@
 	</screen>
 <!-- JobView Summary -->
 	<screen name="JobView_summary" position="0,0" size="400,240">
-		<widget source="parent.summary_job_progress" render="Label" position="0,0" size="400,70" font="FdLcD;70" zposition="0" halign="center" valign="center" zPosition="2" transparent="1" >
+		<widget source="parent.summary_job_progress" render="Label" position="0,0" size="400,70" font="FdLcD;70" zposition="1" halign="center" valign="center" zPosition="2" transparent="1" >
 			<convert type="ProgressToText">InPercent</convert>
 		</widget>
 		<widget source="parent.summary_job_progress" render="Progress" position="0,3" size="400,70" borderColor="#FFFFFF" foregroundColor="#27408B" borderWidth="2" zPosition="1" />
