@@ -113,7 +113,7 @@ AC_ARG_WITH(colorlcd800,
 if test x"$withcolorlcd800" != xno ; then
 	AC_DEFINE(HAVE_COLORLCD800, 1,[Define when using a 800x480 color display device])
 fi
-AM_CONDITIONAL(HAVE_COLORLCD800, test x"$withcolorlcd720" != xno)
+AM_CONDITIONAL(HAVE_COLORLCD800, test x"$withcolorlcd800" != xno)
 
 
 AC_OUTPUT([
