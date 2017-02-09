@@ -288,12 +288,6 @@
 		<widget source="desc" render="Label" position="10,144" size="460,130" font="VFD;40"/>
 		<eLabel text="www.vuplus-support.org" position="10, 284" size="460,25" font="VFD;25" halign="center"/>
 	</screen>
-<!-- LCD screen Setup -->
-	<screen name="SetupSummary" position="0,0" size="480,320">
-		<widget source="SetupTitle" render="RollerCharLCDLong" position="10,10" size="460,18" font="VFD;40" noWrap="1" />
-		<widget source="SetupEntry" render="RollerCharLCDLong" position="10,60" size="460,16" font="VFD;40" noWrap="1" />
-		<widget source="SetupValue" render="RollerCharLCDLong" position="10,120" size="460,16" font="VFD;40" noWrap="1" />
-	</screen>
 <!-- LCD screen MessageBox -->
 	<screen name="MessageBox_summary" position="0,0" size="480,320">
 		<widget source="parent.Text" render="Label" position="10,10" size="460,247" font="VFD;25" halign="center" valign="center" />

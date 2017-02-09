@@ -105,6 +105,17 @@ if test x"$withcolorlcd720" != xno ; then
 fi
 AM_CONDITIONAL(HAVE_COLORLCD720, test x"$withcolorlcd720" != xno)
 
+AC_ARG_WITH(colorlcd800,
+	AC_HELP_STRING([--with-colorlcd800], [use 800x480 16bpp color display, yes or no]),
+	[[withcolorlcd800=$withval]],
+	[[withcolorlcd800=no]]
+)
+if test x"$withcolorlcd800" != xno ; then
+	AC_DEFINE(HAVE_COLORLCD800, 1,[Define when using a 800x480 color display device])
+fi
+AM_CONDITIONAL(HAVE_COLORLCD800, test x"$withcolorlcd800" != xno)
+
+
 AC_OUTPUT([
 Makefile
 skins/Makefile
@@ -230,4 +241,7 @@ skins/display720/OE-A_LCDSkin_6/Makefile
 skins/display720/OE-A_LCDSkin_6/meta/Makefile
 skins/display720/OE-A_LCDSkin_7/Makefile
 skins/display720/OE-A_LCDSkin_7/meta/Makefile
+skins/display800/Makefile
+skins/display800/OE-A_LCDSkin_1/Makefile
+skins/display800/OE-A_LCDSkin_1/meta/Makefile
 ])
