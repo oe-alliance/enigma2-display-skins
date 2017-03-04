@@ -105,97 +105,97 @@
 		<widget source="session.RecordState" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_1/recording.png" position="595,150" size="163,70" zPosition="1" alphatest="blend">
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_1/Tuner/TUNER-A.png" position="525,150" size="70,70" zPosition="1" lphatest="blend" >
+		<widget source="session.FrontendInfo" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_1/TUNER-A.png" position="525,150" size="70,70" zPosition="1" lphatest="blend" >
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">0,0</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_1/Tuner/TUNER-B.png" position="525,150" size="70,70" zPosition="1" alphatest="blend" >
+		<widget source="session.FrontendInfo" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_1/TUNER-B.png" position="525,150" size="70,70" zPosition="1" alphatest="blend" >
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">1,1</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_1/Tuner/TUNER-C.png" position="525,150" size="70,70" zPosition="1" lphatest="blend" >
+		<widget source="session.FrontendInfo" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_1/TUNER-C.png" position="525,150" size="70,70" zPosition="1" lphatest="blend" >
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">2,2</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_1/Tuner/TUNER-D.png" position="525,150" size="70,70" zPosition="1" alphatest="blend" >
+		<widget source="session.FrontendInfo" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_1/TUNER-D.png" position="525,150" size="70,70" zPosition="1" alphatest="blend" >
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">3,3</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_1/Tuner/TUNER-E.png" position="525,150" size="70,70" zPosition="1" lphatest="blend" >
+		<widget source="session.FrontendInfo" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_1/TUNER-E.png" position="525,150" size="70,70" zPosition="1" lphatest="blend" >
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">4,4</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_1/Tuner/TUNER-F.png" position="525,150" size="70,70" zPosition="1" alphatest="blend" >
+		<widget source="session.FrontendInfo" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_1/TUNER-F.png" position="525,150" size="70,70" zPosition="1" alphatest="blend" >
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">5,5</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_1/Tuner/TUNER-G.png" position="525,150" size="70,70" zPosition="1" alphatest="blend" >
+		<widget source="session.FrontendInfo" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_1/TUNER-G.png" position="525,150" size="70,70" zPosition="1" alphatest="blend" >
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">6,6</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_1/Tuner/TUNER-H.png" position="525,150" size="70,70" zPosition="1" alphatest="blend" >
+		<widget source="session.FrontendInfo" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_1/TUNER-H.png" position="525,150" size="70,70" zPosition="1" alphatest="blend" >
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">7,7</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_1/Tuner/TUNER-I.png" position="525,150" size="70,70" zPosition="1" alphatest="blend" >
+		<widget source="session.FrontendInfo" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_1/TUNER-I.png" position="525,150" size="70,70" zPosition="1" alphatest="blend" >
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">8,8</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_1/Tuner/TUNER-J.png" position="525,150" size="70,70" zPosition="1" alphatest="blend" >
+		<widget source="session.FrontendInfo" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_1/TUNER-J.png" position="525,150" size="70,70" zPosition="1" alphatest="blend" >
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">9,9</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_1/Tuner/TUNER-K.png" position="525,150" size="70,70" zPosition="1" alphatest="blend" >
+		<widget source="session.FrontendInfo" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_1/TUNER-K.png" position="525,150" size="70,70" zPosition="1" alphatest="blend" >
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">10,10</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_1/Tuner/TUNER-L.png" position="525,150" size="70,70" zPosition="1" alphatest="blend" >
+		<widget source="session.FrontendInfo" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_1/TUNER-L.png" position="525,150" size="70,70" zPosition="1" alphatest="blend" >
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">11,11</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_1/Tuner/TUNER-M.png" position="525,150" size="70,70" zPosition="1" alphatest="blend" >
+		<widget source="session.FrontendInfo" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_1/TUNER-M.png" position="525,150" size="70,70" zPosition="1" alphatest="blend" >
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">12,12</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_1/Tuner/TUNER-N.png" position="525,150" size="70,70" zPosition="1" alphatest="blend" >
+		<widget source="session.FrontendInfo" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_1/TUNER-N.png" position="525,150" size="70,70" zPosition="1" alphatest="blend" >
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">13,13</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_1/Tuner/TUNER-O.png" position="525,150" size="70,70" zPosition="1" alphatest="blend" >
+		<widget source="session.FrontendInfo" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_1/TUNER-O.png" position="525,150" size="70,70" zPosition="1" alphatest="blend" >
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">14,14</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_1/Tuner/TUNER-P.png" position="525,150" size="70,70" zPosition="1" alphatest="blend" >
+		<widget source="session.FrontendInfo" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_1/TUNER-P.png" position="525,150" size="70,70" zPosition="1" alphatest="blend" >
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">15,15</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_1/Tuner/TUNER-Q.png" position="525,150" size="70,70" zPosition="1" alphatest="blend" >
+		<widget source="session.FrontendInfo" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_1/TUNER-Q.png" position="525,150" size="70,70" zPosition="1" alphatest="blend" >
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">16,16</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_1/Tuner/TUNER-R.png" position="525,150" size="70,70" zPosition="1" alphatest="blend" >
+		<widget source="session.FrontendInfo" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_1/TUNER-R.png" position="525,150" size="70,70" zPosition="1" alphatest="blend" >
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">17,17</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_1/Tuner/TUNER-S.png" position="525,150" size="70,70" zPosition="1" alphatest="blend" >
+		<widget source="session.FrontendInfo" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_1/TUNER-S.png" position="525,150" size="70,70" zPosition="1" alphatest="blend" >
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">18,18</convert>
 			<convert type="ConditionalShowHide" />
