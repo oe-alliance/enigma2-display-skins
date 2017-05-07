@@ -104,7 +104,7 @@
 	</screen>
 <!-- main-->
 	<screen name="InfoBarSummary" position="0,0" size="480,320">
-		<widget source="session.CurrentService" render="LcdPicon" position="0,0" zPosition="2" size="480,266" halign="center" alphatest="on">
+		<widget source="session.CurrentService" render="LcdPicon" position="0,0" zPosition="-1" size="480,266" halign="center" alphatest="on">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<eLabel position="0,269" size="480,2" backgroundColor="#BDBDBD" zPosition="3" />
@@ -112,6 +112,7 @@
 			<convert type="EventTime">Progress</convert>
 		</widget>
 		<eLabel position="0,317" size="480,2" backgroundColor="#BDBDBD" zPosition="3" />
+		<panel name="RecordingPanel" />
 	</screen>
 <!-- Movieplayer -->
 	<screen name="InfoBarMoviePlayerSummary" position="0,0" size="480,320">
@@ -501,7 +502,7 @@
 			  <convert type="EMCServicePosition">Position</convert>
 		</widget>
 		<eLabel position="0,224" size="480,2" backgroundColor="#BDBDBD" zPosition="3" />		
-		<widget source="session.CurrentService" render="Label" position="306,230" size="240,50" font="LCD;45" zPosition="0" foregroundColor="#A9E2F3" halign="right" transparent="1">
+		<widget source="session.CurrentService" render="Label" position="300,230" size="240,50" font="LCD;45" zPosition="0" foregroundColor="#A9E2F3" halign="right" transparent="1">
 			<convert type="ServicePosition">Remaining</convert>
 		</widget>
 		<panel name="RecordingPanel" />
