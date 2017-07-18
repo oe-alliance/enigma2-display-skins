@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
-	<fonts>
-		<font filename="nmsbd.ttf" name="VFD" scale="90"/>
-	</fonts>
 	<windowstyle type="skinned" id="1">
 		<color name="Background" color="#000000" />
 		<color name="LabelForeground" color="#ffffff" />
@@ -17,13 +14,34 @@
 		<color name="WindowTitleForeground" color="#000000" />
 		<color name="WindowTitleBackground" color="#ffffff" />
 	</windowstyle>
-
+	<fonts>
+		<font filename="nmsbd.ttf" name="VFD" scale="90"/>
+		<font filename="nmsbd.ttf" name="FdLcD" scale="100"/>
+		<alias name="Huge" font="FdLcD" size="192" height="192" />
+		<alias name="Bigger" font="FdLcD" size="106" height="106" />
+		<alias name="Big" font="FdLcD" size="84" height="84" />
+		<alias name="Medium" font="FdLcD" size="60" height="60" />
+		<alias name="Smaller" font="FdLcD" size="54" height="60" />
+		<alias name="Small" font="FdLcD" size="48" height="48" />
+		<font filename="MyriadPro-Regular.otf" name="Regular" scale="100" />
+        <font filename="MyriadPro-Semibold.otf" name="Semibold" scale="100" />
+        <font filename="MyriadPro-SemiboldIt.otf" name="Semiboldit" scale="100" />
+	</fonts>
+	<colors>
+		<color name="fullred" value="#ff0000" />
+		<color name="yellow" value="#ffff00" />
+		<color name="greenish" value="#04b404" />
+		<color name="lightcyan" value="#7fffff" />
+		<color name="darkgrey" value="#404040" />
+		<color name="lightgrey" value="#c0c0c0" />
+	</colors>
+	
 <!-- PanelTopBar -->
 	<screen name="PanelTopBar" position="0,0" size="800,480">
-		<widget source="session.RecordState" render="FixedLabel" position="20,20" zPosition="3" size="100,80" text=" ">
+		<widget source="session.RecordState" render="FixedLabel" position="20,20" zPosition="3" size="80,53" text=" ">
 			<convert type="ConfigEntryTest">config.usage.blinking_rec_symbol_during_recording,True,CheckSourceBoolean</convert>
 			<convert type="ConditionalShowHide">Blink</convert>
-		</widget>
+		</widget> 
 		<widget source="session.RecordState" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_1/REC_red.png" position="20,20"  size="80,53" alphatest="blend">
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -102,9 +120,11 @@
 			<convert type="ServiceInfo">Is480</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
+<!--	
 		<widget source="session.RecordState" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_1/recording.png" position="595,150" size="163,70" zPosition="1" alphatest="blend">
 			<convert type="ConditionalShowHide" />
 		</widget>
+-->
 		<widget source="session.FrontendInfo" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_1/TUNER-A.png" position="525,150" size="70,70" zPosition="1" lphatest="blend" >
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">0,0</convert>
@@ -243,7 +263,7 @@
 		<widget source="session.CurrentService" render="Progress" position="20,400" size="720,60" foregroundColor="#02c6ff" borderWidth="2">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
-		<widget source="session.CurrentService" alphatest="on" transparent="0" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_1/ico_stream_on.png" position="600,200" size="100,100" zPosition="5">
+		<widget source="session.CurrentService" alphatest="on" transparent="0" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_1/ico_stream_on.png" position="550,200" size="200,100" zPosition="5">
 			<convert type="ServiceInfo">IsStream</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -286,6 +306,12 @@
 			<convert type="ClockToText">Default</convert>
 		</widget>
 	</screen>
+	
+	<!-- EMCSelectionExtended_summary 
+	<screen name="EMCSelectionExtended_summary" position="0,0" size="800,480" >
+	<panel name="EMCSelection_summary" />
+	</screen>
+	-->
 	
 <!-- EMC Playing-->
 	<screen name="EMCMoviePlayerSummary" position="0,0" size="800,480"> 
@@ -338,7 +364,7 @@
 		<widget source="global.CurrentTime" render="Label" position="5,370" size="280,100" font="VFD;80" halign="center">
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
-		<widget source="session.RecordState" render="FixedLabel" position="20,20" zPosition="3" size="55,42" text=" ">
+		<widget source="session.RecordState" render="FixedLabel" position="20,20" zPosition="3" size="80,53" text=" ">
 			<convert type="ConfigEntryTest">config.usage.blinking_rec_symbol_during_recording,True,CheckSourceBoolean</convert>
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
@@ -694,7 +720,7 @@
 		<widget source="parent.summary_description" render="Label" position="20,43" size="720,300" font="VFD;50" transparent="1" halign="center" valign="center" />
 	</screen>
 	<screen name="AutoTimerOverviewSummary" position="0,0" size="800,480">
-		<widget source="parent.Title" render="Label" position="20,20" size="720,110" font="VFD;48" foregroundColor="#e5b243" halign="center" valign="center" noWrap="1" />
+		<widget source="parent.Title" render="Label" position="20,20" size="750,110" font="VFD;48" foregroundColor="#e5b243" halign="center" valign="center" noWrap="1" />
 		<widget source="entry" render="Label" position="20,120" size="720,250" font="VFD;50" halign="center" valign="center" />
 	</screen>
 	
@@ -828,25 +854,82 @@
 	</screen>
 	
 <!-- webradioFS -->
-	<screen name="webradioFSdisplay13" position="0,0" size="800,480" id="1">
+	<screen name="webradioFSdisplay13" position="0,0" size="800,480" >
 		<widget source="Zeile1" render="Label" position="20,50" size="760,122" font="VFD;60" valign="center" halign="center" />
 		<widget source="Zeile2" render="Label" position="20,178" size="760,122" font="VFD;60" valign="center" halign="center" />
 		<widget source="Zeile3" render="Label" position="20,307" size="760,122" font="VFD;60" valign="center" halign="center" />
 		<widget name="picon" position="20,50" size="760,379" alphatest="blend" />
 	</screen>
 
-<!-- YAMP_Standard -->
-	<screen name="YampLCDScreen" position="0,0" size="800,480" id="1">
+<!-- YAMP -->
+	<screen name="YampLCDScreen" position="0,0" size="800,480" >
 		<widget name="text1" position="20,178" size="760,122" font="VFD;60" halign="left" valign="center" />
 		<widget name="text2" position="20,50" size="760,122" font="VFD;60" halign="left" valign="center" />
 		<widget name="text3" position="20,307" size="760,122" font="VFD;60" halign="left" valign="center" />
 	</screen>
-
-<!-- YAMP_v31 -->
-	<screen name="YampLCDScreenV31" position="0,0" size="800,480" id="1">
-		<widget name="text1" position="20,178" size="760,122" font="VFD;60" halign="left" valign="center" />
-		<widget name="text2" position="20,50" size="760,122" font="VFD;60" halign="left" valign="center" />
-		<widget name="text3" position="20,307" size="760,122" font="VFD;60" halign="left" valign="center" />
+	<screen name="YampLCDScreenV31" position="0,0" size="800,480" >
+		<panel name="YampLCDScreen" />
 	</screen>
 
+<!-- KodiLauncher_summary -->
+	<screen name="KodiLauncher_summary" position="0,0" size="800,480" >
+		<panel name="PanelTopBar" />
+		<ePixmap pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_1/kodi.png" position="100,170" size="600,300" transparent="1"/>
+		<widget source="global.CurrentTime" render="Label" position="550,80" size="230,100" font="VFD;90" halign="center" valign="center">
+			<convert type="ClockToText">Format:%H:%M</convert>
+		</widget>
+	</screen>
+	
+<!-- KodiVideoPlayer_summary -->
+	<screen name="KodiVideoPlayer_summary" position="0,0" size="800,480" >
+		<panel name="InfoBarMoviePlayerSummary" />
+	</screen>
+
+	
+	<!-- MoviePlayer_summary 	
+	<screen name="MoviePlayer_summary" position="0,0" size="800,480" >
+		<panel name="InfoBarMoviePlayerSummary" />
+	</screen> 
+	-->
+
+	<!-- MovieMenu_summary 	
+	<screen name="MovieMenu_summary" position="0,0" size="800,480" >
+	</screen> 
+	-->
+
+	<!-- RdsInfoDisplaySummary 
+	<screen name="RdsInfoDisplaySummary" position="0,0" size="800,480" >
+	</screen>
+	-->
+	
+	<!-- VBMain_summary 
+	<screen name="VBMain_summary" position="0,0" size="800,480" >
+	</screen>
+	-->
+
+	<!-- Seekbar_summary 
+	<screen name="Seekbar_summary" position="0,0" size="800,480" >
+	</screen>
+	-->
+
+	<!-- TimerSelection_summary 
+	<screen name="TimerSelection_summary" position="0,0" size="800,480" >
+	</screen>
+	-->
+	
+	<!-- TranslationInfo_summary 
+	<screen name="TranslationInfo_summary" position="0,0" size="800,480" >
+	</screen>
+	-->
+	
+	<!-- ServiceInfo_summary 
+	<screen name="ServiceInfo_summary" position="0,0" size="800,480" >
+	</screen>
+	-->
+
+	<!-- AudioSelection_summary 
+	<screen name="AudioSelection_summary" position="0,0" size="800,480" >
+	</screen>
+	-->
+	
 </skin>
