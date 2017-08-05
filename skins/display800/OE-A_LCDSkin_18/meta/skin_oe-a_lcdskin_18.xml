@@ -1,0 +1,16 @@
+<default>
+	<prerequisites>
+		<tag type="Display" />
+	</prerequisites>
+	<info>
+		<author>OE-A Team</author>
+		<name>OE-A LCD Skin18</name>
+		<packagename>enigma2-display-oea-lcdskin_18</packagename>
+		<shortdescription>Custom display skin for LCD</shortdescription>
+		<description>Custom display skin for LCD</description>
+	</info>
+
+	<files type="package"> <!-- without version, without .ipk -->
+		<file type="package" name="enigma2-display-oea-lcdskin_18" />
+	</files>
+</default>

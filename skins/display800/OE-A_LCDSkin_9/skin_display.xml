@@ -1,0 +1,266 @@
+<skin>
+  <!-- vfd-Skin Ultimo4k by 0killer -->
+  <!-- Version 1.1 -->
+  
+<fonts>
+  <font filename="nmsbd.ttf" name="VFD" scale="90"/>
+</fonts>
+
+<windowstyle type="skinned" >
+  <color name="Background" color="#000000" />
+  <color name="LabelForeground" color="#ffffff" />
+  <color name="ListboxBackground" color="#ffffff" />
+  <color name="ListboxForeground" color="#000000" />
+  <color name="ListboxSelectedBackground" color="#ffffff" />
+  <color name="ListboxSelectedForeground" color="#000000" />
+  <color name="ListboxMarkedBackground" color="#ffffff" />
+  <color name="ListboxMarkedForeground" color="#000000" />
+  <color name="ListboxMarkedAndSelectedBackground" color="#ffffff" />
+  <color name="ListboxMarkedAndSelectedForeground" color="#000000" />
+  <color name="WindowTitleForeground" color="#000000" />
+  <color name="WindowTitleBackground" color="#ffffff" />
+</windowstyle>
+
+<!-- Time Template -->
+<screen name="TimeTemplate">
+  <widget source="global.CurrentTime" render="Label" position="470,80" size="300,130" font="VFD;130" halign="right" valign="center">
+    <convert type="ClockToText">Format:%H:%M</convert>
+  </widget>
+</screen>
+
+<!-- Update Template -->
+<screen name="UpdateTemplate">
+  <widget source="session.CurrentService" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_9/icon_update_as.png" position="550,20" size="74,74" alphatest="blend">
+    <convert type="ConfigEntryTest">config.usage.update_available,True,CheckSourceBoolean</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+</screen>
+
+<!-- Recording Template -->
+<screen name="RecordingTemplate">
+  <widget source="session.RecordState" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_9/icon_rec_as.png" position="700,20" size="74,74" alphatest="blend">
+     <convert type="ConfigEntryTest">config.usage.blinking_rec_symbol_during_recording,True,CheckSourceBoolean</convert>
+	 <convert type="ConditionalShowHide" />
+  </widget>
+</screen>
+
+<!-- Picon Template -->
+<screen name="PiconTemplate">
+  <widget source="session.CurrentService" render="Picon" position="35,55" size="400,240" zPosition="4" transparent="1"  alphatest="blend">
+    <convert type="MovieBarInfo">Reference</convert>
+  </widget>
+</screen>
+
+<!-- Backdrop Template -->
+<screen name="BackdropTemplate">
+  <widget source="session.CurrentService" render="Cover" position="35,55" size="400,240" zPosition="5" transparent="0" alphatest="off">
+  </widget>
+</screen>
+
+<!-- TVProgress Template -->
+<screen name="TVProgressTemplate">
+  <eLabel name="Progress" position="30,426" size="740,20" backgroundColor="#00FFFFFF" />
+  <eLabel name="25Progress" position="207,426" size="10,20" backgroundColor="#00000000" zPosition="10" />
+  <eLabel name="50Progress" position="395,426" size="10,20" backgroundColor="#00000000" zPosition="10" />
+  <eLabel name="75Progress" position="593,426" size="10,20" backgroundColor="#00000000" zPosition="10" />
+  <widget source="session.Event_Now" render="Progress" position="30,426" size="740,20" borderWidth="0" foregroundColor="#00FF0000" zPosition="1" transparent="1">
+    <convert type="EventTime">Progress</convert>
+  </widget>
+  <widget source="session.Event_Now" render="Label" position="570,200" size="190,78" font="VFD;95" halign="right" valign="top">
+    <convert type="EventTime">Remaining</convert>
+    <convert type="RemainingToText">InMinutes</convert>
+  </widget>
+</screen>
+
+<!-- PlayerProgress Template -->
+<screen name="PlayerProgressTemplate">
+  <eLabel name="Progress" position="30,426" size="740,20" backgroundColor="#00FFFFFF" />
+  <eLabel name="25Progress" position="207,426" size="10,20" backgroundColor="#00000000" zPosition="10" />
+  <eLabel name="50Progress" position="395,426" size="10,20" backgroundColor="#00000000" zPosition="10" />
+  <eLabel name="75Progress" position="593,426" size="10,20" backgroundColor="#00000000" zPosition="10" />
+  <widget source="session.CurrentService" render="Progress" position="30,426" size="740,20" borderWidth="0" foregroundColor="#00FF0000" zPosition="1" transparent="1">
+    <convert type="ServicePosition">Position</convert>
+  </widget>
+  <widget source="session.CurrentService" render="RollerCharLCDLong" noWrap="1" position="30,300" size="740,90" font="VFD;95" halign="left" valign="top">
+    <convert type="ServiceName">Name</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="570,200" size="190,78" font="VFD;95" halign="right" valign="top">
+    <convert type="ServicePosition">Remaining,Negate,ShowMinutes,ShowNoSeconds</convert>
+  </widget>
+</screen>
+	
+<!-- InfoBar -->
+<screen name="InfoBarSummary" position="0,0" size="800,480" >
+  <panel name="TimeTemplate" />
+  <panel name="UpdateTemplate" />
+  <panel name="RecordingTemplate" />
+  <widget source="session.CurrentService" render="Picon" position="35,55" size="400,240" zPosition="4" alphatest="blend">
+    <convert type="ServiceName">Reference</convert>
+  </widget>
+  <panel name="BackdropTemplate" />
+  <panel name="TVProgressTemplate" />
+  <widget source="session.Event_Now" render="RollerCharLCDLong" noWrap="1" position="30,300" size="740,90" font="VFD;95" halign="left" valign="top">
+    <convert type="EventName">Name</convert>
+  </widget>
+</screen>
+
+<!-- Channel Selection -->
+<screen name="ChannelSelection_summary" position="0,0" size="800,480" >
+  <panel name="TimeTemplate" />
+  <panel name="UpdateTemplate" />
+  <panel name="RecordingTemplate" /> 
+  <widget source="parent.ServiceEvent" render="Picon" position="35,55" size="400,240" zPosition="4" alphatest="blend">
+    <convert type="ServiceName">Reference</convert>
+  </widget>
+  <panel name="BackdropTemplate" />
+  <panel name="TVProgressTemplate" />
+  <widget source="parent.ServiceEvent" render="RollerCharLCDLong" noWrap="1" position="30,300" size="740,90" font="VFD;95" halign="left" valign="top">
+    <convert type="EventName">Name</convert>
+  </widget>
+</screen>
+
+<!-- EMC Player -->
+<screen name="EMCMoviePlayerSummary" position="0,0" size="800,480" >
+  <panel name="TimeTemplate" />
+  <panel name="UpdateTemplate" />
+  <panel name="RecordingTemplate" />
+  <panel name="PiconTemplate" />
+  <panel name="BackdropTemplate" />
+  <panel name="PlayerProgressTemplate" />
+</screen>
+
+<!-- EMC Selection -->
+<screen name="EMCSelection_summary" position="0,0" size="800,480" >
+  <panel name="UpdateTemplate" />
+  <panel name="RecordingTemplate" /> 
+  <widget source="parent.Service" render="Label" position="30,80" size="740,480" font="VFD;95" halign="center" valign="top">
+    <convert type="ServiceName">Name</convert>
+  </widget>
+ </screen>
+ 
+<!-- Media Player -->
+<screen name="MediaPlayerLCDScreen" position="0,0" size="800,480" >
+  <panel name="TimeTemplate" />
+  <panel name="UpdateTemplate" />
+  <panel name="RecordingTemplate" />
+  <panel name="PiconTemplate" />
+  <panel name="BackdropTemplate" />
+  <panel name="PlayerProgressTemplate" />
+ </screen>
+ 
+<!-- Movie Player -->
+<screen name="InfoBarMoviePlayerSummary" position="0,0" size="800,480" >
+  <panel name="TimeTemplate" />
+  <panel name="UpdateTemplate" />
+  <panel name="RecordingTemplate" />
+  <panel name="PiconTemplate" />
+  <panel name="BackdropTemplate" />
+  <panel name="PlayerProgressTemplate" />
+</screen>
+
+<!-- Movie Selection -->
+<screen name="MovieSelection_summary" position="0,0" size="800,480" >
+  <panel name="UpdateTemplate" />
+  <panel name="RecordingTemplate" /> 
+  <widget source="parent.Service" render="Label" position="30,80" size="740,480" font="VFD;95" halign="center" valign="top">
+    <convert type="ServiceName">Name</convert>
+  </widget>
+</screen>
+
+<!-- ChoiceBox -->
+<screen name="ChoiceBox_summary" position="0,0" size="800,480" >
+  <panel name="UpdateTemplate" />
+  <panel name="RecordingTemplate" />
+  <widget source="parent.summary_list" render="Label" position="30,80" size="740,480" font="VFD;95" />
+</screen>
+
+<!-- Device Manager 2 -->
+<screen name="DeviceManager2Summary" position="0,0" size="800,480" >
+  <panel name="UpdateTemplate" />
+  <panel name="RecordingTemplate" />
+  <widget source="entry" render="Label" position="30,80" size="740,480" font="VFD;95" halign="center" valign="top" />
+  <widget source="desc" render="Label" position="30,190" size="740,480" font="VFD;85" halign="center" valign="top" foregroundColor="#A4A4A4"/>
+</screen>
+
+<!-- Menu -->
+<screen name="MenuSummary" position="0,0" size="800,480" >
+  <panel name="UpdateTemplate" />
+  <panel name="RecordingTemplate" />
+  <widget source="parent.title" render="Label" position="30,80" size="740,480" font="VFD;95" halign="center" valign="top" />
+  <widget source="parent.menu" render="Label" position="30,190" size="740,480" font="VFD;85" halign="center" valign="top" foregroundColor="#A4A4A4">
+    <convert type="StringListSelection" />
+  </widget>
+</screen>
+
+<!-- Message Box -->
+<screen name="MessageBox_summary" position="0,0" size="800,480" >
+  <panel name="UpdateTemplate" />
+  <panel name="RecordingTemplate" />
+  <widget source="parent.Text" render="Label" position="30,80" size="740,480" font="VFD;95" halign="center" valign="top" />
+  <widget source="parent.selectedChoice" render="Label" position="30,360" size="740,480" font="VFD;85" halign="center" valign="top" foregroundColor="#00FF0000"/>
+</screen>
+
+<!-- Plugin Browser -->
+<screen name="PluginBrowserSummary" position="0,0" size="800,480" >
+  <panel name="UpdateTemplate" />
+  <panel name="RecordingTemplate" />
+  <widget source="entry" render="Label" position="30,80" size="740,480" font="VFD;95" halign="center" valign="top" />
+  <widget source="desc" render="Label" position="30,190" size="740,480" font="VFD;85" halign="center" valign="top" foregroundColor="#A4A4A4"/>
+</screen>
+
+<!-- Service Scan -->
+<screen name="ServiceScanSummary" position="0,0" size="800,480" >
+  <panel name="UpdateTemplate" />
+  <panel name="RecordingTemplate" />
+  <widget name="Title" position="30,80" size="740,480" font="VFD;95" transparent="1" valign="center" halign="left" />
+  <widget name="Service" position="30,190" size="740,480" font="VFD;85" transparent="1" valign="center" halign="left" foregroundColor="#A4A4A4"/>
+  <widget name="scan_progress" position="30,426" zPosition="1" borderWidth="0" size="740,20" foregroundColor="#00FF0000" transparent="1" />	
+</screen>
+
+<!-- Setup -->
+<screen name="SetupSummary" position="0,0" size="800,480" >
+  <panel name="UpdateTemplate" />
+  <panel name="RecordingTemplate" />
+  <widget source="SetupTitle" render="Label" position="30,80" size="740,480" font="VFD;95" halign="center" valign="top" />
+  <widget source="SetupEntry" render="Label" position="30,190" size="740,480" font="VFD;85" halign="center" valign="top" foregroundColor="#A4A4A4"/>
+  <widget source="SetupValue" render="Label" position="30,360" size="740,480" font="VFD;85" halign="center" valign="top" foregroundColor="#00FF0000"/>
+</screen>
+
+<!-- Simple -->
+<screen name="SimpleSummary" position="0,0" size="800,480" >
+  <panel name="UpdateTemplate" />
+  <panel name="RecordingTemplate" />
+  <widget source="parent.Title" render="Label" position="30,80" size="740,480" font="VFD;95" halign="center" valign="top" />
+</screen>
+
+<!-- VTI Panel -->
+<screen name="VTIPanelSummary" position="0,0" size="800,480" >
+  <panel name="UpdateTemplate" />
+  <panel name="RecordingTemplate" />
+  <widget source="entry" render="Label" position="30,80" size="740,480" font="VFD;95" halign="center" valign="top" />
+  <widget source="desc" render="Label" position="30,190" size="740,480" font="VFD;85" halign="center" valign="top" foregroundColor="#A4A4A4"/>
+</screen>
+
+<!-- Wizard -->
+<screen name="WizardSummary" position="0,0" size="800,480" >
+  <panel name="UpdateTemplate" />
+  <panel name="RecordingTemplate" />
+  <widget source="text" render="Label" position="30,80" size="740,480" font="VFD;95" transparent="1" halign="center" valign="top" />
+  <widget source="parent.list" render="Label" position="30,190" size="740,480" font="VFD;85" halign="center" valign="top" foregroundColor="#A4A4A4">
+    <convert type="StringListSelection" />
+  </widget>
+</screen>
+
+<!-- Standby -->
+<screen name="StandbySummary" position="0,0" size="800,480" >
+  <panel name="UpdateTemplate" />
+  <panel name="RecordingTemplate" />
+   <widget source="global.CurrentTime" render="Label" position="180,120" size="440,110" font="VFD;140" halign="center" valign="top">
+    <convert type="ClockToText">Format:%H:%M</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" position="180,280" size="440,100" font="Regular;85" halign="center" valign="top">
+    <convert type="ClockToText">Format:%d.%m.%Y</convert>
+  </widget>
+</screen>
+
+</skin>
