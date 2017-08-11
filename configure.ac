@@ -280,4 +280,6 @@ skins/display800/OE-A_LCDSkin_17/Makefile
 skins/display800/OE-A_LCDSkin_17/meta/Makefile
 skins/display800/OE-A_LCDSkin_18/Makefile
 skins/display800/OE-A_LCDSkin_18/meta/Makefile
+skins/display800/OE-A_LCDSkin_19/Makefile
+skins/display800/OE-A_LCDSkin_19/meta/Makefile
 ])
