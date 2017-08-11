@@ -381,7 +381,7 @@
         </widget>
         <eLabel position="0,403" size="800,2" backgroundColor="#FF0000" />
         <eLabel position="0,338" size="800,2" backgroundColor="#FF0000" />
-		<widget source="session.CurrentService" render="FixedLabel" text="PCM" font="VFD;65" foregroundColor="#000000" backgroundColor="#A9A9A9" halign="center" valign="center" position="595,150" size="163,70" zPosition="1" alphatest="blend">
+<!--		<widget source="session.CurrentService" render="FixedLabel" text="PCM" font="VFD;65" foregroundColor="#000000" backgroundColor="#A9A9A9" halign="center" valign="center" position="595,150" size="163,70" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">IsStereo</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -408,7 +408,7 @@
 		<widget source="session.CurrentService" render="FixedLabel" text="480p" font="VFD;65" foregroundColor="#000000" backgroundColor="#A9A9A9" halign="center" valign="center" position="595,80" size="163,70" zPosition="1" alphatest="blend">
 			<convert type="ServiceInfo">Is480</convert>
 			<convert type="ConditionalShowHide" />
-		</widget>
+		</widget> -->
 		<widget source="session.FrontendInfo" render="FixedLabel" text="A" font="VFD;65" foregroundColor="#00FF00" halign="center" valign="center" position="60,185" size="70,70" zPosition="1" lphatest="blend" >
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">0,0</convert>
@@ -504,7 +504,7 @@
 			<convert type="ValueRange">18,18</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-        <panel name="PanelTunerBar18" />
+<!--         <panel name="PanelTunerBar18" /> -->
 	 </screen>
 	 
 <!-- ChannelSelection_summary -->
