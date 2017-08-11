@@ -6,7 +6,7 @@
   <font filename="nmsbd.ttf" name="VFD" scale="90"/>
 </fonts>
 
-<windowstyle type="skinned" >
+<windowstyle type="skinned" id="1">
   <color name="Background" color="#000000" />
   <color name="LabelForeground" color="#ffffff" />
   <color name="ListboxBackground" color="#ffffff" />
@@ -46,9 +46,9 @@
 
 <!-- Picon Template -->
 <screen name="PiconTemplate">
-  <widget source="session.CurrentService" render="Picon" position="35,55" size="400,240" zPosition="4" transparent="1"  alphatest="blend">
+<!--  <widget source="session.CurrentService" render="Picon" position="35,55" size="400,240" zPosition="4" transparent="1"  alphatest="blend">
     <convert type="MovieBarInfo">Reference</convert>
-  </widget>
+  </widget> -->
 </screen>
 
 <!-- Backdrop Template -->
