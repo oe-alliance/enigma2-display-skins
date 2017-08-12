@@ -12,7 +12,7 @@
 	<font filename="MyriadPro-Semibold.otf" name="SemiboldLCD" scale="100" />
 	<font filename="MyriadPro-SemiboldIt.otf" name="SemiboldLCDit" scale="100" />
 </fonts>
-	<windowstyle type="skinned" >
+	<windowstyle type="skinned" id="1">
     <color name="Background" color="#000000" />
     <color name="LabelForeground" color="#ffffff" />
     <color name="ListboxBackground" color="#ffffff" />
@@ -105,7 +105,6 @@
 
 <!-- EMCMoviePlayer  -->
 <screen name="EMCMoviePlayerSummary" position="0,0" size="800,480" >
-<widget position="30,22" render="Cover" size="400,420" source="session.CurrentService" zPosition="5" transparent="0" alphatest="off" />
 <widget source="session.CurrentService" render="Progress" position="435,427" size="340,25" borderWidth="0" foregroundColor="#00FF0000" zPosition="1" transparent="1">
 <convert type="ServicePosition">Position</convert>
 </widget>
@@ -123,9 +122,10 @@
 <convert type="ConfigEntryTest">config.usage.blinking_rec_symbol_during_recording,True,CheckSourceBoolean</convert>
 <convert type="ConditionalShowHide">Blink</convert>
 </widget>
-<widget source="session.CurrentService" render="Picon" position="30,50" size="400,264" zPosition="0"  transparent="1" alphatest="blend">
+<!-- <widget source="session.CurrentService" render="Picon" position="30,50" size="400,264" zPosition="0"  transparent="1" alphatest="blend">
 <convert type="MovieBarInfo">Reference</convert>
-</widget>
+</widget>-->
+<widget position="30,22" render="Cover" size="400,420" source="session.CurrentService" zPosition="5" transparent="0" alphatest="off" />
 </screen>
 
 <!-- EMCSelection_summary -->
@@ -165,7 +165,6 @@
 
 <!-- MoviePlayer_SimplePlayerMP -->
 <screen name="InfoBarMoviePlayerSummary" position="0,0" size="800,480" >
-  <widget position="30,22" render="Cover" size="400,420" source="session.CurrentService" zPosition="5" transparent="0" alphatest="off" />
 <widget source="session.CurrentService" render="Progress" position="435,427" size="340,25" borderWidth="0" foregroundColor="#00FF0000" zPosition="1" transparent="1">
 <convert type="ServicePosition">Position</convert>
 </widget>
@@ -183,9 +182,10 @@
 <convert type="ConfigEntryTest">config.usage.blinking_rec_symbol_during_recording,True,CheckSourceBoolean</convert>
 <convert type="ConditionalShowHide">Blink</convert>
 </widget>
-<widget source="session.CurrentService" render="Picon" position="30,50" size="400,264" zPosition="0"  transparent="1" alphatest="blend">
+<!-- <widget source="session.CurrentService" render="Picon" position="30,50" size="400,264" zPosition="0"  transparent="1" alphatest="blend">
 <convert type="MovieBarInfo">Reference</convert>
-</widget>
+</widget> -->
+ <widget position="30,22" render="Cover" size="400,420" source="session.CurrentService" zPosition="5" transparent="0" alphatest="off" />
 </screen>
 
 <!-- MovieSelection_summary -->
@@ -201,7 +201,6 @@
 
 <!-- Abspielen von ISO -->
 <screen name="DVDSummary" position="0,0" size="800,480" >
-   <widget position="30,22" render="Cover" size="400,420" source="session.CurrentService" zPosition="5" transparent="0" alphatest="off" />
 <widget source="session.CurrentService" render="Progress" position="435,427" size="340,25" borderWidth="0" foregroundColor="#00FF0000" zPosition="1" transparent="1">
 <convert type="ServicePosition">Position</convert>
 </widget>
@@ -219,9 +218,10 @@
 <convert type="ConfigEntryTest">config.usage.blinking_rec_symbol_during_recording,True,CheckSourceBoolean</convert>
 <convert type="ConditionalShowHide">Blink</convert>
 </widget>
-<widget source="session.CurrentService" render="Picon" position="30,50" size="400,264" zPosition="0"  transparent="1" alphatest="blend">
+<!-- <widget source="session.CurrentService" render="Picon" position="30,50" size="400,264" zPosition="0"  transparent="1" alphatest="blend">
 <convert type="MovieBarInfo">Reference</convert>
-</widget>
+</widget> -->
+<widget position="30,22" render="Cover" size="400,420" source="session.CurrentService" zPosition="5" transparent="0" alphatest="off" />
 </screen>
 
 <!-- webradioFS -->

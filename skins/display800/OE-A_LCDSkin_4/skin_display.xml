@@ -390,11 +390,9 @@
 <widget source="session.RecordState" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_4/icon_REC_red.png" position="685,120"  size="120,40" alphatest="blend">
   <convert type="ConditionalShowHide" />
 </widget>
-<widget source="session.CurrentService" render="Cover" position="20,10" size="300,280" zPosition="5" transparent="0" alphatest="off">
-</widget>
-<widget source="session.CurrentService" render="Picon" position="20,40" size="300,180" zPosition="4" transparent="1" alphatest="blend">
+<!-- <widget source="session.CurrentService" render="Picon" position="20,40" size="300,180" zPosition="4" transparent="1" alphatest="blend">
     <convert type="MovieBarInfo">Reference</convert>
-</widget>
+</widget> -->
 <widget backgroundColor="Background" font="VFD;90" halign="right" position="375,170" foregroundColor="#00B0B0AE" render="Label" size="400,90" source="session.CurrentService" zPosition="1">
     <convert type="ServicePosition">Length,ShowHours,ShowNoSeconds</convert>
 </widget>
@@ -411,6 +409,8 @@
 <widget source="session.CurrentService" render="Progress" position="200,414" size="280,15" borderWidth="0" foregroundColor="#00FF0000" zPosition="1" transparent="1">
   <convert type="ServicePosition">Position</convert>
 </widget> 
+<widget source="session.CurrentService" render="Cover" position="20,10" size="300,280" zPosition="5" transparent="0" alphatest="off">
+</widget>
 </screen>
 
 <!-- Standby -->

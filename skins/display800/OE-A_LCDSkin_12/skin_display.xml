@@ -12,7 +12,7 @@
 	<font filename="MyriadPro-Semibold.otf" name="SemiboldLCD" scale="100" />
 	<font filename="MyriadPro-SemiboldIt.otf" name="SemiboldLCDit" scale="100" />
 </fonts>
-	<windowstyle type="skinned" >
+	<windowstyle type="skinned" id="1">
     <color name="Background" color="#000000" />
     <color name="LabelForeground" color="#ffffff" />
     <color name="ListboxBackground" color="#ffffff" />
@@ -410,11 +410,9 @@
 <screen name="EMCMoviePlayerSummary" position="0,0" size="800,480" >
  <panel name="LCDClockPlayerTemplate" />
  <panel name="LCDIconPlayerTemplate" />
- <widget source="session.CurrentService" render="Cover" position="20,20" size="300,300" zPosition="5" transparent="1" alphatest="blend">
-  </widget>
- <widget source="session.CurrentService" render="Picon" position="70,100" size="200,120" zPosition="4" transparent="1" alphatest="blend">
+<!--  <widget source="session.CurrentService" render="Picon" position="70,100" size="200,120" zPosition="4" transparent="1" alphatest="blend">
   <convert type="MovieBarInfo">Reference</convert>
-</widget>
+</widget> -->
 <widget source="session.CurrentService" render="RollerCharLCDLong" position="30,335" size="740,70" font="RegularLCD;60" foregroundColor="#00ffff00" noWrap="1" halign="left" valign="top">
     <convert type="ServiceName">Name</convert>
   </widget>
@@ -435,6 +433,8 @@
 			<convert type="ServicePosition">Position</convert>
 		</widget>
 <eLabel name="DB" position="575,410" size="3,60" backgroundColor="#00B8B8B8" />
+ <widget source="session.CurrentService" render="Cover" position="20,20" size="300,300" zPosition="5" transparent="1" alphatest="blend">
+  </widget>
 </screen> 
 
 <!-- EMCSelection_summary -->
@@ -476,11 +476,9 @@
 <screen name="InfoBarMoviePlayerSummary" position="0,0" size="800,480" >
   <panel name="LCDClockPlayerTemplate" />
   <panel name="LCDIconPlayerTemplate" />
-  <widget source="session.CurrentService" render="Cover" position="20,20" size="300,300" zPosition="5" transparent="0" alphatest="off">
-  </widget>
-  <widget source="session.CurrentService" render="Picon" position="20,20" size="300,180" zPosition="4" transparent="1" alphatest="blend">
+<!--   <widget source="session.CurrentService" render="Picon" position="20,20" size="300,180" zPosition="4" transparent="1" alphatest="blend">
   <convert type="MovieBarInfo">Reference</convert>
-</widget>
+</widget> -->
 <widget source="session.CurrentService" render="RollerCharLCDLong" position="30,325" size="740,80" font="RegularLCD;70" foregroundColor="#00ff0000" noWrap="1" halign="left" valign="top">
     <convert type="ServiceName">Name</convert>
   </widget>
@@ -501,6 +499,8 @@
 			<convert type="ServicePosition">Position</convert>
 		</widget>
 <eLabel name="DB" position="575,410" size="3,60" backgroundColor="#00B8B8B8" />
+  <widget source="session.CurrentService" render="Cover" position="20,20" size="300,300" zPosition="5" transparent="0" alphatest="off">
+  </widget>
 </screen>
 
 <!-- MovieSelection_summary -->
@@ -518,8 +518,6 @@
 <screen name="DVDSummary" position="0,0" size="800,480" >
    <panel name="LCDClockPlayerTemplate" />
    <panel name="LCDIconPlayerTemplate" />
-   <widget source="session.CurrentService" render="Cover" position="20,20" size="300,300" zPosition="4" transparent="1" alphatest="blend">
-  </widget>
 <widget source="session.CurrentService" render="Progress" position="30,424" size="300,30" borderWidth="3" backgroundColor="LCDBackground" foregroundColor="#00ff0000">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
@@ -542,10 +540,12 @@
   <widget source="session.CurrentService" render="RollerCharLCDLong" position="30,335" size="740,70" font="VFD;60" foregroundColor="#85D4E1" noWrap="1" valign="left">
     <convert type="ServiceName">Name</convert>
   </widget>
-  <widget source="session.CurrentService" render="Picon" position="35,35" size="220,132" zPosition="5" alphatest="blend">
+<!--   <widget source="session.CurrentService" render="Picon" position="35,35" size="220,132" zPosition="5" alphatest="blend">
     <convert type="MovieBarInfo">Reference</convert>
-  </widget>
+  </widget> -->
  <eLabel name="DB" position="575,410" size="3,60" backgroundColor="#00B8B8B8" />
+    <widget source="session.CurrentService" render="Cover" position="20,20" size="300,300" zPosition="4" transparent="1" alphatest="blend">
+  </widget>
 </screen>
 
 <!-- webradioFS -->

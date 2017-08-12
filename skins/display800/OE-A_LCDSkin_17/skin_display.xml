@@ -12,7 +12,7 @@
 	<font filename="MyriadPro-Semibold.otf" name="SemiboldLCD" scale="100" />
 	<font filename="MyriadPro-SemiboldIt.otf" name="SemiboldLCDit" scale="100" />
 </fonts>
-	<windowstyle type="skinned">
+	<windowstyle type="skinned" id="1">
     <color name="Background" color="#000000" />
     <color name="LabelForeground" color="#ffffff" />
     <color name="ListboxBackground" color="#ffffff" />
@@ -442,10 +442,9 @@
  <!-- EMCMoviePlayer  -->
 <screen name="EMCMoviePlayerSummary" position="0,0" size="800,480">
 <panel name="LCDIconTemplate" />
- <widget source="session.CurrentService" render="Cover" position="25,25" size="450,270" zPosition="5" transparent="0" alphatest="off" />
- <widget source="session.CurrentService" render="Picon" position="25,25" size="450,270" zPosition="4" transparent="1" alphatest="blend">
+  <!-- <widget source="session.CurrentService" render="Picon" position="25,25" size="450,270" zPosition="4" transparent="1" alphatest="blend">
   <convert type="MovieBarInfo">Reference</convert>
-</widget>
+</widget>-->
 <widget source="global.CurrentTime" render="Label" position="575,20" size="200,75" foregroundColor="LCDBackground" backgroundColor="#FE0000" font="VFD2;80" halign="center" valign="center">
   <convert type="ClockToText">Format:%H:%M</convert>
 </widget>     
@@ -470,6 +469,7 @@
 <eLabel position="570,110" size="200,40" text="Ends at: " font="VFD;40" foregroundColor="#F5D0A9" transparent="1" zPosition="4" halign="center" valign="center" />
 <eLabel position="570,215" size="200,40" text="Total: " font="VFD;40" foregroundColor="#F6D8CE" transparent="1" zPosition="4" halign="center" valign="center" />
 <eLabel position="250,395" size="290,60" text="EMC " font="VFD;35" foregroundColor="LCDBackground" transparent="1" zPosition="4" halign="center" valign="center" />
+<widget source="session.CurrentService" render="Cover" position="25,25" size="450,270" zPosition="5" transparent="0" alphatest="off" />
 </screen>
 
 <!-- EMCSelection_summary -->
@@ -508,10 +508,9 @@
 <!-- MoviePlayer_SimplePlayerMP -->
 <screen name="InfoBarMoviePlayerSummary" position="0,0" size="800,480">
 <panel name="LCDIconTemplate" />
- <widget source="session.CurrentService" render="Cover" position="25,25" size="450,270" zPosition="5" transparent="0" alphatest="off" />
- <widget source="session.CurrentService" render="Picon" position="25,25" size="450,270" zPosition="4" transparent="1" alphatest="blend">
+ <!-- <widget source="session.CurrentService" render="Picon" position="25,25" size="450,270" zPosition="4" transparent="1" alphatest="blend">
   <convert type="MovieBarInfo">Reference</convert>
-</widget>
+</widget> -->
 <widget source="global.CurrentTime" render="Label" position="575,20" size="200,75" foregroundColor="LCDBackground" backgroundColor="#FE0000" font="VFD2;80" halign="center" valign="center">
   <convert type="ClockToText">Format:%H:%M</convert>
 </widget>     
@@ -536,6 +535,7 @@
 <eLabel position="570,110" size="200,40" text="Endet um: " font="VFD;40" foregroundColor="#F5D0A9" transparent="1" zPosition="4" halign="center" valign="center" />
 <eLabel position="570,215" size="200,40" text="Laufzeit: " font="VFD;40" foregroundColor="#F6D8CE" transparent="1" zPosition="4" halign="center" valign="center" />
 <eLabel position="250,395" size="290,60" text="MOVIEPLAYER " font="VFD;35" foregroundColor="LCDBackground" transparent="1" zPosition="4" halign="center" valign="center" />
+<widget source="session.CurrentService" render="Cover" position="25,25" size="450,270" zPosition="5" transparent="0" alphatest="off" />
 </screen>
 
 <!-- MovieSelection_summary -->
@@ -552,10 +552,9 @@
 <!-- Abspielen von ISO -->
 <screen name="DVDSummary" position="0,0" size="800,480">
 <panel name="LCDIconTemplate" />
- <widget source="session.CurrentService" render="Cover" position="25,25" size="450,270" zPosition="5" transparent="0" alphatest="off" />
- <widget source="session.CurrentService" render="Picon" position="25,25" size="450,270" zPosition="4" transparent="1" alphatest="blend">
+<!--  <widget source="session.CurrentService" render="Picon" position="25,25" size="450,270" zPosition="4" transparent="1" alphatest="blend">
   <convert type="MovieBarInfo">Reference</convert>
-</widget>
+</widget>  -->
 <widget source="global.CurrentTime" render="Label" position="575,20" size="200,75" foregroundColor="LCDBackground" backgroundColor="#FE0000" font="VFD2;80" halign="center" valign="center">
   <convert type="ClockToText">Format:%H:%M</convert>
 </widget>     
@@ -580,6 +579,7 @@
 <eLabel position="570,110" size="200,40" text="Endet um: " font="VFD;40" foregroundColor="#F5D0A9" transparent="1" zPosition="4" halign="center" valign="center" />
 <eLabel position="570,215" size="200,40" text="Laufzeit: " font="VFD;40" foregroundColor="#F6D8CE" transparent="1" zPosition="4" halign="center" valign="center" />
 <eLabel position="250,395" size="290,60" text="DVD " font="VFD;35" foregroundColor="LCDBackground" transparent="1" zPosition="4" halign="center" valign="center" />
+<widget source="session.CurrentService" render="Cover" position="25,25" size="450,270" zPosition="5" transparent="0" alphatest="off" />
 </screen>
 
 <!-- webradioFS -->

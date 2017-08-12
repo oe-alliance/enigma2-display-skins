@@ -11,7 +11,7 @@
       <font filename="MyriadPro-Semibold.otf" name="SemiboldLCD" scale="100" />
       <font filename="MyriadPro-SemiboldIt.otf" name="SemiboldLCDit" scale="100" />
    </fonts>
-   <windowstyle type="skinned" >
+   <windowstyle type="skinned" id="1">
       <color name="Background" color="#000000" />
       <color name="LabelForeground" color="#ffffff" />
       <color name="ListboxBackground" color="#ffffff" />
@@ -100,7 +100,6 @@
    
    <!-- EMCMoviePlayer  -->
    <screen name="EMCMoviePlayerSummary" position="0,0" size="800,480" >
-      <widget position="20,40" render="Cover" size="360,210" source="session.CurrentService" zPosition="5" transparent="0" alphatest="off" />
       <widget source="global.CurrentTime" render="Label" position="430,40" size="350,120" font="VFDB;130" halign="right" valign="center">
          <convert type="ClockToText">Format:%H:%M</convert>
       </widget>
@@ -111,9 +110,9 @@
       <widget source="session.RecordState" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_8/icon_REC_red.png" zPosition="3" position="380,50"  size="100,40" alphatest="blend">
          <convert type="ConditionalShowHide" />
       </widget>
-      <widget source="session.CurrentService" render="Picon" position="20,40" size="360,210" zPosition="4" transparent="1" alphatest="blend">
+ <!--     <widget source="session.CurrentService" render="Picon" position="20,40" size="360,210" zPosition="4" transparent="1" alphatest="blend">
          <convert type="MovieBarInfo">Reference</convert>
-      </widget>
+      </widget> -->
 
 	  <eLabel text=" " position="0,270" size="800,6" font="VFDB;16" backgroundColor="#00777777" transparent="0" zPosition="1" />
 
@@ -133,6 +132,7 @@
       <widget source="session.CurrentService" render="Progress" position="230,414" size="350,26" borderWidth="3" borderColor="#00ffffff" foregroundColor="#001BA1E3" zPosition="1" transparent="1">
          <convert type="ServicePosition">Position</convert>
       </widget>
+      <widget position="20,40" render="Cover" size="360,210" source="session.CurrentService" zPosition="5" transparent="0" alphatest="off" />
    </screen>
    
    <!-- EMCSelection_summary -->
@@ -148,7 +148,6 @@
    
    <!-- MoviePlayer_SimplePlayerMP -->
    <screen name="InfoBarMoviePlayerSummary" position="0,0" size="800,480" >
-      <widget position="20,40" render="Cover" size="360,210" source="session.CurrentService" zPosition="5" transparent="0" alphatest="off" />
       <widget source="global.CurrentTime" render="Label" position="430,40" size="350,120" font="VFDB;130" halign="right" valign="center">
          <convert type="ClockToText">Format:%H:%M</convert>
       </widget>
@@ -159,9 +158,9 @@
       <widget source="session.RecordState" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_8/icon_REC_red.png" zPosition="3" position="380,50"  size="100,40" alphatest="blend">
          <convert type="ConditionalShowHide" />
       </widget>
-      <widget source="session.CurrentService" render="Picon" position="20,40" size="360,210" zPosition="4" transparent="1" alphatest="blend">
+ <!--     <widget source="session.CurrentService" render="Picon" position="20,40" size="360,210" zPosition="4" transparent="1" alphatest="blend">
          <convert type="MovieBarInfo">Reference</convert>
-      </widget>
+      </widget> -->
 
 	  <eLabel text=" " position="0,270" size="800,6" font="VFDB;16" backgroundColor="#00777777" transparent="0" zPosition="1" />
 
@@ -181,6 +180,7 @@
       <widget source="session.CurrentService" render="Progress" position="230,414" size="350,26" borderWidth="3" borderColor="#00ffffff" foregroundColor="#001BA1E3" zPosition="1" transparent="1">
          <convert type="ServicePosition">Position</convert>
       </widget>
+      <widget position="20,40" render="Cover" size="360,210" source="session.CurrentService" zPosition="5" transparent="0" alphatest="off" />
    </screen>
    
    <!-- Standby -->   
