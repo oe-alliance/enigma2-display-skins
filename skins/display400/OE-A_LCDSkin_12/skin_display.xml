@@ -39,7 +39,7 @@
 		<!-- Cover-Linien Default = FFFFFF -->
 		<color name="Cover-Color" value="#848484" />
 	</colors>
-<!-- template Second-MY V1.8 11.08.2017-->
+<!-- template Second-MY V1.9 22.08.2017-->
 	<screen name="SummaryClockPanel">
 		<widget source="global.CurrentTime" render="Label" position="center,180" size="195,65" font="MyLcD;65" foregroundColor="Uhr" halign="center" noWrap="1" transparent="1">
 			<convert type="ClockToText"></convert>
@@ -291,7 +291,16 @@
 <!-- Numberzap -->    
 	<screen name="NumberZap_summary" position="0,0" size="400,240">
 		<widget source="parent.number_summary" render="Label" position="0,0" size="400,99" font="MyLcD;90" halign="center" valign="center" transparent="1" />
-		<ePixmap position="0,105" pixmap="~/bar.png" transparent="0" size="400,2" zPosition="4" />
+		<ePixmap position="0,105" pixmap="~/bar.png" transparent="0" size="400,2" zPosition="2" />
+		<widget source="parent.service_summary" render="Label" position="0,106" size="400,134" font="MyLcD;55" halign="center" valign="center" transparent="1" />
+		<panel name="MeinRecordingPanel" />
+	</screen>   
+	<screen name="NumberZapPicon_summary" position="0,0" size="400,240">
+		<widget source="parent.Service" render="LcdPicon" position="0,0" zPosition="3" size="175,105" alphatest="on">
+			<convert type="ServiceName">Reference</convert>
+		</widget>
+		<widget source="parent.number_summary" render="Label" position="175,0" size="225,99" font="MyLcD;90" halign="center" valign="center" transparent="1" />
+		<ePixmap position="0,105" pixmap="~/bar.png" transparent="0" size="400,2" zPosition="2" />
 		<widget source="parent.service_summary" render="Label" position="0,106" size="400,134" font="MyLcD;55" halign="center" valign="center" transparent="1" />
 		<panel name="MeinRecordingPanel" />
 	</screen>
