@@ -39,7 +39,7 @@
 		<!-- Cover-Linien Default = FFFFFF -->
 		<color name="Cover-Color" value="#848484" />
 	</colors>
-<!-- template Second-MY 25.08.2017-->
+<!-- template Second-MY 31.08.2017-->
 	<screen name="SummaryClockPanel">
 		<widget source="global.CurrentTime" render="Label" position="center,180" size="195,65" font="MyLcD;65" foregroundColor="Uhr" halign="center" noWrap="1" transparent="1">
 			<convert type="ClockToText"></convert>
@@ -583,6 +583,13 @@
 	<screen name="SHOUTcastLCDScreen" position="0,0" size="400,240">
 		<widget name="text1" position="0,0" size="400,56" font="MyLcD;24" halign="center" valign="center"/>
 		<widget name="text2" position="0,60" size="400,100" font="MyLcD;30" halign="center" valign="center"/>
+		<panel name="SummaryClockPanel" />
+	</screen>
+<!-- webradioFS -->
+	<screen name="webradioFSdisplay13" position="0,0" size="400,240" >
+		<widget source="Zeile1" render="Label" position="0,15" size="400,50" font="MyLcD;41" foregroundColor="Menue-Auswahl" noWrap="1" />
+		<widget source="Zeile2" render="Label" position="0,65" size="400,50" font="MyLcD;41" foregroundColor="Menue-Auswahl" noWrap="1" />
+		<widget source="Zeile3" render="Label" position="0,115" size="400,50" font="MyLcD;41" foregroundColor="Menue-Auswahl" noWrap="1" />
 		<panel name="SummaryClockPanel" />
 	</screen>
 <!-- EMC Screen -->
