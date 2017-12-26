@@ -29,6 +29,7 @@
         <font filename="MyriadPro-Regular.otf" name="RegularLCD" scale="100" />
         <font filename="MyriadPro-Semibold.otf" name="SemiboldLCD" scale="100" />
         <font filename="MyriadPro-SemiboldIt.otf" name="SemiboldLCDit" scale="100" />
+        <font filename="~/meteocons.ttf" name="Meteo" scale="100" />
 	</fonts>
 	<colors>
 		<color name="fullred" value="#ff0000" />
@@ -41,34 +42,34 @@
 	
 <!-- PanelTopBar -->
 	<screen name="PanelTopBar" position="0,0" size="800,480">
-		<widget source="session.RecordState" render="FixedLabel" position="20,20" zPosition="3" size="80,53" text=" " >
+		<widget source="session.RecordState" render="FixedLabel" position="20,20" zPosition="3" size="74,44" text=" " >
 			<convert type="ConfigEntryTest">config.usage.blinking_rec_symbol_during_recording,True,CheckSourceBoolean</convert>
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget> 
-		<widget source="session.RecordState" render="Pixmap" pixmap="~/REC_red.png" position="20,20"  size="80,53" >
+		<widget source="session.RecordState" render="Pixmap" pixmap="~/REC_red.png" position="20,20"  size="74,44" zPosition="2">
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="~/CRYPT_grey.png" position="100,20"  size="80,53" >
+		<widget source="session.CurrentService" render="Pixmap" pixmap="~/CRYPT_gold.png" position="100,18"  size="37,53" zPosition="2">
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="~/TELETEXT_yellow.png" position="180,20" size="80,53" >
+		<widget source="session.CurrentService" render="Pixmap" pixmap="~/TELETEXT_gold.png" position="150,20" size="66,51" zPosition="2">
 			<convert type="ServiceInfo">HasTelext</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="~/16x9_blue.png" position="260,22" size="80,53" >
+		<widget source="session.CurrentService" render="Pixmap" pixmap="~/16x9_gold.png" position="240,20" size="84,51" zPosition="2">
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="~/DOLBY_green.png" position="340,25" size="80,53" >
+		<widget source="session.CurrentService" render="Pixmap" pixmap="~/DOLBY_gold.png" position="340,26" size="68,40" zPosition="2">
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="~/ico_hbbtv_on.png" position="415,15" size="110,53"  zPosition="2">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="~/ico_hbbtv_on.png" position="425,20" size="110,53" zPosition="2">
 			<convert type="ServiceInfo">HasHBBTV</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="470,24" size="300,53" font="VFD;53" halign="right">
+		<widget source="global.CurrentTime" render="Label" position="480,24" size="290,53" font="VFD;53" halign="right">
 			<convert type="ClockToText">Format:%d.%m.%Y</convert>
 		</widget>
         <eLabel position="0,75" size="800,2" backgroundColor="#FF0000" />
@@ -668,7 +669,7 @@
 		<widget source="global.CurrentTime" render="Label" position="470,24" size="300,53" font="VFD;53" halign="right">
 			<convert type="ClockToText">Format:%d.%m.%Y</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="20,370" size="280,80" font="VFD;80" halign="left">
+ 		<widget source="global.CurrentTime" render="Label" position="20,370" size="280,80" font="VFD;80" halign="left">
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
 		<widget source="session.RecordState" render="FixedLabel" position="20,20" zPosition="3" size="80,53" text=" ">
@@ -688,6 +689,19 @@
 		<widget source="global.CurrentTime" render="AnalogClockLCD" position="center,center" size="425,420" sColor="red" positionwidth="425" positionheight="420" linewidth="6" linesize="170" zPosition="5" alphatest="on">
 			<convert type="AnalogClock">Seconds</convert>
 		</widget>
+        
+        <widget source="global.CurrentTime" font="VFD;55" render="Label" halign="center" valign="center" noWrap="1" transparent="1" position="520,400" size="280,55" zPosition="5">
+            <convert type="MetrixHDWeather">currentLocation</convert>
+        </widget>
+        <widget source="global.CurrentTime" font="Meteo;65" render="Label" halign="center" valign="center" noWrap="1" transparent="1" position="640,270" size="65,65" zPosition="7">
+            <convert type="MetrixHDWeather">currentWeatherCode</convert>
+        </widget>
+        <widget source="global.CurrentTime" font="VFD;55" render="Label" halign="right" valign="center" noWrap="1" transparent="1" position="593,350" size="65,55" zPosition="5">
+            <convert type="MetrixHDWeather">currentWeatherTemp</convert>
+        </widget>
+        <widget source="global.CurrentTime" font="VFD;55" render="Label" halign="left" valign="center" noWrap="1" transparent="1" position="670,350" size="55,55" zPosition="6">
+            <convert type="MetrixHDWeather">CF</convert>
+        </widget>
 	</screen>
 	
 <!-- SimpleSummary -->
