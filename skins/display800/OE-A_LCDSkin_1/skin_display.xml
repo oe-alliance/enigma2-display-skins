@@ -606,7 +606,10 @@
 		</widget>
         <eLabel position="0,375" size="800,4" backgroundColor="#FF0000" />
 	</screen>
-	
+	<screen name="EMCSelectionOwn_summary" position="0,0" size="800,480">
+		<panel name="EMCSelection_summary" />
+	</screen>
+
 	<!-- EMCSelectionExtended_summary 
 	<screen name="EMCSelectionExtended_summary" position="0,0" size="800,480" >
 	<panel name="EMCSelection_summary" />

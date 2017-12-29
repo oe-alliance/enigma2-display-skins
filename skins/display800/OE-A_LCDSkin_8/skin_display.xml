@@ -145,7 +145,10 @@
          <convert type="ClockToText">InMinutes</convert>
       </widget>
    </screen>
-   
+	<screen name="EMCSelectionOwn_summary" position="0,0" size="800,480">
+		<panel name="EMCSelection_summary" />
+	</screen>
+
    <!-- MoviePlayer_SimplePlayerMP -->
    <screen name="InfoBarMoviePlayerSummary" position="0,0" size="800,480" >
       <widget source="global.CurrentTime" render="Label" position="430,40" size="350,120" font="VFDB;130" halign="right" valign="center">

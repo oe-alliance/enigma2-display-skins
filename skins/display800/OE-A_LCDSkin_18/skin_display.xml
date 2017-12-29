@@ -484,7 +484,10 @@
     <convert type="ClockToText">AsLength</convert>
   </widget>
  </screen>
-
+	<screen name="EMCSelectionOwn_summary" position="0,0" size="800,480">
+		<panel name="EMCSelection_summary" />
+	</screen>
+ 
 <!-- MediaPlayer  -->
 <screen name="MediaPlayerLCDScreen" position="0,0" size="800,480">
   <widget name="text1" position="20,125" size="740,185" font="VFD;45" halign="left" valign="center" transparent="1" />
