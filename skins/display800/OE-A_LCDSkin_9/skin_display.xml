@@ -137,6 +137,9 @@
     <convert type="ServiceName">Name</convert>
   </widget>
  </screen>
+	<screen name="EMCSelectionOwn_summary" position="0,0" size="800,480">
+		<panel name="EMCSelection_summary" />
+	</screen>
  
 <!-- Media Player -->
 <screen name="MediaPlayerLCDScreen" position="0,0" size="800,480" >
