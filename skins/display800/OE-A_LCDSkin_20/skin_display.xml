@@ -1,0 +1,879 @@
+
+<skin>
+  <!-- vfd-Skin Ultimo4k Eisman -->
+<colors>
+    <color name="Background" value="#000000" />
+    <color name="windowBackground" value="#000000" />
+    <color name="LCDBackground" value="#000000" />
+</colors>
+<fonts>
+    <font filename="~/meteocons.ttf" name="Meteo" scale="100" />
+    <font filename="analog.ttf" name="VFD2" scale="90"/>
+    <font filename="nmsbd.ttf" name="VFD" scale="90"/>
+	<font filename="MyriadPro-Regular.otf" name="RegularLCD" scale="100" />
+	<font filename="MyriadPro-Semibold.otf" name="SemiboldLCD" scale="100" />
+	<font filename="MyriadPro-SemiboldIt.otf" name="SemiboldLCDit" scale="100" />
+</fonts>
+	<windowstyle type="skinned" id="1">
+    <color name="Background" color="#000000" />
+    <color name="LabelForeground" color="#ffffff" />
+    <color name="ListboxBackground" color="#ffffff" />
+    <color name="ListboxForeground" color="#000000" />
+    <color name="ListboxSelectedBackground" color="#ffffff" />
+    <color name="ListboxSelectedForeground" color="#000000" />
+    <color name="ListboxMarkedBackground" color="#ffffff" />
+    <color name="ListboxMarkedForeground" color="#000000" />
+    <color name="ListboxMarkedAndSelectedBackground" color="#ffffff" />
+    <color name="ListboxMarkedAndSelectedForeground" color="#000000" />
+    <color name="WindowTitleForeground" color="#000000" />
+    <color name="WindowTitleBackground" color="#ffffff" />
+	</windowstyle>
+
+<screen name="LCDIconTemplate">
+		<widget source="session.RecordState" render="FixedLabel" position="382,22" zPosition="3" size="74,44" text=" ">
+			<convert type="ConfigEntryTest">config.usage.blinking_rec_symbol_during_recording,True,CheckSourceBoolean</convert>
+			<convert type="ConditionalShowHide">Blink</convert>
+		</widget>
+		<widget source="session.RecordState" render="Pixmap" pixmap="~/REC_red.png" position="382,22"  size="74,44" >
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="~/CRYPT_grey.png" position="302,22"  size="60,44" >
+			<convert type="ServiceInfo">IsCrypted</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="~/TELETEXT_yellow.png" position="211,22" size="66,52" >
+			<convert type="ServiceInfo">HasTelext</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="~/16x9_blue.png" position="120,22" size="66,51" >
+			<convert type="ServiceInfo">IsWidescreen</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="~/DOLBY_green.png" position="35,22" size="68,44" >
+			<convert type="ServiceInfo">IsMultichannel</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+	</screen>
+  
+  <screen name="LCDIconPlayerTemplate">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="~/CRYPT_grey.png" position="495,140"  size="60,44" >
+			<convert type="ServiceInfo">IsCrypted</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="~/TELETEXT_yellow.png" position="493,195" size="66,52" >
+			<convert type="ServiceInfo">HasTelext</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="~/16x9_blue.png" position="493,25" size="66,51" >
+			<convert type="ServiceInfo">IsWidescreen</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="~/DOLBY_green.png" position="491,86" size="68,44" >
+			<convert type="ServiceInfo">IsMultichannel</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+	</screen>
+ 
+  <screen name="LCDWetterStandbyTemplate">
+    <widget font="Meteo;65" render="Label" halign="center" valign="center" noWrap="1" transparent="1" source="global.CurrentTime" position="510,35" size="65,65" zPosition="7">
+     <convert type="VWeather">currentWeatherCode</convert>
+    </widget>
+    <widget font="VFD;55" render="Label" halign="left" valign="center" noWrap="1" transparent="1" source="global.CurrentTime" position="60,45" size="430,55" zPosition="5">
+     <convert type="VWeather">currentLocation</convert>
+    </widget>
+    <widget font="VFD;55" render="Label" halign="right" valign="center" noWrap="1" transparent="1" source="global.CurrentTime" position="593,45" size="65,55" zPosition="5">
+     <convert type="VWeather">currentWeatherTemp</convert>
+    </widget>
+    <widget font="VFD;55" render="Label" halign="left" valign="center" noWrap="1" transparent="1" source="global.CurrentTime" position="670,45" size="55,55" zPosition="6">
+     <convert type="VWeather">CF</convert>
+    </widget>
+  </screen>
+  
+  
+  <screen name="LCDExtremeInfoTemplate">
+    <widget source="session.CurrentService" render="FixedLabel" text="I" position="210,385" size="25,35" font="RegularLCD;35" foregroundColor="#00A4A4A4" zPosition="-1">
+     <convert type="ServiceInfo">IsCrypted</convert>
+			<convert type="ConditionalShowHide" />
+      </widget>  
+    <widget source="session.CurrentService" render="FixedLabel" text="B" position="238,385" size="35,35" font="RegularLCD;35" foregroundColor="#00A4A4A4" zPosition="-1">
+     <convert type="ServiceInfo">IsCrypted</convert>
+			<convert type="ConditionalShowHide" />
+      </widget>  
+    <widget source="session.CurrentService" render="FixedLabel" text="V" position="278,385" size="35,35" font="RegularLCD;35" foregroundColor="#00A4A4A4" zPosition="-1">
+     <convert type="ServiceInfo">IsCrypted</convert>
+			<convert type="ConditionalShowHide" />
+      </widget>  
+    <widget source="session.CurrentService" render="FixedLabel" text="N" position="320,385" size="35,35" font="RegularLCD;35" foregroundColor="#00A4A4A4" zPosition="-1">
+     <convert type="ServiceInfo">IsCrypted</convert>
+			<convert type="ConditionalShowHide" />
+      </widget>
+    <widget source="session.CurrentService" render="FixedLabel" text="NDS" position="363,385" size="70,35" font="RegularLCD;35" foregroundColor="#00A4A4A4" zPosition="-1">
+     <convert type="ServiceInfo">IsCrypted</convert>
+			<convert type="ConditionalShowHide" />
+      </widget>  
+    <widget source="session.CurrentService" render="FixedLabel" text="C" position="448,385" size="35,35" font="RegularLCD;35" foregroundColor="#00A4A4A4" zPosition="-1">
+     <convert type="ServiceInfo">IsCrypted</convert>
+			<convert type="ConditionalShowHide" />
+      </widget>  
+    <widget source="session.CurrentService" render="FixedLabel" text="S" position="490,385" size="35,35" font="RegularLCD;35" foregroundColor="#00A4A4A4" zPosition="-1">
+     <convert type="ServiceInfo">IsCrypted</convert>
+			<convert type="ConditionalShowHide" />
+      </widget>  
+    <widget source="session.CurrentService" render="FixedLabel" text="CRW" position="526,385" size="70,35" font="RegularLCD;35" foregroundColor="#00A4A4A4" zPosition="-1">
+     <convert type="ServiceInfo">IsCrypted</convert>
+			<convert type="ConditionalShowHide" />
+      </widget>  
+    
+    
+    <widget source="session.CurrentService" render="FixedLabel" text="I" position="210,385" size="25,35" font="RegularLCD;35" foregroundColor="#00FFFF00" zPosition="1">
+      <convert type="ExtremeInfo">IrdCrypt</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="FixedLabel" text="I" position="210,385" size="25,35" font="RegularLCD;35" foregroundColor="#0000FF40" zPosition="2">
+      <convert type="ExtremeInfo">IrdEcm</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    
+    <widget source="session.CurrentService" render="FixedLabel" text="B" position="238,385" size="35,35" font="RegularLCD;35" foregroundColor="#00FFFF00" zPosition="1">
+      <convert type="ExtremeInfo">BetaCrypt</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="FixedLabel" text="B" position="238,385" size="35,35" font="RegularLCD;35" foregroundColor="#0000FF40" zPosition="2">
+      <convert type="ExtremeInfo">BetaEcm</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    
+    <widget source="session.CurrentService" render="FixedLabel" text="V" position="278,385" size="35,35" font="RegularLCD;35" foregroundColor="#00FFFF00" zPosition="1">
+      <convert type="ExtremeInfo">ViaCrypt</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="FixedLabel" text="V" position="278,385" size="35,35" font="RegularLCD;35" foregroundColor="#0000FF40" zPosition="2">
+      <convert type="ExtremeInfo">ViaEcm</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    
+    <widget source="session.CurrentService" render="FixedLabel" text="N" position="320,385" size="35,35" font="RegularLCD;35" foregroundColor="#00FFFF00" zPosition="1">
+      <convert type="ExtremeInfo">NagraCrypt</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="FixedLabel" text="N" position="320,385" size="35,35" font="RegularLCD;35" foregroundColor="#0000FF40" zPosition="2">
+      <convert type="ExtremeInfo">NagraEcm</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    
+    <widget source="session.CurrentService" render="FixedLabel" text="NDS" position="363,385" size="70,35" font="RegularLCD;35" foregroundColor="#00FFFF00" zPosition="1">
+      <convert type="ExtremeInfo">NdsCrypt</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="FixedLabel" text="NDS" position="363,385" size="70,35" font="RegularLCD;35" foregroundColor="#0000FF40" zPosition="2">
+      <convert type="ExtremeInfo">NdsEcm</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    
+    <widget source="session.CurrentService" render="FixedLabel" text="C" position="448,385" size="35,35" font="RegularLCD;35" foregroundColor="#00FFFF00" zPosition="1">
+      <convert type="ExtremeInfo">ConaxCrypt</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="FixedLabel" text="C" position="448,385" size="35,35" font="RegularLCD;35" foregroundColor="#0000FF40" zPosition="2">
+      <convert type="ExtremeInfo">ConaxEcm</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    
+    <widget source="session.CurrentService" render="FixedLabel" text="S" position="490,385" size="35,35" font="RegularLCD;35" foregroundColor="#00FFFF00" zPosition="1">
+      <convert type="ExtremeInfo">SecaCrypt</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="FixedLabel" text="S" position="490,385" size="35,35" font="RegularLCD;35" foregroundColor="#0000FF40" zPosition="2">
+      <convert type="ExtremeInfo">SecaEcm</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    
+    <widget source="session.CurrentService" render="FixedLabel" text="CRW" position="526,385" size="70,35" font="RegularLCD;35" foregroundColor="#00FFFF00" zPosition="1">
+      <convert type="ExtremeInfo">CrwCrypt</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="FixedLabel" text="CRW" position="526,385" size="70,35" font="RegularLCD;35" foregroundColor="#0000FF40" zPosition="2">
+      <convert type="ExtremeInfo">CrwEcm</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    
+    <widget source="session.CurrentService" position="20,425" size="760,35" font="RegularLCD;33" render="Label" foregroundColor="#00FFBF00" halign="center" valign="center">
+     <convert type="VtiInfo">EcmInfo</convert>
+    </widget>
+  </screen>
+  
+  
+  <screen name="LCD18TunerTemplate">
+    <!-- /* Anfang 
+    <eLabel text="A" font="RegularLCD;33" foregroundColor="#00A4A4A4" halign="center" position="30,85" size="25,33" zPosition="-1" />
+    <eLabel text="B" font="RegularLCD;33" foregroundColor="#00A4A4A4" halign="center" position="60,85" size="25,33" zPosition="-1" />
+    <eLabel text="C" font="RegularLCD;33" foregroundColor="#00A4A4A4" halign="center" position="90,85" size="25,33" zPosition="-1" />
+    <eLabel text="D" font="RegularLCD;33" foregroundColor="#00A4A4A4" halign="center" position="120,85" size="25,33" zPosition="-1" />
+    <eLabel text="E" font="RegularLCD;33" foregroundColor="#00A4A4A4" halign="center" position="150,85" size="25,33" zPosition="-1" />
+    <eLabel text="F" font="RegularLCD;33" foregroundColor="#00A4A4A4" halign="center" position="180,85" size="25,33" zPosition="-1" />
+    <eLabel text="G" font="RegularLCD;33" foregroundColor="#00A4A4A4" halign="center" position="30,123" size="25,33" zPosition="-1" />
+    <eLabel text="H" font="RegularLCD;33" foregroundColor="#00A4A4A4" halign="center" position="60,123" size="25,33" zPosition="-1" />
+    <eLabel text="I" font="RegularLCD;33" foregroundColor="#00A4A4A4" halign="center" position="90,123" size="25,33" zPosition="-1" />
+    <eLabel text="J" font="RegularLCD;33" foregroundColor="#00A4A4A4" halign="center" position="120,123" size="25,33" zPosition="-1" />
+    <eLabel text="K" font="RegularLCD;33" foregroundColor="#00A4A4A4" halign="center" position="150,123" size="25,33" zPosition="-1" />
+    <eLabel text="L" font="RegularLCD;33" foregroundColor="#00A4A4A4" halign="center" position="180,123" size="25,33" zPosition="-1" />
+    <eLabel text="M" font="RegularLCD;33" foregroundColor="#00A4A4A4" halign="center" position="30,161" size="25,33" zPosition="-1" />
+    <eLabel text="N" font="RegularLCD;33" foregroundColor="#00A4A4A4" halign="center" position="60,161" size="25,33" zPosition="-1" />
+    <eLabel text="O" font="RegularLCD;33" foregroundColor="#00A4A4A4" halign="center" position="90,161" size="25,33" zPosition="-1" />
+    <eLabel text="P" font="RegularLCD;33" foregroundColor="#00A4A4A4" halign="center" position="120,161" size="25,33" zPosition="-1" />
+    <eLabel text="Q" font="RegularLCD;33" foregroundColor="#00A4A4A4" halign="center" position="150,161" size="25,33" zPosition="-1" />
+    <eLabel text="R" font="RegularLCD;33" foregroundColor="#00A4A4A4" halign="center" position="180,161" size="25,33" zPosition="-1" /> Ende -->
+	  <widget position="30,85" size="25,33" source="session.TunerInfo" render="FixedLabel" text="A" font="RegularLCD;33" foregroundColor="#00A4A4A4" halign="center" zPosition="2">
+      <convert type="TunerInfo">TunerAvailable</convert>
+			<convert type="ValueRange">1,18</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+    <widget position="30,85" size="25,33" source="session.TunerInfo" render="FixedLabel" text="A" font="RegularLCD;33" foregroundColor="#00ff0000" halign="center" zPosition="3">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">1</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget position="30,85" size="25,33" source="session.FrontendInfo" render="FixedLabel" text="A" font="RegularLCD;33" foregroundColor="#0000FF40" halign="center" zPosition="4">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">0,0</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+ 
+    <widget position="60,85" size="25,33" source="session.TunerInfo" render="FixedLabel" text="B" font="RegularLCD;33" foregroundColor="#00A4A4A4" halign="center" zPosition="2">
+      <convert type="TunerInfo">TunerAvailable</convert>
+			<convert type="ValueRange">2,18</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+    <widget position="60,85" size="25,33" source="session.TunerInfo" render="FixedLabel" text="B" font="RegularLCD;33" foregroundColor="#00ff0000" halign="center" zPosition="3">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">2</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget position="60,85" size="25,33" source="session.FrontendInfo" render="FixedLabel" text="B" font="RegularLCD;33" foregroundColor="#0000FF40" halign="center" zPosition="4">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">1,1</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    
+    <widget position="90,85" size="25,33" source="session.TunerInfo" render="FixedLabel" text="C" font="RegularLCD;33" foregroundColor="#00A4A4A4" halign="center" zPosition="2">
+      <convert type="TunerInfo">TunerAvailable</convert>
+			<convert type="ValueRange">3,18</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+    <widget position="90,85" size="25,33" source="session.TunerInfo" render="FixedLabel" text="C" font="RegularLCD;33" foregroundColor="#00ff0000" halign="center" zPosition="3">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">4</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget position="90,85" size="25,33" source="session.FrontendInfo" render="FixedLabel" text="C" font="RegularLCD;33" foregroundColor="#0000FF40" halign="center" zPosition="4">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">2,2</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    
+    
+    <widget position="120,85" size="25,33" source="session.TunerInfo" render="FixedLabel" text="D" font="RegularLCD;33" foregroundColor="#00A4A4A4" halign="center" zPosition="2">
+      <convert type="TunerInfo">TunerAvailable</convert>
+			<convert type="ValueRange">4,18</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+    <widget position="120,85" size="25,33" source="session.TunerInfo" render="FixedLabel" text="D" font="RegularLCD;33" foregroundColor="#00ff0000" halign="center" zPosition="3">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">8</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget position="120,85" size="25,33" source="session.FrontendInfo" render="FixedLabel" text="D" font="RegularLCD;33" foregroundColor="#0000FF40" halign="center" zPosition="4">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">3,3</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    
+    
+    <widget position="150,85" size="25,33" source="session.TunerInfo" render="FixedLabel" text="E" font="RegularLCD;33" foregroundColor="#00A4A4A4" halign="center" zPosition="2">
+      <convert type="TunerInfo">TunerAvailable</convert>
+			<convert type="ValueRange">5,18</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+    <widget position="150,85" size="25,33" source="session.TunerInfo" render="FixedLabel" text="E" font="RegularLCD;33" foregroundColor="#00ff0000" halign="center" zPosition="3">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">16</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget position="150,85" size="25,33" source="session.FrontendInfo" render="FixedLabel" text="E" font="RegularLCD;33" foregroundColor="#0000FF40" halign="center" zPosition="4">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">4,4</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    
+    
+    <widget position="180,85" size="25,33" source="session.TunerInfo" render="FixedLabel" text="F" font="RegularLCD;33" foregroundColor="#00A4A4A4" halign="center" zPosition="2">
+      <convert type="TunerInfo">TunerAvailable</convert>
+			<convert type="ValueRange">6,18</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+    <widget position="180,85" size="25,33" source="session.TunerInfo" render="FixedLabel" text="F" font="RegularLCD;33" foregroundColor="#00ff0000" halign="center" zPosition="3">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">32</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget position="180,85" size="25,33" source="session.FrontendInfo" render="FixedLabel" text="F" font="RegularLCD;33" foregroundColor="#0000FF40" halign="center" zPosition="4">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">5,5</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    
+    
+    <widget position="30,123" size="25,33" source="session.TunerInfo" render="FixedLabel" text="G" font="RegularLCD;33" foregroundColor="#00A4A4A4" halign="center" zPosition="2">
+      <convert type="TunerInfo">TunerAvailable</convert>
+			<convert type="ValueRange">7,18</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+    <widget position="30,123" size="25,33" source="session.TunerInfo" render="FixedLabel" text="G" font="RegularLCD;33" foregroundColor="#00ff0000" halign="center" zPosition="3">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">64</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget position="30,123" size="25,33" source="session.FrontendInfo" render="FixedLabel" text="G" font="RegularLCD;33" foregroundColor="#0000FF40" halign="center" zPosition="4">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">6,6</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    
+    
+    <widget position="60,123" size="25,33" source="session.TunerInfo" render="FixedLabel" text="H" font="RegularLCD;33" foregroundColor="#00A4A4A4" halign="center" zPosition="2">
+      <convert type="TunerInfo">TunerAvailable</convert>
+			<convert type="ValueRange">8,18</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+    <widget position="60,123" size="25,33" source="session.TunerInfo" render="FixedLabel" text="H" font="RegularLCD;33" foregroundColor="#00ff0000" halign="center" zPosition="3">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">128</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget position="60,123" size="25,33" source="session.FrontendInfo" render="FixedLabel" text="H" font="RegularLCD;33" foregroundColor="#0000FF40" halign="center" zPosition="4">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">7,7</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    
+    
+    <widget position="90,123" size="25,33" source="session.TunerInfo" render="FixedLabel" text="I" font="RegularLCD;33" foregroundColor="#00A4A4A4" halign="center" zPosition="2">
+      <convert type="TunerInfo">TunerAvailable</convert>
+			<convert type="ValueRange">9,18</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+    <widget position="90,123" size="25,33" source="session.TunerInfo" render="FixedLabel" text="I" font="RegularLCD;33" foregroundColor="#00ff0000" halign="center" zPosition="3">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">256</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget position="90,123" size="25,33" source="session.FrontendInfo" render="FixedLabel" text="I" font="RegularLCD;33" foregroundColor="#0000FF40" halign="center" zPosition="4">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">8,8</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    
+    
+    <widget position="120,123" size="25,33" source="session.TunerInfo" render="FixedLabel" text="J" font="RegularLCD;33" foregroundColor="#00A4A4A4" halign="center" zPosition="2">
+      <convert type="TunerInfo">TunerAvailable</convert>
+			<convert type="ValueRange">10,18</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+    <widget position="120,123" size="25,33" source="session.TunerInfo" render="FixedLabel" text="J" font="RegularLCD;33" foregroundColor="#00ff0000" halign="center" zPosition="3">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">512</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget position="120,123" size="25,33" source="session.FrontendInfo" render="FixedLabel" text="J" font="RegularLCD;33" foregroundColor="#0000FF40" halign="center" zPosition="4">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">9,9</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    
+    <!-- /* 16 Tuner  16 Tuner */ -->
+    <widget position="150,123" size="25,33" source="session.TunerInfo" render="FixedLabel" text="K" font="RegularLCD;33" foregroundColor="#00A4A4A4" halign="center" zPosition="2">
+      <convert type="TunerInfo">TunerAvailable</convert>
+			<convert type="ValueRange">11,18</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+    <widget position="150,123" size="25,33" source="session.TunerInfo" render="FixedLabel" text="K" font="RegularLCD;33" foregroundColor="#00ff0000" halign="center" zPosition="3">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">1024</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget position="150,123" size="25,33" source="session.FrontendInfo" render="FixedLabel" text="K" font="RegularLCD;33" foregroundColor="#0000FF40" halign="center" zPosition="4">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">10,10</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    
+    
+    <widget position="180,123" size="25,33" source="session.TunerInfo" render="FixedLabel" text="L" font="RegularLCD;33" foregroundColor="#00A4A4A4" halign="center" zPosition="2">
+      <convert type="TunerInfo">TunerAvailable</convert>
+			<convert type="ValueRange">12,18</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+    <widget position="180,123" size="25,33" source="session.TunerInfo" render="FixedLabel" text="L" font="RegularLCD;33" foregroundColor="#00ff0000" halign="center" zPosition="3">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">2048</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget position="180,123" size="25,33" source="session.FrontendInfo" render="FixedLabel" text="L" font="RegularLCD;33" foregroundColor="#0000FF40" halign="center" zPosition="4">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">11,11</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    
+    
+    <widget position="30,161" size="25,33" source="session.TunerInfo" render="FixedLabel" text="M" font="RegularLCD;33" foregroundColor="#00A4A4A4" halign="center" zPosition="2">
+      <convert type="TunerInfo">TunerAvailable</convert>
+			<convert type="ValueRange">13,18</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+    <widget position="30,161" size="25,33" source="session.TunerInfo" render="FixedLabel" text="M" font="RegularLCD;33" foregroundColor="#00ff0000" halign="center" zPosition="3">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">4096</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget position="30,161" size="25,33" source="session.FrontendInfo" render="FixedLabel" text="M" font="RegularLCD;33" foregroundColor="#0000FF40" halign="center" zPosition="4">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">12,12</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    
+    
+    <widget position="60,161" size="25,33" source="session.TunerInfo" render="FixedLabel" text="N" font="RegularLCD;33" foregroundColor="#00A4A4A4" halign="center" zPosition="2">
+      <convert type="TunerInfo">TunerAvailable</convert>
+			<convert type="ValueRange">14,18</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+    <widget position="60,161" size="25,33" source="session.TunerInfo" render="FixedLabel" text="N" font="RegularLCD;33" foregroundColor="#00ff0000" halign="center" zPosition="3">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">8192</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget position="60,161" size="25,33" source="session.FrontendInfo" render="FixedLabel" text="N" font="RegularLCD;33" foregroundColor="#0000FF40" halign="center" zPosition="4">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">13,13</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    
+    
+    <widget position="90,161" size="25,33" source="session.TunerInfo" render="FixedLabel" text="O" font="RegularLCD;33" foregroundColor="#00A4A4A4" halign="center" zPosition="2">
+      <convert type="TunerInfo">TunerAvailable</convert>
+			<convert type="ValueRange">15,18</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+    <widget position="90,161" size="25,33" source="session.TunerInfo" render="FixedLabel" text="O" font="RegularLCD;33" foregroundColor="#00ff0000" halign="center" zPosition="3">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">16384</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget position="90,161" size="25,33" source="session.FrontendInfo" render="FixedLabel" text="O" font="RegularLCD;33" foregroundColor="#0000FF40" halign="center" zPosition="4">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">14,14</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    
+    
+    <widget position="120,161" size="25,33" source="session.TunerInfo" render="FixedLabel" text="P" font="RegularLCD;33" foregroundColor="#00A4A4A4" halign="center" zPosition="2">
+      <convert type="TunerInfo">TunerAvailable</convert>
+			<convert type="ValueRange">16,18</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+    <widget position="120,161" size="25,33" source="session.TunerInfo" render="FixedLabel" text="P" font="RegularLCD;33" foregroundColor="#00ff0000" halign="center" zPosition="3">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">32768</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget position="120,161" size="25,33" source="session.FrontendInfo" render="FixedLabel" text="P" font="RegularLCD;33" foregroundColor="#0000FF40" halign="center" zPosition="4">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">15,15</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    
+    
+    <widget position="150,161" size="25,33" source="session.TunerInfo" render="FixedLabel" text="Q" font="RegularLCD;33" foregroundColor="#00A4A4A4" halign="center" zPosition="2">
+      <convert type="TunerInfo">TunerAvailable</convert>
+			<convert type="ValueRange">17,18</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+    <widget position="150,161" size="25,33" source="session.TunerInfo" render="FixedLabel" text="Q" font="RegularLCD;33" foregroundColor="#00ff0000" halign="center" zPosition="3">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">65536</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget position="150,161" size="25,33" source="session.FrontendInfo" render="FixedLabel" text="Q" font="RegularLCD;33" foregroundColor="#0000FF40" halign="center" zPosition="4">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">16,16</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    
+    
+    <widget position="180,161" size="25,33" source="session.TunerInfo" render="FixedLabel" text="R" font="RegularLCD;33" foregroundColor="#00A4A4A4" halign="center" zPosition="2">
+      <convert type="TunerInfo">TunerAvailable</convert>
+			<convert type="ValueRange">18,18</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+    <widget position="180,161" size="25,33" source="session.TunerInfo" render="FixedLabel" text="R" font="RegularLCD;33" foregroundColor="#00ff0000" halign="center" zPosition="3">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">131072</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget position="180,161" size="25,33" source="session.FrontendInfo" render="FixedLabel" text="R" font="RegularLCD;33" foregroundColor="#0000FF40" halign="center" zPosition="4">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">17,17</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>    
+ </screen>
+ 
+	
+<!-- InfoBar    -->
+  <screen name="InfoBarSummary" position="0,0" size="800,480" >
+    <panel name="LCDIconTemplate" />
+		<panel name="LCD18TunerTemplate" />
+    <panel name="LCDExtremeInfoTemplate" />
+    <widget source="session.CurrentService" render="Picon" position="284,90" zPosition="4" size="220,132" transparent="1" >
+			<convert type="ServiceName">Reference</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="505,22" size="200,70" font="VFD2;70" foregroundColor="#009BDEE7" halign="right" valign="top">
+     <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="710,22" size="60,55" font="VFD2;55" foregroundColor="#009BDEE7" halign="left" valign="top">
+      <convert type="ClockToText">Format:%S</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="30,205" size="175,45" font="RegularLCD;45" halign="center" valign="top">
+     <convert type="ExtendedServiceInfo">ServiceNumber</convert>
+    </widget> 
+    <!--/*
+    <widget source="session.CurrentService" render="Label" noWrap="1" position="30,248" size="740,55" font="VFD;55" transparent="1" halign="center" valign="top">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+    -->
+    <widget source="session.Event_Now" render="VRunningText" options="movetype=running,startpoint=0,direction=left,step=3,steptime=60,repeat=0,startdelay=5000,always=0,oneshot=60000" noWrap="1" position="30,253" size="740,78" font="RegularLCD;60" halign="left" valign="center">
+       <convert type="EventName">Name</convert>
+    </widget>
+    <eLabel name="progress_bg" position="200,360" size="400,3" backgroundColor="#00ffffff" />
+    <widget source="session.Event_Now" render="Progress" foregroundColor="#00ff0000" position="200,355" size="400,13" zPosition="1" transparent="1">
+      <convert type="EventTime">Progress</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="30,337" size="170,55" font="RegularLCD;55" halign="left" valign="top">
+      <convert type="EventTime">StartTime</convert>
+     <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="590,337" size="170,55" font="RegularLCD;55" halign="right" valign="top">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="514,181" size="256,55" font="RegularLCD;55" halign="right" valign="top">
+     <convert type="EventTime">Remaining</convert>
+     <convert type="RemainingToText">InMinutes</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="514,111" size="256,55" font="VFD;55" halign="right" valign="top" foregroundColor="#00ff0000">
+     <convert type="EventTime">Duration</convert>
+     <convert type="ClockToText">InMinutes</convert>
+    </widget>
+  </screen>
+                                                                                                   
+<!-- ChannelSelection  -->
+<screen name="ChannelSelection_summary" position="0,0" size="800,480" >
+		<panel name="LCDIconTemplate" />
+    <panel name="LCD18TunerTemplate" />
+		<widget source="parent.ServiceEvent" render="Picon" position="284,90" zPosition="4" size="220,132" transparent="1" >
+			<convert type="ServiceName">Reference</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="505,22" size="200,70" font="VFD2;70" foregroundColor="#009BDEE7" halign="right" valign="top">
+     <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="710,22" size="60,55" font="VFD2;55" foregroundColor="#009BDEE7" halign="left" valign="top">
+      <convert type="ClockToText">Format:%S</convert>
+    </widget>
+    <widget source="parent.ServiceEvent" render="Label" position="45,248" size="720,132" font="RegularLCD;60" halign="center" valign="top" foregroundColor="#00FFFF00">
+			<convert type="EventName">Name</convert>
+		</widget>
+		<eLabel name="progress_bg" position="200,413" size="400,3" backgroundColor="#00ffffff" />
+    <widget source="parent.ServiceEvent" render="Progress" foregroundColor="#00FFFF00" position="200,408" size="400,13" zPosition="1" transparent="1">
+      <convert type="EventTime">Progress</convert>
+    </widget>
+    <widget source="parent.ServiceEvent" render="Label" position="30,385" size="170,55" font="RegularLCD;55" halign="left" valign="top">
+      <convert type="EventTime">StartTime</convert>
+     <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="parent.ServiceEvent" render="Label" position="590,385" size="170,55" font="RegularLCD;55" halign="right" valign="top">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="parent.ServiceEvent" render="Label" position="514,181" size="256,55" font="RegularLCD;55" halign="right" valign="top">
+     <convert type="EventTime">Remaining</convert>
+     <convert type="RemainingToText">InMinutes</convert>
+    </widget>
+    <widget source="parent.ServiceEvent" render="Label" position="514,111" size="256,55" font="VFD;55" halign="right" valign="top" foregroundColor="#00FFFF00">
+     <convert type="EventTime">Duration</convert>
+     <convert type="ClockToText">InMinutes</convert>
+    </widget>   
+	</screen>
+
+<!-- EMCMoviePlayer  -->
+<screen name="EMCMoviePlayerSummary" position="0,0" size="800,480" >
+<panel name="LCDIconPlayerTemplate" />
+ <widget source="session.CurrentService" render="Cover" position="25,25" size="450,270" zPosition="5" transparent="0" alphatest="off" />
+ <widget source="session.CurrentService" render="Picon" position="25,25" size="450,270" zPosition="4" transparent="1" >
+  <convert type="MovieBarInfo">Reference</convert>
+</widget>
+<widget source="global.CurrentTime" render="Label" position="575,20" size="200,75" foregroundColor="#009BDEE7" font="VFD2;80" halign="center" valign="center">
+  <convert type="ClockToText">Format:%H:%M</convert>
+</widget>     
+<widget source="session.CurrentService" render="VRunningText" options="movetype=running,startpoint=0,direction=left,step=3,steptime=40,repeat=0,startdelay=5000,always=0,oneshot=60000" position="30,317" size="740,85" font="VFD;65" foregroundColor="#FAFAFA" noWrap="1" halign="left" valign="top">
+    <convert type="ServiceName">Name</convert>
+  </widget>
+<widget backgroundColor="Background" font="RegularLCD;60" halign="center" position="570,150" render="Label" size="200,60" foregroundColor="#00F5D0A9" source="session.CurrentService" zPosition="1">
+		<convert type="ServicePosition">EndTime,ShowHours,ShowNoSeconds</convert>
+  </widget>
+<widget font="RegularLCD;60" halign="center" position="570,260" render="Label" size="200,60" foregroundColor="#00F6D8CE" source="session.CurrentService" zPosition="1">
+		<convert type="ServicePosition">Length,ShowHours</convert>
+  </widget>
+<widget source="session.CurrentService" render="Label" position="25,395" size="200,60" font="RegularLCD;60" halign="left" valign="top">
+    <convert type="ServicePosition">Position,ShowHours</convert>
+  </widget>
+<widget source="session.CurrentService" render="Label" position="550,395" size="220,60" font="RegularLCD;60" halign="right" valign="top">
+    <convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
+  </widget>  
+<eLabel name="progress_bg" position="245,423" size="290,3" backgroundColor="#00ffffff" />
+    <widget source="session.CurrentService" render="Progress" foregroundColor="#00ff0000" position="245,418" size="290,13" zPosition="1" transparent="1">
+      <convert type="ServicePosition">Position</convert>
+    </widget>
+<eLabel position="570,110" size="200,40" text="Endet um: " font="VFD;40" foregroundColor="#00F5D0A9" transparent="1" zPosition="4" halign="center" valign="center" />
+<eLabel position="570,215" size="200,40" text="Laufzeit: " font="VFD;40" foregroundColor="#00F6D8CE" transparent="1" zPosition="4" halign="center" valign="center" />
+</screen>
+
+<!-- EMCSelection_summary -->
+<screen name="EMCSelection_summary" position="0,0" size="800,480" >
+  <widget source="parent.Service" render="Label" position="30,272" size="740,165" font="VFD;55" halign="center" valign="top">
+    <convert type="ServiceName">Name</convert>
+  </widget>
+  <widget source="parent.Service" render="Label" position="550,104" size="220,86" font="VFD;55" halign="right" valign="top">
+    <convert type="ServiceTime">Duration</convert>
+    <convert type="ClockToText">AsLength</convert>
+  </widget>
+ </screen>
+
+<!-- MediaPlayer  -->
+<screen name="MediaPlayerLCDScreen" position="0,0" size="800,480" >
+  <widget name="text1" position="20,125" size="740,185" font="VFD;45" halign="left" valign="center" transparent="1" />
+  <widget source="session.CurrentService" render="VRunningText" options="movetype=running,startpoint=0,direction=left,step=3,steptime=40,repeat=0,startdelay=5000,always=0,oneshot=60000" position="30,317" size="740,85" font="RegularLCD;65" foregroundColor="#FAFAFA" noWrap="1" halign="left" valign="top" transparent="1" zPosition="2">
+    <convert type="ServiceName">Name</convert>
+  </widget>
+<widget source="session.CurrentService" font="RegularLCD;60" halign="left" position="570,395" render="Label" size="200,60" transparent="1" zPosition="1">
+		<convert type="ServicePosition">Length,ShowHours</convert>
+  </widget>
+<widget source="session.CurrentService" render="Label" position="25,395" size="200,60" font="RegularLCD;60" halign="left" valign="top">
+    <convert type="ServicePosition">Position,ShowHours</convert>
+  </widget>
+<eLabel name="progress_bg" position="245,423" size="290,3" backgroundColor="#00ffffff" />
+    <widget source="session.CurrentService" render="Progress" foregroundColor="#00ff0000" position="245,415" size="290,19" zPosition="1" transparent="1">
+      <convert type="ServicePosition">Position</convert>
+    </widget>
+<eLabel font="SemiboldLCD;75" position="30,40" size="440,80" text="MediaPlayer " foregroundColor="#00ff0000" transparent="1" zPosition="2" halign="left" valign="center" />
+<widget source="global.CurrentTime" render="Label" position="575,20" size="200,75" foregroundColor="#009BDEE7" font="VFD2;80" halign="center" valign="center">
+  <convert type="ClockToText">Format:%H:%M</convert>
+</widget>     
+</screen>
+                                               
+
+<!-- MoviePlayer_SimplePlayerMP -->
+<screen name="InfoBarMoviePlayerSummary" position="0,0" size="800,480" >
+<panel name="LCDIconPlayerTemplate" />
+ <widget source="session.CurrentService" render="Cover" position="25,25" size="450,270" zPosition="5" transparent="0" alphatest="off" />
+ <widget source="session.CurrentService" render="Picon" position="25,25" size="450,270" zPosition="4" transparent="1" >
+  <convert type="MovieBarInfo">Reference</convert>
+</widget>
+<widget source="global.CurrentTime" render="Label" position="575,20" size="200,75" foregroundColor="#009BDEE7" font="VFD2;80" halign="center" valign="center">
+  <convert type="ClockToText">Format:%H:%M</convert>
+</widget>     
+<widget source="session.CurrentService" render="VRunningText" options="movetype=running,startpoint=0,direction=left,step=3,steptime=40,repeat=0,startdelay=5000,always=0,oneshot=60000" position="30,317" size="740,85" font="VFD;65" foregroundColor="#FAFAFA" noWrap="1" halign="left" valign="top">
+    <convert type="ServiceName">Name</convert>
+  </widget>
+<widget backgroundColor="Background" font="RegularLCD;60" halign="center" position="570,150" render="Label" size="200,60" foregroundColor="#00F5D0A9" source="session.CurrentService" zPosition="1">
+		<convert type="ServicePosition">EndTime,ShowHours,ShowNoSeconds</convert>
+  </widget>
+<widget font="RegularLCD;60" halign="center" position="570,260" render="Label" size="200,60" foregroundColor="#00F6D8CE" source="session.CurrentService" zPosition="1">
+		<convert type="ServicePosition">Length,ShowHours</convert>
+  </widget>
+<widget source="session.CurrentService" render="Label" position="25,395" size="200,60" font="RegularLCD;60" halign="left" valign="top">
+    <convert type="ServicePosition">Position,ShowHours</convert>
+  </widget>
+<widget source="session.CurrentService" render="Label" position="550,395" size="220,60" font="RegularLCD;60" halign="right" valign="top">
+    <convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
+  </widget>  
+<eLabel name="progress_bg" position="245,423" size="290,3" backgroundColor="#00ffffff" />
+    <widget source="session.CurrentService" render="Progress" foregroundColor="#00ff0000" position="245,418" size="290,13" zPosition="1" transparent="1">
+      <convert type="ServicePosition">Position</convert>
+    </widget>
+<eLabel position="570,110" size="200,40" text="Endet um: " font="VFD;40" foregroundColor="#00F5D0A9" transparent="1" zPosition="4" halign="center" valign="center" />
+<eLabel position="570,215" size="200,40" text="Laufzeit: " font="VFD;40" foregroundColor="#00F6D8CE" transparent="1" zPosition="4" halign="center" valign="center" />
+</screen>
+
+<!-- MovieSelection_summary -->
+<screen name="MovieSelection_summary" position="0,0" size="800,480" >
+  <widget source="parent.Service" render="Label" position="30,240" size="740,220" font="VFD;55" halign="center" valign="top">
+    <convert type="ServiceName">Name</convert>
+  </widget>
+  <widget source="parent.Service" render="Label" position="550,104" size="220,120" font="VFD;55" halign="right" valign="top">
+    <convert type="ServiceTime">Duration</convert>
+    <convert type="ClockToText">AsLength</convert>
+  </widget>
+ </screen>
+
+
+<!-- Abspielen von ISO -->
+<screen name="DVDSummary" position="0,0" size="800,480" >
+ <panel name="LCDIconPlayerTemplate" />
+ <widget source="session.CurrentService" render="Cover" position="25,25" size="450,270" zPosition="5" transparent="0" alphatest="off" />
+ <widget source="session.CurrentService" render="Picon" position="25,25" size="450,270" zPosition="4" transparent="1" >
+  <convert type="MovieBarInfo">Reference</convert>
+</widget>
+<widget source="global.CurrentTime" render="Label" position="575,20" size="200,75" foregroundColor="#009BDEE7" font="VFD2;80" halign="center" valign="center">
+  <convert type="ClockToText">Format:%H:%M</convert>
+</widget>     
+<widget source="session.CurrentService" render="VRunningText" options="movetype=running,startpoint=0,direction=left,step=3,steptime=40,repeat=0,startdelay=5000,always=0,oneshot=60000" position="30,317" size="740,85" font="VFD;65" foregroundColor="#FAFAFA" noWrap="1" halign="left" valign="top">
+    <convert type="ServiceName">Name</convert>
+  </widget>
+<widget backgroundColor="LCDBackground" font="RegularLCD;60" halign="center" position="570,150" render="Label" size="200,60" foregroundColor="#00F5D0A9" source="session.CurrentService" zPosition="1">
+		<convert type="ServicePosition">EndTime,ShowHours,ShowNoSeconds</convert>
+  </widget>
+<widget font="RegularLCD;60" halign="center" position="570,260" render="Label" size="200,60" foregroundColor="#00F6D8CE" source="session.CurrentService" zPosition="1">
+		<convert type="ServicePosition">Length,ShowHours</convert>
+  </widget>
+<widget source="session.CurrentService" render="Label" position="25,395" size="200,60" font="RegularLCD;60" halign="left" valign="top">
+    <convert type="ServicePosition">Position,ShowHours</convert>
+  </widget>
+<widget source="session.CurrentService" render="Label" position="550,395" size="220,60" font="RegularLCD;60" halign="right" valign="top">
+    <convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
+  </widget>  
+<eLabel name="progress_bg" position="245,423" size="290,3" backgroundColor="#00ffffff" />
+    <widget source="session.CurrentService" render="Progress" foregroundColor="#00ff0000" position="245,418" size="290,13" zPosition="1" transparent="1">
+      <convert type="ServicePosition">Position</convert>
+    </widget>
+<eLabel position="570,110" size="200,40" text="Endet um: " font="VFD;40" foregroundColor="#00F5D0A9" transparent="1" zPosition="4" halign="center" valign="center" />
+<eLabel position="570,215" size="200,40" text="Laufzeit: " font="VFD;40" foregroundColor="#00F6D8CE" transparent="1" zPosition="4" halign="center" valign="center" />
+</screen>
+
+
+
+<!-- webradioFS -->
+<screen name="webradioFSdisplay13" position="0,0" size="800,480" >
+  <widget source="Zeile1" render="Label" position="20,50" size="760,122" font="VFD;60" valign="center" halign="center" />
+  <widget source="Zeile2" render="Label" position="20,178" size="760,122" font="VFD;60" valign="center" halign="center" />
+  <widget source="Zeile3" render="Label" position="20,307" size="760,122" font="VFD;60" valign="center" halign="center" />
+  <widget name="picon" position="20,50" size="760,379"  />
+  </screen>
+
+<!-- YAMP_Standard -->
+<screen name="YampLCDScreen" position="0,0" size="800,480" >
+  <widget name="text1" position="20,178" size="760,122" font="VFD;60" halign="left" valign="center" />
+  <widget name="text2" position="20,50" size="760,122" font="VFD;60" halign="left" valign="center" />
+  <widget name="text3" position="20,307" size="760,122" font="VFD;60" halign="left" valign="center" />
+  </screen>
+
+<!-- YAMP_v31 -->
+<screen name="YampLCDScreenV31" position="0,0" size="800,480" >
+  <widget name="text1" position="20,178" size="760,122" font="VFD;60" halign="left" valign="center" />
+  <widget name="text2" position="20,50" size="760,122" font="VFD;60" halign="left" valign="center" />
+  <widget name="text3" position="20,307" size="760,122" font="VFD;60" halign="left" valign="center" />
+  </screen>
+
+<!-- ChoiceBox -->
+<screen name="ChoiceBox_summary" position="0,0" size="800,480" >
+  <widget source="parent.summary_list" render="Label" position="20,50" size="760,379" font="VFD;50" />
+  </screen>
+
+<!-- DeviceManager2 -->
+<screen name="DeviceManager2Summary" position="0,0" size="800,480" >
+  <widget source="entry" render="Label" position="20,50" size="760,180" font="VFD;55" halign="center" valign="center" />
+  <eLabel position="0,240" size="800,2" backgroundColor="#00FFFFFF" />
+  <widget source="desc" render="Label" position="20,248" size="760,180" font="VFD;45" halign="center" valign="center" />
+ </screen>
+
+<!-- Menu -->
+<screen name="MenuSummary" position="0,0" size="800,480" >
+  <widget source="parent.title" render="Label" position="20,50" size="760,180" font="VFD;60" halign="center" valign="center" />
+  <widget source="parent.menu" render="Label" position="20,248" size="760,180" font="VFD;60" halign="center" valign="center">
+    <convert type="StringListSelection" />
+  </widget>
+  <eLabel position="0,240" size="800,2" backgroundColor="#00FFFFFF" />
+  </screen>
+
+<!-- MessageBox -->
+<screen name="MessageBox_summary" position="0,0" size="800,480" >
+  <widget source="parent.Text" render="Label" position="20,50" size="760,270" font="VFD;45" halign="center" valign="center" />
+  <eLabel position="0,329" size="800,2" backgroundColor="#00FFFFFF" />
+  <widget source="parent.selectedChoice" render="Label" position="21,337" size="760,95" font="VFD;65" halign="center" valign="center" />
+  </screen>
+
+<!-- PluginBrowser -->
+<screen name="PluginBrowserSummary" position="0,0" size="800,480" >
+  <widget source="entry" render="Label" position="20,50" size="760,180" font="VFD;60" halign="center" valign="center" />
+  <eLabel position="0,240" size="800,2" backgroundColor="#00FFFFFF" />
+  <widget source="desc" render="Label" position="20,248" size="760,180" font="VFD;60" halign="center" valign="center" />
+ </screen>
+
+<!-- ServiceScan -->
+<screen name="ServiceScanSummary" position="0,0" size="800,480" >
+  <widget name="Title" position="20,50" size="760,180" font="VFD;55" transparent="1" valign="center" halign="left" />
+  <widget name="Service" position="20,248" size="760,160" font="VFD;45" transparent="1" valign="center" halign="left" />
+  <widget name="scan_progress" position="20,415" zPosition="1" borderWidth="0" size="760,15" foregroundColor="#00FF0000" transparent="1" />
+  <eLabel name="progress" position="20,421" size="760,3" backgroundColor="#00FFFFFF" />	
+  <eLabel position="0,240" size="800,2" backgroundColor="#00FFFFFF" />
+ </screen>
+
+<!-- Setup -->
+<screen name="SetupSummary" position="0,0" size="800,480" >
+  <widget source="SetupTitle" render="Label" position="20,20" size="760,115" font="VFD;55" halign="center" valign="center" />
+  <widget source="SetupEntry" render="Label" position="20,155" size="760,170" font="VFD;55" halign="center" valign="center" />
+  <widget source="SetupValue" render="Label" position="20,350" size="760,115" font="VFD;55" halign="center" valign="center" />
+  <eLabel position="1,140" size="800,2" backgroundColor="#00FFFFFF" />
+  <eLabel position="0,340" size="800,2" backgroundColor="#00FFFFFF" />
+ </screen>
+
+<!-- Simple -->
+<screen name="SimpleSummary" position="0,0" size="800,480" >
+  <widget source="parent.Title" render="Label" position="20,50" size="760,379" font="VFD;55" halign="center" valign="center" />
+ </screen>
+
+<!-- Standby -->
+<screen name="StandbySummary" position="0,0" size="800,480" >
+<panel name="LCDWetterStandbyTemplate" />
+<widget source="global.CurrentTime" render="Label" position="50,105" size="520,200" font="VFD2;190" foregroundColor="#009BDEE7" halign="right" valign="top">
+<convert type="ClockToText">Format:%H:%M</convert>
+</widget>
+<widget source="global.CurrentTime" render="Label" position="580,115" size="200,120" font="VFD2;100" foregroundColor="#009BDEE7" halign="left" valign="top">
+<convert type="ClockToText">Format:%S</convert>
+</widget>
+<widget source="global.CurrentTime" render="Label" position="40,295" size="720,100" font="VFD2;80" foregroundColor="#009BDEE7" halign="center" valign="center">
+<convert type="ClockToText">Format:%a, %d. %b %Y</convert>
+</widget>
+<widget source="session.RecordState" render="FixedLabel" position="35,126" zPosition="3" size="74,44" text=" ">
+<convert type="ConfigEntryTest">config.usage.blinking_rec_symbol_during_recording,True,CheckSourceBoolean</convert>
+<convert type="ConditionalShowHide">Blink</convert>
+</widget>
+<widget source="session.RecordState" render="Pixmap" pixmap="~/REC_red.png" position="35,126" size="74,44" >
+<convert type="ConditionalShowHide" />
+</widget>
+</screen>
+	
+
+<!-- VTIPanel -->
+<screen name="VTIPanelSummary" position="0,0" size="800,480" >
+  <widget source="entry" render="Label" position="20,50" size="760,180" font="VFD;55" halign="center" valign="center" />
+  <widget source="desc" render="Label" position="20,248" size="760,180" font="VFD;55" halign="center" valign="center" />
+  </screen>
+
+<!-- Wizard -->
+<screen name="WizardSummary" position="0,0" size="800,480" >
+  <widget source="text" render="Label" position="20,50" size="760,115" font="VFD;55" transparent="1" halign="center" valign="center" />
+  <widget source="parent.list" render="Label" position="20,174" size="760,255" font="VFD;55" halign="center" valign="center">
+    <convert type="StringListSelection" />
+  </widget>
+  </screen>
+
+</skin>
