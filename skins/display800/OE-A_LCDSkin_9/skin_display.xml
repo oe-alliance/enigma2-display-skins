@@ -137,7 +137,7 @@
     <convert type="ServiceName">Name</convert>
   </widget>
  </screen>
-	<screen name="EMCSelectionOwn_summary" position="0,0" size="800,480">
+	<screen name="EMCSelectionSummary" position="0,0" size="800,480">
 		<panel name="EMCSelection_summary" />
 	</screen>
  
