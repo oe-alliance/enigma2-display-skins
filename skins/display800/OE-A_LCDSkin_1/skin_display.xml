@@ -606,7 +606,7 @@
 		</widget>
         <eLabel position="0,375" size="800,4" backgroundColor="#FF0000" />
 	</screen>
-	<screen name="EMCSelectionOwn_summary" position="0,0" size="800,480">
+	<screen name="EMCSelectionSummary" position="0,0" size="800,480">
 		<panel name="EMCSelection_summary" />
 	</screen>
 
@@ -615,7 +615,7 @@
 	<panel name="EMCSelection_summary" />
 	</screen>
 	-->
-	
+
 <!-- EMC Playing-->
 	<screen name="EMCMoviePlayerSummary" position="0,0" size="800,480"> 
 		<panel name="InfoBarMoviePlayerSummary" />
@@ -797,8 +797,8 @@
 	
 <!-- NUMBERZAP -->
 	<screen name="NumberZap_summary" position="0,0" size="800,480">
-		<widget source="parent.servicename" render="Label" position="40,50" size="720,110" font="VFD;85" foregroundColor="#e5b243" halign="center" valign="center" zPosition="2" />
-		<widget source="parent.number" render="Label" position="40,190" size="720,250" font="VFD;90" halign="center" valign="center" zPosition="2" />
+		<widget source="parent.servicename" render="Label" position="40,50" size="720,170" font="VFD;85" foregroundColor="#e5b243" halign="center" valign="center" zPosition="2" />
+		<widget source="parent.number" render="Label" position="40,250" size="720,90" font="VFD;90" halign="center" valign="center" zPosition="2" />
 <!--	<widget source="parent.channel_summary" render="Label" position="10,10" size="770,60" font="VFD;60" halign="center"/> -->
 	</screen>
 
