@@ -326,13 +326,6 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
  </screen>
-	
-
-<!-- VTIPanel -->
-<screen name="VTIPanelSummary" position="0,0" size="800,480" >
-  <widget source="entry" render="Label" position="20,50" size="760,180" font="VFD;55" halign="center" valign="center" />
-  <widget source="desc" render="Label" position="20,248" size="760,180" font="VFD;55" halign="center" valign="center" />
-  </screen>
 
 <!-- Wizard -->
 <screen name="WizardSummary" position="0,0" size="800,480" >
