@@ -253,13 +253,6 @@
 		<eLabel position="0,158" size="480,2"  backgroundColor="#f0f0f0" />
 		<widget source="desc" render="Label" position="10,161" size="460,149" font="VFD;40" />
 	</screen>
-<!-- LCD screen VTIPanel -->
-	<screen name="VTIPanelSummary" position="0,0" size="480,320">>
-		<widget source="entry" render="Label" position="10,10" size="460,130" font="VFD;40"/>
-		<eLabel position="0,141" size="480,2"  backgroundColor="#f0f0f0" />
-		<widget source="desc" render="Label" position="10,144" size="460,130" font="VFD;40"/>
-		<eLabel text="www.vuplus-support.org" position="10, 284" size="460,25" font="VFD;25" halign="center"/>
-	</screen>
 <!-- LCD screen DeviceManager2 -->
 	<screen name="DeviceManager2Summary" position="0,0" size="480,320">>
 		<widget source="entry" render="Label" position="10,10" size="460,130" font="VFD;40"/>
