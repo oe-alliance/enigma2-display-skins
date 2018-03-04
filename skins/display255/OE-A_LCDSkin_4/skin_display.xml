@@ -222,12 +222,6 @@
 		<widget source="global.CurrentTime" render="Label" position="0,13" size="256,24" font="VFD;24" halign="center" valign="center">
 			<convert type="ClockToText">Format:%d.%m.%Y - %H:%M</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" font="VFD;20" position="0, 38" size="128, 20" halign="center">
-			<convert type="VtiTempFan">FanInfo</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" font="VFD;20" position="128, 38" size="128, 20" halign="center">
-			<convert type="VtiTempFan">TempInfo</convert>
-		</widget>
 		<widget source="session.RecordState" render="FixedLabel" position="0,0" zPosition="1" size="256,64" text=" ">
 			<convert type="ConfigEntryTest">config.usage.blinking_display_clock_during_recording,True,CheckSourceBoolean</convert>
 			<convert type="ConditionalShowHide">Blink</convert>
@@ -235,6 +229,12 @@
 		<widget source="session.RecordState" render="FixedLabel" position="0,0" zPosition="1" size="256,64" text=" ">
 			<convert type="ConfigEntryTest">config.usage.blinking_display_clock_during_recording,False,CheckSourceBoolean</convert>
 			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="global.CurrentTime" render="Label" font="VFD;20" position="0, 38" size="128, 20" halign="center">
+			<convert type="VtiTempFan">FanInfo</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" font="VFD;20" position="128, 38" size="128, 20" halign="center">
+			<convert type="VtiTempFan">TempInfo</convert>
 		</widget>
 	</screen>
 <!-- LCD screen Service Scan -->
@@ -269,12 +269,6 @@
 	<screen name="Infopanel_summary" position="0,0" size="256,64">
 		<widget source="parent.Title" render="Label" position="0,0" size="256,22" font="VFD;20" halign="center" valgin="bottom" />
 		<widget source="parent.summary_description" render="Label" position="0,24" size="256,42" zPosition="1" font="VFD;20" halign="center" valign="center" />
-	</screen>
-<!-- LCD screen VTIPanel -->
-	<screen name="VTIPanelSummary" position="0,0" size="256,64">
-		<widget source="entry" render="RollerCharLCDLong" position="0,0" size="256,20" font="VFD;20" noWrap="1" />
-		<widget source="desc" render="RollerCharLCDLong" position="0,21" size="256,20" font="VFD;20" noWrap="1" />
-		<eLabel text="www.vuplus-support.org" position="0, 43" size="256,20" font="VFD;18" halign="center"/>
 	</screen>
 <!-- LCD screen DeviceManager2 -->
 	<screen name="DeviceManager2Summary" position="0,0" size="256,64">

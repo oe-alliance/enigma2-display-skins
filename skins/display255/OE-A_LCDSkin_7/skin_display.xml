@@ -346,41 +346,6 @@
 		<widget source="entry" render="RollerCharLCD" position="0,0" size="143,20" font="VFD;18" noWrap="1" />
 		<widget source="desc" render="Label" position="0,21" size="143,40" font="VFD;18" />
 	</screen>
-<!-- LCD screen VTIPanel -->
-	<screen name="VTIPanelSummary" position="0,0" size="256,64">
-		<widget source="global.CurrentTime" render="Label" position="180,44" size="58,20" font="VFD;20" halign="right" valign="center" transparent="1">
-			<convert type="ClockToText">Format:%H:%M</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="241,46" zPosition="1" size="15,10" font="VFD;10" valign="center" transparent="1">
-			<convert type="ClockToText">Format:%S</convert>
-		</widget>
-		<widget source="session.RecordState" render="FixedLabel" position="155,0" zPosition="3" size="28,12" text=" ">
-			<convert type="ConfigEntryTest">config.usage.blinking_rec_symbol_during_recording,True,CheckSourceBoolean</convert>
-			<convert type="ConditionalShowHide">Blink</convert>
-		</widget>
-		<widget source="session.RecordState" render="Pixmap" pixmap="rec.png" position="155,0"  size="28,12">
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="crypt.png" position="186,0"  size="10,12">
-			<convert type="ServiceInfo">IsCrypted</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="txt.png" position="199,0" size="14,12">
-			<convert type="ServiceInfo">HasTelext</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="format.png" position="216,0" size="21,12">
-			<convert type="ServiceInfo">IsWidescreen</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="dolby.png" position="240,0" size="16,12">
-			<convert type="ServiceInfo">IsMultichannel</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="entry" render="Label" position="0,0" size="143,20" font="VFD;18" noWrap="1" />
-		<widget source="desc" render="RollerCharLCD" position="0,21" size="143,20" font="VFD;18" noWrap="1" />
-		<eLabel text="www.vuplus-support.org" position="0, 43" size="143,20" font="VFD;12" halign="left"/>
-	</screen>
 <!-- LCD screen DeviceManager2 -->
 	<screen name="DeviceManager2Summary" position="0,0" size="256,64">
 		<widget source="global.CurrentTime" render="Label" position="180,44" size="58,20" font="VFD;20" halign="right" valign="center" transparent="1">
