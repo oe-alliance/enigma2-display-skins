@@ -153,13 +153,6 @@
 		<widget source="global.CurrentTime" render="Label" position="169,14" zPosition="1" size="32,20" font="FdLcD;20" valign="center" transparent="1">
 			<convert type="ClockToText">Format:%S</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" font="FdLcD;12" position="0, 50" size="128, 20" halign="center">
-			<convert type="VtiTempFan">FanInfo</convert>
-		</widget>
-
-		<widget source="global.CurrentTime" render="Label" font="FdLcD;12" position="128, 50" size="128, 20" halign="center">
-			<convert type="VtiTempFan">TempInfo</convert>
-		</widget>
 		<widget source="session.RecordState" render="FixedLabel" position="0,0" zPosition="1" size="256,64" text=" ">
 			<convert type="ConfigEntryTest">config.usage.blinking_display_clock_during_recording,True,CheckSourceBoolean</convert>
 			<convert type="ConditionalShowHide">Blink</convert>
@@ -167,6 +160,12 @@
 		<widget source="session.RecordState" render="FixedLabel" position="0,0" zPosition="1" size="256,64" text=" ">
 			<convert type="ConfigEntryTest">config.usage.blinking_display_clock_during_recording,False,CheckSourceBoolean</convert>
 			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="global.CurrentTime" render="Label" font="FdLcD;12" position="0, 50" size="128, 20" halign="center">
+			<convert type="VtiTempFan">FanInfo</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" font="FdLcD;12" position="128, 50" size="128, 20" halign="center">
+			<convert type="VtiTempFan">TempInfo</convert>
 		</widget>
 	</screen>
 <!-- LCD screen Service Scan -->

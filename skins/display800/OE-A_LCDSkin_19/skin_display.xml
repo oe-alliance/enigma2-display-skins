@@ -215,13 +215,6 @@
 		<eLabel position="0,242" size="800,2" backgroundColor="#f0f0f0" transparent="1" />
 		<widget source="desc" render="Label" position="40,260" size="720,200" font="RegularLCD;60" halign="center" valign="center" transparent="1" />
 	</screen>
-	<screen name="VTIPanelSummary" position="0,0" size="800,480">
-		<ePixmap pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_19/skin_vfd_schomi_u4k_back.png" position="20,20" size="750,450" zPosition="-1" alphatest="blend" />
-		<widget source="entry" render="Label" position="40,40" size="720,200" font="SemiboldLCD;60" halign="center" valign="center" transparent="1"/>
-		<eLabel position="0,242" size="800,2" backgroundColor="#f0f0f0" transparent="1" />
-		<widget source="desc" render="Label" position="40,260" size="720,130" font="RegularLCD;60" halign="center" valign="top" transparent="1"/>
-		<eLabel text="www.vuplus-support.org" position="40, 400" size="720,42" font="RegularLCD;40" halign="center" valign="center" foregroundColor="#0000bb00" transparent="1"/>
-	</screen>
 	<screen name="DeviceManager2Summary" position="0,0" size="800,480">
 		<ePixmap pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_19/skin_vfd_schomi_u4k_back.png" position="20,20" size="750,450" zPosition="-1" alphatest="blend" />
 		<widget source="entry" render="Label" position="40,40" size="720,200" font="SemiboldLCD;60" halign="center" valign="center" transparent="1"/>
