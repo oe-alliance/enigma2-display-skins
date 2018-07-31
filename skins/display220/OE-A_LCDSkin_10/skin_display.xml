@@ -344,10 +344,10 @@
 		<widget source="parent.text" render="Label" position="0,0" size="220,176" font="MyLcD;37" foregroundColor="#87CEFA" halign="center" valign="center" />
 	</screen>
 <!-- console -->
-	<screen name="Console_summary" position="0,0" size="220,176">
-		<widget source="parent.Title" render="Label" position="0,0" size="220,77" font="MyLcD;21" foregroundColor="Menue-Titel" halign="center" valign="center" />
-		<ePixmap position="0,78" pixmap="~/bar.png" alphatest="on" transparent="0" size="220,1" zPosition="4" />
-		<widget source="parent.summary_description" render="Label" position="0,78" size="220,98" zPosition="1" font="MyLcD;19" halign="center" valign="center" />
+	<screen name="Console_summary" position="fill">
+		<widget source="parent.Title" render="Label" position="top" size="*,87" font="MyLcD;24" foregroundColor="Menue-Titel" halign="center" valign="center" />
+		<ePixmap position="top" pixmap="~/bar.png" alphatest="on" transparent="0" size="220,2" zPosition="4" />
+		<widget source="parent.summary_description" render="Label" position="top" size="*,87" font="MyLcD;24" foregroundColor="Menue-Auswahl" backgroundColor="Menue-Auswahl-Hintergrund" halign="center" valign="center" />
 	</screen>
 <!--  normale Timer -->
 	<screen name="TimerEditListSummary" position="0,0" size="220,176">
