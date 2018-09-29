@@ -320,6 +320,9 @@
 	<screen name="EPGSelection_summary" position="0,0" size="220,176">
 		<panel name="MyEPGPanel" />
 	</screen>
+	<screen name="EPGvertical_summary" position="0,0" size="220,176">
+		<panel name="MyEPGPanel" />
+	</screen>
 <!-- IMDbLCDScreen -->
 	<screen name="IMDbLCDScreen" position="0,0" size="220,176">
 		<widget name="headline"  position="0,0" size="220,176" font="MyLcD;37" foregroundColor="Menue-Titel" halign="center" valign="center" />
