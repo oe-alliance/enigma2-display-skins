@@ -448,6 +448,13 @@
 			<widget name="Chapter" position="fill" font="FdLcD;7" halign="left" />
 		</panel>
 	</screen>
+<!-- hbbtv-->
+	<screen name="HbbTVWindow_summary" position="0,0" size="220,176">
+		<widget source="parent.Title" render="Label" position="0,0" size="220,130" font="MyLcD;28" halign="center" valign="center" />
+		<widget source="global.CurrentTime" render="Label" position="0,132" size="220,55" font="MyLcD;48" foregroundColor="Uhr" halign="center" noWrap="1" transparent="1">
+			<convert type="ClockToText"></convert>
+		</widget>
+	</screen>
 <!-- Shoutcast -->
 	<screen name="SHOUTcastLCDScreen" position="0,0" size="220,176">
 		<widget name="text1" position="0,0" size="220,41" font="MyLcD;13" halign="center" valign="center"/>
