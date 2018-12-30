@@ -229,8 +229,6 @@
 	</screen>
 <!-- setup-->
 	<screen name="SetupSummary" position="fill">
-<!-- 		<widget source="SetupTitle" render="Label" position="top" size="*,85" font="FdLcD;21" foregroundColor="#87CEFA" halign="left"  valign="center" />
-		<eLabel position="top" size="*,1" backgroundColor="white" /> -->
 		<widget source="SetupEntry" render="Label" position="top" size="*,87" font="MyLcD;35" halign="center" valign="center" />
 		<ePixmap position="top" pixmap="~/bar.png" alphatest="on" transparent="0" size="220,1" zPosition="4" />
 		<widget source="SetupValue" render="Label" position="top" size="*,87" font="MyLcD;35" foregroundColor="#F4FA58" halign="center" valign="center" />
@@ -240,7 +238,13 @@
 		<widget source="parent.Title" render="Label" position="0,0" size="220,62" font="MyLcD;21" foregroundColor="Menue-Titel" halign="center" valign="center" />
 		<widget name="scan_progress" render="Progress" position="0,73" size="220,26"  borderWidth="2" />
 		<widget name="Service" position="0,110" size="220,62" font="MyLcD;21" halign="center" valign="center" />
-	</screen> 		
+	</screen>
+<!-- Blindscan -->
+	<screen name="SetupSummary2" position="fill">
+		<widget source="SetupEntry" render="Label" position="top" size="*,87" font="MyLcD;35" halign="center" valign="center" />
+		<ePixmap position="top" pixmap="~/bar.png" alphatest="on" transparent="0" size="220,1" zPosition="4" />
+		<widget source="SetupValue" render="Label" position="top" size="*,87" font="MyLcD;35" foregroundColor="#F4FA58" halign="center" valign="center" />
+	</screen>	
 <!-- Network -->	
 	<screen name="NetworkServicesSummary" position="0,0" size="220,176">
 		<widget source="title" render="Label" position="0,0" size="220,62" font="MyLcD;25" foregroundColor="Menue-Titel" halign="center" valign="center" />
