@@ -185,7 +185,11 @@
 		<widget source="parent.RdsDecoder" render="RunningText" position="0,33"  size="220,143" options="movetype=running,direction=top,startpoint=0,startdelay=2000,wrap=1,always=0,repeat=2,oneshot=1" font="MyLcD;32" halign="center" valign="center">
 			<convert type="RdsInfo">RadioText</convert>
 		</widget>
-	</screen>	
+	</screen>
+<!-- Rds  -->	
+	<screen name="RdsInfoDisplaySummary" position="0,0" size="220,176">
+		<widget source="message" render="RunningText" position="0,0"  size="220,176" options="movetype=running,direction=top,startpoint=0,startdelay=2000,wrap=1,always=0,repeat=2,oneshot=0" font="MyLcD;32" halign="center" valign="center" />
+	</screen>
 <!-- Numberzap -->    
 	<screen name="NumberZap_summary" position="0,0" size="220,176">
 		<widget source="parent.number_summary" render="Label" position="0,0" size="220,73" font="MyLcD;58" halign="center" valign="center" transparent="1" />
