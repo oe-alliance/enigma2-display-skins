@@ -305,12 +305,15 @@
 		<widget source="parent.summary_job_progress" render="Progress" pixmap="~/progress1.png" position="0,58" size="220,12" zPosition="3" transparent="1" />
 		<widget source="parent.summary_job_name" render="Label" position="0,70" size="220,106" font="MyLcD;24" halign="center" valign="center" />
 	</screen>
-
+<!-- FlashImage Summary -->
+	<screen name="FlashImage_summary" position="0,0" size="220,176">
+		<widget source="parent.summary_header" render="Label" position="0,0" size="220,176" font="MyLcD;37" foregroundColor="Menue-Titel" halign="center" valign="center" />
+	</screen>
+<!-- EventView Summary -->
 	<screen name="EventView_summary" position="0,0" size="220,176">
 		<widget source="parent.Title" render="Label" position="0,0" size="88,16" font="MyLcD;11" foregroundColor="Menue-Titel" halign="left" noWrap="1" />
 		<widget source="parent.summary_description" render="Label" position="0,16" size="220,103" font="MyLcD;13" />
 	</screen>
-
 	<screen name="EventViewSimple_summary" position="0,0" size="220,176">
 		<widget source="parent.Title" render="Label" position="0,0" size="88,16" font="MyLcD;11" foregroundColor="Menue-Titel" halign="left" noWrap="1" />
 		<widget source="parent.summary_description" render="Label" position="0,16" size="220,103" font="MyLcD;13" />
