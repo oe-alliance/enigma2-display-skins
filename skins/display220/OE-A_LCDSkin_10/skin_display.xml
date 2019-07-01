@@ -351,7 +351,7 @@
 		<widget source="parent.selectedChoice" render="Label" position="0,144" size="220,32" font="MyLcD;19" foregroundColor="#F4FA58" halign="center" noWrap="1" />
 	</screen>
 	<screen name="AboutSummary" position="0,0" size="220,176">
-		<widget source="AboutText" render="Label" position="0,0" size="220,176" font="MyLcD;7" />
+		<widget source="parent.Title" render="Label" position="0,0" size="220,176" font="MyLcD;34" foregroundColor="Menue-Titel" halign="center" valign="center" />
 	</screen>
 <!-- LocationBox_summary -->
 	<screen name="LocationBox_summary" position="0,0" size="220,176">
@@ -394,8 +394,7 @@
 		<widget source="parent.status" render="Label" position="0,153" size="220,23" font="MyLcD;15" halign="left" transparent="1" />
 	</screen>
 	<screen name="SoftwareUpdateChanges_summary" position="0,0" size="220,176">
-		<widget source="parent.title_summary" render="Label" position="0,0" size="220,19" font="MyLcD;13" foregroundColor="Menue-Titel" halign="center" noWrap="1" />
-		<widget source="parent.text_summary" render="Label" position="0,21" size="220,155" font="MyLcD;13" halign="left" transparent="1" />
+		<widget source="parent.Title" render="Label" position="0,0" size="220,176" font="MyLcD;37" foregroundColor="Menue-Titel" halign="center" valign="center" />
 	</screen>
 	<screen name="WizardSummary" position="0,0" size="220,176">
 		<widget source="text" render="Label" position="0,0" size="220,40" font="MyLcD;13" halign="center" />
