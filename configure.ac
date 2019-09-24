@@ -145,6 +145,8 @@ skins/display128/LCDSkin_4/Makefile
 skins/display128/LCDSkin_4/meta/Makefile
 skins/display128/LCDSkin_5/Makefile
 skins/display128/LCDSkin_5/meta/Makefile
+skins/display128/LCDSkin_6/Makefile
+skins/display128/LCDSkin_6/meta/Makefile
 skins/display140/Makefile
 skins/display140/ubisIst_extlalarge/Makefile
 skins/display140/ubisIst_extlalarge/meta/Makefile

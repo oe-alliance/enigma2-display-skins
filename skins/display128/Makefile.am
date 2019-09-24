@@ -1,1 +1,1 @@
-SUBDIRS = LCDSkin_1 LCDSkin_2 LCDSkin_3 LCDSkin_4 LCDSkin_5
+SUBDIRS = LCDSkin_1 LCDSkin_2 LCDSkin_3 LCDSkin_4 LCDSkin_5 LCDSkin_6
