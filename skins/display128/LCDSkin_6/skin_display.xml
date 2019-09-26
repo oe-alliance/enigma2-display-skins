@@ -168,7 +168,6 @@
 
 <!-- menus-->
 	<screen name="MenuSummary" position="0,0" size="128,32">
-<!-- 		<widget source="parent.title" render="Label" position="0,0" size="128,16" font="FdLcD;16" halign="center" valign="top" zPosition="1" noWrap="1" /> -->
 		<widget source="parent.menu" render="Label" position="0,0" size="128,32" font="FdLcD;16" halign="center" valign="center" zPosition="1" noWrap="0" >
 			<convert type="StringListSelection" />
 		</widget>
@@ -176,9 +175,7 @@
 
 <!-- setup-->
 	<screen name="SetupSummary" position="0,0" size="128,32">
-		<!-- <widget source="SetupTitle" render="Label" position="0,0" size="170,18" font="FdLcD;15" halign="left" valign="top" noWrap="1"  /> -->
 		<widget source="SetupEntry" render="RunningText" position="0,0"  size="128,32" options="movetype=running,direction=top,startpoint=0,startdelay=2000,repeat=3,always=0,wrap=1,oneshot=1" font="FdLcD;16" halign="center" valign="center" />
-<!-- 		<widget source="SetupValue" render="Label" position="0,16" size="128,16" font="FdLcD;14" halign="center" valign="bottom" zPosition="1" noWrap="1" /> -->
 	</screen>
 
 
@@ -208,7 +205,7 @@
 		<widget source="parent.summary_job_name" render="Label" position="0,0" size="128,16" font="FdLcD;16" halign="center" valign="bottom" zPosition="1" noWrap="1" />
 		<widget source="parent.summary_job_task" render="Label" position="0,13" size="128,14" font="FdLcD;14" halign="center" valign="top" zPosition="1" noWrap="1" />
 		<widget source="parent.summary_job_progress" render="Progress" position="0,26" size="50,6" borderWidth="1" zPosition="1" />
-		<widget source="parent.summary_job_progress" render="Label" position="58,25" size="70,12" font="FdLcD;12" halign="right" valign="bottom" noWrap="1" zPosition="1" >
+		<widget source="parent.summary_job_progress" render="Label" position="58,22" size="70,12" font="FdLcD;10" halign="right" valign="bottom" noWrap="1" zPosition="1" >
 			<convert type="ProgressToText" />
 		</widget>
 	</screen>
