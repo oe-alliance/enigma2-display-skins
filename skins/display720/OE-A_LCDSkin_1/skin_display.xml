@@ -277,7 +277,7 @@
 <!--"Analog Clock" -->
         <screen name="StandbySummary" position="0,0" size="720,576">
                <eLabel position="0,0" size="700,576" zPosition="-1" backgroundColor="#000000" />
-               <ePixmap pixmap="~/analog_lcd.png" position="center,center" size="700,540" transparent="1" alphatest="blend" />
+               <ePixmap pixmap="analog_lcd.png" position="center,center" size="700,540" transparent="1" alphatest="blend" />
                <widget source="global.CurrentTime" render="EtAnalogClockLCD" position="center,center" size="700,540" hColor="#e5b243" positionwidth="682" positionheight="550" linewidth="7" linesize="120" zPosition="3" alphatest="on">
                        <convert type="EtAnalogClock">Hours</convert>
                </widget>

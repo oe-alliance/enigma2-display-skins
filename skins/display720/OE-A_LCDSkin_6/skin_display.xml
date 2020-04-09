@@ -41,78 +41,78 @@
 
 <!-- IconPanel -->        
 	<screen name="SummaryIconPanel">
-		<widget pixmap="~/ico_dolby_on.png" position="15,15" alphatest="on" transparent="0" render="Pixmap" size="85,55" source="session.CurrentService" zPosition="5">
+		<widget pixmap="ico_dolby_on.png" position="15,15" alphatest="on" transparent="0" render="Pixmap" size="85,55" source="session.CurrentService" zPosition="5">
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap position="15,15" pixmap="~/ico_dolby_off.png" alphatest="on" transparent="0" size="85,55" zPosition="4" />
-		<widget pixmap="~/ico_hd_on.png" alphatest="on" transparent="0" position="116,15" render="Pixmap" size="85,55" source="session.CurrentService" zPosition="5">
+		<ePixmap position="15,15" pixmap="ico_dolby_off.png" alphatest="on" transparent="0" size="85,55" zPosition="4" />
+		<widget pixmap="ico_hd_on.png" alphatest="on" transparent="0" position="116,15" render="Pixmap" size="85,55" source="session.CurrentService" zPosition="5">
 			<convert type="ServiceInfo">VideoWidth</convert>
                         <convert type="ValueRange">721,1980</convert>
                         <convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap position="116,15" pixmap="~/ico_hd_off.png" alphatest="on" transparent="0" size="85,55" zPosition="4" />
-		<widget pixmap="~/ico_format_on.png" position="217,15" alphatest="on" transparent="0" render="Pixmap" size="85,55" source="session.CurrentService" zPosition="5">
+		<ePixmap position="116,15" pixmap="ico_hd_off.png" alphatest="on" transparent="0" size="85,55" zPosition="4" />
+		<widget pixmap="ico_format_on.png" position="217,15" alphatest="on" transparent="0" render="Pixmap" size="85,55" source="session.CurrentService" zPosition="5">
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap position="217,15" pixmap="~/ico_format_off.png" alphatest="on" transparent="0" size="85,55" zPosition="4" />
-		<widget pixmap="~/ico_crypt_on.png" position="318,15" alphatest="on" transparent="0" render="Pixmap" size="85,55" source="session.CurrentService" zPosition="5">
+		<ePixmap position="217,15" pixmap="ico_format_off.png" alphatest="on" transparent="0" size="85,55" zPosition="4" />
+		<widget pixmap="ico_crypt_on.png" position="318,15" alphatest="on" transparent="0" render="Pixmap" size="85,55" source="session.CurrentService" zPosition="5">
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap position="318,15" pixmap="~/ico_crypt_off.png" alphatest="on" transparent="0" size="85,55" zPosition="4" />
-		<ePixmap position="419,15" pixmap="~/ico_rec_off.png" alphatest="on" transparent="0" size="85,55" zPosition="4" />
+		<ePixmap position="318,15" pixmap="ico_crypt_off.png" alphatest="on" transparent="0" size="85,55" zPosition="4" />
+		<ePixmap position="419,15" pixmap="ico_rec_off.png" alphatest="on" transparent="0" size="85,55" zPosition="4" />
 	</screen>
 
 <!-- Tunerstatuspanel -->	
 	<screen name="SummaryTunerStatusPanel">
-		<widget source="session.TunerInfo" render="Pixmap" pixmap="~/tuner_a.png" alphatest="on" transparent="1" position="15,90" size="45,45" zPosition="5">
+		<widget source="session.TunerInfo" render="Pixmap" pixmap="tuner_a.png" alphatest="on" transparent="1" position="15,90" size="45,45" zPosition="5">
 			<convert type="TunerInfo">TunerUseMask</convert>
 			<convert type="ValueBitTest">1</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.TunerInfo" render="Pixmap" pixmap="~/tuner_b.png" alphatest="blend" transparent="1" position="73,90" size="45,45" zPosition="5">
+		<widget source="session.TunerInfo" render="Pixmap" pixmap="tuner_b.png" alphatest="blend" transparent="1" position="73,90" size="45,45" zPosition="5">
 			<convert type="TunerInfo">TunerUseMask</convert>
 			<convert type="ValueBitTest">2</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.TunerInfo" render="Pixmap" pixmap="~/tuner_c.png" alphatest="blend" transparent="1" position="600,90" size="45,45" zPosition="5">
+		<widget source="session.TunerInfo" render="Pixmap" pixmap="tuner_c.png" alphatest="blend" transparent="1" position="600,90" size="45,45" zPosition="5">
 			<convert type="TunerInfo">TunerUseMask</convert>
 			<convert type="ValueBitTest">4</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.TunerInfo" render="Pixmap" pixmap="~/tuner_d.png" alphatest="blend" transparent="1" position="658,90" size="45,45" zPosition="5">
+		<widget source="session.TunerInfo" render="Pixmap" pixmap="tuner_d.png" alphatest="blend" transparent="1" position="658,90" size="45,45" zPosition="5">
 			<convert type="TunerInfo">TunerUseMask</convert>
 			<convert type="ValueBitTest">8</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="Pixmap" pixmap="~/tuner_a_stb.png" position="15,90" size="45,45" transparent="1" alphatest="blend" zPosition="22">
+		<widget source="session.FrontendInfo" render="Pixmap" pixmap="tuner_a_stb.png" position="15,90" size="45,45" transparent="1" alphatest="blend" zPosition="22">
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">0,0</convert>
 			<convert type="ConditionalShowHide">Blink,1000</convert>
 		</widget>
-		<widget source="session.FrontendInfo" render="Pixmap" pixmap="~/tuner_b_stb.png" position="73,90" size="45,45" transparent="1" alphatest="blend" zPosition="22">
+		<widget source="session.FrontendInfo" render="Pixmap" pixmap="tuner_b_stb.png" position="73,90" size="45,45" transparent="1" alphatest="blend" zPosition="22">
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">1,1</convert>
 			<convert type="ConditionalShowHide">Blink,1000</convert>
 		</widget>
-		<widget source="session.FrontendInfo" render="Pixmap" pixmap="~/tuner_c_stb.png" position="600,90" size="45,45" transparent="1" alphatest="blend" zPosition="22">
+		<widget source="session.FrontendInfo" render="Pixmap" pixmap="tuner_c_stb.png" position="600,90" size="45,45" transparent="1" alphatest="blend" zPosition="22">
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">2,2</convert>
 			<convert type="ConditionalShowHide">Blink,1000</convert>
 		</widget>
-		<widget source="session.FrontendInfo" render="Pixmap" pixmap="~/tuner_d_stb.png" position="658,90" size="45,45" transparent="1" alphatest="blend" zPosition="22">
+		<widget source="session.FrontendInfo" render="Pixmap" pixmap="tuner_d_stb.png" position="658,90" size="45,45" transparent="1" alphatest="blend" zPosition="22">
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">3,3</convert>
 			<convert type="ConditionalShowHide">Blink,1000</convert>
 		</widget>
-		<widget source="session.FrontendInfo" render="Pixmap" pixmap="~/dvb-s.png" alphatest="on" transparent="0" position="15,155" size="110,55" zPosition="22">
+		<widget source="session.FrontendInfo" render="Pixmap" pixmap="dvb-s.png" alphatest="on" transparent="0" position="15,155" size="110,55" zPosition="22">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">0,0</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="Pixmap" pixmap="~/dvb-c.png" alphatest="on" transparent="0" position="15,155" size="110,55" zPosition="22">
+		<widget source="session.FrontendInfo" render="Pixmap" pixmap="dvb-c.png" alphatest="on" transparent="0" position="15,155" size="110,55" zPosition="22">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">1,1</convert>
 			<convert type="ConditionalShowHide" />
@@ -122,7 +122,7 @@
 			<convert type="ValueRange">2,2</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" alphatest="on" transparent="0" render="Pixmap" pixmap="~/dvb-streamIN.png" position="15,155" size="110,55" zPosition="21">
+		<widget source="session.CurrentService" alphatest="on" transparent="0" render="Pixmap" pixmap="dvb-streamIN.png" position="15,155" size="110,55" zPosition="21">
 			<convert type="ServiceInfo">IsStream</convert>
 			<convert type="ConditionalShowHide" />
 		</widget> 
@@ -130,13 +130,13 @@
          
 <!-- RecPanel -->                
 	<screen name="SummaryRecPanel">
-		<ePixmap position="0,448" pixmap="~/p_barblack.png" size="720,29" transparent="1" alphatest="on" />
-		<widget source="session.RecordState" render="Pixmap" position="419,15" pixmap="~/ico_rec_on.png" alphatest="on" size="85,55" zPosition="11">
+		<ePixmap position="0,448" pixmap="p_barblack.png" size="720,29" transparent="1" alphatest="on" />
+		<widget source="session.RecordState" render="Pixmap" position="419,15" pixmap="ico_rec_on.png" alphatest="on" size="85,55" zPosition="11">
 			<convert type="ConfigEntryTest">config.usage.blinking_rec_symbol_during_recording,True,CheckSourceBoolean</convert>
 			<convert type="ConditionalShowHide">Blink,800</convert>
 			
 		</widget>
-		<widget source="session.RecordState" render="Pixmap" position="419,15" pixmap="~/ico_rec_on.png" alphatest="on" size="85,55" zPosition="11">
+		<widget source="session.RecordState" render="Pixmap" position="419,15" pixmap="ico_rec_on.png" alphatest="on" size="85,55" zPosition="11">
 			<convert type="ConfigEntryTest">config.usage.blinking_rec_symbol_during_recording,False,CheckSourceBoolean</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -335,16 +335,16 @@
 		<widget source="session.CurrentService" render="Label" position="15,485" size="675,72" font="FdLcD;60" foregroundColor="#dedede" halign="center">
 			<convert type="ServicePosition">Remaining,Negate</convert>
 		</widget>
-		<widget source="session.CurrentService" alphatest="on" transparent="0" render="Pixmap" pixmap="~/ico_stream_on.png" position="520,15" size="85,55" zPosition="5">
+		<widget source="session.CurrentService" alphatest="on" transparent="0" render="Pixmap" pixmap="ico_stream_on.png" position="520,15" size="85,55" zPosition="5">
 			<convert type="ServiceInfo">IsStream</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" alphatest="on" render="Pixmap" pixmap="~/red_blank.png" position="15,155" size="110,55" zPosition="21">
+		<widget source="session.CurrentService" alphatest="on" render="Pixmap" pixmap="red_blank.png" position="15,155" size="110,55" zPosition="21">
 		        <convert type="ServiceInfoET8500">IsMPIII</convert>
                         <convert type="ConfigEntryTest">config.usage.blinking_rec_symbol_during_recording,True,CheckSourceBoolean</convert>
 			<convert type="ConditionalShowHide">Blink,800</convert>
                 </widget>
-                <widget source="session.CurrentService" alphatest="on" render="Pixmap" pixmap="~/red_blank.png" position="15,155" size="110,55" zPosition="15">
+                <widget source="session.CurrentService" alphatest="on" render="Pixmap" pixmap="red_blank.png" position="15,155" size="110,55" zPosition="15">
 			<convert type="ServiceInfoET8500">IsMPIII</convert>
                         <convert type="ConfigEntryTest">config.usage.blinking_rec_symbol_during_recording,False,CheckSourceBoolean</convert>
 			<convert type="ConditionalShowHide" />
@@ -365,16 +365,16 @@
 		<widget source="session.CurrentService" render="Label" position="15,485" size="675,72" font="FdLcD;60" foregroundColor="#dedede" halign="center">
 			<convert type="ServicePosition">Remaining,Negate</convert>
 		</widget>
-		<widget source="session.CurrentService" alphatest="on" transparent="0" render="Pixmap" pixmap="~/ico_stream_on.png" position="520,15" size="85,55" zPosition="5">
+		<widget source="session.CurrentService" alphatest="on" transparent="0" render="Pixmap" pixmap="ico_stream_on.png" position="520,15" size="85,55" zPosition="5">
 			<convert type="ServiceInfo">IsStream</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" alphatest="on" render="Pixmap" pixmap="~/red_blank.png" position="15,155" size="110,55" zPosition="21">
+		<widget source="session.CurrentService" alphatest="on" render="Pixmap" pixmap="red_blank.png" position="15,155" size="110,55" zPosition="21">
 		        <convert type="ServiceInfoET8500">IsMPIII</convert>
                         <convert type="ConfigEntryTest">config.usage.blinking_rec_symbol_during_recording,True,CheckSourceBoolean</convert>
 			<convert type="ConditionalShowHide">Blink,800</convert>
                 </widget>
-                <widget source="session.CurrentService" alphatest="on" render="Pixmap" pixmap="~/red_blank.png" position="15,155" size="110,55" zPosition="15">
+                <widget source="session.CurrentService" alphatest="on" render="Pixmap" pixmap="red_blank.png" position="15,155" size="110,55" zPosition="15">
 			<convert type="ServiceInfoET8500">IsMPIII</convert>
                         <convert type="ConfigEntryTest">config.usage.blinking_rec_symbol_during_recording,False,CheckSourceBoolean</convert>
 			<convert type="ConditionalShowHide" />
@@ -440,9 +440,9 @@
 <!-- standby -->
 <!--"Analog Clock" -->
 	<screen name="StandbySummary" position="0,0" size="704,576" flags="wfNoBorder">
-                <ePixmap pixmap="~/analog_lcd2.png" position="0,0" size="720,576" zPosition="1" />
-		<ePixmap pixmap="~/ClockPoint.png" position="10,278" size="700,35" alphatest="on" transparent="1" zPosition="7" />
-		<ePixmap pixmap="~/ClockPointSec2.png" position="12,415" size="700,15" alphatest="on" transparent="1" zPosition="5" />
+                <ePixmap pixmap="analog_lcd2.png" position="0,0" size="720,576" zPosition="1" />
+		<ePixmap pixmap="ClockPoint.png" position="10,278" size="700,35" alphatest="on" transparent="1" zPosition="7" />
+		<ePixmap pixmap="ClockPointSec2.png" position="12,415" size="700,15" alphatest="on" transparent="1" zPosition="5" />
 		<widget source="global.CurrentTime" render="EtAnalogClockLCD" position="8,center" size="700,540" hColor="#EFC700" positionwidth="682" positionheight="550" linewidth="14" linesize="155" zPosition="6" alphatest="on">
 			<convert type="EtAnalogClock">Hours</convert>
 		</widget>
@@ -452,11 +452,11 @@
 		<widget source="global.CurrentTime" render="EtAnalogClockLCD" position="10,145" size="700,540" sColor="#7FC9FF" positionwidth="682" positionheight="550" linewidth="4" linesize="60" zPosition="4" alphatest="blend">
 			<convert type="EtAnalogClock">Seconds</convert>
 		</widget>
-		<widget source="session.RecordState" render="Pixmap" position="0,346" size="720,576" alphatest="on" pixmap="~/analog_lcd2_rec.png" transparent="1" zPosition="2">
+		<widget source="session.RecordState" render="Pixmap" position="0,346" size="720,576" alphatest="on" pixmap="analog_lcd2_rec.png" transparent="1" zPosition="2">
 			<convert type="ConfigEntryTest">config.usage.blinking_display_clock_during_recording,True,CheckSourceBoolean</convert>
 			<convert type="ConditionalShowHide">Blink,1000</convert>
 		</widget>
-		<widget source="session.RecordState" render="Pixmap" position="0,0" size="720,576" alphatest="on" pixmap="~/analog_lcd2_rec.png" transparent="1" zPosition="2">
+		<widget source="session.RecordState" render="Pixmap" position="0,0" size="720,576" alphatest="on" pixmap="analog_lcd2_rec.png" transparent="1" zPosition="2">
 			<convert type="ConfigEntryTest">config.usage.blinking_display_clock_during_recording,False,CheckSourceBoolean</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>

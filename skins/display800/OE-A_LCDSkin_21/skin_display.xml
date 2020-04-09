@@ -61,7 +61,7 @@
 	
 	<fonts>
 		<!-- no changes here -->
-		<font filename="~/lack_lcd.otf" name="lack_lcd" scale="100"/>
+		<font filename="lack_lcd.otf" name="lack_lcd" scale="100"/>
 	</fonts>
 	
 	
@@ -656,11 +656,11 @@
 	
 	<!-- /* ########## Recording Panel ########## -->
 	<screen name="MyRecordingPanel">
-		<widget source="session.RecordState" render="Pixmap" position="20,16" pixmap="~/ico_rec_on.png" size="68,35" alphatest="blend" zPosition="2">
+		<widget source="session.RecordState" render="Pixmap" position="20,16" pixmap="ico_rec_on.png" size="68,35" alphatest="blend" zPosition="2">
 			<convert type="ConfigEntryTest">config.usage.blinking_rec_symbol_during_recording,True,CheckSourceBoolean</convert>
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<widget source="session.RecordState" pixmap="~/ico_rec_on.png" render="Pixmap" position="20,16" size="68,35" alphatest="blend" zPosition="2">
+		<widget source="session.RecordState" pixmap="ico_rec_on.png" render="Pixmap" position="20,16" size="68,35" alphatest="blend" zPosition="2">
 			<convert type="ConfigEntryTest">config.usage.blinking_rec_symbol_during_recording,False,CheckSourceBoolean</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -670,38 +670,38 @@
 	<!-- /* ########## Icon Main Panel ########## -->
 	<screen name="MyIconMainPanel">
 		<!-- Record off -->
-		<ePixmap pixmap="~/ico_rec_off.png" position="20,16" size="68,35" alphatest="blend" zPosition="1" />
+		<ePixmap pixmap="ico_rec_off.png" position="20,16" size="68,35" alphatest="blend" zPosition="1" />
 		<!-- Subtitle -->
-		<ePixmap pixmap="~/ico_subtitle_off.png" position="111,16" size="47,35" alphatest="blend" zPosition="1" />
-		<widget source="session.CurrentService" pixmap="~/ico_subtitle_on.png" render="Pixmap" position="111,16" size="47,35" alphatest="blend" zPosition="2">
+		<ePixmap pixmap="ico_subtitle_off.png" position="111,16" size="47,35" alphatest="blend" zPosition="1" />
+		<widget source="session.CurrentService" pixmap="ico_subtitle_on.png" render="Pixmap" position="111,16" size="47,35" alphatest="blend" zPosition="2">
 			<convert type="ServiceInfo">SubservicesAvailable</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<!-- HbbTV -->
-		<ePixmap pixmap="~/ico_hbbtv_off.png" position="181,16" size="96,36" alphatest="blend" zPosition="1" />
-		<widget source="session.CurrentService" pixmap="~/ico_hbbtv_on.png" render="Pixmap" position="181,16" size="96,36" alphatest="blend" zPosition="2">
+		<ePixmap pixmap="ico_hbbtv_off.png" position="181,16" size="96,36" alphatest="blend" zPosition="1" />
+		<widget source="session.CurrentService" pixmap="ico_hbbtv_on.png" render="Pixmap" position="181,16" size="96,36" alphatest="blend" zPosition="2">
 			<convert type="ServiceInfo">HasHBBTV</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<!-- Teletext -->
-		<ePixmap pixmap="~/ico_txt_off.png" position="300,16" size="45,35" alphatest="blend" zPosition="1" />
-		<widget source="session.CurrentService" pixmap="~/ico_txt_on.png" render="Pixmap" position="300,16" size="45,35" alphatest="blend" zPosition="2">
+		<ePixmap pixmap="ico_txt_off.png" position="300,16" size="45,35" alphatest="blend" zPosition="1" />
+		<widget source="session.CurrentService" pixmap="ico_txt_on.png" render="Pixmap" position="300,16" size="45,35" alphatest="blend" zPosition="2">
 			<convert type="ServiceInfo">HasTelext</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<!-- Multichannel -->
-		<ePixmap pixmap="~/ico_dolby_off.png" position="368,16" size="51,35" alphatest="blend" zPosition="1" />
-		<widget source="session.CurrentService" pixmap="~/ico_dolby_on.png" render="Pixmap" position="368,16" size="51,35" alphatest="blend" zPosition="2">
+		<ePixmap pixmap="ico_dolby_off.png" position="368,16" size="51,35" alphatest="blend" zPosition="1" />
+		<widget source="session.CurrentService" pixmap="ico_dolby_on.png" render="Pixmap" position="368,16" size="51,35" alphatest="blend" zPosition="2">
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<!-- SD -->
-		<widget source="session.CurrentService" pixmap="~/ico_hd_off.png" render="Pixmap" position="442,16" size="74,36" alphatest="blend" zPosition="1">
+		<widget source="session.CurrentService" pixmap="ico_hd_off.png" render="Pixmap" position="442,16" size="74,36" alphatest="blend" zPosition="1">
 			<convert type="ServiceInfo">IsSD</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<!-- HD -->
-		<widget source="session.CurrentService" pixmap="~/ico_hd_on.png" render="Pixmap" position="442,16" size="74,36" alphatest="blend" zPosition="1">
+		<widget source="session.CurrentService" pixmap="ico_hd_on.png" render="Pixmap" position="442,16" size="74,36" alphatest="blend" zPosition="1">
 			<convert type="ServiceInfo">IsHD</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
@@ -710,16 +710,16 @@
 			<convert type="ServiceInfo">IsHDHDR</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" pixmap="~/ico_hd_hdr_r_on.png" render="Pixmap" position="442,16" size="74,36" alphatest="blend" zPosition="3">
+		<widget source="session.CurrentService" pixmap="ico_hd_hdr_r_on.png" render="Pixmap" position="442,16" size="74,36" alphatest="blend" zPosition="3">
 			<convert type="ServiceInfo">IsHDHDR</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<!-- 4K -->
-		<widget source="session.CurrentService" pixmap="~/ico_4k_off.png" render="Pixmap" position="539,16" size="74,36" alphatest="blend" zPosition="1">
+		<widget source="session.CurrentService" pixmap="ico_4k_off.png" render="Pixmap" position="539,16" size="74,36" alphatest="blend" zPosition="1">
 			<convert type="ServiceInfo">Is4K</convert>
 			<convert type="ConditionalShowHide">Invert</convert>
 		</widget>
-		<widget source="session.CurrentService" pixmap="~/ico_4k_on.png" render="Pixmap" position="539,16" size="74,36" alphatest="blend" zPosition="1">
+		<widget source="session.CurrentService" pixmap="ico_4k_on.png" render="Pixmap" position="539,16" size="74,36" alphatest="blend" zPosition="1">
 			<convert type="ServiceInfo">Is4K</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -728,7 +728,7 @@
 			<convert type="ServiceInfo">IsHDR</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" pixmap="~/ico_4k_hdr_on.png" render="Pixmap" position="539,16" size="74,36" alphatest="blend" zPosition="3">
+		<widget source="session.CurrentService" pixmap="ico_4k_hdr_on.png" render="Pixmap" position="539,16" size="74,36" alphatest="blend" zPosition="3">
 			<convert type="ServiceInfo">IsHDR</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
@@ -737,7 +737,7 @@
 			<convert type="ServiceInfo">IsHDR10</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" pixmap="~/ico_4k_hdr10_on.png" render="Pixmap" position="539,16" size="74,36" alphatest="blend" zPosition="3">
+		<widget source="session.CurrentService" pixmap="ico_4k_hdr10_on.png" render="Pixmap" position="539,16" size="74,36" alphatest="blend" zPosition="3">
 			<convert type="ServiceInfo">IsHDR10</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
@@ -746,19 +746,19 @@
 			<convert type="ServiceInfo">IsHLG</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" pixmap="~/ico_4k_hlg_on.png" render="Pixmap" position="539,16" size="74,36" alphatest="blend" zPosition="3">
+		<widget source="session.CurrentService" pixmap="ico_4k_hlg_on.png" render="Pixmap" position="539,16" size="74,36" alphatest="blend" zPosition="3">
 			<convert type="ServiceInfo">IsHLG</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<!-- Widescreen -->
-		<ePixmap pixmap="~/ico_format_off.png" position="636,16" size="65,35" alphatest="blend" zPosition="1" />
-		<widget source="session.CurrentService" pixmap="~/ico_format_on.png" render="Pixmap" position="636,16" size="65,35" alphatest="blend" zPosition="2">
+		<ePixmap pixmap="ico_format_off.png" position="636,16" size="65,35" alphatest="blend" zPosition="1" />
+		<widget source="session.CurrentService" pixmap="ico_format_on.png" render="Pixmap" position="636,16" size="65,35" alphatest="blend" zPosition="2">
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<!-- Crypted -->
-		<ePixmap pixmap="~/ico_crypt_off.png" position="724,16" size="56,35" alphatest="blend" zPosition="1" />
-		<widget source="session.CurrentService" pixmap="~/ico_crypt_on.png" render="Pixmap" position="724,16" size="56,35" alphatest="blend" zPosition="2">
+		<ePixmap pixmap="ico_crypt_off.png" position="724,16" size="56,35" alphatest="blend" zPosition="1" />
+		<widget source="session.CurrentService" pixmap="ico_crypt_on.png" render="Pixmap" position="724,16" size="56,35" alphatest="blend" zPosition="2">
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -768,29 +768,29 @@
 	<!-- /* ########## Icon Cover Panel ########## -->
 	<screen name="MyIconCoverPanel">
 		<!-- Record off -->
-		<ePixmap pixmap="~/ico_rec_off.png" position="20,16" size="68,35" alphatest="blend" zPosition="1" />
+		<ePixmap pixmap="ico_rec_off.png" position="20,16" size="68,35" alphatest="blend" zPosition="1" />
 		<!-- Subtitle -->
-		<ePixmap pixmap="~/ico_subtitle_off.png" position="110,16" size="47,35" alphatest="blend" zPosition="1" />
-		<widget source="session.CurrentService" pixmap="~/ico_subtitle_on.png" render="Pixmap" position="110,16" size="47,35" alphatest="blend" zPosition="2">
+		<ePixmap pixmap="ico_subtitle_off.png" position="110,16" size="47,35" alphatest="blend" zPosition="1" />
+		<widget source="session.CurrentService" pixmap="ico_subtitle_on.png" render="Pixmap" position="110,16" size="47,35" alphatest="blend" zPosition="2">
 			<convert type="ServiceInfo">SubservicesAvailable</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<!-- Teletext -->
-		<ePixmap pixmap="~/ico_txt_off.png" position="179,16" size="45,35" alphatest="blend" zPosition="1" />
-		<widget source="session.CurrentService" pixmap="~/ico_txt_on.png" render="Pixmap" position="179,16" size="45,35" alphatest="blend" zPosition="2">
+		<ePixmap pixmap="ico_txt_off.png" position="179,16" size="45,35" alphatest="blend" zPosition="1" />
+		<widget source="session.CurrentService" pixmap="ico_txt_on.png" render="Pixmap" position="179,16" size="45,35" alphatest="blend" zPosition="2">
 			<convert type="ServiceInfo">HasTelext</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<!-- Multichannel -->
-		<ePixmap pixmap="~/ico_dolby_off.png" position="246,16" size="51,35" alphatest="blend" zPosition="1" />
-		<widget source="session.CurrentService" pixmap="~/ico_dolby_on.png" render="Pixmap" position="246,16" size="51,35" alphatest="blend" zPosition="2">
+		<ePixmap pixmap="ico_dolby_off.png" position="246,16" size="51,35" alphatest="blend" zPosition="1" />
+		<widget source="session.CurrentService" pixmap="ico_dolby_on.png" render="Pixmap" position="246,16" size="51,35" alphatest="blend" zPosition="2">
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<!-- SD -->
-		<ePixmap pixmap="~/ico_hd_off.png" position="319,16" size="74,36" alphatest="blend" zPosition="1" />
+		<ePixmap pixmap="ico_hd_off.png" position="319,16" size="74,36" alphatest="blend" zPosition="1" />
 		<!-- HD -->
-		<widget source="session.CurrentService" pixmap="~/ico_hd_on.png" render="Pixmap" position="319,16" size="74,36" alphatest="blend" zPosition="1">
+		<widget source="session.CurrentService" pixmap="ico_hd_on.png" render="Pixmap" position="319,16" size="74,36" alphatest="blend" zPosition="1">
 			<convert type="ServiceInfo">IsHD</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
@@ -799,16 +799,16 @@
 			<convert type="ServiceInfo">IsHDHDR</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" pixmap="~/ico_hd_hdr_r_on.png" render="Pixmap" position="319,16" size="74,36" alphatest="blend" zPosition="3">
+		<widget source="session.CurrentService" pixmap="ico_hd_hdr_r_on.png" render="Pixmap" position="319,16" size="74,36" alphatest="blend" zPosition="3">
 			<convert type="ServiceInfo">IsHDHDR</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<!-- 4K -->
-		<widget source="session.CurrentService" pixmap="~/ico_4k_off.png" render="Pixmap" position="414,16" size="74,36" alphatest="blend" zPosition="1">
+		<widget source="session.CurrentService" pixmap="ico_4k_off.png" render="Pixmap" position="414,16" size="74,36" alphatest="blend" zPosition="1">
 			<convert type="ServiceInfo">Is4K</convert>
 			<convert type="ConditionalShowHide">Invert</convert>
 		</widget>
-		<widget source="session.CurrentService" pixmap="~/ico_4k_on.png" render="Pixmap" position="414,16" size="74,36" alphatest="blend" zPosition="1">
+		<widget source="session.CurrentService" pixmap="ico_4k_on.png" render="Pixmap" position="414,16" size="74,36" alphatest="blend" zPosition="1">
 			<convert type="ServiceInfo">Is4K</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -817,7 +817,7 @@
 			<convert type="ServiceInfo">IsHDR</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" pixmap="~/ico_4k_hdr_on.png" render="Pixmap" position="414,16" size="74,36" alphatest="blend" zPosition="3">
+		<widget source="session.CurrentService" pixmap="ico_4k_hdr_on.png" render="Pixmap" position="414,16" size="74,36" alphatest="blend" zPosition="3">
 			<convert type="ServiceInfo">IsHDR</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
@@ -826,7 +826,7 @@
 			<convert type="ServiceInfo">IsHDR10</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" pixmap="~/ico_4k_hdr10_on.png" render="Pixmap" position="414,16" size="74,36" alphatest="blend" zPosition="3">
+		<widget source="session.CurrentService" pixmap="ico_4k_hdr10_on.png" render="Pixmap" position="414,16" size="74,36" alphatest="blend" zPosition="3">
 			<convert type="ServiceInfo">IsHDR10</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
@@ -835,13 +835,13 @@
 			<convert type="ServiceInfo">IsHLG</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" pixmap="~/ico_4k_hlg_on.png" render="Pixmap" position="414,16" size="74,36" alphatest="blend" zPosition="3">
+		<widget source="session.CurrentService" pixmap="ico_4k_hlg_on.png" render="Pixmap" position="414,16" size="74,36" alphatest="blend" zPosition="3">
 			<convert type="ServiceInfo">IsHLG</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<!-- Widescreen -->
-		<ePixmap pixmap="~/ico_format_off.png" position="509,16" size="65,35" alphatest="blend" zPosition="1" />
-		<widget source="session.CurrentService" pixmap="~/ico_format_on.png" render="Pixmap" position="509,16" size="65,35" alphatest="blend" zPosition="2">
+		<ePixmap pixmap="ico_format_off.png" position="509,16" size="65,35" alphatest="blend" zPosition="1" />
+		<widget source="session.CurrentService" pixmap="ico_format_on.png" render="Pixmap" position="509,16" size="65,35" alphatest="blend" zPosition="2">
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -851,29 +851,29 @@
 	<!-- /* ########## Icon No Cover Panel ########## -->
 	<screen name="MyIconNoCoverPanel">
 		<!-- Record off -->
-		<ePixmap pixmap="~/ico_rec_off.png" position="20,16" size="68,35" alphatest="blend" zPosition="1" />
+		<ePixmap pixmap="ico_rec_off.png" position="20,16" size="68,35" alphatest="blend" zPosition="1" />
 		<!-- Subtitle -->
-		<ePixmap pixmap="~/ico_subtitle_off.png" position="144,16" size="47,35" alphatest="blend" zPosition="1" />
-		<widget source="session.CurrentService" pixmap="~/ico_subtitle_on.png" render="Pixmap" position="144,16" size="47,35" alphatest="blend" zPosition="2">
+		<ePixmap pixmap="ico_subtitle_off.png" position="144,16" size="47,35" alphatest="blend" zPosition="1" />
+		<widget source="session.CurrentService" pixmap="ico_subtitle_on.png" render="Pixmap" position="144,16" size="47,35" alphatest="blend" zPosition="2">
 			<convert type="ServiceInfo">SubservicesAvailable</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<!-- Teletext -->
-		<ePixmap pixmap="~/ico_txt_off.png" position="247,16" size="45,35" alphatest="blend" zPosition="1" />
-		<widget source="session.CurrentService" pixmap="~/ico_txt_on.png" render="Pixmap" position="247,16" size="45,35" alphatest="blend" zPosition="2">
+		<ePixmap pixmap="ico_txt_off.png" position="247,16" size="45,35" alphatest="blend" zPosition="1" />
+		<widget source="session.CurrentService" pixmap="ico_txt_on.png" render="Pixmap" position="247,16" size="45,35" alphatest="blend" zPosition="2">
 			<convert type="ServiceInfo">HasTelext</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<!-- Multichannel -->
-		<ePixmap pixmap="~/ico_dolby_off.png" position="348,16" size="51,35" alphatest="blend" zPosition="1" />
-		<widget source="session.CurrentService" pixmap="~/ico_dolby_on.png" render="Pixmap" position="348,16" size="51,35" alphatest="blend" zPosition="2">
+		<ePixmap pixmap="ico_dolby_off.png" position="348,16" size="51,35" alphatest="blend" zPosition="1" />
+		<widget source="session.CurrentService" pixmap="ico_dolby_on.png" render="Pixmap" position="348,16" size="51,35" alphatest="blend" zPosition="2">
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<!-- SD -->
-		<ePixmap pixmap="~/ico_hd_off.png" position="455,16" size="74,36" alphatest="blend" zPosition="1" />
+		<ePixmap pixmap="ico_hd_off.png" position="455,16" size="74,36" alphatest="blend" zPosition="1" />
 		<!-- HD -->
-		<widget source="session.CurrentService" pixmap="~/ico_hd_on.png" render="Pixmap" position="455,16" size="74,36" alphatest="blend" zPosition="1">
+		<widget source="session.CurrentService" pixmap="ico_hd_on.png" render="Pixmap" position="455,16" size="74,36" alphatest="blend" zPosition="1">
 			<convert type="ServiceInfo">IsHD</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
@@ -882,16 +882,16 @@
 			<convert type="ServiceInfo">IsHDHDR</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" pixmap="~/ico_hd_hdr_r_on.png" render="Pixmap" position="455,16" size="74,36" alphatest="blend" zPosition="3">
+		<widget source="session.CurrentService" pixmap="ico_hd_hdr_r_on.png" render="Pixmap" position="455,16" size="74,36" alphatest="blend" zPosition="3">
 			<convert type="ServiceInfo">IsHDHDR</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<!-- 4K -->
-		<widget source="session.CurrentService" pixmap="~/ico_4k_off.png" render="Pixmap" position="585,16" size="74,36" alphatest="blend" zPosition="1">
+		<widget source="session.CurrentService" pixmap="ico_4k_off.png" render="Pixmap" position="585,16" size="74,36" alphatest="blend" zPosition="1">
 			<convert type="ServiceInfo">Is4K</convert>
 			<convert type="ConditionalShowHide">Invert</convert>
 		</widget>
-		<widget source="session.CurrentService" pixmap="~/ico_4k_on.png" render="Pixmap" position="585,16" size="74,36" alphatest="blend" zPosition="1">
+		<widget source="session.CurrentService" pixmap="ico_4k_on.png" render="Pixmap" position="585,16" size="74,36" alphatest="blend" zPosition="1">
 			<convert type="ServiceInfo">Is4K</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -900,7 +900,7 @@
 			<convert type="ServiceInfo">IsHDR</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" pixmap="~/ico_4k_hdr_on.png" render="Pixmap" position="585,16" size="74,36" alphatest="blend" zPosition="3">
+		<widget source="session.CurrentService" pixmap="ico_4k_hdr_on.png" render="Pixmap" position="585,16" size="74,36" alphatest="blend" zPosition="3">
 			<convert type="ServiceInfo">IsHDR</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
@@ -909,7 +909,7 @@
 			<convert type="ServiceInfo">IsHDR10</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" pixmap="~/ico_4k_hdr10_on.png" render="Pixmap" position="585,16" size="74,36" alphatest="blend" zPosition="3">
+		<widget source="session.CurrentService" pixmap="ico_4k_hdr10_on.png" render="Pixmap" position="585,16" size="74,36" alphatest="blend" zPosition="3">
 			<convert type="ServiceInfo">IsHDR10</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
@@ -918,13 +918,13 @@
 			<convert type="ServiceInfo">IsHLG</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" pixmap="~/ico_4k_hlg_on.png" render="Pixmap" position="585,16" size="74,36" alphatest="blend" zPosition="3">
+		<widget source="session.CurrentService" pixmap="ico_4k_hlg_on.png" render="Pixmap" position="585,16" size="74,36" alphatest="blend" zPosition="3">
 			<convert type="ServiceInfo">IsHLG</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<!-- Widescreen -->
-		<ePixmap pixmap="~/ico_format_off.png" position="715,16" size="65,35" alphatest="blend" zPosition="1" />
-		<widget source="session.CurrentService" pixmap="~/ico_format_on.png" render="Pixmap" position="715,16" size="65,35" alphatest="blend" zPosition="2">
+		<ePixmap pixmap="ico_format_off.png" position="715,16" size="65,35" alphatest="blend" zPosition="1" />
+		<widget source="session.CurrentService" pixmap="ico_format_on.png" render="Pixmap" position="715,16" size="65,35" alphatest="blend" zPosition="2">
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -1439,19 +1439,19 @@
 	<!-- /* ########## Backdrop Panel ########## -->
 	<screen name="MyBackdropPanel" position="0,0" size="800,480">
 		<!-- SD-Backdrop -->
-		<ePixmap pixmap="~/cinema_backdrop_1.png" position="20,52" size="554,256" />
+		<ePixmap pixmap="cinema_backdrop_1.png" position="20,52" size="554,256" />
 		<!-- HD-ready-Backdrop -->
-		<widget source="session.CurrentService" pixmap="~/cinema_backdrop_2.png" render="Pixmap" position="20,52" size="554,256" zPosition="1">
+		<widget source="session.CurrentService" pixmap="cinema_backdrop_2.png" render="Pixmap" position="20,52" size="554,256" zPosition="1">
 			<convert type="ServiceInfo">IsHD</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<!-- Full-HD-Backdrop -->
-		<widget source="session.CurrentService" pixmap="~/cinema_backdrop_3.png" render="Pixmap" position="20,52" size="554,256" zPosition="2">
+		<widget source="session.CurrentService" pixmap="cinema_backdrop_3.png" render="Pixmap" position="20,52" size="554,256" zPosition="2">
 			<convert type="ServiceInfo">Is1080</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<!-- 4K-Backdrop -->
-		<widget source="session.CurrentService" pixmap="~/cinema_backdrop_4.png" render="Pixmap" position="20,52" size="554,256" zPosition="1">
+		<widget source="session.CurrentService" pixmap="cinema_backdrop_4.png" render="Pixmap" position="20,52" size="554,256" zPosition="1">
 			<convert type="ServiceInfo">Is4K</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -1475,7 +1475,7 @@
 		<eLabel position="490,459" size="290,1" backgroundColor="NoCoverBorderColor" />
 		<eLabel position="490,21" size="1,438" backgroundColor="NoCoverBorderColor" />
 		<eLabel position="779,21" size="1,438" backgroundColor="NoCoverBorderColor" />
-		<ePixmap pixmap="~/no_cover_selection.png" position="492,22" size="286,436" zPosition="1" />
+		<ePixmap pixmap="no_cover_selection.png" position="492,22" size="286,436" zPosition="1" />
 		<widget source="parent.Service" render="Cover" position="485,15" size="300,450" zPosition="2" />
 	</screen>
 	<!-- EMC Selection Cover Panel */ -->
@@ -1531,7 +1531,7 @@
 		<eLabel position="584,297" size="196,1" backgroundColor="NoCoverBorderColor" />
 		<eLabel position="584,21" size="1,276" backgroundColor="NoCoverBorderColor" />
 		<eLabel position="779,21" size="1,276" backgroundColor="NoCoverBorderColor" />
-		<ePixmap pixmap="~/no_cover_player.png" position="586,22" size="192,274" zPosition="1" />
+		<ePixmap pixmap="no_cover_player.png" position="586,22" size="192,274" zPosition="1" />
 		<widget source="session.CurrentService" render="Cover" position="584,14" size="196,294" zPosition="2" />
 		
 		<panel name="MyIconCoverPanel" />
@@ -1609,7 +1609,7 @@
 		<eLabel position="584,297" size="196,1" backgroundColor="NoCoverBorderColor" />
 		<eLabel position="584,21" size="1,276" backgroundColor="NoCoverBorderColor" />
 		<eLabel position="779,21" size="1,276" backgroundColor="NoCoverBorderColor" />
-		<ePixmap pixmap="~/no_cover_player.png" position="586,22" size="192,274" zPosition="1" />
+		<ePixmap pixmap="no_cover_player.png" position="586,22" size="192,274" zPosition="1" />
 		<widget source="session.CurrentService" render="Cover" position="584,14" size="196,294" zPosition="2" />
 		
 		<panel name="MyIconCoverPanel" />
@@ -1679,11 +1679,11 @@
 		</widget>
 		<eLabel text="&#176;" position="763,62" size="68,58" font="lack_lcd;58" foregroundColor="StandbyColor" backgroundColor="WeatherBarColor" halign="left" zPosition="2" />
 		<!-- Record -->
-		<widget source="session.RecordState" render="Pixmap" position="10,122" pixmap="~/ico_rec_on.png" size="68,35" alphatest="blend" zPosition="2">
+		<widget source="session.RecordState" render="Pixmap" position="10,122" pixmap="ico_rec_on.png" size="68,35" alphatest="blend" zPosition="2">
 			<convert type="ConfigEntryTest">config.usage.blinking_rec_symbol_during_recording,True,CheckSourceBoolean</convert>
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<widget source="session.RecordState" pixmap="~/ico_rec_on.png" render="Pixmap" position="10,122" size="68,35" alphatest="blend" zPosition="2">
+		<widget source="session.RecordState" pixmap="ico_rec_on.png" render="Pixmap" position="10,122" size="68,35" alphatest="blend" zPosition="2">
 			<convert type="ConfigEntryTest">config.usage.blinking_rec_symbol_during_recording,False,CheckSourceBoolean</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>

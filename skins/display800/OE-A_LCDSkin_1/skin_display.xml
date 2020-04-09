@@ -29,7 +29,7 @@
         <font filename="MyriadPro-Regular.otf" name="RegularLCD" scale="100" />
         <font filename="MyriadPro-Semibold.otf" name="SemiboldLCD" scale="100" />
         <font filename="MyriadPro-SemiboldIt.otf" name="SemiboldLCDit" scale="100" />
-        <font filename="~/meteocons.ttf" name="Meteo" scale="100" />
+        <font filename="meteocons.ttf" name="Meteo" scale="100" />
 	</fonts>
 	<colors>
 		<color name="fullred" value="#ff0000" />
@@ -42,31 +42,31 @@
 	
 <!-- PanelTopBar -->
 	<screen name="PanelTopBar" position="0,0" size="800,480">
-		<ePixmap pixmap="~/background.png" position="0,0" size="800,480" />
+		<ePixmap pixmap="background.png" position="0,0" size="800,480" />
 		<widget source="session.RecordState" render="FixedLabel" position="20,20" zPosition="3" size="74,44" text=" " >
 			<convert type="ConfigEntryTest">config.usage.blinking_rec_symbol_during_recording,True,CheckSourceBoolean</convert>
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget> 
-		<widget source="session.RecordState" render="Pixmap" pixmap="~/REC_red.png" position="20,20"  size="74,44" transparent="1" zPosition="2">
+		<widget source="session.RecordState" render="Pixmap" pixmap="REC_red.png" position="20,20"  size="74,44" transparent="1" zPosition="2">
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="~/CRYPT_gold.png" position="100,18"  size="37,53" transparent="1" zPosition="2">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="CRYPT_gold.png" position="100,18"  size="37,53" transparent="1" zPosition="2">
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="~/TELETEXT_gold.png" position="150,20" size="66,51" transparent="1" zPosition="2">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="TELETEXT_gold.png" position="150,20" size="66,51" transparent="1" zPosition="2">
 			<convert type="ServiceInfo">HasTelext</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="~/16x9_gold.png" position="240,20" size="84,51" transparent="1" zPosition="2">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="16x9_gold.png" position="240,20" size="84,51" transparent="1" zPosition="2">
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="~/DOLBY_gold.png" position="340,26" size="68,40" transparent="1" zPosition="2">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="DOLBY_gold.png" position="340,26" size="68,40" transparent="1" zPosition="2">
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="~/ico_hbbtv_on.png" position="425,20" size="110,53" transparent="1" zPosition="2">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ico_hbbtv_on.png" position="425,20" size="110,53" transparent="1" zPosition="2">
 			<convert type="ServiceInfo">HasHBBTV</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
@@ -511,7 +511,7 @@
 	 
 <!-- ChannelSelection_summary -->
 	 <screen name="ChannelSelection_summary" position="0,0" size="800,480">
-		<ePixmap pixmap="~/background.png" position="0,0" size="800,480" />
+		<ePixmap pixmap="background.png" position="0,0" size="800,480" />
 		 <widget position="190,78" size="400,260" source="parent.ServiceEvent" render="Picon" transparent="1" zPosition="1">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
@@ -561,8 +561,8 @@
 		</widget>
 		<eLabel position="20,430" size="760,32" backgroundColor="#0066FF" zPosition="3" />
         <eLabel position="0,378" size="800,2" backgroundColor="#FF0000" zPosition="2"/>
-		<ePixmap pixmap="~/cinema_backdrop.png" position="20,80" size="520,298" />
-		<ePixmap pixmap="~/no_cover_player.png" position="540,80" size="240,295" />
+		<ePixmap pixmap="cinema_backdrop.png" position="20,80" size="520,298" />
+		<ePixmap pixmap="no_cover_player.png" position="540,80" size="240,295" />
 		<eLabel position="0,330" size="800,50" backgroundColor="#000000" zPosition="1" />
 		<widget source="parent.Service" render="Cover" position="540,15" size="240,360" zPosition="3" />
 		<widget source="Service" render="Progress" position="20,430" size="760,30" foregroundColor="#FF0000" transparent="1" borderWidth="6" zPosition="4">
@@ -606,7 +606,7 @@
 	
 <!-- EMC Selecting -->
 	<screen name="EMCSelection_summary" position="0,0" size="800,480"> 
-		<ePixmap pixmap="~/background.png" position="0,0" size="800,480" />
+		<ePixmap pixmap="background.png" position="0,0" size="800,480" />
 		<widget source="parent.Service" render="Label" position="20,105" size="510,265" font="VFD;50" foregroundColor="#e5b243" halign="center" valign="center" transparent="1" zPosition="2" >
 			<convert type="ServiceName">Name</convert>
 		</widget>
@@ -623,7 +623,7 @@
 			<convert type="ClockToText">Default</convert>
 		</widget>
         <eLabel position="0,375" size="800,4" backgroundColor="#FF0000" />
-		<ePixmap pixmap="~/no_cover_player.png" position="540,105" size="240,270" />
+		<ePixmap pixmap="no_cover_player.png" position="540,105" size="240,270" />
 		<widget source="parent.Service" render="Cover" position="540,15" size="240,360" zPosition="2" />
 	</screen>
 	<screen name="EMCSelectionSummary" position="0,0" size="800,480">
@@ -686,7 +686,7 @@
 
 <!-- E2 Standby Screen Analog clock  -->
 	<screen name="StandbySummary" position="0,0" size="800,480">
-		<ePixmap pixmap="~/background-1.png" position="0,0" size="800,480" />
+		<ePixmap pixmap="background-1.png" position="0,0" size="800,480" />
 		<widget source="global.CurrentTime" render="Label" position="520,24" size="250,53" font="VFD;53" transparent="1" halign="right" zPosition="1">
 			<convert type="ClockToText">Format:%d.%m.%Y</convert>
 		</widget>
@@ -697,10 +697,10 @@
 			<convert type="ConfigEntryTest">config.usage.blinking_rec_symbol_during_recording,True,CheckSourceBoolean</convert>
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<widget source="session.RecordState" render="Pixmap" pixmap="~/REC_red.png" position="20,20" size="80,53" transparent="1" zPosition="1">
+		<widget source="session.RecordState" render="Pixmap" pixmap="REC_red.png" position="20,20" size="80,53" transparent="1" zPosition="1">
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap pixmap="~/analogclock.png" position="186,32" size="800,480" transparent="1" alphatest="on" zPosition="1"/>
+		<ePixmap pixmap="analogclock.png" position="186,32" size="800,480" transparent="1" alphatest="on" zPosition="1"/>
 		<widget source="global.CurrentTime" render="AnalogClockLCD" position="center,center" size="425,420" hColor="black" positionwidth="425" positionheight="420" linewidth="10" linesize="120" zPosition="3" alphatest="on">
 			<convert type="AnalogClock">Hours</convert>
 		</widget>
@@ -736,11 +736,11 @@
 		<widget source="global.CurrentTime" render="Label" position="0,374" size="800,106" font="VFD;78" foregroundColor="#747474" backgroundColor="#111d3f" halign="center" zPosition="1">
 			<convert type="ClockToText">Format:%A %d.%m.%Y</convert>
 		</widget>
-		<widget source="session.RecordState" render="Pixmap" position="10,122" pixmap="~/REC_red.png" size="68,35" alphatest="blend" zPosition="2">
+		<widget source="session.RecordState" render="Pixmap" position="10,122" pixmap="REC_red.png" size="68,35" alphatest="blend" zPosition="2">
 			<convert type="ConfigEntryTest">config.usage.blinking_rec_symbol_during_recording,True,CheckSourceBoolean</convert>
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<widget source="session.RecordState" pixmap="~/REC_red.png" render="Pixmap" position="10,122" size="68,35" alphatest="blend" zPosition="2">
+		<widget source="session.RecordState" pixmap="REC_red.png" render="Pixmap" position="10,122" size="68,35" alphatest="blend" zPosition="2">
 			<convert type="ConfigEntryTest">config.usage.blinking_rec_symbol_during_recording,False,CheckSourceBoolean</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -817,7 +817,7 @@
 	
 <!-- PluginBrowser -->
 	<screen name="PluginBrowserSummary" position="0,0" size="800,480">
-		<ePixmap pixmap="~/background.png" position="0,0" size="800,480" />
+		<ePixmap pixmap="background.png" position="0,0" size="800,480" />
 		<widget source="entry" render="Label" position="20,20" size="720,220" font="VFD;60" foregroundColor="#e5b243" valign="center" halign="center" transparent="1" zPosition="1"/>
 		<eLabel position="0,240" size="800,4"  backgroundColor="#FF0000" />
 		<widget source="desc" render="Label" position="20,245" size="720,195" font="VFD;50" valign="center" halign="center" transparent="1" zPosition="1"/>
@@ -854,7 +854,7 @@
 	
 <!-- JOBVIEW SUMMARY -->
 	<screen name="JobView_summary" position="0,0" size="800,480">
-		<ePixmap pixmap="~/background.png" position="0,0" size="800,480" />
+		<ePixmap pixmap="background.png" position="0,0" size="800,480" />
 		<widget source="parent.summary_job_name" render="RollerCharLCDLong" position="20,20" size="760,80" font="VFD;80" foregroundColor="#e5b243" transparent="1" zPosition="1"/>
 		<widget source="parent.summary_job_task" render="Label" position="20,110" size="760,220" font="VFD;60" backgroundColor="#253f8a" halign="center" valign="center" zPosition="1" />
 		<widget source="parent.summary_job_progress" render="Label" position="20,340" size="720,50" font="VFD;50" halign="left" valign="center" transparent="1" zPosition="1">
@@ -893,7 +893,7 @@
         <widget source="parent.Title" render="Label" position="20,80" size="760,360" font="VFD;80" foregroundColor="#e5b243" halign="center" valign="center" transparent="1" zPosition="1"/>
 	</screen>
 	<screen name="EPGSelection_summary" position="fill">
-		<ePixmap pixmap="~/background.png" position="0,0" size="800,480" />
+		<ePixmap pixmap="background.png" position="0,0" size="800,480" />
 		<widget source="parent.Service" render="Label" position="20,20" size="720,70" font="VFD;60" foregroundColor="#e5b243" halign="center" valign="center" transparent="1" zPosition="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
@@ -1294,7 +1294,7 @@
 <!-- KodiLauncher_summary -->
 	<screen name="KodiLauncher_summary" position="0,0" size="800,480" >
 		<panel name="PanelTopBar" />
-		<ePixmap pixmap="~/kodi.png" position="100,170" size="600,300" transparent="1" zPosition="1"/>
+		<ePixmap pixmap="kodi.png" position="100,170" size="600,300" transparent="1" zPosition="1"/>
 		<widget source="global.CurrentTime" render="Label" position="550,80" size="230,100" font="VFD;90" halign="center" valign="center" transparent="1" zPosition="1">
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>

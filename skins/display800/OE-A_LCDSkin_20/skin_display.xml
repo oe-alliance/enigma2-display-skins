@@ -7,7 +7,7 @@
     <color name="LCDBackground" value="#000000" />
 </colors>
 <fonts>
-    <font filename="~/meteocons.ttf" name="Meteo" scale="100" />
+    <font filename="meteocons.ttf" name="Meteo" scale="100" />
     <font filename="analog.ttf" name="VFD2" scale="90"/>
     <font filename="nmsbd.ttf" name="VFD" scale="90"/>
 	<font filename="MyriadPro-Regular.otf" name="RegularLCD" scale="100" />
@@ -34,41 +34,41 @@
 			<convert type="ConfigEntryTest">config.usage.blinking_rec_symbol_during_recording,True,CheckSourceBoolean</convert>
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
-		<widget source="session.RecordState" render="Pixmap" pixmap="~/REC_red.png" position="382,22"  size="74,44" >
+		<widget source="session.RecordState" render="Pixmap" pixmap="REC_red.png" position="382,22"  size="74,44" >
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="~/CRYPT_grey.png" position="302,22"  size="60,44" >
+		<widget source="session.CurrentService" render="Pixmap" pixmap="CRYPT_grey.png" position="302,22"  size="60,44" >
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="~/TELETEXT_yellow.png" position="211,22" size="66,52" >
+		<widget source="session.CurrentService" render="Pixmap" pixmap="TELETEXT_yellow.png" position="211,22" size="66,52" >
 			<convert type="ServiceInfo">HasTelext</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="~/16x9_blue.png" position="120,22" size="66,51" >
+		<widget source="session.CurrentService" render="Pixmap" pixmap="16x9_blue.png" position="120,22" size="66,51" >
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="~/DOLBY_green.png" position="35,22" size="68,44" >
+		<widget source="session.CurrentService" render="Pixmap" pixmap="DOLBY_green.png" position="35,22" size="68,44" >
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 	</screen>
   
   <screen name="LCDIconPlayerTemplate">
-		<widget source="session.CurrentService" render="Pixmap" pixmap="~/CRYPT_grey.png" position="495,140"  size="60,44" >
+		<widget source="session.CurrentService" render="Pixmap" pixmap="CRYPT_grey.png" position="495,140"  size="60,44" >
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="~/TELETEXT_yellow.png" position="493,195" size="66,52" >
+		<widget source="session.CurrentService" render="Pixmap" pixmap="TELETEXT_yellow.png" position="493,195" size="66,52" >
 			<convert type="ServiceInfo">HasTelext</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="~/16x9_blue.png" position="493,25" size="66,51" >
+    <widget source="session.CurrentService" render="Pixmap" pixmap="16x9_blue.png" position="493,25" size="66,51" >
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="~/DOLBY_green.png" position="491,86" size="68,44" >
+		<widget source="session.CurrentService" render="Pixmap" pixmap="DOLBY_green.png" position="491,86" size="68,44" >
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
@@ -855,7 +855,7 @@
 <convert type="ConfigEntryTest">config.usage.blinking_rec_symbol_during_recording,True,CheckSourceBoolean</convert>
 <convert type="ConditionalShowHide">Blink</convert>
 </widget>
-<widget source="session.RecordState" render="Pixmap" pixmap="~/REC_red.png" position="35,126" size="74,44" >
+<widget source="session.RecordState" render="Pixmap" pixmap="REC_red.png" position="35,126" size="74,44" >
 <convert type="ConditionalShowHide" />
 </widget>
 </screen>

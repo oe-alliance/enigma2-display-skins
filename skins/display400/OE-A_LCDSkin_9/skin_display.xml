@@ -29,30 +29,30 @@
 	</screen>
 <!-- Rec Panel -->	
 	<screen name="MeinRecordingPanel">
-		<widget source="session.RecordState" render="Pixmap" position="378,0" pixmap="~/record.png" transparent="1" alphatest="on" size="22,20" zPosition="1">
+		<widget source="session.RecordState" render="Pixmap" position="378,0" pixmap="record.png" transparent="1" alphatest="on" size="22,20" zPosition="1">
 			<convert type="ConfigEntryTest">config.usage.blinking_rec_symbol_during_recording,True,CheckSourceBoolean</convert>
 			<convert type="ConditionalShowHide">Blink,1000</convert>
 		</widget>
-		<widget source="session.RecordState" render="Pixmap" position="378,0" pixmap="~/record.png" transparent="1" alphatest="on" size="22,20" zPosition="1">
+		<widget source="session.RecordState" render="Pixmap" position="378,0" pixmap="record.png" transparent="1" alphatest="on" size="22,20" zPosition="1">
 			<convert type="ConfigEntryTest">config.usage.blinking_rec_symbol_during_recording,False,CheckSourceBoolean</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 	</screen>
 <!-- Icon Panel -->	
 	<screen name="MeinIconPanel">
-		<widget source="session.CurrentService" render="Pixmap" pixmap="~/dolby.png" position="22,4" zPosition="4" size="33,20" >
+		<widget source="session.CurrentService" render="Pixmap" pixmap="dolby.png" position="22,4" zPosition="4" size="33,20" >
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="~/stereo.png" position="22,4" zPosition="4" size="33,20" >
+		<widget source="session.CurrentService" render="Pixmap" pixmap="stereo.png" position="22,4" zPosition="4" size="33,20" >
 			<convert type="ServiceInfo">IsStereo</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="~/hd.png" position="105,4" zPosition="3" size="46,20" >
+		<widget source="session.CurrentService" render="Pixmap" pixmap="hd.png" position="105,4" zPosition="3" size="46,20" >
 			<convert type="ServiceInfo">IsHD</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="~/wd.png" position="197,4" zPosition="2" size="37,20" >
+		<widget source="session.CurrentService" render="Pixmap" pixmap="wd.png" position="197,4" zPosition="2" size="37,20" >
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
