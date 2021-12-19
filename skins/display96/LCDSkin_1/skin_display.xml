@@ -193,6 +193,16 @@
 	<screen name="MessageBoxSimple_summary" position="fill">
 		<panel name="MessageBox_summary" />
 	</screen>
+
+	<screen name="MessageBoxSummary" position="fill">
+		<widget source="text" render="Label" position="top" size="*,52" font="FdLcD;11" halign="center" valign="center" />
+		<widget source="option" render="Label" position="bottom" size="*,14" font="FdLcD;14" halign="center" valign="center" />
+	</screen>
+
+	<screen name="MessageBoxSimpleSummary" position="fill">
+		<panel name="MessageBoxSummary" />
+	</screen>
+
 	<screen name="EMCMoviePlayerSummary" position="0,0" size="96,64" >
 		<!-- Movie name -->
 		<widget source="session.CurrentService" render="Label" position="0,-3" size="96,40" font="Regular;17" foregroundColor="#FFFF00" halign="center" valign="top" >
