@@ -323,6 +323,14 @@
 		<panel name="MessageBox_summary" />
 	</screen>
 
+	<screen name="MessageBoxSummary" position="0,0" size="255,64">
+		<widget source="text" render="Label" position="0,0" size="255,64" font="FdLcD;12" halign="center" />
+		<widget source="option" render="Label" position="0,50" size="255,14" font="FdLcD;12" halign="center" noWrap="1" />
+	</screen>
+	<screen name="MessageBoxSimpleSummary" position="0,0" size="255,64">
+		<panel name="MessageBoxSummary" />
+	</screen>
+
 	<screen name="AboutSummary" position="0,0" size="255,64">
 		<widget source="AboutText" render="Label" position="0,0" size="255,64" font="FdLcD;11" />
 	</screen>

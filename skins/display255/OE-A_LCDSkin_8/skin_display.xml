@@ -161,6 +161,10 @@
 		<widget source="parent.Text" render="Label" position="6,0" size="244,45" font="Regular;15" halign="center" valign="center" />
 		<widget source="parent.selectedChoice" render="Label" position="6,46" size="244,18" font="Regular;18" halign="center" valign="center" />
 	</screen>
+	<screen name="MessageBoxSummary" position="0,0" size="256,64" id="1">
+		<widget source="text" render="Label" position="6,0" size="244,45" font="Regular;15" halign="center" valign="center" />
+		<widget source="option" render="Label" position="6,46" size="244,18" font="Regular;18" halign="center" valign="center" />
+	</screen>
 	<screen name="MenuSummary" position="0,0" size="256,64" id="1">
 		<widget source="parent.title" render="Label" position="0,0" size="143,32" font="VFD;18" halign="center" valign="center"/>
 		<widget source="parent.menu" render="Label" position="0,32" size="143,32" font="VFD;18" halign="center" valign="center">
