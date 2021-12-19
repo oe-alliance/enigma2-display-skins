@@ -210,7 +210,7 @@
 
 	<screen name="ChoiceBox_summary" position="fill">
 		<widget source="parent.summary_list" render="Label" position="top" size="*,181" font="FdLcD;25" halign="left" />
-    </screen>	
+	</screen>
 
 	<screen name="MessageBox_summary" position="fill">
 		<widget source="parent.Text" render="Label" position="top" size="*,95" font="FdLcD;31" halign="center" valign="center" />
@@ -220,4 +220,14 @@
 	<screen name="MessageBoxSimple_summary" position="fill">
 		<panel name="MessageBox_summary" />
 	</screen>
+
+	<screen name="MessageBoxSummary" position="fill">
+		<widget source="text" render="Label" position="top" size="*,95" font="FdLcD;31" halign="center" valign="center" />
+		<widget source="option" render="Label" position="bottom" size="*,44" font="FdLcD;44" halign="center" valign="center" />
+	</screen>
+
+	<screen name="MessageBoxSimpleSummary" position="fill">
+		<panel name="MessageBoxSummary" />
+	</screen>
+
 </skin>
