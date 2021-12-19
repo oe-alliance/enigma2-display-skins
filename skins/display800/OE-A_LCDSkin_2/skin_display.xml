@@ -204,6 +204,13 @@
 	<screen name="MessageBoxSimple_summary" position="fill">
 		<panel name="MessageBox_summary" />
 	</screen>
+	<screen name="MessageBoxSummary" position="fill">
+		<widget source="text" render="Label" position="10,10" size="770,380" font="Medium" halign="center" valign="center"/>
+		<widget source="option" render="Label" position="10,390" size="770,70" font="Medium" halign="center" valign="center" noWrap="1" foregroundColor="lightcyan"/>
+	</screen>
+	<screen name="MessageBoxSimpleSummary" position="fill">
+		<panel name="MessageBoxSummary" />
+	</screen>
 	<!-- standby -->
 	<screen name="StandbySummary" position="fill">
 		<widget source="global.CurrentTime" render="Label" position="10,70" size="770,240" font="FdLcD;160" noWrap="1" foregroundColor="lightcyan" halign="center">

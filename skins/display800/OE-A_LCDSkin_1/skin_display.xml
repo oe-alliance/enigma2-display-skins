@@ -844,6 +844,15 @@
 		<panel name="MessageBox_summary" />
 	</screen>
 	
+	<screen name="MessageBoxSummary" position="0,0" size="800,480">
+		<widget source="text" render="Label" position="20,10" size="720,247" font="VFD;60" foregroundColor="#e5b243" halign="center" valign="center" />
+		<eLabel position="0,258" size="800,4"  backgroundColor="#FF0000" />
+		<widget source="option" render="Label" position="20,340" size="720,60" font="VFD;60" halign="center" valign="center" />
+	</screen>
+	<screen name="MessageBoxSimpleSummary" position="0,0" size="800,480"> 
+		<panel name="MessageBoxSummary" />
+	</screen>
+	
 <!-- ChoiceBox -->
 	<screen name="ChoiceBox_summary" position="0,0" size="800,480">
 		<widget source="parent.summary_list" render="Label" position="20,20" size="720,440" font="VFD;60" foregroundColor="#e5b243" halign="center" valign="center" />

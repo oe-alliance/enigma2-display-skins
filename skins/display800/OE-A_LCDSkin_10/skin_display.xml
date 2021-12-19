@@ -630,6 +630,12 @@
   <eLabel position="0,329" size="800,2" backgroundColor="#00FFFFFF" />
   <widget source="parent.selectedChoice" render="Label" position="21,337" size="760,95" font="VFD;65" halign="center" valign="center" />
   </screen>
+<screen name="MessageBoxSummary" position="0,0" size="800,480" >
+  <widget source="text" render="Label" position="20,50" size="760,270" font="VFD;45" halign="center" valign="center" />
+  <eLabel position="0,329" size="800,2" backgroundColor="#00FFFFFF" />
+  <widget source="option" render="Label" position="21,337" size="760,95" font="VFD;65" halign="center" valign="center" />
+  </screen>
+
 
 <!-- PluginBrowser -->
 <screen name="PluginBrowserSummary" position="0,0" size="800,480" >

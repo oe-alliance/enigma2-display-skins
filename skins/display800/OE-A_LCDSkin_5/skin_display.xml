@@ -177,6 +177,10 @@
 		<widget source="parent.Text" render="Label" position="30,20" size="740,300" font="RegularLCD;58" halign="center" valign="center" />
 		<widget source="parent.selectedChoice" render="Label" position="200,320" size="400,60" font="RegularLCD;58" halign="center" valign="center" />
 	</screen>
+	<screen name="MessageBoxSummary" position="0,0" size="800,480" >
+		<widget source="text" render="Label" position="30,20" size="740,300" font="RegularLCD;58" halign="center" valign="center" />
+		<widget source="option" render="Label" position="200,320" size="400,60" font="RegularLCD;58" halign="center" valign="center" />
+	</screen>
 	<screen name="MenuSummary" position="0,0" size="800,480" >
 		<panel name="LCDIconTemplate" />
 		<panel name="LCDClockTemplate" />

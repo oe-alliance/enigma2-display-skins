@@ -513,6 +513,16 @@
 		<panel name="MessageBox_summary" />
 	</screen>
 	
+	<screen name="MessageBoxSummary" position="0,0" size="800,480">
+		<widget source="text" render="Label" position="20,16" size="760,350" font="lack_lcd;60" halign="center" valign="center" />
+		<eLabel position="0,360" size="800,80" backgroundColor="openATVblueBar" />
+		<widget source="option" render="Label" position="20,364" size="760,80" font="lack_lcd;60" halign="center" valign="center" transparent="1" zPosition="1" />
+	</screen>
+	
+	<screen name="MessageBoxSimpleSummary" position="0,0" size="800,480">
+		<panel name="MessageBoxSummary" />
+	</screen>
+	
 	<screen name="AboutSummary" position="0,0" size="800,480">
 		<widget source="AboutText" render="Label" position="20,16" size="760,448" font="lack_lcd;26" />
 	</screen>

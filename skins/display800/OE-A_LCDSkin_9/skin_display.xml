@@ -203,6 +203,13 @@
   <widget source="parent.selectedChoice" render="Label" position="30,360" size="740,480" font="VFD;85" halign="center" valign="top" foregroundColor="#00FF0000"/>
 </screen>
 
+<screen name="MessageBoxSummary" position="0,0" size="800,480" >
+  <panel name="UpdateTemplate" />
+  <panel name="RecordingTemplate" />
+  <widget source="text" render="Label" position="30,80" size="740,480" font="VFD;95" halign="center" valign="top" />
+  <widget source="option" render="Label" position="30,360" size="740,480" font="VFD;85" halign="center" valign="top" foregroundColor="#00FF0000"/>
+</screen>
+
 <!-- Plugin Browser -->
 <screen name="PluginBrowserSummary" position="0,0" size="800,480" >
   <panel name="UpdateTemplate" />
