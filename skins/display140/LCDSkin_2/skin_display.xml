@@ -94,6 +94,9 @@
 	<screen name="MessageBox_summary" position="0,0" size="140,32" id="1">
 		<widget source="parent.selectedChoice" render="Label" position="5,5" size="130,20" font="VFD;20" halign="center" valign="top" />
 	</screen>
+	<screen name="MessageBoxSummary" position="0,0" size="140,32" id="1">
+		<widget source="option" render="Label" position="5,5" size="130,20" font="VFD;20" halign="center" valign="top" />
+	</screen>
 	<screen name="MenuSummary" position="0,0" size="140,32" id="1">
 		<widget source="parent.menu" render="Label" position="5,10" size="130,20" font="VFD;16" halign="center" valign="top">
 			<convert type="StringListSelection" />
