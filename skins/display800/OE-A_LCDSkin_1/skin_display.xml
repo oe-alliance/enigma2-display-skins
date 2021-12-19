@@ -646,6 +646,9 @@
 	<screen name="MediaPlayerLCDScreen" position="0,0" size="800,480">
 		<panel name="InfoBarMoviePlayerSummary" />
 	</screen>
+	<screen name="XStreamity_VodPlayer_summary" position="0,0" size="800,480">
+		<panel name="InfoBarMoviePlayerSummary" />
+	</screen>
 
 <!-- MediaPlayer Selecting & Playing 
 	<screen name="MediaPlayerLCDScreen" position="0,0" size="800,480">
