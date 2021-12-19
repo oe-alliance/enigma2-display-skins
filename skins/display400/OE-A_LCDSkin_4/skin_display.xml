@@ -234,8 +234,7 @@
 		<widget source="parent.selectedChoice" render="Label" position="0,135" size="400,28" font="FdLcD;26" halign="center" noWrap="1" />
 	</screen>
 	<screen name="MessageBoxSimple_summary" position="0,0" size="400,240">
-		<widget source="parent.Text" render="Label" position="0,0" size="400,240" font="FdLcD;24" halign="center" />
-		<widget source="parent.selectedChoice" render="Label" position="0,135" size="400,28" font="FdLcD;26" halign="center" noWrap="1" />
+		<panel name="MessageBox_summary" />
 	</screen>
 
 	<screen name="AboutSummary" position="0,0" size="400,240">

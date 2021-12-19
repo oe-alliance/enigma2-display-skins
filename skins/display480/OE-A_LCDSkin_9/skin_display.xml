@@ -508,9 +508,7 @@
 	</screen>
 	
 	<screen name="MessageBoxSimple_summary" position="0,0" size="480,320">
-		<widget source="parent.Text" render="Label" position="5,4" size="470,233" font="lack_lcd;37" halign="center" valign="center" />
-		<eLabel position="0,240" size="480,53" backgroundColor="openATVblueBar" />
-		<widget source="parent.selectedChoice" render="Label" position="5,243" size="470,53" font="lack_lcd;37" halign="center" valign="center" transparent="1" zPosition="1" />
+		<panel name="MessageBox_summary" />
 	</screen>
 	
 	<screen name="AboutSummary" position="0,0" size="480,320">

@@ -252,7 +252,7 @@
 		<widget source="parent.Text" render="Label" position="0,0" size="128,32" font="FdLcD;16" valign="center" halign="center" />
 	</screen>
 	<screen name="MessageBoxSimple_summary" position="0,0" size="128,32">
-		<widget source="parent.Text" render="Label" position="0,0" size="128,32" font="FdLcD;16" valign="center" halign="center" />
+		<panel name="MessageBox_summary" />
 	</screen>
 
 	<screen name="AboutSummary" position="0,0" size="128,32">

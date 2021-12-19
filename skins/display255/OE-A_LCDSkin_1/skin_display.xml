@@ -320,8 +320,7 @@
 		<widget source="parent.selectedChoice" render="Label" position="0,50" size="255,14" font="FdLcD;12" halign="center" noWrap="1" />
 	</screen>
 	<screen name="MessageBoxSimple_summary" position="0,0" size="255,64">
-		<widget source="parent.Text" render="Label" position="0,0" size="255,64" font="FdLcD;12" halign="center" />
-		<widget source="parent.selectedChoice" render="Label" position="0,50" size="255,14" font="FdLcD;12" halign="center" noWrap="1" />
+		<panel name="MessageBox_summary" />
 	</screen>
 
 	<screen name="AboutSummary" position="0,0" size="255,64">

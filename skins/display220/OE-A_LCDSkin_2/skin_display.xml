@@ -199,7 +199,6 @@
 	</screen>
 
 	<screen name="MessageBoxSimple_summary" position="fill">
-		<widget source="parent.Text" render="Label" position="top" size="*,95" font="FdLcD;31" halign="center" valign="center" />
-		<widget source="parent.selectedChoice" render="Label" position="bottom" size="*,44" font="FdLcD;44" halign="center" valign="center" />
+		<panel name="MessageBox_summary" />
 	</screen>
 </skin>
