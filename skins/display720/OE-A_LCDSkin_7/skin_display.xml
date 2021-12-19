@@ -317,7 +317,7 @@
 		</widget>
 		<panel name="SummaryClockPanel" />
 	</screen>
-        
+	
 	<screen name="ChoiceBox_summary" position="0,0" size="720,576">
 		<widget source="parent.summary_list" render="Label" position="22,22" size="670,445" font="FdLcDLight;57" halign="center" valign="center" foregroundColor="#e5b243" />
 		<panel name="SummaryClockPanel" />
@@ -331,6 +331,16 @@
 	
 	<screen name="MessageBoxSimple_summary" position="0,0" size="720,576"> 
 		<panel name="MessageBox_summary" />
+	</screen>
+	
+	<screen name="MessageBoxSummary" position="0,0" size="720,576"> 
+		<widget source="text" render="Label" position="10,20" size="670,376" font="FdLcD;70" halign="center" valign="center" foregroundColor="#e5b243" />
+		<widget source="option" render="Label" position="22,390" size="670,63" foregroundColor="#02c6ff" font="FdLcDLight;60" halign="center" valign="center" />
+		<panel name="SummaryClockPanel" />
+	</screen>
+	
+	<screen name="MessageBoxSimpleSummary" position="0,0" size="720,576"> 
+		<panel name="MessageBoxSummary" />
 	</screen>
 	
 <!-- console -->
