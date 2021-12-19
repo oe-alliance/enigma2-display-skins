@@ -1,7 +1,6 @@
 # usage: genmetaindex.py <xml-files>  > index.xml
 import sys, os
 from xml.etree.ElementTree import ElementTree, Element
-
 root = Element("index")
 
 for file in sys.argv[1:]:
@@ -47,4 +46,7 @@ def indent(elem, level=0):
 
 indent(root)
 
-ElementTree(root).write(sys.stdout)
+if sys.version_info[0] == 3:
+	ElementTree(root).write(sys.stdout, encoding='unicode')
+else:
+	ElementTree(root).write(sys.stdout)
