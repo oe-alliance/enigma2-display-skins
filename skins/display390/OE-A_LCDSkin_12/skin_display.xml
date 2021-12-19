@@ -467,6 +467,13 @@
 	<screen name="MessageBoxSimple_summary" position="0,0" size="390,240">
 		<panel name="MessageBox_summary" />
 	</screen>
+	<screen name="MessageBoxSummary" position="0,0" size="390,240">
+		<widget source="text" render="Label" position="0,0" size="390,240" font="MyLcD;35" halign="center" />
+		<widget source="option" render="Label" position="0,197" size="390,43" font="MyLcD;35" foregroundColor="#F4FA58" halign="center" noWrap="1" />
+	</screen>
+	<screen name="MessageBoxSimpleSummary" position="0,0" size="390,240">
+		<panel name="MessageBoxSummary" />
+	</screen>
 	<screen name="AboutSummary" position="0,0" size="390,240">
 		<widget source="AboutText" render="Label" position="0,0" size="390,240" font="MyLcD;12" />
 	</screen>
