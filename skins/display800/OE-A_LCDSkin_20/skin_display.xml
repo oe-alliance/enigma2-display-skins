@@ -75,7 +75,7 @@
 	</screen>
  
   <screen name="LCDWetterStandbyTemplate">
-    <widget font="MetrixIcons;65" render="Label" halign="center" valign="center" noWrap="1" transparent="1" source="global.CurrentTime" position="510,35" size="65,65" zPosition="7">
+    <widget font="Meteo;65" render="Label" halign="center" valign="center" noWrap="1" transparent="1" source="global.CurrentTime" position="510,35" size="65,65" zPosition="7">
      <convert type="VWeather">currentWeatherCode</convert>
     </widget>
     <widget font="VFD;55" render="Label" halign="left" valign="center" noWrap="1" transparent="1" source="global.CurrentTime" position="60,45" size="430,55" zPosition="5">

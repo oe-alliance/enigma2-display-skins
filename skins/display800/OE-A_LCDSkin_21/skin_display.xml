@@ -1655,7 +1655,7 @@
 			<convert type="MetrixHDWeather">currentWeatherTemp</convert>
 		</widget>
 		<eLabel text="&#176;" position="20,18" size="162,98" font="lack_lcd;98" foregroundColor="StandbyColor" backgroundColor="WeatherBarColor" halign="right" zPosition="1" />
-		<widget source="session.CurrentService" render="Label" position="212,16" size="98,98" font="MetrixIcons;98" foregroundColor="StandbyColor" backgroundColor="WeatherBarColor" halign="center" zPosition="1">
+		<widget source="session.CurrentService" render="Label" position="212,16" size="98,98" font="Meteo;98" foregroundColor="StandbyColor" backgroundColor="WeatherBarColor" halign="center" zPosition="1">
 			<convert type="MetrixHDWeather">currentWeatherCode</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="335,10" size="120,58" font="lack_lcd;58" foregroundColor="StandbyColor" backgroundColor="WeatherBarColor" halign="right" zPosition="1">
@@ -1667,7 +1667,7 @@
 		</widget>
 		<eLabel text="&#176;" position="391,62" size="68,58" font="lack_lcd;58" foregroundColor="StandbyColor" backgroundColor="WeatherBarColor" halign="left" zPosition="2" />
 		<!-- Weather tomorrow -->
-		<widget source="session.CurrentService" render="Label" position="584,16" size="98,98" font="MetrixIcons;98" foregroundColor="StandbyColor" backgroundColor="WeatherBarColor" halign="center" zPosition="1">
+		<widget source="session.CurrentService" render="Label" position="584,16" size="98,98" font="Meteo;98" foregroundColor="StandbyColor" backgroundColor="WeatherBarColor" halign="center" zPosition="1">
 			<convert type="MetrixHDWeather">forecastTomorrowCode</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="707,10" size="120,58" font="lack_lcd;58" foregroundColor="StandbyColor" backgroundColor="WeatherBarColor" halign="right" zPosition="1">

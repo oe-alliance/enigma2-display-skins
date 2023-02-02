@@ -54,7 +54,7 @@
 		<widget font="FdLcDLight;65" halign="center" noWrap="1" position="0,14" render="Label" size="720,65" source="session.CurrentService" transparent="1" valign="center" zPosition="9">
 			<convert type="MetrixHDWeather">currentLocation</convert>
 		</widget>
-		<widget font="MetrixIcons;125" foregroundColor="#0A02D9" halign="center" noWrap="1" position="155,112" render="Label" size="300,150" source="session.CurrentService" transparent="1" valign="center" zPosition="15">
+		<widget font="Meteo;125" foregroundColor="#0A02D9" halign="center" noWrap="1" position="155,112" render="Label" size="300,150" source="session.CurrentService" transparent="1" valign="center" zPosition="15">
 			<convert type="MetrixHDWeather">forecastTodayCode</convert>
 		</widget>
 		<ePixmap position="470,130" pixmap="ico_temp_v.png" alphatest="on" transparent="0" size="55,106" zPosition="4" />
