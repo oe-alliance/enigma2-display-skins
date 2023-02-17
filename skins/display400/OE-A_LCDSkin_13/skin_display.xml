@@ -64,6 +64,7 @@
 	<fonts>
 		<!-- no changes here -->
 		<font filename="lack_lcd.otf" name="lack_lcd" scale="100"/>
+        <font filename="meteocons.ttf" name="Meteo" scale="100" />
 	</fonts>
 	
 	

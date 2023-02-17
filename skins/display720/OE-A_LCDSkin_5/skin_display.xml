@@ -21,7 +21,8 @@
 		<!-- pick a funky name for the font, so we don't conflict  -->     
 		<font filename="nmsbd.ttf" name="FdLcD" scale="90"/>
 		<font filename="verdana.ttf" name="FdLcDLight" scale="90"/>
-	</fonts>	
+        <font filename="meteocons.ttf" name="Meteo" scale="100" />
+	</fonts>
 	
 <!-- template -->
 	<screen name="SummaryClockPanel">
@@ -39,7 +40,6 @@
         
 <!-- WeatherPanel -->
          <screen name="SummaryMetrixHDWeatherPanel">
-		<widget render="MetrixHDWeatherUpdaterStandalone" source="global.CurrentTime" position="0,0" size="0,0" alphatest="on" transparent="1" />
 		<widget font="FdLcD;80" noWrap="1" position="25,117" render="Label" size="100,80" source="session.CurrentService" alphatest="on" transparent="1" halign="right" valign="bottom" zPosition="8">
 			<convert type="MetrixHDWeather">currentWeatherTemp</convert>
 		</widget>
@@ -481,7 +481,6 @@
 			<convert type="ConfigEntryTest">config.usage.blinking_display_clock_during_recording,False,CheckSourceBoolean</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget render="MetrixHDWeatherUpdaterStandalone" source="global.CurrentTime" position="0,0" size="0,0" alphatest="on" transparent="1" />
 		<widget font="FdLcD;70" noWrap="1" position="81,245" render="Label" size="100,80" source="session.CurrentService" alphatest="on" transparent="1" halign="right" valign="bottom" zPosition="3" foregroundColor="#4A90BE">
 			<convert type="MetrixHDWeather">currentWeatherTemp</convert>
 		</widget>
