@@ -932,7 +932,7 @@
 	
 	<!-- /* ########## Picon Main Panel ########## -->
 	<screen name="MyPiconMainPanel" size="400,240">
-		<widget source="session.CurrentService" render="LcdPicon" position="85,22" size="220,132" halign="center" alphatest="blend">
+		<widget source="session.CurrentService" render="LcdPicon" position="85,22" size="220,132" alphatest="blend">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 	</screen>
@@ -940,7 +940,7 @@
 	
 	<!-- /* ########## Picon EPG Panel ########## -->
 	<screen name="MyPiconEPGPanel" size="400,240">
-		<widget source="parent.Service" render="LcdPicon" position="85,22" size="220,132" halign="center" alphatest="blend">
+		<widget source="parent.Service" render="LcdPicon" position="85,22" size="220,132" alphatest="blend">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 	</screen>

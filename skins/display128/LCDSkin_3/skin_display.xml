@@ -48,7 +48,7 @@
 	
 <!-- main-->
 	<screen name="InfoBarSummary" position="0,0" size="128,32">
-		<widget source="session.CurrentService" render="LcdPicon" position="0,0" size="128,30" halign="center" valign="bottom" zPosition="1" noWrap="1" >
+		<widget source="session.CurrentService" render="LcdPicon" position="0,0" size="128,30" zPosition="1" noWrap="1" >
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		
@@ -119,7 +119,7 @@
 
 <!-- channelselection-->
 	<screen name="ChannelSelection_summary" position="0,0" size="128,32">
-		<widget source="parent.ServiceEvent" render="LcdPicon" position="0,0" size="128,30" halign="center" valign="bottom" zPosition="1" noWrap="1" >
+		<widget source="parent.ServiceEvent" render="LcdPicon" position="0,0" size="128,30" zPosition="1" noWrap="1" >
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 	</screen>
