@@ -76,7 +76,7 @@
 	
 <!-- main-->
 	<screen name="InfoBarSummary" position="0,0" size="720,576"> 
-		<widget source="session.CurrentService" render="LcdPicon" zPosition="13" position="10,10" size="700,500" transparent="1" alphatest="blend" halign="right" valign="top">	
+		<widget source="session.CurrentService" render="LcdPicon" zPosition="13" position="10,10" size="700,500" transparent="1" alphatest="blend">	
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<panel name="SummaryClockPanel" />
@@ -96,7 +96,7 @@
         
 <!-- channelselection-->
 	<screen name="ChannelSelection_summary" position="0,0" size="720,576"> 
-		<widget source="parent.Service" render="LcdPicon" zPosition="13" position="10,10" size="700,500" transparent="1" alphatest="blend" halign="right" valign="top">	
+		<widget source="parent.Service" render="LcdPicon" zPosition="13" position="10,10" size="700,500" transparent="1" alphatest="blend">	
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<panel name="SummaryClockPanel" />
