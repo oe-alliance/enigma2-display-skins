@@ -809,15 +809,6 @@
 		<widget source="parent.summarylangname" render="Label" position="20,85" size="720,150" font="VFD;50" halign="center" />
 	</screen>
 	
-<!-- VideoWizardSummary -->
-	<screen name="VideoWizardSummary" position="0,0" size="800,480">
-		<widget source="text" render="Label" position="20,20" size="720,50" font="VFD;50" foregroundColor="#e5b243" halign="center" />
-        <eLabel position="0,80" size="800,4" backgroundColor="#FF0000" />
-		<widget source="parent.list" render="Label" position="20,85" size="720,150" font="VFD;50" halign="center" >
-			<convert type="StringListSelection" />
-		</widget>
-	</screen>
-	
 <!-- PluginBrowser -->
 	<screen name="PluginBrowserSummary" position="0,0" size="800,480">
 		<ePixmap pixmap="background.png" position="0,0" size="800,480" />

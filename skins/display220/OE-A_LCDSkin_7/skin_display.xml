@@ -167,13 +167,6 @@
 		</widget>
 	</screen>
 
-	<screen name="VideoWizardSummary" position="fill">
-		<widget name="text" position="top" size="*,40" font="FdLcD;12" transparent="1" />
-		<widget source="parent.list" render="Label" position="fill" font="FdLcD;45" halign="center" >
-			<convert type="StringListSelection" />
-		</widget>
-	</screen>
-
 <!-- standby -->
 	<screen name="StandbySummary" position="fill">
 		<widget source="global.CurrentTime" render="Label" position="0,0" size="220,24" font="FdLcD;22" halign="left"  noWrap="1">

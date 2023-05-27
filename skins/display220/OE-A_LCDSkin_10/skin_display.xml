@@ -266,12 +266,6 @@
 			<convert type="StringListSelection" />
 		</widget>
 	</screen>
-	<screen name="VideoWizardSummary" position="fill">
-		<widget name="text" position="top" size="*,40" font="MyLcD;7" transparent="1" />
-		<widget source="parent.list" render="Label" position="fill" font="MyLcD;25" halign="center" >
-			<convert type="StringListSelection" />
-		</widget>
-	</screen>
 <!-- DevicesPanelSummary -->	
 	<screen name="DevicesPanelSummary" position="0,0" size="220,176">
 		<widget source="parent.Title" render="Label" position="0,0" size="220,27" font="MyLcD;19" foregroundColor="Menue-Titel" noWrap="1" halign="center" valign="top" />
@@ -411,12 +405,6 @@
 	<screen name="LanguageWizardSummary" position="0,0" size="220,176">
 		<widget source="parent.summarytext" render="Label" position="0,0" size="220,40" font="MyLcD;13" halign="center" />
 		<widget source="parent.summarylangname" render="Label" position="0,62" size="220,91" font="MyLcD;13" halign="center" />
-	</screen>
-	<screen name="VideoWizardSummary" position="fill">
-		<widget source="text" render="Label" position="0,0" size="220,37" font="MyLcD;13" halign="center" />
-		<widget source="parent.list" render="Label" position="0,62" size="220,91" font="MyLcD;13" halign="center" >
-			<convert type="StringListSelection" />
-		</widget>
 	</screen>
 <!-- Neu -->	
 	<screen name="BackupSelection_summary" position="0,0" size="220,176">
