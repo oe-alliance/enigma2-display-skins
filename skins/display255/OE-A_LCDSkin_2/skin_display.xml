@@ -284,9 +284,9 @@
 	</screen>
 <!-- LCD screen Setup -->
 	<screen name="SetupSummary" position="0,0" size="255,64">
-		<widget source="SetupTitle" render="RollerCharLCDLong" position="6,0" size="256,18" font="VFD;18" noWrap="1" />
-		<widget source="SetupEntry" render="RollerCharLCDLong" position="6,20" size="256,16" font="VFD;16" noWrap="1" />
-		<widget source="SetupValue" render="RollerCharLCDLong" position="6,38" size="256,16" font="VFD;16" noWrap="1" />
+		<widget source="Title" render="RollerCharLCDLong" position="6,0" size="256,18" font="VFD;18" noWrap="1" />
+		<widget source="entry" render="RollerCharLCDLong" position="6,20" size="256,16" font="VFD;16" noWrap="1" />
+		<widget source="value" render="RollerCharLCDLong" position="6,38" size="256,16" font="VFD;16" noWrap="1" />
 	</screen>
 <!-- LCD screen MessageBox -->
 	<screen name="MessageBox_summary" position="0,0" size="255,64" id="1">

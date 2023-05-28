@@ -393,9 +393,9 @@
 	
 	<!-- /* ########## Setup ########## -->
 	<screen name="SetupSummary" position="5,4" size="400,240">
-		<widget source="SetupEntry" render="Label" position="0,0" size="390,116" font="lack_lcd;34" halign="center" valign="center" />
+		<widget source="entry" render="Label" position="0,0" size="390,116" font="lack_lcd;34" halign="center" valign="center" />
 		<eLabel position="0,116" size="400,80" backgroundColor="openATVblueBar" />
-		<widget source="SetupValue" render="Label" position="0,116" size="390,80" font="lack_lcd;34" halign="center" valign="center" transparent="1" zPosition="1" />
+		<widget source="value" render="Label" position="0,116" size="390,80" font="lack_lcd;34" halign="center" valign="center" transparent="1" zPosition="1" />
 		
 		<panel name="MyRecordingPanel" />
 	</screen>

@@ -233,9 +233,9 @@
 	</screen>
 <!-- setup-->
 	<screen name="SetupSummary" position="fill">
-		<widget source="SetupEntry" render="Label" position="top" size="*,87" font="MyLcD;35" halign="center" valign="center" />
+		<widget source="entry" render="Label" position="top" size="*,87" font="MyLcD;35" halign="center" valign="center" />
 		<ePixmap position="top" pixmap="bar.png" alphatest="on" transparent="0" size="220,1" zPosition="4" />
-		<widget source="SetupValue" render="Label" position="top" size="*,87" font="MyLcD;35" foregroundColor="#F4FA58" halign="center" valign="center" />
+		<widget source="value" render="Label" position="top" size="*,87" font="MyLcD;35" foregroundColor="#F4FA58" halign="center" valign="center" />
 	</screen>	
 <!-- Servicescan -->
 	<screen name="ServiceScanSummary" position="0,0" size="220,176">

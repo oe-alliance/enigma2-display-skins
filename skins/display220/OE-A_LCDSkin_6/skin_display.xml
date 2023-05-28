@@ -117,9 +117,9 @@
 
 <!-- setup-->
 	<screen name="SetupSummary" position="0,0" size="220,176">
-		<widget source="SetupTitle" render="Label" position="0,38" size="220,26" font="FdLcD;24" halign="left" valign="top" noWrap="1"  />
-		<widget source="SetupEntry" render="Label" position="0,66" size="220,20" font="FdLcD;19" halign="left" valign="top" />
-		<widget source="SetupValue" render="Label" position="0,93" size="220,19" font="FdLcD;17" halign="left" valign="bottom" />
+		<widget source="Title" render="Label" position="0,38" size="220,26" font="FdLcD;24" halign="left" valign="top" noWrap="1"  />
+		<widget source="entry" render="Label" position="0,66" size="220,20" font="FdLcD;19" halign="left" valign="top" />
+		<widget source="value" render="Label" position="0,93" size="220,19" font="FdLcD;17" halign="left" valign="bottom" />
 		<panel name="SummaryClockPanel" />
 	</screen>
 

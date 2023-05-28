@@ -176,9 +176,9 @@
 
 <!-- setup-->
 	<screen name="SetupSummary" position="0,0" size="140,32">
-		<!-- <widget source="SetupTitle" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=1,repeat=99,startdelay=2000,always=0,oneshot=1" position="0,0" size="170,18" font="FdLcD;15" halign="left" valign="top" noWrap="1"  /> -->
-		<widget source="SetupEntry" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=1,repeat=99,startdelay=2000,always=0,oneshot=1" size="140,16" font="FdLcD;16" halign="left" valign="bottom" zPosition="1" noWrap="1" />
-		<widget source="SetupValue" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=1,repeat=99,startdelay=2000,always=0,oneshot=1" position="0,21" size="140,14" font="FdLcD;14" halign="left" valign="top" zPosition="1" noWrap="1" />
+		<!-- <widget source="Title" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=1,repeat=99,startdelay=2000,always=0,oneshot=1" position="0,0" size="170,18" font="FdLcD;15" halign="left" valign="top" noWrap="1"  /> -->
+		<widget source="entry" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=1,repeat=99,startdelay=2000,always=0,oneshot=1" size="140,16" font="FdLcD;16" halign="left" valign="bottom" zPosition="1" noWrap="1" />
+		<widget source="value" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=1,repeat=99,startdelay=2000,always=0,oneshot=1" position="0,21" size="140,14" font="FdLcD;14" halign="left" valign="top" zPosition="1" noWrap="1" />
 		<panel name="SummaryIconsPanel" />
 		<panel name="SummaryClockPanel" />
 	</screen>

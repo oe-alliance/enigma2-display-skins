@@ -682,9 +682,9 @@
 <!-- E2 Settings Menu Items -->
 	<screen name="SetupSummary" position="0,0" size="800,480">
 		<panel name="PanelTopBar" />
-		<widget source="SetupTitle" render="RollerCharLCDLong" position="20,100" size="720,70" font="VFD;70" foregroundColor="#e5b243" halign="center" transparent="1" zPosition="1"/>
-		<widget source="SetupEntry" render="Label" position="20,200" size="760,140" font="VFD;70" backgroundColor="#253f8a" halign="center" valign="center" zPosition="1"/>
-		<widget source="SetupValue" render="Label" position="20,360" size="720,70" font="VFD;70" halign="center" transparent="1" zPosition="1"/>
+		<widget source="Title" render="RollerCharLCDLong" position="20,100" size="720,70" font="VFD;70" foregroundColor="#e5b243" halign="center" transparent="1" zPosition="1"/>
+		<widget source="entry" render="Label" position="20,200" size="760,140" font="VFD;70" backgroundColor="#253f8a" halign="center" valign="center" zPosition="1"/>
+		<widget source="value" render="Label" position="20,360" size="720,70" font="VFD;70" halign="center" transparent="1" zPosition="1"/>
 	</screen>
 
 <!-- E2 Standby Screen Analog clock  -->

@@ -175,9 +175,9 @@
 		<widget name="scan_progress" position="0,290" zPosition="1" borderWidth="2" size="480,25" backgroundColor="dark" />
 	</screen>
 	<screen name="SetupSummary" position="0,0" size="480,320">
-		<widget source="SetupTitle" render="Label" position="15,80" size="450,60" font="VFD;52" />
-		<widget source="SetupEntry" render="Label" position="15,140" size="450,120" font="VFD;42" />
-		<widget source="SetupValue" render="Label" position="15,260" size="450,60" font="VFD;42" />
+		<widget source="Title" render="Label" position="15,80" size="450,60" font="VFD;52" />
+		<widget source="entry" render="Label" position="15,140" size="450,120" font="VFD;42" />
+		<widget source="value" render="Label" position="15,260" size="450,60" font="VFD;42" />
 		<widget source="global.CurrentTime" render="Label" position="320,10" size="150,35" font="VFD;32" halign="right">
 			<convert type="ClockToText">Format:%d.%m.%Y</convert>
 		</widget>

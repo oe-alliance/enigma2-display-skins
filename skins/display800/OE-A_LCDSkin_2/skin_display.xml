@@ -55,9 +55,9 @@
 	</screen>
 	<!-- setup-->
 	<screen name="SetupSummary" position="fill">
-		<widget source="SetupTitle" render="Label" position="10,10" size="770,110" font="Big" halign="center" valign="center" foregroundColor="yellow" />
-		<widget source="SetupEntry" render="Label" position="10,140" size="770,140" font="Medium" halign="center" valign="center" />
-		<widget source="SetupValue" render="Label" position="10,300" size="770,110" font="Medium" halign="center" valign="center" />
+		<widget source="Title" render="Label" position="10,10" size="770,110" font="Big" halign="center" valign="center" foregroundColor="yellow" />
+		<widget source="entry" render="Label" position="10,140" size="770,140" font="Medium" halign="center" valign="center" />
+		<widget source="value" render="Label" position="10,300" size="770,110" font="Medium" halign="center" valign="center" />
 	</screen>
 	<screen name="InfoBarSummary" position="fill">
 		<panel name="SummaryClockPanel"/>

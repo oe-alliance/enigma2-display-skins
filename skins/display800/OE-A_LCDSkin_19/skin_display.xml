@@ -151,9 +151,9 @@
 		<panel name="LCDIconTemplate" />
 		<panel name="LCDClockTemplate" />
 		<ePixmap pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_19/skin_vfd_schomi_u4k_back.png" position="20,20" size="750,450" zPosition="-1" alphatest="blend" />		
-		<widget source="SetupTitle" render="Label" position="30,110" size="750,90" font="SemiboldLCD;70" halign="center" backgroundColor="LCDBackground" transparent="1" />
-		<widget source="SetupEntry" render="Label" position="30,180" size="750,200" font="SemiboldLCD;60" halign="center" backgroundColor="LCDBackground" transparent="1" />
-		<widget source="SetupValue" render="Label" position="30,400" size="750,70" font="RegularLCD;60" halign="center" foregroundColor="#0000bb00" backgroundColor="LCDBackground" transparent="1" />
+		<widget source="Title" render="Label" position="30,110" size="750,90" font="SemiboldLCD;70" halign="center" backgroundColor="LCDBackground" transparent="1" />
+		<widget source="entry" render="Label" position="30,180" size="750,200" font="SemiboldLCD;60" halign="center" backgroundColor="LCDBackground" transparent="1" />
+		<widget source="value" render="Label" position="30,400" size="750,70" font="RegularLCD;60" halign="center" foregroundColor="#0000bb00" backgroundColor="LCDBackground" transparent="1" />
 	</screen>
 	<screen name="StandbySummary" position="0,0" size="800,480">
 		<ePixmap pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_19/skin_vfd_schomi_u4k_back.png" position="20,20" size="750,450" zPosition="-1" alphatest="blend" />

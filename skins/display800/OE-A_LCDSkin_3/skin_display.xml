@@ -121,9 +121,9 @@
 	<screen name="SetupSummary" position="0,0" size="800,480" >
 		<panel name="LCDIconTemplate" />
 		<panel name="LCDClockTemplate" />
-		<widget source="SetupTitle" render="Label" position="30,110" size="720,90" font="SemiboldLCD;70" halign="center" backgroundColor="LCDBackground" />
-		<widget source="SetupEntry" render="Label" position="30,200" size="720,180" font="SemiboldLCD;63" halign="center" backgroundColor="LCDBackground" />
-		<widget source="SetupValue" render="Label" position="30,380" size="720,90" font="RegularLCD;53" halign="center" backgroundColor="LCDBackground" />
+		<widget source="Title" render="Label" position="30,110" size="720,90" font="SemiboldLCD;70" halign="center" backgroundColor="LCDBackground" />
+		<widget source="entry" render="Label" position="30,200" size="720,180" font="SemiboldLCD;63" halign="center" backgroundColor="LCDBackground" />
+		<widget source="value" render="Label" position="30,380" size="720,90" font="RegularLCD;53" halign="center" backgroundColor="LCDBackground" />
 	</screen>
 	<screen name="StandbySummary" position="0,0" size="800,480" >
 		<panel name="LCDIconTemplate" />

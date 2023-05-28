@@ -231,9 +231,9 @@
 <screen name="SetupSummary" position="0,0" size="800,480" >
   <panel name="UpdateTemplate" />
   <panel name="RecordingTemplate" />
-  <widget source="SetupTitle" render="Label" position="30,80" size="740,480" font="VFD;95" halign="center" valign="top" />
-  <widget source="SetupEntry" render="Label" position="30,190" size="740,480" font="VFD;85" halign="center" valign="top" foregroundColor="#A4A4A4"/>
-  <widget source="SetupValue" render="Label" position="30,360" size="740,480" font="VFD;85" halign="center" valign="top" foregroundColor="#00FF0000"/>
+  <widget source="Title" render="Label" position="30,80" size="740,480" font="VFD;95" halign="center" valign="top" />
+  <widget source="entry" render="Label" position="30,190" size="740,480" font="VFD;85" halign="center" valign="top" foregroundColor="#A4A4A4"/>
+  <widget source="value" render="Label" position="30,360" size="740,480" font="VFD;85" halign="center" valign="top" foregroundColor="#00FF0000"/>
 </screen>
 
 <!-- Simple -->
