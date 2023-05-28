@@ -1115,9 +1115,6 @@
 	</screen>
 	
 <!-- About Screen -->
-	<screen name="AboutSummary" position="0,0" size="800,480">
-		<widget source="AboutText" render="Label" position="20,15" size="760,440" font="VFD;31" foregroundColor="#e5b243" />
-	</screen>
 	
 <!-- Timers -->
 	<screen name="TimerEditListSummary" position="0,0" size="800,480">

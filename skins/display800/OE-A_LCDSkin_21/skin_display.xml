@@ -508,9 +508,6 @@
 		<panel name="MessageBoxSummary" />
 	</screen>
 	
-	<screen name="AboutSummary" position="0,0" size="800,480">
-		<widget source="AboutText" render="Label" position="20,16" size="760,448" font="lack_lcd;26" />
-	</screen>
 	<!-- System */ -->
 	
 	<!-- /* ########## Info ########## -->

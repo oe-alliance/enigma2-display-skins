@@ -249,9 +249,6 @@
 		<panel name="MessageBoxSummary" />
 	</screen>
 
-	<screen name="AboutSummary" position="0,0" size="400,240">
-		<widget source="AboutText" render="Label" position="0,0" size="400,240" font="FdLcD;11" />
-	</screen>
 
 	<screen name="TimerEditListSummary" position="0,0" size="400,240">
 		<widget source="parent.Title" render="Label" position="0,0" size="400,26" font="FdLcD;24" halign="center" noWrap="1" />

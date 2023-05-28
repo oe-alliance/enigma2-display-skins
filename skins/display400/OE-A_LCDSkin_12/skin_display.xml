@@ -468,9 +468,6 @@
 	<screen name="MessageBoxSimpleSummary" position="0,0" size="400,240">
 		<panel name="MessageBoxSummary" />
 	</screen>
-	<screen name="AboutSummary" position="0,0" size="400,240">
-		<widget source="AboutText" render="Label" position="0,0" size="400,240" font="MyLcD;12" />
-	</screen>
 <!-- LocationBox_summary -->
 	<screen name="LocationBox_summary" position="0,0" size="400,240">
 		<widget source="parent.text" render="Label" position="0,0" size="400,178" font="MyLcD;40" foregroundColor="#87CEFA" halign="center" valign="center" />

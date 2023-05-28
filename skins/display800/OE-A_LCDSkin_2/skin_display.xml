@@ -313,9 +313,6 @@
 	<screen name="ChoiceBox_summary" position="fill">
 		<widget source="parent.summary_list" render="Label" position="10,10" size="770,440" font="FdLcD;32" halign="center" valign="center" noWrap="1" foregroundColor="lightcyan" />
 	</screen>
-	<screen name="AboutSummary" position="fill">
-		<widget source="AboutText" render="Label" position="fill" font="FdLcD;20" />
-	</screen>
 	<screen name="TimerEditListSummary" position="fill">
 		<widget source="parent.Title" render="Label" position="10,10" size="770,40" font="FdLcD;32" halign="center" noWrap="1" />
 		<widget source="service" render="Label" position="10,50" size="770,50" font="FdLcD;42" halign="center" noWrap="1" />

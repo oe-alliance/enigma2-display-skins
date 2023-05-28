@@ -357,9 +357,6 @@
 	<screen name="MessageBoxSimpleSummary" position="0,0" size="400,240">
 		<panel name="MessageBoxSummary" />
 	</screen>
-	<screen name="AboutSummary" position="0,0" size="400,240">
-		<widget source="AboutText" render="Label" position="0,0" size="400,240" font="FdLcD;11" />
-	</screen>
 <!-- console -->
 	<screen name="Console_summary" position="0,0" size="400,240">
 		<widget source="parent.Title" render="Label" position="0,0" size="400,85" font="FdLcD;38" foregroundColor="#87CEFA" halign="center" valign="center" />

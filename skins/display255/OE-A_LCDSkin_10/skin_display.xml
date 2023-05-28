@@ -233,9 +233,6 @@
 		<panel name="MessageBoxSummary" />
 	</screen>
 
-	<screen name="AboutSummary" position="0,0" size="256,64">
-		<widget source="AboutText" render="Label" position="0,0" size="256,64" font="FdLcD;26" />
-	</screen>
 
 <!-- Plugin browser -->
 	<screen name="PluginBrowserSummary" position="0,0" size="256,64">
