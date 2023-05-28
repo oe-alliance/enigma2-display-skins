@@ -185,8 +185,7 @@
 		<panel name="LCDIconTemplate" />
 		<panel name="LCDClockTemplate" />
 		<widget source="parent.title" render="Label" position="30,130" size="740,110" font="SemiboldLCD;63" halign="center" valign="center" backgroundColor="LCDBackground" />
-		<widget source="parent.menu" render="Label" position="30,240" size="740,180" font="RegularLCD;70" halign="center" valign="center" backgroundColor="LCDBackground">
-			<convert type="StringListSelection" />
+		<widget source="entry" render="Label" position="30,240" size="740,180" font="RegularLCD;70" halign="center" valign="center" backgroundColor="LCDBackground">
 		</widget>
 	</screen>
 	<screen name="ServiceScanSummary" position="0,0" size="800,480" >

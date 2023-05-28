@@ -256,8 +256,7 @@
 <!-- menus-->
 	<screen name="MenuSummary" position="0,0" size="720,576"> 
 		<widget source="parent.title" render="Label" position="15,20" foregroundColor="#e5b243" size="670,120" font="FdLcD;70" halign="center" valign="top" noWrap="1" />
-		<widget source="parent.menu" render="Label" position="20,190" size="670,200" font="FdLcD;60" halign="center" valign="top">
-			<convert type="StringListSelection" />
+		<widget source="entry" render="Label" position="20,190" size="670,200" font="FdLcD;60" halign="center" valign="top">
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="500,490" size="182,52" halign="right" font="FdLcD;50" >
 			<convert type="ClockToText">Default</convert>

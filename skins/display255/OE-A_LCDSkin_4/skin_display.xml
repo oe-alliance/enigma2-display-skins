@@ -142,8 +142,7 @@
 <!-- LCD screen (menus) -->
 	<screen name="MenuSummary" position="0,0" size="256,64">
 		<widget source="parent.title" render="RollerCharLCDLong" position="0,0" size="256,25" font="VFD;25" noWrap="1" />
-		<widget source="parent.menu" render="RollerCharLCDLong" position="0,25" size="256,25" font="VFD;23" noWrap="1" >
-			<convert type="StringListSelection" />
+		<widget source="entry" render="RollerCharLCDLong" position="0,25" size="256,25" font="VFD;23" noWrap="1" >
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="0,50" size="256,14" font="VFD;14" halign="left">
 			<convert type="ClockToText">WithSeconds</convert>

@@ -211,8 +211,7 @@
 	<screen name="MenuSummary" position="fill">
 		<widget source="parent.title" render="Label" position="top" size="*,87" font="MyLcD;35" foregroundColor="Menue-Titel" halign="center" valign="center" />
 		<ePixmap position="top" pixmap="bar.png" alphatest="on" transparent="0" size="220,2" zPosition="4" />
-		<widget source="parent.menu" render="Label" position="top" size="*,87" font="MyLcD;35"  foregroundColor="Menue-Auswahl" backgroundColor="Menue-Auswahl-Hintergrund" halign="center" valign="center">
-			<convert type="StringListSelection" />
+		<widget source="entry" render="Label" position="top" size="*,87" font="MyLcD;35"  foregroundColor="Menue-Auswahl" backgroundColor="Menue-Auswahl-Hintergrund" halign="center" valign="center">
 		</widget>
 	</screen>
 <!-- Schnellstartmenue -->

@@ -314,8 +314,7 @@
 		<panel name="MeinRecordingPanel" />
 		<widget source="parent.title" render="Label" position="top" size="*,118" font="MyLcD;41" foregroundColor="Menue-Titel" halign="center" valign="center" transparent="1" />
 		<ePixmap position="top" pixmap="bar.png" transparent="0" size="390,3" zPosition="4" />
-		<widget source="parent.menu" render="Label" position="top" size="*,118" font="MyLcD;41"  foregroundColor="Menue-Auswahl" backgroundColor="Menue-Auswahl-Hintergrund" halign="center" valign="center">
-			<convert type="StringListSelection" />
+		<widget source="entry" render="Label" position="top" size="*,118" font="MyLcD;41"  foregroundColor="Menue-Auswahl" backgroundColor="Menue-Auswahl-Hintergrund" halign="center" valign="center">
 		</widget>
 	</screen>
 <!-- Schnellstartmenue -->

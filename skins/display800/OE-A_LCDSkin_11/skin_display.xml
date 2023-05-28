@@ -594,8 +594,7 @@
 <!-- Menu -->
 <screen name="MenuSummary" position="0,0" size="800,480" >
   <widget source="parent.title" render="Label" position="20,50" size="760,180" font="VFD;60" halign="center" valign="center" />
-  <widget source="parent.menu" render="Label" position="20,248" size="760,180" font="VFD;60" halign="center" valign="center">
-    <convert type="StringListSelection" />
+  <widget source="entry" render="Label" position="20,248" size="760,180" font="VFD;60" halign="center" valign="center">
   </widget>
   <eLabel position="0,240" size="800,2" backgroundColor="#00FFFFFF" />
   </screen>
