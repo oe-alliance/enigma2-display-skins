@@ -288,12 +288,6 @@
 		<panel name="SummaryClockPanel"/>
 		<widget source="parent.Title" render="Label" position="10,110" size="770,70" font="Medium" halign="center" valign="center" />
 	</screen>
-	<screen name="WizardSummary" position="fill">
-		<widget source="text" render="Label" position="top" size="*,105" font="FdLcD;55" halign="center" />
-		<widget source="parent.list" render="Label" position="fill" font="FdLcD;38" halign="center" >
-			<convert type="StringListSelection" />
-		</widget>
-	</screen>
 	<!-- Plugin browser -->
 	<screen name="PluginBrowserSummary" position="fill">
 		<widget source="parent.Title" render="Label" position="top" size="*,39" font="FdLcD;37" noWrap="1" />

@@ -249,12 +249,6 @@
 		<widget source="parent.Title" render="Label" position="0,0" size="480,237" font="FdLcD;42" foregroundColor="#87CEFA" halign="center" valign="center" />
 		<panel name="SummaryClockPanel" />
 	</screen>
-	<screen name="WizardSummary" position="fill">
-		<widget source="text" render="Label" position="top" size="*,71" font="FdLcD;35" halign="center" />
-		<widget source="parent.list" render="Label" position="fill" font="FdLcD;30" halign="center" >
-			<convert type="StringListSelection" />
-		</widget>
-	</screen>
 <!-- DevicesPanelSummary -->	
 	<screen name="DevicesPanelSummary" position="0,0" size="480,320">
 		<widget source="parent.Title" render="Label" position="0,0" size="480,49" font="FdLcD;40" foregroundColor="#87CEFA" noWrap="1" halign="center" valign="top" />

@@ -422,13 +422,6 @@
 		
 		<panel name="MyRecordingPanel" />
 	</screen>
-	
-	<screen name="WizardSummary" position="5,4" size="400,240">
-		<widget source="text" render="Label" position="0,0" size="390,232" font="lack_lcd;30" halign="center" valign="center" />
-		<widget source="parent.list" render="Label" position="fill" font="lack_lcd;24" halign="center">
-			<convert type="StringListSelection" />
-		</widget>
-	</screen>
 	<!-- Misc */ -->
 	
 	<!-- /* ########## JobView Summary (not tested yet) ########## -->

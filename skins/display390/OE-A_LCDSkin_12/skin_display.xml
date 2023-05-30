@@ -361,12 +361,6 @@
 		<panel name="SummaryClockPanel" />
 		<panel name="MeinRecordingPanel" />
 	</screen>
-	<screen name="WizardSummary" position="fill">
-		<widget source="text" render="Label" position="top" size="*,71" font="MyLcD;35" halign="center" />
-		<widget source="parent.list" render="Label" position="fill" font="MyLcD;25" halign="center" >
-			<convert type="StringListSelection" />
-		</widget>
-	</screen>
 <!-- DevicesPanelSummary -->	
 	<screen name="DevicesPanelSummary" position="0,0" size="390,240">
 		<widget source="parent.Title" render="Label" position="0,0" size="390,37" font="MyLcD;34" foregroundColor="Menue-Titel" noWrap="1" halign="center" valign="top" />
