@@ -99,7 +99,7 @@
 		</widget>
 	</screen>
 	<!-- channelselection-->
-	<screen name="ChannelSelection_summary" position="fill">
+	<screen name="ChannelSelectionSummary" position="fill">
 		<panel name="SummaryClockPanel"/>
 		<widget source="parent.ServiceEvent" render="Picon" isFrontDisplayPicon="1" position="10,10" size="220,132" transparent="1" halign="center" valign="center" alphatest="blend" >
 			<convert type="ServiceName">Reference</convert>
@@ -139,14 +139,14 @@
 			<convert type="RemainingToText">FOLLOW</convert>
 		</widget>
 	</screen>
-	<screen name="SimpleChannelSelection_summary" position="fill">
-		<panel name="ChannelSelection_summary" />
+	<screen name="SimpleChannelSelectionSummary" position="fill">
+		<panel name="ChannelSelectionSummary" />
 	</screen>
-	<screen name="ChannelSelectionRadio_summary" position="fill">
-		<panel name="ChannelSelection_summary" />
+	<screen name="ChannelSelectionRadioSummary" position="fill">
+		<panel name="ChannelSelectionSummary" />
 	</screen>
 	<!-- EPG Screens -->
-	<screen name="EPGSelection_summary" position="fill">
+	<screen name="EPGSelectionSummary" position="fill">
 		<panel name="SummaryClockPanel" />
 		<widget source="parent.Service" render="Picon" isFrontDisplayPicon="1" position="10,10" size="220,132" transparent="1" halign="center" valign="center" alphatest="blend" >
 			<convert type="ServiceName">Reference</convert>
@@ -186,22 +186,22 @@
 			<convert type="RemainingToText">FOLLOW</convert>
 		</widget>
 	</screen>
-	<screen name="GraphMultiEPG_summary" position="fill">
-		<panel name="EPGSelection_summary" />
+	<screen name="GraphMultiEPGSummary" position="fill">
+		<panel name="EPGSelectionSummary" />
 	</screen>
-	<screen name="EPGSelectionMulti_summary" position="fill">
-		<panel name="EPGSelection_summary" />
+	<screen name="EPGSelectionMultiSummary" position="fill">
+		<panel name="EPGSelectionSummary" />
 	</screen>
-	<screen name="EventView_summary" position="fill">
-		<panel name="EPGSelection_summary" />
+	<screen name="EventViewSummary" position="fill">
+		<panel name="EPGSelectionSummary" />
 	</screen>
 	<!-- messagebox-->
-	<screen name="MessageBox_summary" position="fill">
+	<screen name="MessageBoxSummary" position="fill">
 		<widget source="parent.Text" render="Label" position="10,10" size="770,380" font="Medium" halign="center" valign="center"/>
 		<widget source="parent.selectedChoice" render="Label" position="10,390" size="770,70" font="Medium" halign="center" valign="center" noWrap="1" foregroundColor="lightcyan"/>
 	</screen>
-	<screen name="MessageBoxSimple_summary" position="fill">
-		<panel name="MessageBox_summary" />
+	<screen name="MessageBoxSimpleSummary" position="fill">
+		<panel name="MessageBoxSummary" />
 	</screen>
 	<screen name="MessageBoxSummary" position="fill">
 		<widget source="text" render="Label" position="10,10" size="770,380" font="Medium" halign="center" valign="center"/>
@@ -233,7 +233,7 @@
 		</widget>
 	</screen>
 	<!-- numberzap -->
-	<screen name="NumberZap_summary" position="fill">
+	<screen name="NumberZapSummary" position="fill">
 		<widget source="parent.channel_summary" render="Label" position="10,10" size="770,60" font="FdLcD;60" halign="center"/>
 		<widget source="parent.number_summary" render="Label" position="10,70" size="770,120" font="FdLcD;120" halign="center" foregroundColor="lightcyan"/>
 		<widget source="parent.servicename_summary" render="Label" position="10,190" size="770,60" font="FdLcD;60" halign="center" foregroundColor="yellow"/>
@@ -295,7 +295,7 @@
 		<widget source="desc" render="Label" position="fill" font="FdLcD;33" valign="top" />
 	</screen>
 	<!-- JobView Summary -->
-	<screen name="JobView_summary" position="fill">
+	<screen name="JobViewSummary" position="fill">
 		<widget source="parent.summary_job_name" render="Label" position="0,38" size="400,58" font="FdLcD;24" halign="left" />
 		<widget source="parent.summary_job_task" render="Label" position="0,100" size="400,25" font="FdLcD;19" halign="left" />
 		<widget source="parent.summary_job_progress" render="Progress" position="0,0" size="285,30" borderWidth="1" zPosition="1" />
@@ -303,7 +303,7 @@
 			<convert type="ProgressToText" />
 		</widget>
 	</screen>
-	<screen name="ChoiceBox_summary" position="fill">
+	<screen name="ChoiceBoxSummary" position="fill">
 		<widget source="parent.summary_list" render="Label" position="10,10" size="770,440" font="FdLcD;32" halign="center" valign="center" noWrap="1" foregroundColor="lightcyan" />
 	</screen>
 	<screen name="TimerEditListSummary" position="fill">

@@ -78,7 +78,7 @@
 		</widget>
 	</screen>
 <!-- LCD screen Channelselection -->
-	<screen name="ChannelSelection_summary" position="0,0" size="140,32">
+	<screen name="ChannelSelectionSummary" position="0,0" size="140,32">
 		<widget source="parent.ServiceEvent" render="RollerCharLCDLong" position="0,0" size="140,16" font="VFD;14" noWrap="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
@@ -187,7 +187,7 @@
 		<widget source="value" render="RollerCharLCDLong" position="6,22" size="128,10" font="VFD;10" noWrap="1" />
 	</screen>
 <!-- LCD screen MessageBox -->
-	<screen name="MessageBox_summary" position="0,0" size="140,32" id="1">
+	<screen name="MessageBoxSummary" position="0,0" size="140,32" id="1">
 		<widget source="parent.Text" render="RollerCharLCDLong" position="0,0" size="140,16" font="VFD;12" halign="left" noWrap="1" />
 		<widget source="parent.selectedChoice" render="Label" position="0,17" size="140,15" font="VFD;12" halign="center" valign="center" />
 	</screen>
@@ -196,7 +196,7 @@
 		<widget source="option" render="Label" position="0,17" size="140,15" font="VFD;12" halign="center" valign="center" />
 	</screen>
 <!-- LCD screen ChoiceBox -->
-	<screen name="ChoiceBox_summary" position="0,0" size="140,32" id="1">
+	<screen name="ChoiceBoxSummary" position="0,0" size="140,32" id="1">
 		<widget source="parent.summary_list" render="Label" position="6,0" size="128,32" font="VFD;12" />
 	</screen>
 <!-- LCD screen EMC -->

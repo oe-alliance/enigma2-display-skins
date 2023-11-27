@@ -164,7 +164,7 @@
 		<panel name="SummaryClockPanel" />
 	</screen>		
 <!-- channelselection -->
-	<screen name="ChannelSelection_summary" position="0,0" size="220,176">
+	<screen name="ChannelSelectionSummary" position="0,0" size="220,176">
 		<widget source="parent.Service" render="LcdPicon" position="55,0" size="110,66" zPosition="2" alphatest="on">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
@@ -178,7 +178,7 @@
 		<panel name="MeinRecordingPanel" /> 
 	</screen>
 <!-- RadioChannelselection  -->	
-	<screen name="ChannelSelectionRadio_summary" position="0,0" size="220,176">
+	<screen name="ChannelSelectionRadioSummary" position="0,0" size="220,176">
 		<widget source="session.CurrentService" render="Label" position="0,0" size="220,29" foregroundColor="#87CEFA" font="MyLcD;21" halign="center">
 			<convert type="ServiceName">Name</convert>
 		</widget>
@@ -191,11 +191,11 @@
 		<widget source="message" render="RunningText" position="0,0"  size="220,176" options="movetype=running,direction=top,startpoint=0,startdelay=2000,wrap=1,always=0,repeat=2,oneshot=0" font="MyLcD;32" halign="center" valign="center" />
 	</screen>
 <!-- Numberzap -->    
-	<screen name="NumberZap_summary" position="0,0" size="220,176">
+	<screen name="NumberZapSummary" position="0,0" size="220,176">
 		<widget source="parent.number_summary" render="Label" position="0,0" size="220,73" font="MyLcD;58" halign="center" valign="center" transparent="1" />
 		<widget source="parent.service_summary" render="Label" position="0,74" size="220,102" font="MyLcD;34" halign="center" valign="center" transparent="1" />
 	</screen>
-	<screen name="NumberZapPicon_summary" position="0,0" size="400,240">
+	<screen name="NumberZapPiconSummary" position="0,0" size="400,240">
 		<widget source="parent.Service" render="LcdPicon" position="55,0" size="110,66" zPosition="3" alphatest="on">
 			<convert type="ServiceName">Reference</convert>
 		</widget> 
@@ -203,7 +203,7 @@
 		<widget source="parent.service_summary" render="Label" position="0,131" size="220,45" font="MyLcD;40" halign="center" valign="center" transparent="1" />
 	</screen>
 <!-- NumberZapExt -->    
-	<screen name="NumberZapExt_summary" position="0,0" size="220,176">
+	<screen name="NumberZapExtSummary" position="0,0" size="220,176">
 		<widget source="parent.number_summary" render="Label" position="0,0" size="220,73" font="MyLcD;58" halign="center" valign="center" transparent="1" />
 		<widget source="parent.service_summary" render="Label" position="0,74" size="220,102" font="MyLcD;34" halign="center" valign="center" transparent="1" />
 	</screen>
@@ -215,17 +215,17 @@
 		</widget>
 	</screen>
 <!-- Schnellstartmenue -->
-	<screen name="QuickMenu_summary" position="fill">
+	<screen name="QuickMenuSummary" position="fill">
 		<widget source="parent.Title" render="Label" position="top" size="*,87" font="MyLcD;35" foregroundColor="Menue-Titel" halign="center" valign="center" />
 		<ePixmap position="top" pixmap="bar.png" alphatest="on" transparent="0" size="220,2" zPosition="4" />
 		<widget source="parent.summary_description" render="Label" position="top" size="*,87" font="MyLcD;35" foregroundColor="Menue-Auswahl" backgroundColor="Menue-Auswahl-Hintergrund" halign="center" valign="center" />
 	</screen>
 <!-- Metrix-Menu -->
-	<screen name="MainSettingsView_summary" position="0,0" size="220,176">
+	<screen name="MainSettingsViewSummary" position="0,0" size="220,176">
 		<widget source="parent.titleText" render="Label" position="0,0" size="220,176" font="MyLcD;37" foregroundColor="Menue-Titel" halign="center" valign="center" />
 	</screen>
 <!-- Infopanel -->
-	<screen name="Infopanel_summary" position="fill">
+	<screen name="InfopanelSummary" position="fill">
 		<widget source="parent.Title" render="Label" position="top" size="*,87" font="MyLcD;35" foregroundColor="Menue-Titel" halign="center" valign="center" />
 		<ePixmap position="top" pixmap="bar.png" alphatest="on" transparent="0" size="220,2" zPosition="4" />
 		<widget source="parent.summary_description" render="Label" position="top" size="*,87" font="MyLcD;35" foregroundColor="Menue-Auswahl" backgroundColor="Menue-Auswahl-Hintergrund" halign="center" valign="center" />
@@ -284,7 +284,7 @@
 		<widget source="entry" render="Label" position="0,0" size="220,176" font="MyLcD;37" foregroundColor="Menue-Titel" halign="center" valign="center" />
 	</screen>
 <!-- JobView Summary -->
-	<screen name="JobView_summary" position="0,0" size="220,176">
+	<screen name="JobViewSummary" position="0,0" size="220,176">
 		<widget source="parent.summary_job_progress" render="Label" position="0,0" size="220,51" font="MyLcD;45" zposition="0" halign="center" valign="center" transparent="1" >
 			<convert type="ProgressToText">InPercent</convert>
 		</widget>
@@ -293,32 +293,32 @@
 		<widget source="parent.summary_job_name" render="Label" position="0,70" size="220,106" font="MyLcD;24" halign="center" valign="center" />
 	</screen>
 <!-- FlashImage Summary -->
-	<screen name="FlashImage_summary" position="0,0" size="220,176">
+	<screen name="FlashImageSummary" position="0,0" size="220,176">
 		<widget source="parent.summary_header" render="Label" position="0,0" size="220,176" font="MyLcD;37" foregroundColor="Menue-Titel" halign="center" valign="center" />
 	</screen>
 <!-- EventView Summary -->
-	<screen name="EventView_summary" position="0,0" size="220,176">
+	<screen name="EventViewSummary" position="0,0" size="220,176">
 		<widget source="parent.Title" render="Label" position="0,0" size="88,16" font="MyLcD;11" foregroundColor="Menue-Titel" halign="left" noWrap="1" />
 		<widget source="parent.summary_description" render="Label" position="0,16" size="220,103" font="MyLcD;13" />
 	</screen>
-	<screen name="EventViewSimple_summary" position="0,0" size="220,176">
+	<screen name="EventViewSimpleSummary" position="0,0" size="220,176">
 		<widget source="parent.Title" render="Label" position="0,0" size="88,16" font="MyLcD;11" foregroundColor="Menue-Titel" halign="left" noWrap="1" />
 		<widget source="parent.summary_description" render="Label" position="0,16" size="220,103" font="MyLcD;13" />
 	</screen>
 <!-- EPG Screens -->
-	<screen name="GraphicalEPG_summary" position="0,0" size="220,176">
+	<screen name="GraphicalEPGSummary" position="0,0" size="220,176">
 		<panel name="MyEPGPanel" />
 	</screen>
-	<screen name="GraphicalInfoBarEPG_summary" position="0,0" size="220,176">
+	<screen name="GraphicalInfoBarEPGSummary" position="0,0" size="220,176">
 		<panel name="MyEPGPanel" />
 	</screen>
-	<screen name="EPGSelectionMulti_summary" position="0,0" size="220,176">
+	<screen name="EPGSelectionMultiSummary" position="0,0" size="220,176">
 		<panel name="MyEPGPanel" />
 	</screen>
-	<screen name="EPGSelection_summary" position="0,0" size="220,176">
+	<screen name="EPGSelectionSummary" position="0,0" size="220,176">
 		<panel name="MyEPGPanel" />
 	</screen>
-	<screen name="EPGvertical_summary" position="0,0" size="220,176">
+	<screen name="EPGverticalSummary" position="0,0" size="220,176">
 		<panel name="MyEPGPanel" />
 	</screen>
 <!-- IMDbLCDScreen -->
@@ -326,15 +326,15 @@
 		<widget name="headline"  position="0,0" size="220,176" font="MyLcD;37" foregroundColor="Menue-Titel" halign="center" valign="center" />
 	</screen>	
 <!-- System -->
-	<screen name="ChoiceBox_summary" position="fill" >
+	<screen name="ChoiceBoxSummary" position="fill" >
 		<widget source="parent.summary_list" render="Label" position="fill" font="MyLcD;13" noWrap="1" valign="top" />
 	</screen>
-	<screen name="MessageBox_summary" position="0,0" size="220,176">
+	<screen name="MessageBoxSummary" position="0,0" size="220,176">
 		<widget source="parent.Text" render="Label" position="0,0" size="220,176" font="MyLcD;19" halign="center" />
 		<widget source="parent.selectedChoice" render="Label" position="0,144" size="220,32" font="MyLcD;19" foregroundColor="#F4FA58" halign="center" noWrap="1" />
 	</screen>
-	<screen name="MessageBoxSimple_summary" position="0,0" size="220,176">
-		<panel name="MessageBox_summary" />
+	<screen name="MessageBoxSimpleSummary" position="0,0" size="220,176">
+		<panel name="MessageBoxSummary" />
 	</screen>
 	<screen name="MessageBoxSummary" position="0,0" size="220,176">
 		<widget source="text" render="Label" position="0,0" size="220,176" font="MyLcD;19" halign="center" />
@@ -344,11 +344,11 @@
 		<panel name="MessageBoxSummary" />
 	</screen>
 <!-- LocationBox_summary -->
-	<screen name="LocationBox_summary" position="0,0" size="220,176">
+	<screen name="LocationBoxSummary" position="0,0" size="220,176">
 		<widget source="parent.text" render="Label" position="0,0" size="220,176" font="MyLcD;37" foregroundColor="#87CEFA" halign="center" valign="center" />
 	</screen>
 <!-- console -->
-	<screen name="Console_summary" position="fill">
+	<screen name="ConsoleSummary" position="fill">
 		<widget source="parent.Title" render="Label" position="top" size="*,87" font="MyLcD;24" foregroundColor="Menue-Titel" halign="center" valign="center" />
 		<ePixmap position="top" pixmap="bar.png" alphatest="on" transparent="0" size="220,2" zPosition="4" />
 		<widget source="parent.summary_description" render="Label" position="top" size="*,87" font="MyLcD;24" foregroundColor="Menue-Auswahl" backgroundColor="Menue-Auswahl-Hintergrund" halign="center" valign="center" />
@@ -366,7 +366,7 @@
 		<widget source="name" render="Label" position="0,33" size="220,143" font="MyLcD;32" transparent="1" foregroundColor="Menue-Auswahl" halign="center" valign="center" />	
 	</screen>		
 <!-- TimerLog_summary -->
-	<screen name="TimerLog_summary" position="0,0" size="220,176">
+	<screen name="TimerLogSummary" position="0,0" size="220,176">
 		<widget source="parent.Title" render="Label" position="0,0" size="220,28" font="MyLcD;24" foregroundColor="Menue-Titel" halign="center" noWrap="1" />
 		<ePixmap position="0,31" pixmap="bar.png" alphatest="on" transparent="0" size="220,1" zPosition="4" />
 		<widget source="parent.summary_description" render="Label" position="0,33" size="220,143" font="MyLcD;24" transparent="1" halign="center" valign="center" />
@@ -378,12 +378,12 @@
 		<widget source="entry" render="Label" position="0,33" size="220,143" font="MyLcD;32" transparent="1" foregroundColor="Menue-Auswahl" halign="center" valign="center" />
 	</screen>
 <!-- SoftwareUpdate -->
-	<screen name="UpdatePlugin_summary" position="0,0" size="220,176">
+	<screen name="UpdatePluginSummary" position="0,0" size="220,176">
 		<widget source="parent.Title" render="Label" position="0,0" size="220,23" font="MyLcD;15" foregroundColor="Menue-Titel" halign="center" noWrap="1" />
 		<widget source="parent.package" render="Label" position="0,24" size="220,128" font="MyLcD;18" halign="center" valign="center" />
 		<widget source="parent.status" render="Label" position="0,153" size="220,23" font="MyLcD;15" halign="left" transparent="1" />
 	</screen>
-	<screen name="SoftwareUpdateChanges_summary" position="0,0" size="220,176">
+	<screen name="SoftwareUpdateChangesSummary" position="0,0" size="220,176">
 		<widget source="parent.Title" render="Label" position="0,0" size="220,176" font="MyLcD;37" foregroundColor="Menue-Titel" halign="center" valign="center" />
 	</screen>
 	<screen name="WizardSummary" position="0,0" size="220,176">
@@ -397,32 +397,32 @@
 		<widget source="parent.summarylangname" render="Label" position="0,62" size="220,91" font="MyLcD;13" halign="center" />
 	</screen>
 <!-- Neu -->	
-	<screen name="BackupSelection_summary" position="0,0" size="220,176">
+	<screen name="BackupSelectionSummary" position="0,0" size="220,176">
 		<widget source="parent.Title" render="Label" position="0,0" size="220,77" font="MyLcD;21" foregroundColor="Menue-Titel" halign="center" valign="center" />
 		<ePixmap position="0,78" pixmap="bar.png" alphatest="on" transparent="0" size="220,1" zPosition="4" />
 		<widget source="parent.summary_description" render="Label" position="0,78" size="220,98" foregroundColor="Menue-Auswahl" zPosition="1" font="MyLcD;19" halign="center" valign="center" /> 
 	</screen>
-	<screen name="RestoreScreen_summary" position="0,0" size="220,176">
+	<screen name="RestoreScreenSummary" position="0,0" size="220,176">
 		<widget source="parent.Title" render="Label" position="0,0" size="220,77" font="MyLcD;21" foregroundColor="Menue-Titel" halign="center" valign="center" />
 		<ePixmap position="0,78" pixmap="bar.png" alphatest="on" transparent="0" size="220,1" zPosition="4" />
 		<widget source="parent.summary_description" render="Label" position="0,78" size="220,98" foregroundColor="Menue-Auswahl" zPosition="1" font="MyLcD;19" halign="center" valign="center" /> 	
 	</screen>
-	<screen name="installedPlugins_summary" position="0,0" size="220,176">
+	<screen name="installedPluginsSummary" position="0,0" size="220,176">
 		<widget source="parent.Title" render="Label" position="0,0" size="220,77" font="MyLcD;21" foregroundColor="Menue-Titel" halign="center" valign="center" />
 		<ePixmap position="0,78" pixmap="bar.png" alphatest="on" transparent="0" size="220,1" zPosition="4" />
 		<widget source="parent.summary_description" render="Label" position="0,78" size="220,98" foregroundColor="Menue-Auswahl" zPosition="1" font="MyLcD;19" halign="center" valign="center" /> 
 	</screen>
-	<screen name="RestartNetwork_summary" position="0,0" size="220,176">
+	<screen name="RestartNetworkSummary" position="0,0" size="220,176">
 		<widget source="parent.Title" render="Label" position="0,0" size="220,77" font="MyLcD;21" foregroundColor="Menue-Titel" halign="center" valign="center" />
 		<ePixmap position="0,78" pixmap="bar.png" alphatest="on" transparent="0" size="220,1" zPosition="4" />
 		<widget source="parent.summary_description" render="Label" position="0,78" size="220,98" foregroundColor="Menue-Auswahl" zPosition="1" font="MyLcD;19" halign="center" valign="center" /> 
 	</screen>
-	<screen name="RestorePlugins_summary" position="0,0" size="220,176">
+	<screen name="RestorePluginsSummary" position="0,0" size="220,176">
 		<widget source="parent.Title" render="Label" position="0,0" size="220,77" font="MyLcD;21" foregroundColor="Menue-Titel" halign="center" valign="center" />
 		<ePixmap position="0,78" pixmap="bar.png" alphatest="on" transparent="0" size="220,1" zPosition="4" />
 		<widget source="parent.summary_description" render="Label" position="0,78" size="220,98" foregroundColor="Menue-Auswahl" zPosition="1" font="MyLcD;19" halign="center" valign="center" /> 
 	</screen>
-	<screen name="RestoreMenu_summary" position="0,0" size="220,176">
+	<screen name="RestoreMenuSummary" position="0,0" size="220,176">
 		<widget source="parent.Title" render="Label" position="0,0" size="220,77" font="MyLcD;21" foregroundColor="Menue-Titel" halign="center" valign="center" />
 		<ePixmap position="0,78" pixmap="bar.png" alphatest="on" transparent="0" size="220,1" zPosition="4" />
 		<widget source="parent.summary_description" render="Label" position="0,78" size="220,98" foregroundColor="Menue-Auswahl" zPosition="1" font="MyLcD;19" halign="center" valign="center" /> 
@@ -443,7 +443,7 @@
 		</panel>
 	</screen>
 <!-- hbbtv-->
-	<screen name="HbbTVWindow_summary" position="0,0" size="220,176">
+	<screen name="HbbTVWindowSummary" position="0,0" size="220,176">
 		<widget source="parent.Title" render="Label" position="0,0" size="220,130" font="MyLcD;28" halign="center" valign="center" />
 		<widget source="global.CurrentTime" render="Label" position="0,132" size="220,55" font="MyLcD;48" foregroundColor="Uhr" halign="center" noWrap="1" transparent="1">
 			<convert type="ClockToText"></convert>

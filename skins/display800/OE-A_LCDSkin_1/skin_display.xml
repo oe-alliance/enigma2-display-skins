@@ -510,7 +510,7 @@
 	 </screen>
 	 
 <!-- ChannelSelection_summary -->
-	 <screen name="ChannelSelection_summary" position="0,0" size="800,480">
+	 <screen name="ChannelSelectionSummary" position="0,0" size="800,480">
 		<ePixmap pixmap="background.png" position="0,0" size="800,480" />
 		 <widget position="190,78" size="400,260" source="parent.ServiceEvent" render="Picon" transparent="1" zPosition="1">
 			<convert type="ServiceName">Reference</convert>
@@ -605,7 +605,7 @@
 	</screen>
 	
 <!-- EMC Selecting -->
-	<screen name="EMCSelection_summary" position="0,0" size="800,480"> 
+	<screen name="EMCSelectionSummary" position="0,0" size="800,480"> 
 		<ePixmap pixmap="background.png" position="0,0" size="800,480" />
 		<widget source="parent.Service" render="Label" position="20,105" size="510,265" font="VFD;50" foregroundColor="#e5b243" halign="center" valign="center" transparent="1" zPosition="2" >
 			<convert type="ServiceName">Name</convert>
@@ -626,15 +626,6 @@
 		<ePixmap pixmap="no_cover_player.png" position="540,105" size="240,270" />
 		<widget source="parent.Service" render="Cover" position="540,15" size="240,360" zPosition="2" />
 	</screen>
-	<screen name="EMCSelectionSummary" position="0,0" size="800,480">
-		<panel name="EMCSelection_summary" />
-	</screen>
-
-	<!-- EMCSelectionExtended_summary 
-	<screen name="EMCSelectionExtended_summary" position="0,0" size="800,480" >
-	<panel name="EMCSelection_summary" />
-	</screen>
-	-->
 
 <!-- EMC Playing-->
 	<screen name="EMCMoviePlayerSummary" position="0,0" size="800,480"> 
@@ -646,7 +637,7 @@
 	<screen name="MediaPlayerLCDScreen" position="0,0" size="800,480">
 		<panel name="InfoBarMoviePlayerSummary" />
 	</screen>
-	<screen name="XStreamity_VodPlayer_summary" position="0,0" size="800,480">
+	<screen name="XStreamity_VodPlayerSummary" position="0,0" size="800,480">
 		<panel name="InfoBarMoviePlayerSummary" />
 	</screen>
 
@@ -825,13 +816,13 @@
 	</screen>
 	
 <!-- MessageBox -->
-	<screen name="MessageBox_summary" position="0,0" size="800,480">
+	<screen name="MessageBoxSummary" position="0,0" size="800,480">
 		<widget source="parent.Text" render="Label" position="20,10" size="720,247" font="VFD;60" foregroundColor="#e5b243" halign="center" valign="center" />
 		<eLabel position="0,258" size="800,4"  backgroundColor="#FF0000" />
 		<widget source="parent.selectedChoice" render="Label" position="20,340" size="720,60" font="VFD;60" halign="center" valign="center" />
 	</screen>
-	<screen name="MessageBoxSimple_summary" position="0,0" size="800,480"> 
-		<panel name="MessageBox_summary" />
+	<screen name="MessageBoxSimpleSummary" position="0,0" size="800,480"> 
+		<panel name="MessageBoxSummary" />
 	</screen>
 	
 	<screen name="MessageBoxSummary" position="0,0" size="800,480">
@@ -844,7 +835,7 @@
 	</screen>
 	
 <!-- ChoiceBox -->
-	<screen name="ChoiceBox_summary" position="0,0" size="800,480">
+	<screen name="ChoiceBoxSummary" position="0,0" size="800,480">
 		<widget source="parent.summary_list" render="Label" position="20,20" size="720,440" font="VFD;60" foregroundColor="#e5b243" halign="center" valign="center" />
 	</screen>
 	
@@ -855,7 +846,7 @@
 	</screen>
 	
 <!-- JOBVIEW SUMMARY -->
-	<screen name="JobView_summary" position="0,0" size="800,480">
+	<screen name="JobViewSummary" position="0,0" size="800,480">
 		<ePixmap pixmap="background.png" position="0,0" size="800,480" />
 		<widget source="parent.summary_job_name" render="RollerCharLCDLong" position="20,20" size="760,80" font="VFD;80" foregroundColor="#e5b243" transparent="1" zPosition="1"/>
 		<widget source="parent.summary_job_task" render="Label" position="20,110" size="760,220" font="VFD;60" backgroundColor="#253f8a" halign="center" valign="center" zPosition="1" />
@@ -866,35 +857,35 @@
 	</screen>
 	
 <!-- NUMBERZAP -->
-	<screen name="NumberZap_summary" position="0,0" size="800,480">
+	<screen name="NumberZapSummary" position="0,0" size="800,480">
 		<widget source="parent.servicename" render="Label" position="40,50" size="720,170" font="VFD;85" foregroundColor="#e5b243" halign="center" valign="center" zPosition="2" />
 		<widget source="parent.number" render="Label" position="40,250" size="720,90" font="VFD;90" halign="center" valign="center" zPosition="2" />
 <!--	<widget source="parent.channel_summary" render="Label" position="10,10" size="770,60" font="VFD;60" halign="center"/> -->
 	</screen>
 
 <!-- NumberZapExt -->   
-	<screen name="NumberZapExt_summary" position="0,0" size="800,480">
+	<screen name="NumberZapExtSummary" position="0,0" size="800,480">
 		<widget source="parent.number_summary" render="Label" position="20,20" size="720,132" font="VFD;126" halign="center" valign="center" transparent="1" />
 		<widget source="parent.service_summary" render="Label" position="20,154" size="720,300" font="VFD;66" halign="center" valign="center" transparent="1" />
 	</screen>
     
 <!-- ET PORTAL -->
-	<screen name="EtPortalScreen_summary" position="0,0" size="800,480">
+	<screen name="EtPortalScreenSummary" position="0,0" size="800,480">
 		<eLabel text="EtPortal" position="20,20" size="800,120" font="VFD;70" foregroundColor="#e5b243" halign="center" valign="top" noWrap="1" />
 		<widget source="parent.label" render="Label" position="white" size="670,200" font="VFD;60" halign="center" valign="top" />
 	</screen>
 	
 <!-- ExtensionsList -->
-	<screen name="ExtensionsList_summary" position="0,0" size="800,480">
-		<panel name="EPGExtensionsList_summary" />
+	<screen name="ExtensionsListSummary" position="0,0" size="800,480">
+		<panel name="EPGExtensionsListSummary" />
 	</screen>
 	
 <!-- EPG -->
-	<screen name="EPGExtensionsList_summary" position="0,0" size="800,480">
+	<screen name="EPGExtensionsListSummary" position="0,0" size="800,480">
 		<panel name="PanelTopBar" />
         <widget source="parent.Title" render="Label" position="20,80" size="760,360" font="VFD;80" foregroundColor="#e5b243" halign="center" valign="center" transparent="1" zPosition="1"/>
 	</screen>
-	<screen name="EPGSelection_summary" position="fill">
+	<screen name="EPGSelectionSummary" position="fill">
 		<ePixmap pixmap="background.png" position="0,0" size="800,480" />
 		<widget source="parent.Service" render="Label" position="20,20" size="720,70" font="VFD;60" foregroundColor="#e5b243" halign="center" valign="center" transparent="1" zPosition="1">
 			<convert type="ServiceName">Name</convert>
@@ -1023,68 +1014,68 @@
 	</screen>
 	
 <!-- EPG Summarys -->
-	<screen name="QuickEPG_summary" position="fill">
-		<panel name="EPGSelection_summary" />
+	<screen name="QuickEPGSummary" position="fill">
+		<panel name="EPGSelectionSummary" />
 	</screen>
-	<screen name="GraphicalEPG_summary" position="fill">
-		<panel name="EPGSelection_summary" />
+	<screen name="GraphicalEPGSummary" position="fill">
+		<panel name="EPGSelectionSummary" />
 	</screen>
-	<screen name="GraphicalEPGPIG_summary" position="fill">
-		<panel name="EPGSelection_summary" />
+	<screen name="GraphicalEPGPIGSummary" position="fill">
+		<panel name="EPGSelectionSummary" />
 	</screen>
-	<screen name="GraphicalInfoBarEPG_summary" position="fill">
-		<panel name="EPGSelection_summary" />
+	<screen name="GraphicalInfoBarEPGSummary" position="fill">
+		<panel name="EPGSelectionSummary" />
 	</screen>
-	<screen name="EPGSelectionMulti_summary" position="fill">
-		<panel name="EPGSelection_summary" />
+	<screen name="EPGSelectionMultiSummary" position="fill">
+		<panel name="EPGSelectionSummary" />
 	</screen>
-	<screen name="CoolTVGuide_summary" position="fill">
-		<panel name="EPGSelection_summary" />
+	<screen name="CoolTVGuideSummary" position="fill">
+		<panel name="EPGSelectionSummary" />
 	</screen>	
-	<screen name="CoolMultiGuide_summary" position="fill">
-		<panel name="EPGSelection_summary" />
+	<screen name="CoolMultiGuideSummary" position="fill">
+		<panel name="EPGSelectionSummary" />
 	</screen>	
-	<screen name="CoolTinyGuide_summary" position="fill">
-		<panel name="EPGSelection_summary" />
+	<screen name="CoolTinyGuideSummary" position="fill">
+		<panel name="EPGSelectionSummary" />
 	</screen>
-	<screen name="CoolNiceGuide_summary" position="fill">
-		<panel name="EPGSelection_summary" />
+	<screen name="CoolNiceGuideSummary" position="fill">
+		<panel name="EPGSelectionSummary" />
 	</screen>
-	<screen name="CoolChannelGuide_summary" position="fill">
-		<panel name="EPGSelection_summary" />
+	<screen name="CoolChannelGuideSummary" position="fill">
+		<panel name="EPGSelectionSummary" />
 	</screen>	
-	<screen name="CoolChannelGuide2_summary" position="fill">
-		<panel name="EPGSelection_summary" />
+	<screen name="CoolChannelGuide2Summary" position="fill">
+		<panel name="EPGSelectionSummary" />
 	</screen>
-	<screen name="CoolChannelGuide3_summary" position="fill">
-		<panel name="EPGSelection_summary" />
+	<screen name="CoolChannelGuide3Summary" position="fill">
+		<panel name="EPGSelectionSummary" />
 	</screen>
-	<screen name="CoolInfoGuide_summary" position="fill">
-		<panel name="EPGSelection_summary" />
+	<screen name="CoolInfoGuideSummary" position="fill">
+		<panel name="EPGSelectionSummary" />
 	</screen>	
-	<screen name="CoolSingleGuide_summary" position="fill">
-		<panel name="EPGSelection_summary" />
+	<screen name="CoolSingleGuideSummary" position="fill">
+		<panel name="EPGSelectionSummary" />
 	</screen>	
-	<screen name="CoolSingleGuide2_summary" position="fill">
-		<panel name="EPGSelection_summary" />
+	<screen name="CoolSingleGuide2Summary" position="fill">
+		<panel name="EPGSelectionSummary" />
 	</screen>	
-	<screen name="CoolSingleGuide3_summary" position="fill">
-		<panel name="EPGSelection_summary" />
+	<screen name="CoolSingleGuide3Summary" position="fill">
+		<panel name="EPGSelectionSummary" />
 	</screen>
-	<screen name="CoolEasyGuide_summary" position="fill">
-		<panel name="EPGSelection_summary" />
+	<screen name="CoolEasyGuideSummary" position="fill">
+		<panel name="EPGSelectionSummary" />
 	</screen>
-	<screen name="CoolEasyGuide2_summary" position="fill">
-		<panel name="EPGSelection_summary" />
+	<screen name="CoolEasyGuide2Summary" position="fill">
+		<panel name="EPGSelectionSummary" />
 	</screen>
-	<screen name="CoolEasyGuide3_summary" position="fill">
-		<panel name="EPGSelection_summary" />
+	<screen name="CoolEasyGuide3Summary" position="fill">
+		<panel name="EPGSelectionSummary" />
 	</screen>
-	<screen name="CoolSearch_summary" position="fill">
-		<panel name="EPGSelection_summary" />
+	<screen name="CoolSearchSummary" position="fill">
+		<panel name="EPGSelectionSummary" />
 	</screen>
-	<screen name="GraphMultiEPG_summary" position="fill">
-		<panel name="EPGSelection_summary" />
+	<screen name="GraphMultiEPGSummary" position="fill">
+		<panel name="EPGSelectionSummary" />
 	</screen>
    
 <!-- DVD -->
@@ -1104,13 +1095,13 @@
 	</screen>
 	
 <!-- Service Descriptions -->
-	<screen name="EventViewSimple_summary" position="0,0" size="800,480">
+	<screen name="EventViewSimpleSummary" position="0,0" size="800,480">
 		<widget source="parent.Title" render="RollerCharLCDLong" position="20,20" size="760,70" font="VFD;60" foregroundColor="#e5b243" halign="left" noWrap="1" />
         <eLabel position="0,80" size="800,4" backgroundColor="#FF0000" />
 		<widget source="parent.summary_description" render="Label" position="20,90" size="760,450" font="VFD;40" />
 	</screen>
-	<screen name="EventView_summary" position="0,0" size="800,480">
- 		<panel name="EventViewSimple_summary" />
+	<screen name="EventViewSummary" position="0,0" size="800,480">
+ 		<panel name="EventViewSimpleSummary" />
 	</screen>
 	
 <!-- About Screen -->
@@ -1130,10 +1121,10 @@
 	<screen name="PowerTimerEditListSummary" position="0,0" size="800,480">
  		<panel name="TimerEditListSummary" />
 	</screen>	
-	<screen name="TimerEntry_summary" position="0,0" size="800,480">
+	<screen name="TimerEntrySummary" position="0,0" size="800,480">
 		<panel name="TimerEditListSummary" />
 	</screen>
-	<screen name="TimerLog_summary" position="0,0" size="800,480">
+	<screen name="TimerLogSummary" position="0,0" size="800,480">
 		<widget source="parent.Title" render="Label" position="20,20" size="720,50" font="VFD;50" foregroundColor="#87CEFA" halign="center" noWrap="1" />
         <eLabel position="0,75" size="800,4" backgroundColor="#FF0000" />
 		<widget source="parent.summary_description" render="Label" position="20,80" size="720,300" font="VFD;50" transparent="1" halign="center" valign="center" />
@@ -1146,47 +1137,47 @@
 	</screen>
 	
 <!-- Console -->
-	<screen name="Console_summary" position="0,0" size="800,480">
-		<panel name="BackupSelection_summary" />
+	<screen name="ConsoleSummary" position="0,0" size="800,480">
+		<panel name="BackupSelectionSummary" />
 	</screen>
 	
 <!-- SoftwareManagment -->
-	<screen name="BackupSelection_summary" position="0,0" size="800,480">
+	<screen name="BackupSelectionSummary" position="0,0" size="800,480">
 		<panel name="PanelTopBar" />
 		<widget source="parent.Title" render="Label" position="20,80" size="720,340" font="VFD;70" halign="center" valign="center" foregroundColor="#e5b243" transparent="1" zPosition="1"/>
 		<widget source="parent.summary_description" render="Label" position="22,390" size="720,63" foregroundColor="#0000FF" font="VFD;60" halign="center" valign="center" transparent="1" zPosition="1"/>
 	</screen>
-	<screen name="RestoreScreen_summary" position="0,0" size="800,480">
-		<panel name="BackupSelection_summary" />
+	<screen name="RestoreScreenSummary" position="0,0" size="800,480">
+		<panel name="BackupSelectionSummary" />
 	</screen>
-	<screen name="installedPlugins_summary" position="0,0" size="800,480">
-		<panel name="BackupSelection_summary" />
+	<screen name="installedPluginsSummary" position="0,0" size="800,480">
+		<panel name="BackupSelectionSummary" />
 	</screen>
-	<screen name="RestartNetwork_summary" position="0,0" size="800,480">
-		<panel name="BackupSelection_summary" />
+	<screen name="RestartNetworkSummary" position="0,0" size="800,480">
+		<panel name="BackupSelectionSummary" />
 	</screen>
-	<screen name="RestorePlugins_summary" position="0,0" size="800,480">
-		<panel name="BackupSelection_summary" />
+	<screen name="RestorePluginsSummary" position="0,0" size="800,480">
+		<panel name="BackupSelectionSummary" />
 	</screen>
-	<screen name="RestoreMenu_summary" position="0,0" size="800,480">
-		<panel name="BackupSelection_summary" />
+	<screen name="RestoreMenuSummary" position="0,0" size="800,480">
+		<panel name="BackupSelectionSummary" />
 	</screen> 
 	
 <!-- SoftwareUpdate -->	
-	<screen name="UpdatePlugin_summary" position="0,0" size="800,480">
+	<screen name="UpdatePluginSummary" position="0,0" size="800,480">
 		<widget source="parent.Title" render="Label" position="20,20" size="720,50" font="VFD;50" foregroundColor="#e5b243" halign="center" noWrap="1" />
 		<eLabel position="0,75" size="800,4" backgroundColor="FF0000" />
 		<widget source="parent.package" render="Label" position="20,80" size="720,200" font="VFD;50" halign="center" valign="center" />
 		<widget source="parent.status" render="Label" position="20,280" size="720,200" font="VFD;50" halign="center" transparent="1" />
 	</screen>
-	<screen name="SoftwareUpdateChanges_summary" position="0,0" size="800,480">
+	<screen name="SoftwareUpdateChangesSummary" position="0,0" size="800,480">
 		<widget source="parent.title_summary" render="Label" position="20,20" size="720,50" font="VFD;50" foregroundColor="#e5b243" halign="center" noWrap="1" />
 		<eLabel position="0,75" size="800,4" backgroundColor="FF0000" />
 		<widget source="parent.text_summary" render="Label" position="20,80" size="720,282" font="VFD;50" halign="left" transparent="1" />
 	</screen>
 	
 <!-- QuickMenu -->
-	<screen name="QuickMenu_summary" position="0,0" size="800,480">
+	<screen name="QuickMenuSummary" position="0,0" size="800,480">
 		<panel name="PanelTopBar" />
 		<widget source="parent.summary_description" render="Label" position="20,200" size="760,240" font="VFD;70" halign="center" valign="center" backgroundColor="#253f8a" zPosition="1" />
 			<convert type="StringListSelection" />
@@ -1196,20 +1187,20 @@
 	</screen>
 	
 <!-- InfoPanel -->
-	<screen name="Infopanel_summary" position="0,0" size="800,480">
+	<screen name="InfopanelSummary" position="0,0" size="800,480">
 		<panel name="PanelTopBar" />
         <widget source="parent.Title" render="Label" position="20,80" size="760,140" font="VFD;70" halign="center" valign="center" foregroundColor="#e5b243" transparent="1" zPosition="1"/> 
 		<widget source="parent.summary_description" render="Label" position="20,220" size="760,220" font="VFD;70" halign="center" valign="center" backgroundColor="#253f8a" zPosition="1"/>
 	</screen>
 	
 <!-- Metrix-Skin-Menu -->
-	<screen name="MainSettingsView_summary" position="0,0" size="800,480">
+	<screen name="MainSettingsViewSummary" position="0,0" size="800,480">
 		<panel name="PanelTopBar" />
 		<widget source="parent.titleText" render="Label" position="20,150" size="720,180" font="VFD;70" foregroundColor="#e5b243" halign="center" valign="center" transparent="1" zPosition="1"/>
 	</screen>
 	
 <!-- Weatherplugin -->
-	<screen name="MSNWeatherPlugin_summary" position="0,0" size="800,480">
+	<screen name="MSNWeatherPluginSummary" position="0,0" size="800,480">
 		<widget source="parent.Title" render="Label" position="20,20" foregroundColor="#e5b243" size="720,80" font="VFD;70" halign="center" valign="center" />
 		<widget source="session.MSNWeather" noWrap="1" font="VFD;95" render="Label" position="420,120" size="300,100" transparent="1" zPosition="8" halign="center" foregroundColor="#e5b243" >
 			<convert type="MSNWeather">temperature_current</convert>
@@ -1244,7 +1235,7 @@
 	</screen>
 	
 <!-- Enigmalight -->
-	<screen name="EL_Screen_MainMenu_summary" position="0,0" size="800,480">
+	<screen name="EL_Screen_MainMenuSummary" position="0,0" size="800,480">
 		<eLabel text="Enigmalight" position="20,20" foregroundColor="#e5b243" size="720,400" font="VFD;70" halign="center" valign="center" />
 	</screen>
 	
@@ -1268,7 +1259,7 @@
 	</screen>
 	
 <!-- LocationBox_summary -->
-	<screen name="LocationBox_summary" position="0,0" size="800,480">
+	<screen name="LocationBoxSummary" position="0,0" size="800,480">
 		<widget source="parent.text" render="Label" position="20,20" size="720,400" font="VFD;60" foregroundColor="#87CEFA" halign="center" valign="center" />
 	</screen>
 	
@@ -1291,7 +1282,7 @@
 	</screen>
 
 <!-- KodiLauncher_summary -->
-	<screen name="KodiLauncher_summary" position="0,0" size="800,480" >
+	<screen name="KodiLauncherSummary" position="0,0" size="800,480" >
 		<panel name="PanelTopBar" />
 		<ePixmap pixmap="kodi.png" position="100,170" size="600,300" transparent="1" zPosition="1"/>
 		<widget source="global.CurrentTime" render="Label" position="550,80" size="230,100" font="VFD;90" halign="center" valign="center" transparent="1" zPosition="1">
@@ -1300,41 +1291,41 @@
 	</screen>
 	
 <!-- KodiVideoPlayer_summary -->
-	<screen name="KodiVideoPlayer_summary" position="0,0" size="800,480" >
+	<screen name="KodiVideoPlayerSummary" position="0,0" size="800,480" >
 		<panel name="InfoBarMoviePlayerSummary" />
 	</screen>
 
 <!-- LiveSoccerStream_summary -->
-	<screen name="LiveSoccerStream_summary" position="0,0" size="800,480" >
+	<screen name="LiveSoccerStreamSummary" position="0,0" size="800,480" >
 		<panel name="InfoBarMoviePlayerSummary" />
 	</screen>
     
 <!-- SkinSelector_summary
-	<screen name="SkinSelector_summary" position="0,0" size="800,480" >
+	<screen name="SkinSelectorSummary" position="0,0" size="800,480" >
 		<panel name="" />
 	</screen>
 	-->
     
 	<!-- MoviePlayer_summary 	
-	<screen name="MoviePlayer_summary" position="0,0" size="800,480" >
+	<screen name="MoviePlayerSummary" position="0,0" size="800,480" >
 		<panel name="InfoBarMoviePlayerSummary" />
 	</screen> 
 	-->
 
 	<!-- MovieMenu_summary 	
-	<screen name="MovieMenu_summary" position="0,0" size="800,480" >
+	<screen name="MovieMenuSummary" position="0,0" size="800,480" >
 		<panel name="" />
 	</screen> 
 	-->
 
 	<!-- VBMain_summary 
-	<screen name="VBMain_summary" position="0,0" size="800,480" >
+	<screen name="VBMainSummary" position="0,0" size="800,480" >
 		<panel name="" />
 	</screen>
 	-->
     
 	<!-- TranslationInfo_summary
-	<screen name="TranslationInfo_summary" position="0,0" size="800,480" >
+	<screen name="TranslationInfoSummary" position="0,0" size="800,480" >
 		<panel name="" />
 	</screen>
 	-->
@@ -1345,49 +1336,49 @@
 	-->
 
 	<!-- Seekbar_summary 
-	<screen name="Seekbar_summary" position="0,0" size="800,480" >
+	<screen name="SeekbarSummary" position="0,0" size="800,480" >
 		<panel name="" />
 	</screen>
 	-->
 
 	<!-- TimerSelection_summary 
-	<screen name="TimerSelection_summary" position="0,0" size="800,480" >
+	<screen name="TimerSelectionSummary" position="0,0" size="800,480" >
 		<panel name="" />
 	</screen>
 	-->
 	
 	<!-- ServiceInfo_summary 
-	<screen name="ServiceInfo_summary" position="0,0" size="800,480" >
+	<screen name="ServiceInfoSummary" position="0,0" size="800,480" >
 		<panel name="" />
 	</screen>
 	-->
 
 	<!-- AudioSelection_summary 
-	<screen name="AudioSelection_summary" position="0,0" size="800,480" >
+	<screen name="AudioSelectionSummary" position="0,0" size="800,480" >
 		<panel name="" />
 	</screen>
 	-->
    
 	<!-- ImageBackup_summary 
-	<screen name="ImageBackup_summary" position="0,0" size="800,480" >
+	<screen name="ImageBackupSummary" position="0,0" size="800,480" >
 		<panel name="" />
 	</screen>
 	-->
     
 	<!-- NimSelection_summary 
-	<screen name="NimSelection_summary" position="0,0" size="800,480" >
+	<screen name="NimSelectionSummary" position="0,0" size="800,480" >
 		<panel name="" />
 	</screen>
 	-->
     
 	<!-- TryQuitMainloop_summary 
-	<screen name="TryQuitMainloop_summary" position="0,0" size="800,480" >
+	<screen name="TryQuitMainloopSummary" position="0,0" size="800,480" >
 		<panel name="" />
 	</screen>
 	-->
 
 <!-- IPTVLIVE_summary
-	<screen name="IPTVLIVE_summary" position="0,0" size="800,480" >
+	<screen name="IPTVLIVESummary" position="0,0" size="800,480" >
 		<panel name="InfoBarMoviePlayerSummary" />
 	</screen>     -->
     

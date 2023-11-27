@@ -572,7 +572,7 @@
   </screen>
                                                                                                    
 <!-- ChannelSelection  -->
-<screen name="ChannelSelection_summary" position="0,0" size="800,480" >
+<screen name="ChannelSelectionSummary" position="0,0" size="800,480" >
 		<panel name="LCDIconTemplate" />
     <panel name="LCD18TunerTemplate" />
 		<widget source="parent.ServiceEvent" render="Picon" position="284,90" zPosition="4" size="220,132" transparent="1" >
@@ -643,7 +643,7 @@
 </screen>
 
 <!-- EMCSelection_summary -->
-<screen name="EMCSelection_summary" position="0,0" size="800,480" >
+<screen name="EMCSelectionSummary" position="0,0" size="800,480" >
   <widget source="parent.Service" render="Label" position="30,272" size="740,165" font="VFD;55" halign="center" valign="top">
     <convert type="ServiceName">Name</convert>
   </widget>
@@ -652,9 +652,6 @@
     <convert type="ClockToText">AsLength</convert>
   </widget>
  </screen>
-	<screen name="EMCSelectionSummary" position="0,0" size="800,480">
-		<panel name="EMCSelection_summary" />
-	</screen>
 
 <!-- MediaPlayer  -->
 <screen name="MediaPlayerLCDScreen" position="0,0" size="800,480" >
@@ -713,7 +710,7 @@
 </screen>
 
 <!-- MovieSelection_summary -->
-<screen name="MovieSelection_summary" position="0,0" size="800,480" >
+<screen name="MovieSelectionSummary" position="0,0" size="800,480" >
   <widget source="parent.Service" render="Label" position="30,240" size="740,220" font="VFD;55" halign="center" valign="top">
     <convert type="ServiceName">Name</convert>
   </widget>
@@ -782,7 +779,7 @@
   </screen>
 
 <!-- ChoiceBox -->
-<screen name="ChoiceBox_summary" position="0,0" size="800,480" >
+<screen name="ChoiceBoxSummary" position="0,0" size="800,480" >
   <widget source="parent.summary_list" render="Label" position="20,50" size="760,379" font="VFD;50" />
   </screen>
 
@@ -802,7 +799,7 @@
   </screen>
 
 <!-- MessageBox -->
-<screen name="MessageBox_summary" position="0,0" size="800,480" >
+<screen name="MessageBoxSummary" position="0,0" size="800,480" >
   <widget source="parent.Text" render="Label" position="20,50" size="760,270" font="VFD;45" halign="center" valign="center" />
   <eLabel position="0,329" size="800,2" backgroundColor="#00FFFFFF" />
   <widget source="parent.selectedChoice" render="Label" position="21,337" size="760,95" font="VFD;65" halign="center" valign="center" />
