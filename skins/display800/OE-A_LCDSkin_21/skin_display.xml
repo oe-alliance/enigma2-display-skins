@@ -186,7 +186,7 @@
 	<!-- Media Player */ -->
 	
 	<!-- /* ########## Channel Selection ########## -->
-	<screen name="ChannelSelection_summary" position="0,0" size="800,480">
+	<screen name="ChannelSelectionSummary" position="0,0" size="800,480">
 		<widget source="parent.ServiceEvent" render="Label" position="20,244" size="760,62" font="lack_lcd;56" halign="center" transparent="1" zPosition="1">
 			<convert type="EventName">Name</convert>
 		</widget>
@@ -219,7 +219,7 @@
 	<!-- Channel Selection */ -->
 	
 	<!-- /* ########## Number Zap ########## -->
-	<screen name="NumberZap_summary" position="0,0" size="800,480">
+	<screen name="NumberZapSummary" position="0,0" size="800,480">
 		<eLabel position="0,330" size="250,100" backgroundColor="openATVblueBar" />
 		<widget source="parent.number_summary" render="Label" position="20,334" size="230,100" font="lack_lcd;88" halign="center" valign="center" transparent="1" zPosition="1" />
 		<widget source="parent.service_summary" render="Label" position="250,310" size="540,140" font="lack_lcd;60" halign="right" valign="center" />
@@ -227,7 +227,7 @@
 		<panel name="MyRecordingPanel" />
 	</screen>
 	
-	<screen name="NumberZapPicon_summary" position="0,0" size="800,480">
+	<screen name="NumberZapPiconSummary" position="0,0" size="800,480">
 		<eLabel position="0,330" size="250,100" backgroundColor="openATVblueBar" />
 		<widget source="parent.number_summary" render="Label" position="20,334" size="230,100" font="lack_lcd;88" halign="center" valign="center" transparent="1" zPosition="1" />
 		<widget source="parent.service_summary" render="Label" position="250,310" size="540,140" font="lack_lcd;60" halign="right" valign="center" />
@@ -236,7 +236,7 @@
 		<panel name="MyRecordingPanel" />
 	</screen>
 	
-	<screen name="NumberZapExt_summary" position="0,0" size="800,480">
+	<screen name="NumberZapExtSummary" position="0,0" size="800,480">
 		<widget source="parent.channel" render="Label" position="20,20" size="760,464" font="lack_lcd;88" halign="center" valign="center" />
 		
 		<panel name="MyRecordingPanel" />
@@ -244,7 +244,7 @@
 	<!-- Number Zap */ -->
 	
 	<!-- /* ########## Channel Selection Radio (not tested yet) ########## -->
-	<screen name="ChannelSelectionRadio_summary" position="0,0" size="800,480">
+	<screen name="ChannelSelectionRadioSummary" position="0,0" size="800,480">
 		<widget source="session.CurrentService" render="Label" position="20,20" size="760,80" font="lack_lcd;76" halign="center">
 			<convert type="ServiceName">Name</convert>
 		</widget>
@@ -257,19 +257,19 @@
 	<!-- Channel Selection Radio */ -->
 	
 	<!-- /* ########## EPG Screens ########## -->
-	<screen name="GraphicalEPG_summary" position="0,0" size="800,480">
+	<screen name="GraphicalEPGSummary" position="0,0" size="800,480">
 		<panel name="MyEPGPanel" />
 	</screen>
 	
-	<screen name="GraphicalInfoBarEPG_summary" position="0,0" size="800,480">
+	<screen name="GraphicalInfoBarEPGSummary" position="0,0" size="800,480">
 		<panel name="MyEPGPanel" />
 	</screen>
 	
-	<screen name="EPGSelectionMulti_summary" position="0,0" size="800,480">
+	<screen name="EPGSelectionMultiSummary" position="0,0" size="800,480">
 		<panel name="MyEPGPanel" />
 	</screen>
 	
-	<screen name="EPGSelection_summary" position="0,0" size="800,480">
+	<screen name="EPGSelectionSummary" position="0,0" size="800,480">
 		<panel name="MyEPGPanel" />
 	</screen>
 	<!-- EPG Screens */ -->
@@ -312,7 +312,7 @@
 		<panel name="MyRecordingPanel" />
 	</screen>
 	
-	<screen name="TimerLog_summary" position="0,0" size="800,480">
+	<screen name="TimerLogSummary" position="0,0" size="800,480">
 		<widget source="parent.Title" render="Label" position="20,16" size="760,232" font="lack_lcd;88" halign="center" valign="center" />
 		<eLabel position="0,240" size="800,160" backgroundColor="openATVblueBar" />
 		<widget source="entry" render="Label" position="20,240" size="760,160" font="lack_lcd;68" halign="center" valign="center" transparent="1" zPosition="1" />
@@ -383,8 +383,7 @@
 	<screen name="MenuSummary" position="0,0" size="800,480">
 		<widget source="parent.title" render="Label" position="20,16" size="760,232" font="lack_lcd;88" halign="center" valign="center" />
 		<eLabel position="0,240" size="800,160" backgroundColor="openATVblueBar" />
-		<widget source="parent.menu" render="Label" position="20,240" size="760,160" font="lack_lcd;68" halign="center" valign="center" transparent="1" zPosition="1">
-			<convert type="StringListSelection" />
+		<widget source="entry" render="Label" position="20,240" size="760,160" font="lack_lcd;68" halign="center" valign="center" transparent="1" zPosition="1">
 		</widget>
 		
 		<panel name="MyRecordingPanel" />
@@ -393,16 +392,16 @@
 	
 	<!-- /* ########## Setup ########## -->
 	<screen name="SetupSummary" position="0,0" size="800,480">
-		<widget source="SetupEntry" render="Label" position="20,16" size="760,232" font="lack_lcd;68" halign="center" valign="center" />
+		<widget source="entry" render="Label" position="20,16" size="760,232" font="lack_lcd;68" halign="center" valign="center" />
 		<eLabel position="0,240" size="800,160" backgroundColor="openATVblueBar" />
-		<widget source="SetupValue" render="Label" position="20,240" size="760,160" font="lack_lcd;68" halign="center" valign="center" transparent="1" zPosition="1" />
+		<widget source="value" render="Label" position="20,240" size="760,160" font="lack_lcd;68" halign="center" valign="center" transparent="1" zPosition="1" />
 		
 		<panel name="MyRecordingPanel" />
 	</screen>
 	<!-- Setup */ -->
 	
 	<!-- /* ########## Quick Menu ########## -->
-	<screen name="QuickMenu_summary" position="0,0" size="800,480">
+	<screen name="QuickMenuSummary" position="0,0" size="800,480">
 		<widget source="parent.Title" render="Label" position="20,16" size="760,232" font="lack_lcd;88" halign="center" valign="center" />
 		<eLabel position="0,240" size="800,160" backgroundColor="openATVblueBar" />
 		<widget source="parent.summary_description" render="Label" position="20,240" size="760,160" font="lack_lcd;68" halign="center" valign="center" transparent="1" zPosition="1" />
@@ -412,7 +411,7 @@
 	<!-- Quick Menu */ -->
 	
 	<!-- /* ########## Metrix Menu ########## -->
-	<screen name="MainSettingsView_summary" position="0,0" size="800,480">
+	<screen name="MainSettingsViewSummary" position="0,0" size="800,480">
 		<widget source="parent.titleText" render="Label" position="20,16" size="760,232" font="lack_lcd;88" halign="center" valign="center" />
 	</screen>
 	<!-- Metrix Menu */ -->
@@ -423,17 +422,10 @@
 		
 		<panel name="MyRecordingPanel" />
 	</screen>
-	
-	<screen name="WizardSummary" position="0,0" size="800,480">
-		<widget source="text" render="Label" position="20,16" size="760,464" font="lack_lcd;60" halign="center" valign="center" />
-		<widget source="parent.list" render="Label" position="fill" font="lack_lcd;48" halign="center">
-			<convert type="StringListSelection" />
-		</widget>
-	</screen>
 	<!-- Misc */ -->
 	
 	<!-- /* ########## JobView Summary (not tested yet) ########## -->
-	<screen name="JobView_summary" position="0,0" size="800,480">
+	<screen name="JobViewSummary" position="0,0" size="800,480">
 		<widget source="parent.summary_job_progress" render="Label" position="20,16" size="760,120" font="lack_lcd;68" borderWidth="2" halign="center" valign="center" zPosition="2" transparent="1">
 			<convert type="ProgressToText">InPercent</convert>
 		</widget>
@@ -443,25 +435,25 @@
 	<!-- JobView Summary */ -->
 	
 	<!-- /* ########## EventView Summary ########## -->
-	<screen name="EventView_summary" position="0,0" size="800,240">
+	<screen name="EventViewSummary" position="0,0" size="800,240">
 		<widget source="parent.Title" render="Label" position="20,16" size="760,96" font="lack_lcd;48" halign="left" noWrap="1" />
 		<widget source="parent.summary_description" render="Label" position="20,96" size="760,368" font="lack_lcd;44" />
 	</screen>
 	
-	<screen name="EventViewSimple_summary" position="0,0" size="800,480">
+	<screen name="EventViewSimpleSummary" position="0,0" size="800,480">
 		<widget source="parent.Title" render="Label" position="20,16" size="760,96" font="lack_lcd;48" halign="left" noWrap="1" />
 		<widget source="parent.summary_description" render="Label" position="20,96" size="760,368" font="lack_lcd;44" />
 	</screen>
 	<!-- EventView Summary */ -->
 	
 	<!-- /* ########## Software Update (not tested yet) ########## -->
-	<screen name="UpdatePlugin_summary" position="0,0" size="800,480">
+	<screen name="UpdatePluginSummary" position="0,0" size="800,480">
 		<widget source="parent.Title" render="Label" position="20,16" size="760,64" font="lack_lcd;56" halign="center" noWrap="1" />
 		<widget source="parent.package" render="Label" position="20,66" size="760,348" font="lack_lcd;64" halign="center" valign="center" />
 		<widget source="parent.status" render="Label" position="20,416" size="760,64" font="lack_lcd;56" halign="left" transparent="1" />
 	</screen>
 	
-	<screen name="SoftwareUpdateChanges_summary" position="0,0" size="800,480">
+	<screen name="SoftwareUpdateChangesSummary" position="0,0" size="800,480">
 		<widget source="parent.title_summary" render="Label" position="20,16" size="760,52" font="lack_lcd;48" halign="center" noWrap="1" />
 		<widget source="parent.text_summary" render="Label" position="20,56" size="760,424" font="lack_lcd;48" halign="left" transparent="1" />
 	</screen>
@@ -484,18 +476,18 @@
 	<!-- LanguageWizardSummary */ -->
 	
 	<!-- /* ########## System ########## -->
-	<screen name="ChoiceBox_summary" position="20,16" size="760,448">
+	<screen name="ChoiceBoxSummary" position="20,16" size="760,448">
 		<widget source="parent.summary_list" render="Label" position="fill" font="lack_lcd;48" noWrap="1" valign="top" />
 	</screen>
 	
-	<screen name="MessageBox_summary" position="0,0" size="800,480">
+	<screen name="MessageBoxSummary" position="0,0" size="800,480">
 		<widget source="parent.Text" render="Label" position="20,16" size="760,350" font="lack_lcd;60" halign="center" valign="center" />
 		<eLabel position="0,360" size="800,80" backgroundColor="openATVblueBar" />
 		<widget source="parent.selectedChoice" render="Label" position="20,364" size="760,80" font="lack_lcd;60" halign="center" valign="center" transparent="1" zPosition="1" />
 	</screen>
 	
-	<screen name="MessageBoxSimple_summary" position="0,0" size="800,480">
-		<panel name="MessageBox_summary" />
+	<screen name="MessageBoxSimpleSummary" position="0,0" size="800,480">
+		<panel name="MessageBoxSummary" />
 	</screen>
 	
 	<screen name="MessageBoxSummary" position="0,0" size="800,480">
@@ -508,13 +500,10 @@
 		<panel name="MessageBoxSummary" />
 	</screen>
 	
-	<screen name="AboutSummary" position="0,0" size="800,480">
-		<widget source="AboutText" render="Label" position="20,16" size="760,448" font="lack_lcd;26" />
-	</screen>
 	<!-- System */ -->
 	
 	<!-- /* ########## Info ########## -->
-	<screen name="Infopanel_summary" position="0,0" size="800,480">
+	<screen name="InfopanelSummary" position="0,0" size="800,480">
 		<widget source="parent.Title" render="Label" position="20,16" size="760,232" font="lack_lcd;88" halign="center" valign="center" />
 		<eLabel position="0,240" size="800,160" backgroundColor="openATVblueBar" />
 		<widget source="parent.summary_description" render="Label" position="20,240" size="760,160" font="lack_lcd;68" halign="center" valign="center" transparent="1" zPosition="1" />
@@ -522,7 +511,7 @@
 	<!-- Info */ -->
 	
 	<!-- /* ########## Backup Selection ########## -->
-	<screen name="BackupSelection_summary" position="0,0" size="800,480">
+	<screen name="BackupSelectionSummary" position="0,0" size="800,480">
 		<widget source="parent.Title" render="Label" position="20,16" size="760,232" font="lack_lcd;68" halign="center" valign="center" />
 		<eLabel position="0,240" size="800,160" backgroundColor="openATVblueBar" />
 		<widget source="parent.summary_description" render="Label" position="20,240" size="760,160" font="lack_lcd;48" halign="center" valign="center" transparent="1" zPosition="1" />
@@ -530,7 +519,7 @@
 	<!-- Backup Selection */ -->
 	
 	<!-- /* ########## Restore ########## -->
-	<screen name="RestoreScreen_summary" position="0,0" size="800,480">
+	<screen name="RestoreScreenSummary" position="0,0" size="800,480">
 		<widget source="parent.Title" render="Label" position="20,16" size="760,232" font="lack_lcd;68" halign="center" valign="center" />
 		<eLabel position="0,240" size="800,160" backgroundColor="openATVblueBar" />
 		<widget source="parent.summary_description" render="Label" position="20,240" size="760,160" font="lack_lcd;68" halign="center" valign="center" transparent="1" zPosition="1" />
@@ -538,7 +527,7 @@
 	<!-- Restore */ -->
 	
 	<!-- /* ########## Installed Plugins ########## -->
-	<screen name="installedPlugins_summary" position="0,0" size="800,480">
+	<screen name="installedPluginsSummary" position="0,0" size="800,480">
 		<widget source="parent.Title" render="Label" position="20,16" size="760,232" font="lack_lcd;68" halign="center" valign="center" />
 		<eLabel position="0,240" size="800,160" backgroundColor="openATVblueBar" />
 		<widget source="parent.summary_description" render="Label" position="20,240" size="760,160" font="lack_lcd;68" halign="center" valign="center" transparent="1" zPosition="1" />
@@ -546,19 +535,19 @@
 	<!-- Installed Plugins */ -->
 	
 	<!-- /* ########## Restart Network ########## -->
-	<screen name="RestartNetwork_summary" position="0,0" size="800,480">
+	<screen name="RestartNetworkSummary" position="0,0" size="800,480">
 		<widget source="parent.Title" render="Label" position="20,16" size="760,464" font="lack_lcd;68" halign="center" valign="center" />
 	</screen>
 	<!-- Restart Network */ -->
 	
 	<!-- /* ########## Restore Plugins ########## -->
-	<screen name="RestorePlugins_summary" position="0,0" size="800,480">
+	<screen name="RestorePluginsSummary" position="0,0" size="800,480">
 		<widget source="parent.Title" render="Label" position="20,16" size="760,232" font="lack_lcd;68" halign="center" valign="center" />
 		<eLabel position="0,240" size="800,160" backgroundColor="openATVblueBar" />
 		<widget source="parent.summary_description" render="Label" position="20,240" size="760,160" font="lack_lcd;68" halign="center" valign="center" transparent="1" zPosition="1" />
 	</screen>
 	
-	<screen name="RestoreMenu_summary" position="0,0" size="800,480">
+	<screen name="RestoreMenuSummary" position="0,0" size="800,480">
 		<widget source="parent.Title" render="Label" position="20,16" size="760,232" font="lack_lcd;68" halign="center" valign="center" />
 		<eLabel position="0,240" size="800,160" backgroundColor="openATVblueBar" />
 		<widget source="parent.summary_description" render="Label" position="20,240" size="760,160" font="lack_lcd;68" halign="center" valign="center" transparent="1" zPosition="1" />
@@ -583,13 +572,13 @@
 	<!-- DVD */ -->
 	
 	<!-- /* ########## Location Box (not tested yet) ########## -->
-	<screen name="LocationBox_summary" position="0,0" size="800,480">
+	<screen name="LocationBoxSummary" position="0,0" size="800,480">
 		<widget source="parent.text" render="Label" position="20,16" size="760,464" font="lack_lcd;88" halign="center" valign="center" />
 	</screen>
 	<!-- Location Box */ -->
 	
 	<!-- /* ########## Console (not tested yet) ########## -->
-	<screen name="Console_summary" position="0,0" size="800,480">
+	<screen name="ConsoleSummary" position="0,0" size="800,480">
 		<widget source="parent.Title" render="Label" position="20,16" size="760,232" font="lack_lcd;68" halign="center" valign="center" />
 		<eLabel position="0,240" size="800,160" backgroundColor="openATVblueBar" />
 		<widget source="parent.summary_description" render="Label" position="20,240" size="760,160" font="lack_lcd;68" halign="center" valign="center" transparent="1" zPosition="1" />

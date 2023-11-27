@@ -53,7 +53,7 @@
     
   
 <!-- channelselection-->
-	<screen name="ChannelSelection_summary" position="fill">
+	<screen name="ChannelSelectionSummary" position="fill">
 		<widget source="parent.ServiceEvent" render="Label" position="top" size="*,65" font="FdLcD;30" halign="center" >
 			<convert type="ServiceName">Name</convert>
 		</widget>
@@ -69,8 +69,7 @@
 <!-- menus-->
 	<screen name="MenuSummary" position="fill">
 		<widget source="parent.title" render="Label" position="top" size="*,61" font="FdLcD;30" halign="center" valign="top" />
-		<widget source="parent.menu" render="Label" position="top" size="*,53" font="FdLcD;26" halign="left" valign="center">
-			<convert type="StringListSelection" />
+		<widget source="entry" render="Label" position="top" size="*,53" font="FdLcD;26" halign="left" valign="center">
 		</widget>
 	</screen>
 
@@ -130,9 +129,9 @@
 
 <!-- setup-->
 	<screen name="SetupSummary" position="fill">
-		<widget source="SetupTitle" render="Label" position="top" size="*,61" font="FdLcD;30" halign="left" />
-		<widget source="SetupEntry" render="Label" position="top" size="*,51" font="FdLcD;25" halign="left" />
-		<widget source="SetupValue" render="Label" position="top" size="*,51" font="FdLcD;25" halign="left" />
+		<widget source="Title" render="Label" position="top" size="*,61" font="FdLcD;30" halign="left" />
+		<widget source="entry" render="Label" position="top" size="*,51" font="FdLcD;25" halign="left" />
+		<widget source="value" render="Label" position="top" size="*,51" font="FdLcD;25" halign="left" />
 	</screen>
 
 <!-- misc-->
@@ -173,7 +172,7 @@
 	</screen>
 
 <!-- JobView Summary -->
-	<screen name="JobView_summary" position="fill">
+	<screen name="JobViewSummary" position="fill">
 		<widget source="parent.summary_job_name" render="Label" position="top" size="*,51" font="FdLcD;25" halign="center" />
 		<widget source="parent.summary_job_task" render="Label" position="top" size="*,41" font="FdLcD;20" halign="center" />
 		<widget source="parent.summary_job_progress" render="Progress" position="top" size="80,16" borderWidth="1" zPosition="1" halign="center" />
@@ -182,17 +181,17 @@
 		</widget>
 	</screen>
 
-	<screen name="ChoiceBox_summary" position="fill">
+	<screen name="ChoiceBoxSummary" position="fill">
 		<widget source="parent.summary_list" render="Label" position="top" size="*,181" font="FdLcD;25" halign="left" />
 	</screen>
 
-	<screen name="MessageBox_summary" position="fill">
+	<screen name="MessageBoxSummary" position="fill">
 		<widget source="parent.Text" render="Label" position="top" size="*,95" font="FdLcD;31" halign="center" valign="center" />
 		<widget source="parent.selectedChoice" render="Label" position="bottom" size="*,44" font="FdLcD;44" halign="center" valign="center" />
 	</screen>
 
-	<screen name="MessageBoxSimple_summary" position="fill">
-		<panel name="MessageBox_summary" />
+	<screen name="MessageBoxSimpleSummary" position="fill">
+		<panel name="MessageBoxSummary" />
 	</screen>
 
 	<screen name="MessageBoxSummary" position="fill">

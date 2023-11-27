@@ -65,7 +65,7 @@
 			<convert type="EventTime">Progress</convert>
 		</widget>
 	 </screen>
-	 <screen name="ChannelSelection_summary" position="0,0" size="800,480" >
+	 <screen name="ChannelSelectionSummary" position="0,0" size="800,480" >
 		<panel name="LCDIconTemplete" />
 		<panel name="LCDClockTemplete" />
 		<widget source="parent.ServiceEvent" render="Label" position="45,120" size="720,80" font="Semibold;63" halign="center" valign="bottom" backgroundColor="LCDBackground">
@@ -88,10 +88,10 @@
 			<convert type="ServicePosition">Position</convert>
 		</widget>
 	</screen>
-	<screen name="ChoiceBox_summary" position="0,0" size="800,480" >
+	<screen name="ChoiceBoxSummary" position="0,0" size="800,480" >
 		<widget source="parent.summary_list" render="Label" position="45,40" size="720,400" font="Regular;58" valign="center"  />
 	</screen>
-	<screen name="MessageBox_summary" position="0,0" size="800,480" >
+	<screen name="MessageBoxSummary" position="0,0" size="800,480" >
 		<widget source="parent.Text" render="Label" position="30,20" size="740,300" font="Regular;58" halign="center" valign="center" />
 		<widget source="parent.selectedChoice" render="Label" position="200,320" size="400,60" font="Regular;58" halign="center" valign="center" />
 	</screen>
@@ -103,8 +103,7 @@
 		<panel name="LCDIconTemplete" />
 		<panel name="LCDClockTemplete" />
 		<widget source="parent.title" render="Label" position="30,130" size="740,110" font="Semibold;63" halign="center" valign="center" backgroundColor="LCDBackground" />
-		<widget source="parent.menu" render="Label" position="30,240" size="740,180" font="Semibold;70" halign="center" valign="center" backgroundColor="LCDBackground">
-			<convert type="StringListSelection" />
+		<widget source="entry" render="Label" position="30,240" size="740,180" font="Semibold;70" halign="center" valign="center" backgroundColor="LCDBackground">
 		</widget>
 	</screen>
 	<screen name="ServiceScanSummary" position="0,0" size="800,480" >
@@ -115,9 +114,9 @@
 	<screen name="SetupSummary" position="0,0" size="800,480" >
 		<panel name="LCDIconTemplete" />
 		<panel name="LCDClockTemplete" />
-		<widget source="SetupTitle" render="Label" position="30,110" size="720,90" font="Semibold;70" halign="center" backgroundColor="LCDBackground" />
-		<widget source="SetupEntry" render="Label" position="30,200" size="720,180" font="Semibold;63" halign="center" backgroundColor="LCDBackground" />
-		<widget source="SetupValue" render="Label" position="30,380" size="720,90" font="Regular;53" halign="center" backgroundColor="LCDBackground" />
+		<widget source="Title" render="Label" position="30,110" size="720,90" font="Semibold;70" halign="center" backgroundColor="LCDBackground" />
+		<widget source="entry" render="Label" position="30,200" size="720,180" font="Semibold;63" halign="center" backgroundColor="LCDBackground" />
+		<widget source="value" render="Label" position="30,380" size="720,90" font="Regular;53" halign="center" backgroundColor="LCDBackground" />
 	</screen>
 	<screen name="StandbySummary" position="0,0" size="800,480" >
 		<panel name="LCDIconTemplete" />

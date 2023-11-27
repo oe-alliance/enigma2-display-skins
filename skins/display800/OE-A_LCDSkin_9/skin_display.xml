@@ -105,7 +105,7 @@
 </screen>
 
 <!-- Channel Selection -->
-<screen name="ChannelSelection_summary" position="0,0" size="800,480" >
+<screen name="ChannelSelectionSummary" position="0,0" size="800,480" >
   <panel name="TimeTemplate" />
   <panel name="UpdateTemplate" />
   <panel name="RecordingTemplate" /> 
@@ -130,16 +130,13 @@
 </screen>
 
 <!-- EMC Selection -->
-<screen name="EMCSelection_summary" position="0,0" size="800,480" >
+<screen name="EMCSelectionSummary" position="0,0" size="800,480" >
   <panel name="UpdateTemplate" />
   <panel name="RecordingTemplate" /> 
   <widget source="parent.Service" render="Label" position="30,80" size="740,480" font="VFD;95" halign="center" valign="top">
     <convert type="ServiceName">Name</convert>
   </widget>
  </screen>
-	<screen name="EMCSelectionSummary" position="0,0" size="800,480">
-		<panel name="EMCSelection_summary" />
-	</screen>
  
 <!-- Media Player -->
 <screen name="MediaPlayerLCDScreen" position="0,0" size="800,480" >
@@ -162,7 +159,7 @@
 </screen>
 
 <!-- Movie Selection -->
-<screen name="MovieSelection_summary" position="0,0" size="800,480" >
+<screen name="MovieSelectionSummary" position="0,0" size="800,480" >
   <panel name="UpdateTemplate" />
   <panel name="RecordingTemplate" /> 
   <widget source="parent.Service" render="Label" position="30,80" size="740,480" font="VFD;95" halign="center" valign="top">
@@ -171,7 +168,7 @@
 </screen>
 
 <!-- ChoiceBox -->
-<screen name="ChoiceBox_summary" position="0,0" size="800,480" >
+<screen name="ChoiceBoxSummary" position="0,0" size="800,480" >
   <panel name="UpdateTemplate" />
   <panel name="RecordingTemplate" />
   <widget source="parent.summary_list" render="Label" position="30,80" size="740,480" font="VFD;95" />
@@ -190,13 +187,12 @@
   <panel name="UpdateTemplate" />
   <panel name="RecordingTemplate" />
   <widget source="parent.title" render="Label" position="30,80" size="740,480" font="VFD;95" halign="center" valign="top" />
-  <widget source="parent.menu" render="Label" position="30,190" size="740,480" font="VFD;85" halign="center" valign="top" foregroundColor="#A4A4A4">
-    <convert type="StringListSelection" />
+  <widget source="entry" render="Label" position="30,190" size="740,480" font="VFD;85" halign="center" valign="top" foregroundColor="#A4A4A4">
   </widget>
 </screen>
 
 <!-- Message Box -->
-<screen name="MessageBox_summary" position="0,0" size="800,480" >
+<screen name="MessageBoxSummary" position="0,0" size="800,480" >
   <panel name="UpdateTemplate" />
   <panel name="RecordingTemplate" />
   <widget source="parent.Text" render="Label" position="30,80" size="740,480" font="VFD;95" halign="center" valign="top" />
@@ -231,9 +227,9 @@
 <screen name="SetupSummary" position="0,0" size="800,480" >
   <panel name="UpdateTemplate" />
   <panel name="RecordingTemplate" />
-  <widget source="SetupTitle" render="Label" position="30,80" size="740,480" font="VFD;95" halign="center" valign="top" />
-  <widget source="SetupEntry" render="Label" position="30,190" size="740,480" font="VFD;85" halign="center" valign="top" foregroundColor="#A4A4A4"/>
-  <widget source="SetupValue" render="Label" position="30,360" size="740,480" font="VFD;85" halign="center" valign="top" foregroundColor="#00FF0000"/>
+  <widget source="Title" render="Label" position="30,80" size="740,480" font="VFD;95" halign="center" valign="top" />
+  <widget source="entry" render="Label" position="30,190" size="740,480" font="VFD;85" halign="center" valign="top" foregroundColor="#A4A4A4"/>
+  <widget source="value" render="Label" position="30,360" size="740,480" font="VFD;85" halign="center" valign="top" foregroundColor="#00FF0000"/>
 </screen>
 
 <!-- Simple -->

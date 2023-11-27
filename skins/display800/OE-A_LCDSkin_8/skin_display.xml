@@ -136,7 +136,7 @@
    </screen>
    
    <!-- EMCSelection_summary -->
-   <screen name="EMCSelection_summary" position="0,0" size="800,480" >
+   <screen name="EMCSelectionSummary" position="0,0" size="800,480" >
       <widget source="parent.Service" render="Label" position="20,140" size="740,320" font="VFDB;60" halign="left" valign="top">
          <convert type="ServiceName">Name</convert>
       </widget>
@@ -145,9 +145,6 @@
          <convert type="ClockToText">InMinutes</convert>
       </widget>
    </screen>
-	<screen name="EMCSelectionSummary" position="0,0" size="800,480">
-		<panel name="EMCSelection_summary" />
-	</screen>
 
    <!-- MoviePlayer_SimplePlayerMP -->
    <screen name="InfoBarMoviePlayerSummary" position="0,0" size="800,480" >
@@ -206,7 +203,7 @@
    </screen>
    
    <!-- ChannelSelection_summary -->
-   <screen name="ChannelSelection_summary" position="0,0" size="800,480" >
+   <screen name="ChannelSelectionSummary" position="0,0" size="800,480" >
       <widget source="global.CurrentTime" render="Label" position="430,40" size="350,120" font="VFDB;130" halign="right" valign="center">
          <convert type="ClockToText">Format:%H:%M</convert>
       </widget>
@@ -244,11 +241,11 @@
       </widget>
    </screen>
    
-   <screen name="ChoiceBox_summary" position="0,0" size="800,480" >
+   <screen name="ChoiceBoxSummary" position="0,0" size="800,480" >
       <widget source="parent.summary_list" render="Label" position="45,40" size="720,400" font="RegularLCD;58" valign="top"  />
    </screen>
    
-   <screen name="MessageBox_summary" position="0,0" size="800,480" >
+   <screen name="MessageBoxSummary" position="0,0" size="800,480" >
       <widget source="parent.Text" render="Label" position="30,20" size="740,300" font="RegularLCD;58" halign="center" valign="center" />
       <widget source="parent.selectedChoice" render="Label" position="200,320" size="400,60" font="RegularLCD;58" halign="center" valign="center" />
    </screen>
@@ -262,8 +259,7 @@
       <panel name="LCDIconTemplate" />
       <panel name="LCDClockTemplate" />
       <widget source="parent.title" render="Label" position="30,130" size="740,110" font="SemiboldLCD;63" halign="center" valign="center" backgroundColor="LCDBackground" />
-      <widget source="parent.menu" render="Label" position="30,240" size="740,180" font="RegularLCD;70" halign="center" valign="center" backgroundColor="LCDBackground">
-         <convert type="StringListSelection" />
+      <widget source="entry" render="Label" position="30,240" size="740,180" font="RegularLCD;70" halign="center" valign="center" backgroundColor="LCDBackground">
       </widget>
    </screen>
    
@@ -276,9 +272,9 @@
    <screen name="SetupSummary" position="0,0" size="800,480" >
       <panel name="LCDIconTemplate" />
       <panel name="LCDClockTemplate" />
-      <widget source="SetupTitle" render="Label" position="30,110" size="720,90" font="SemiboldLCD;70" halign="center" backgroundColor="LCDBackground" />
-      <widget source="SetupEntry" render="Label" position="30,200" size="720,180" font="SemiboldLCD;63" halign="center" backgroundColor="LCDBackground" />
-      <widget source="SetupValue" render="Label" position="30,380" size="720,90" font="RegularLCD;53" halign="center" backgroundColor="LCDBackground" />
+      <widget source="Title" render="Label" position="30,110" size="720,90" font="SemiboldLCD;70" halign="center" backgroundColor="LCDBackground" />
+      <widget source="entry" render="Label" position="30,200" size="720,180" font="SemiboldLCD;63" halign="center" backgroundColor="LCDBackground" />
+      <widget source="value" render="Label" position="30,380" size="720,90" font="RegularLCD;53" halign="center" backgroundColor="LCDBackground" />
    </screen>
    
    <screen name="SimpleSummary" position="0,0" size="800,480" >

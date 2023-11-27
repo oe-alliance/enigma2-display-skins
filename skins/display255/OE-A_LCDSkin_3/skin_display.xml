@@ -95,7 +95,7 @@
 		</widget>
 	</screen>
 <!-- LCD screen Channelselection -->
-	<screen name="ChannelSelection_summary" position="0,0" size="256,64">
+	<screen name="ChannelSelectionSummary" position="0,0" size="256,64">
 		<widget source="parent.ServiceEvent" render="RollerCharLCDLong" position="0,0" size="256,20" font="Myrida;18" noWrap="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
@@ -110,8 +110,7 @@
 <!-- LCD screen (menus) -->
 	<screen name="MenuSummary" position="0,0" size="256,64">
 		<widget source="parent.title" render="RollerCharLCDLong" position="0,0" size="256,21" font="Myrida;18" noWrap="1" />
-		<widget source="parent.menu" render="RollerCharLCDLong" position="0,25" size="256,21" font="Myrida;16" noWrap="1" >
-			<convert type="StringListSelection" />
+		<widget source="entry" render="RollerCharLCDLong" position="0,25" size="256,21" font="Myrida;16" noWrap="1" >
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="0,46" size="256,18" font="Myrida;16" halign="left">
 			<convert type="ClockToText">WithSeconds</convert>
@@ -184,14 +183,14 @@
 		<widget source="desc" render="RollerCharLCDLong" position="6,20" size="256,20" font="Myrida;20" noWrap="1" />
 	</screen>
 <!-- ATV -->
-	<screen name="QuickMenu_summary" position="0,0" size="256,64">
+	<screen name="QuickMenuSummary" position="0,0" size="256,64">
 		<widget source="parent.Title" render="Label" position="0,0" size="256,21" font="Myrida;20" halign="center" valgin="bottom" />
 		<widget source="parent.summary_description" render="Label" position="0,22" size="256,21" zPosition="1" font="Myrida;20" halign="center" valign="center" />
 		<widget source="global.CurrentTime" render="Label" position="0,46" size="256,18" font="Myrida;16" halign="center">
 			<convert type="ClockToText">WithSeconds</convert>
 		</widget>
 	</screen>
-	<screen name="Infopanel_summary" position="0,0" size="256,64">
+	<screen name="InfopanelSummary" position="0,0" size="256,64">
 		<widget source="parent.Title" render="Label" position="0,0" size="256,21" font="Myrida;20" halign="center" valgin="bottom" />
 		<widget source="parent.summary_description" render="Label" position="0,22" size="256,21" zPosition="1" font="Myrida;20" halign="center" valign="center" />
 		<widget source="global.CurrentTime" render="Label" position="0,46" size="256,18" font="Myrida;16" halign="center">
@@ -206,12 +205,12 @@
 	</screen>
 <!-- LCD screen Setup -->
 	<screen name="SetupSummary" position="0,0" size="256,64">
-		<widget source="SetupTitle" render="RollerCharLCDLong" position="6,0" size="256,16" font="Myrida;18" noWrap="1" />
-		<widget source="SetupEntry" render="RollerCharLCDLong" position="6,20" size="256,16" font="Myrida;16" noWrap="1" />
-		<widget source="SetupValue" render="RollerCharLCDLong" position="6,38" size="256,16" font="Myrida;16" noWrap="1" />
+		<widget source="Title" render="RollerCharLCDLong" position="6,0" size="256,16" font="Myrida;18" noWrap="1" />
+		<widget source="entry" render="RollerCharLCDLong" position="6,20" size="256,16" font="Myrida;16" noWrap="1" />
+		<widget source="value" render="RollerCharLCDLong" position="6,38" size="256,16" font="Myrida;16" noWrap="1" />
 	</screen>
 <!-- LCD screen MessageBox -->
-	<screen name="MessageBox_summary" position="0,0" size="256,64" id="1">
+	<screen name="MessageBoxSummary" position="0,0" size="256,64" id="1">
 		<widget source="parent.Text" render="Label" position="0,0" size="256,45" font="Myrida;14" halign="center" valign="center" />
 		<widget source="parent.selectedChoice" render="Label" position="6,46" size="244,18" font="Myrida;16" halign="center" valign="center" />
 	</screen>
@@ -220,7 +219,7 @@
 		<widget source="option" render="Label" position="6,46" size="244,18" font="Myrida;16" halign="center" valign="center" />
 	</screen>
 <!-- LCD screen ChoiceBox -->
-	<screen name="ChoiceBox_summary" position="0,0" size="256,64" id="1">
+	<screen name="ChoiceBoxSummary" position="0,0" size="256,64" id="1">
 		<widget source="parent.summary_list" render="Label" position="0,0" size="244,64" font="Myrida;12" />
 	</screen>
 		<!-- LCD screen EMC -->

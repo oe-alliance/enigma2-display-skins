@@ -83,7 +83,7 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 	 </screen>
-	 <screen name="ChannelSelection_summary" position="0,0" size="256,64" id="1">
+	 <screen name="ChannelSelectionSummary" position="0,0" size="256,64" id="1">
 		<widget source="parent.ServiceEvent" render="Label" position="0,7" size="143,48" font="VFD;24" halign="center" valign="center" >
 			<convert type="ServiceName">Name</convert>
 		</widget>
@@ -157,10 +157,10 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 	</screen>
-	<screen name="ChoiceBox_summary" position="0,0" size="256,64" id="1">
+	<screen name="ChoiceBoxSummary" position="0,0" size="256,64" id="1">
 		<widget source="parent.summary_list" render="Label" position="6,0" size="244,64" font="Regular;12" />
 	</screen>
-	<screen name="MessageBox_summary" position="0,0" size="256,64" id="1">
+	<screen name="MessageBoxSummary" position="0,0" size="256,64" id="1">
 		<widget source="parent.Text" render="Label" position="6,0" size="244,45" font="Regular;15" halign="center" valign="center" />
 		<widget source="parent.selectedChoice" render="Label" position="6,46" size="244,18" font="Regular;18" halign="center" valign="center" />
 	</screen>
@@ -170,8 +170,7 @@
 	</screen>
 	<screen name="MenuSummary" position="0,0" size="256,64" id="1">
 		<widget source="parent.title" render="Label" position="0,0" size="143,32" font="VFD;18" halign="center" valign="center"/>
-		<widget source="parent.menu" render="Label" position="0,32" size="143,32" font="VFD;18" halign="center" valign="center">
-			<convert type="StringListSelection" />
+		<widget source="entry" render="Label" position="0,32" size="143,32" font="VFD;18" halign="center" valign="center">
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="180,44" size="58,20" font="VFD;20" halign="right" valign="center" transparent="1">
 			<convert type="ClockToText">Format:%H:%M</convert>
@@ -209,9 +208,9 @@
 		<widget name="scan_progress" position="0,59" zPosition="1" borderWidth="1" size="143,5" backgroundColor="dark" />
 	</screen>
 	<screen name="SetupSummary" position="0,0" size="256,64" id="1">
-		<widget source="SetupTitle" render="Label" position="6,0" size="143,16" font="VFD;16" />
-		<widget source="SetupEntry" render="Label" position="6,16" size="143,32" font="VFD;14" />
-		<widget source="SetupValue" render="Label" position="6,48" size="143,16" font="VFD;14" />
+		<widget source="Title" render="Label" position="6,0" size="143,16" font="VFD;16" />
+		<widget source="entry" render="Label" position="6,16" size="143,32" font="VFD;14" />
+		<widget source="value" render="Label" position="6,48" size="143,16" font="VFD;14" />
 		<widget source="global.CurrentTime" render="Label" position="180,44" size="58,20" font="VFD;20" halign="right" valign="center" transparent="1">
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
