@@ -72,7 +72,7 @@
 		</widget>
 		<widget source="session.Event_Now" render="Label" position="80, 34" size="30,14" font="Myrida;14">
 			<convert type="EventTime">Remaining</convert>
-			<convert type="RemainingToText">InMinutes</convert>
+			<convert type="RemainingToText"></convert>
 		</widget>
 	</screen>
 <!-- LCD screen InfoBarMoviePlayer -->

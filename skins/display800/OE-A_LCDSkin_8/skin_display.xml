@@ -90,7 +90,7 @@
       </widget>
       <widget source="session.Event_Now" render="Label" position="380,170" foregroundColor="#001BA1E3" size="390,90" font="VFDB;80" halign="right" valign="center">
          <convert type="EventTime">Remaining</convert>
-         <convert type="RemainingToText">InMinutes</convert>
+         <convert type="RemainingToText"></convert>
       </widget>
       <eLabel name="progress" position="230,420" size="350,0" backgroundColor="#00FFFFFF" />
       <widget source="session.Event_Now" render="Progress" position="230,414" size="350,26" borderWidth="3" borderColor="#00ffffff" foregroundColor="#001BA1E3" zPosition="1" transparent="1">
@@ -233,7 +233,7 @@
       </widget>
       <widget source="parent.ServiceEvent" render="Label" position="380,170" foregroundColor="#001BA1E3" size="390,90" font="VFDB;80" halign="right" valign="center">
          <convert type="EventTime">Remaining</convert>
-         <convert type="RemainingToText">InMinutes</convert>
+         <convert type="RemainingToText"></convert>
       </widget>
       <eLabel name="progress" position="230,420" size="350,0" backgroundColor="#00FFFFFF" />
       <widget source="parent.ServiceEvent" render="Progress" position="230,414" size="350,26" borderWidth="3" borderColor="#00ffffff" foregroundColor="#001BA1E3" zPosition="1" transparent="1">

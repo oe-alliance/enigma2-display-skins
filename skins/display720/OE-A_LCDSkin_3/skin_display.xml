@@ -46,7 +46,7 @@
                 </widget>
                 <widget source="session.Event_Now" render="Label" position="421,140" size="266,46" font="FdLcD;50" halign="right">
 			<convert type="EventTime">Remaining</convert>
-                        <convert type="RemainingToText">InMinutes</convert>
+                        <convert type="RemainingToText"></convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="500,490" size="182,52" halign="right" font="FdLcD;50">
 		        <convert type="ClockToText">Default</convert>
@@ -91,7 +91,7 @@
                 </widget>
                 <widget source="parent.ServiceEvent" render="Label" position="421,140" size="266,46" font="FdLcD;50" halign="right">
 			<convert type="EventTime">Remaining</convert>
-                        <convert type="RemainingToText">InMinutes</convert>
+                        <convert type="RemainingToText"></convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="500,490" size="182,52" halign="right" font="FdLcD;50">
 		        <convert type="ClockToText">Default</convert>

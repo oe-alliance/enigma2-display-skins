@@ -59,7 +59,7 @@
 		</widget>
 		<widget source="session.Event_Now" render="Label" zPosition="-1" position="80,25" size="46,20" font="VFD;18" halign="center">
 			<convert type="EventTime">Remaining</convert>
-			<convert type="RemainingToText">InMinutes</convert>
+			<convert type="RemainingToText"></convert>
 		</widget>
 		<widget source="session.Event_Now" render="RollerCharLCDLong" zPosition="-2" position="0,42" size="256,22" font="VFD;20" noWrap="1" >
 			<convert type="EventName">Name</convert>

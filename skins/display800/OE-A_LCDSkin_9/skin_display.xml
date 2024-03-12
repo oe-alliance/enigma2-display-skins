@@ -68,7 +68,7 @@
   </widget>
   <widget source="session.Event_Now" render="Label" position="570,200" size="190,78" font="VFD;95" halign="right" valign="top">
     <convert type="EventTime">Remaining</convert>
-    <convert type="RemainingToText">InMinutes</convert>
+    <convert type="RemainingToText"></convert>
   </widget>
 </screen>
 

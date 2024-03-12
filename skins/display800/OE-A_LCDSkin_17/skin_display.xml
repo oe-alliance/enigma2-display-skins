@@ -400,7 +400,7 @@
     </widget>
     <widget source="session.Event_Now" render="Label" position="190,397" size="420,60" font="VFD;55" foregroundColor="LCDBackground" transparent="1" zPosition="4" halign="center" valign="center">
      <convert type="EventTime">Remaining</convert>
-     <convert type="RemainingToText">InMinutes</convert>
+     <convert type="RemainingToText"></convert>
     </widget>
 <widget source="global.CurrentTime" render="Label" position="575,20" size="200,75" foregroundColor="LCDBackground" backgroundColor="#FE0000" font="VFD2;80" halign="center" valign="center">
   <convert type="ClockToText">Format:%H:%M</convert>
@@ -432,7 +432,7 @@
     </widget>
     <widget source="parent.ServiceEvent" render="Label" position="190,397" size="420,60" font="VFD;55" foregroundColor="LCDBackground" transparent="1" zPosition="4" halign="center" valign="center">
      <convert type="EventTime">Remaining</convert>
-     <convert type="RemainingToText">InMinutes</convert>
+     <convert type="RemainingToText"></convert>
     </widget>
 <widget source="global.CurrentTime" render="Label" position="575,20" size="200,75" foregroundColor="LCDBackground" backgroundColor="#00e5b243" font="VFD2;80" halign="center" valign="center">
   <convert type="ClockToText">Format:%H:%M</convert>

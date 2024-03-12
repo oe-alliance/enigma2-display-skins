@@ -379,7 +379,7 @@
         </widget>
         <widget source="session.Event_Now" render="Label" position="200,412" size="400,50" font="SemiboldLCD;50" halign="center" transparent="1" zPosition="1" foregroundColor="#000000">
             <convert type="EventTime">Remaining</convert>
-            <convert type="RemainingToText">InMinutes</convert>
+            <convert type="RemainingToText"></convert>
         </widget>
         <eLabel position="0,403" size="800,3" backgroundColor="#FF0000" zPosition="1"/>
         <eLabel position="0,338" size="800,3" backgroundColor="#FF0000" zPosition="1"/>
@@ -540,7 +540,7 @@
         </widget>
         <widget source="parent.Event" render="Label" position="200,412" size="400,50" font="SemiboldLCD;50" halign="center" foregroundColor="#000000" transparent="1" zPosition="1">
             <convert type="EventTime">Remaining</convert>
-            <convert type="RemainingToText">InMinutes</convert>
+            <convert type="RemainingToText"></convert>
         </widget>
         <eLabel position="0,403" size="800,2" backgroundColor="#FF0000" />
         <eLabel position="0,338" size="800,2" backgroundColor="#FF0000" />
@@ -910,7 +910,7 @@
 		</widget>
 		<widget source="parent.Event" render="Label" position="580,330" size="180,60" font="VFD;60" halign="right" valign="center" foregroundColor="#FFA500" transparent="1" zPosition="1">
 			<convert type="EventTime">Remaining</convert>
-			<convert type="RemainingToText">FOLLOW</convert>
+			<convert type="RemainingToText"></convert>
 		</widget>
         <eLabel position="0,256" size="800,4" backgroundColor="#FF0000" />
         <eLabel position="0,324" size="800,4" backgroundColor="#FF0000" />

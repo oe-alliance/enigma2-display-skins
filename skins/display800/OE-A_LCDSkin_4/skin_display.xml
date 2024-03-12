@@ -92,7 +92,7 @@
 </widget>
 <widget source="session.Event_Now" render="Label" position="375,170" foregroundColor="#00B0B0AE" size="400,90" font="VFD;90" halign="right" valign="top">
   <convert type="EventTime">Remaining</convert>
-  <convert type="RemainingToText">InMinutes</convert>
+  <convert type="RemainingToText"></convert>
 </widget>
 <eLabel name="progress" position="230,420" size="350,3" backgroundColor="#00FFFFFF" />
 <widget source="session.Event_Now" render="Progress" position="230,414" size="350,15" borderWidth="0" foregroundColor="#0004B404" zPosition="1" transparent="1">

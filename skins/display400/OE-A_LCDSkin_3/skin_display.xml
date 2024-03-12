@@ -39,7 +39,7 @@
 		</widget>
 		<widget source="session.Event_Now" render="Label" position="0,195" size="150,45" font="Regular;40" foregroundColor="#F78181" >
 			<convert type="EventTime">Remaining</convert>
-			<convert type="RemainingToText">FOLLOW</convert>
+			<convert type="RemainingToText"></convert>
 		</widget>
 		<widget source="session.RecordState" render="FixedLabel" text="Recording" position="0,195" size="150,45" halign="left" valign="bottom" foregroundColor="#ff0000" font="FdLcD;25" zPosition="1" noWrap="1" >
 			<convert type="ConfigEntryTest">config.usage.blinking_rec_symbol_during_recording,True,CheckSourceBoolean</convert>

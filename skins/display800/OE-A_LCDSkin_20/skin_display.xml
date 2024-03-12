@@ -563,7 +563,7 @@
     </widget>
     <widget source="session.Event_Now" render="Label" position="514,181" size="256,55" font="RegularLCD;55" halign="right" valign="top">
      <convert type="EventTime">Remaining</convert>
-     <convert type="RemainingToText">InMinutes</convert>
+     <convert type="RemainingToText"></convert>
     </widget>
     <widget source="session.Event_Now" render="Label" position="514,111" size="256,55" font="VFD;55" halign="right" valign="top" foregroundColor="#00ff0000">
      <convert type="EventTime">Duration</convert>
@@ -601,7 +601,7 @@
     </widget>
     <widget source="parent.ServiceEvent" render="Label" position="514,181" size="256,55" font="RegularLCD;55" halign="right" valign="top">
      <convert type="EventTime">Remaining</convert>
-     <convert type="RemainingToText">InMinutes</convert>
+     <convert type="RemainingToText"></convert>
     </widget>
     <widget source="parent.ServiceEvent" render="Label" position="514,111" size="256,55" font="VFD;55" halign="right" valign="top" foregroundColor="#00FFFF00">
      <convert type="EventTime">Duration</convert>

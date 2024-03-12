@@ -95,7 +95,7 @@
 		</widget>
 		<widget source="session.Event_Now" render="Label" position="580,405" size="200,55" font="Small" halign="right" valign="bottom" foregroundColor="lightgrey">
 			<convert type="EventTime">Remaining</convert>
-			<convert type="RemainingToText">FOLLOW</convert>
+			<convert type="RemainingToText"></convert>
 		</widget>
 	</screen>
 	<!-- channelselection-->
@@ -136,7 +136,7 @@
 		</widget>
 		<widget source="parent.ServiceEvent" render="Label" position="580,405" size="200,55" font="Small" halign="right" valign="bottom" foregroundColor="lightgrey">
 			<convert type="EventTime">Remaining</convert>
-			<convert type="RemainingToText">FOLLOW</convert>
+			<convert type="RemainingToText"></convert>
 		</widget>
 	</screen>
 	<screen name="SimpleChannelSelectionSummary" position="fill">
@@ -183,7 +183,7 @@
 		</widget>
 		<widget source="parent.Event" render="Label" position="580,405" size="200,55" font="Small" halign="right" valign="bottom" foregroundColor="lightgrey">
 			<convert type="EventTime">Remaining</convert>
-			<convert type="RemainingToText">FOLLOW</convert>
+			<convert type="RemainingToText"></convert>
 		</widget>
 	</screen>
 	<screen name="GraphMultiEPGSummary" position="fill">

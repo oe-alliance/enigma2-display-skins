@@ -45,7 +45,7 @@
 </widget>
 <widget source="session.Event_Now" render="Label" position="500,400" size="270,65" font="RegularLCD;70" halign="center" valign="top">
   <convert type="EventTime">Remaining</convert>
-  <convert type="RemainingToText">InMinutes</convert>
+  <convert type="RemainingToText"></convert>
 </widget>  
 <!--   <eLabel position="207,369" size="10,22" backgroundColor="background" zPosition="100" name="25Progress" />
   <eLabel position="395,369" size="10,22" backgroundColor="background" zPosition="100" name="50Progress" />
@@ -83,7 +83,7 @@
 </widget>
 <widget source="parent.ServiceEvent" render="Label" position="500,400" size="270,65" font="RegularLCD;70" halign="center" valign="top">
   <convert type="EventTime">Remaining</convert>
-  <convert type="RemainingToText">InMinutes</convert>
+  <convert type="RemainingToText"></convert>
 </widget>  
 <!--   <eLabel position="207,369" size="10,22" backgroundColor="background" zPosition="100" name="25Progress" />
   <eLabel position="395,369" size="10,22" backgroundColor="background" zPosition="100" name="50Progress" />
