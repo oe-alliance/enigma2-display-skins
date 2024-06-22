@@ -15,7 +15,7 @@
 		<color color="#000000" name="WindowTitleBackground"/>
 	</windowstyle>
 	<fonts>
-		<font filename="analog.ttf" name="VFD" scale="100" />
+		<font filename="nmsbd.ttf" name="VFD" scale="100" />
 		<font filename="nmsbd.ttf" name="FdLcD" scale="100"/>
 	</fonts>
 <!-- template -->
