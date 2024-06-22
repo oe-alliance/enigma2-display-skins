@@ -6,10 +6,10 @@
 	<color name="LCDBackground" value="#000000" />
 </colors>
 <fonts>
-    <font filename="analog.ttf" name="VFD" scale="90"/>
-  	<font filename="MyriadPro-Regular.otf" name="RegularLCD" scale="100" />
-	<font filename="MyriadPro-Semibold.otf" name="SemiboldLCD" scale="100" />
-	<font filename="MyriadPro-SemiboldIt.otf" name="SemiboldLCDit" scale="100" />
+	<font filename="nmsbd.ttf" name="VFD" scale="90"/>
+	<font filename="OpenSans-Regular.ttf" name="RegularLCD" scale="100" />
+	<font filename="OpenSans-Semibold.ttf" name="SemiboldLCD" scale="100" />
+	<font filename="OpenSans-SemiboldItalic.ttf" name="SemiboldLCDit" scale="100" />
 </fonts>
 	<windowstyle type="skinned" id="1">
     <color name="Background" color="#000000" />

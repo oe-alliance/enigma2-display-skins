@@ -3,9 +3,9 @@
 		<color name="LCDBackground" value="#000000" />
 	</colors>
 	<fonts>
-		<font filename="MyriadPro-Regular.otf" name="Regular" scale="100" />
-        <font filename="MyriadPro-Semibold.otf" name="Semibold" scale="100" />
-        <font filename="MyriadPro-SemiboldIt.otf" name="Semiboldit" scale="100" />
+		<font filename="OpenSans-Regular.ttf" name="RegularLCD" scale="100" />
+		<font filename="OpenSans-Semibold.ttf" name="SemiboldLCD" scale="100" />
+		<font filename="OpenSans-SemiboldItalic.ttf" name="SemiboldLCDit" scale="100" />
 	</fonts>
 	<windowstyle type="skinned" id="1">
 		<color name="Background" color="LCDBackground" />
