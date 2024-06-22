@@ -14,7 +14,7 @@
 		<color color="#000000" name="WindowTitleBackground"/>
 	</windowstyle>
 	<fonts>
-		<font filename="analog.ttf" name="VFD" scale="100" />
+		<font filename="nmsbd.ttf" name="VFD" scale="100" />
 		<font filename="nmsbd.ttf" name="VFD_II" scale="100"/>
 	</fonts>
 <!-- LCD screen InfoBar -->
