@@ -18,7 +18,7 @@
 	<fonts>
 		<!-- pick a funky name for the font, so we don't conflict  -->
 		<font filename="nmsbd.ttf" name="FdLcD" scale="100"/>
-		<font filename="OpenSans-Regular.ttf" name="MyLcD" scale="100"/>
+		<font filename="OpenSans-Regular.ttf" name="MyLcD" scale="85"/>
 	</fonts>
 
 <!-- template MY V2.7 23.07.2017-->

@@ -16,7 +16,7 @@
 	</windowstyle>
 	<fonts>
 		<font filename="lcd.ttf" name="LCD" scale="100" />
-		<font filename="OpenSans-Regular.ttf" name="Myrida" scale="100" />
+		<font filename="OpenSans-Regular.ttf" name="Myrida" scale="85" />
 		<font filename="nmsbd.ttf" name="FdLcD" scale="100"/>
 	</fonts>
 <!-- template -->

@@ -7,9 +7,9 @@
 </colors>
 <fonts>
 	<font filename="nmsbd.ttf" name="VFD" scale="90"/>
-	<font filename="OpenSans-Regular.ttf" name="RegularLCD" scale="100" />
-	<font filename="OpenSans-Semibold.ttf" name="SemiboldLCD" scale="100" />
-	<font filename="OpenSans-SemiboldItalic.ttf" name="SemiboldLCDit" scale="100" />
+	<font filename="OpenSans-Regular.ttf" name="RegularLCD" scale="85" />
+	<font filename="OpenSans-Semibold.ttf" name="SemiboldLCD" scale="85" />
+	<font filename="OpenSans-SemiboldItalic.ttf" name="SemiboldLCDit" scale="85" />
 </fonts>
 	<windowstyle type="skinned" id="1">
     <color name="Background" color="#000000" />

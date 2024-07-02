@@ -23,12 +23,12 @@
 		<alias name="Medium" font="FdLcD" size="60" height="60" />
 		<alias name="Smaller" font="FdLcD" size="54" height="60" />
 		<alias name="Small" font="FdLcD" size="48" height="48" />
-		<font filename="OpenSans-Regular.ttf" name="Regular" scale="100" />
-        <font filename="OpenSans-Semibold.ttf" name="Semibold" scale="100" />
-        <font filename="OpenSans-SemiboldItalic.ttf" name="Semiboldit" scale="100" />
-        <font filename="OpenSans-Regular.ttf" name="RegularLCD" scale="100" />
-        <font filename="OpenSans-Semibold.ttf" name="SemiboldLCD" scale="100" />
-        <font filename="OpenSans-SemiboldItalic.ttf" name="SemiboldLCDit" scale="100" />
+		<font filename="OpenSans-Regular.ttf" name="Regular" scale="85" />
+        <font filename="OpenSans-Semibold.ttf" name="Semibold" scale="85" />
+        <font filename="OpenSans-SemiboldItalic.ttf" name="Semiboldit" scale="85" />
+        <font filename="OpenSans-Regular.ttf" name="RegularLCD" scale="85" />
+        <font filename="OpenSans-Semibold.ttf" name="SemiboldLCD" scale="85" />
+        <font filename="OpenSans-SemiboldItalic.ttf" name="SemiboldLCDit" scale="85" />
         <font filename="meteocons.ttf" name="Meteo" scale="100" />
 	</fonts>
 	<colors>
