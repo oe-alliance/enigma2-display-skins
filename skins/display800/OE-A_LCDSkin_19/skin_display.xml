@@ -204,7 +204,7 @@
 			<convert type="ClockToText">Format:%d.%m.%yy</convert>
 		</widget>		
 	</screen>
-	<screen name="SimpleSummary" position="fill">
+	<screen name="ScreenSummary" position="fill">
 		<panel name="LCDClockTemplate" />
 		<panel name="LCDIconTemplate" />
 		<ePixmap pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_19/skin_vfd_schomi_u4k_back.png" position="20,20" size="750,450" zPosition="-1" alphatest="blend" />		

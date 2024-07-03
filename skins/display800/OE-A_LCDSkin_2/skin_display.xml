@@ -290,7 +290,7 @@
 		</panel>
 	</screen>
 	<!-- misc -->
-	<screen name="SimpleSummary" position="fill">
+	<screen name="ScreenSummary" position="fill">
 		<panel name="SummaryClockPanel"/>
 		<widget source="parent.Title" render="Label" position="10,110" size="770,70" font="Medium" halign="center" valign="center" />
 	</screen>

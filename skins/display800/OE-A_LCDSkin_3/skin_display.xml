@@ -141,7 +141,7 @@
 			<convert type="ClockToText">Format:%d.%m.%Y</convert>
 		</widget>
 	</screen>
-	<screen name="SimpleSummary" position="fill" >
+	<screen name="ScreenSummary" position="fill" >
 		<panel name="LCDClockTemplate" />
 		<panel name="LCDIconTemplate" />
 		<widget source="parent.Title" render="Label" position="45,110" size="710,270" font="SemiboldLCD;70" halign="center" valign="center" backgroundColor="LCDBackground" />

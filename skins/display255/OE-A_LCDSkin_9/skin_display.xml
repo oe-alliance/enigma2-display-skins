@@ -46,7 +46,7 @@
 -------------------------------------------------------------------------------------------------------------------------------------------
 
 <!-- misc-->
-	<screen name="SimpleSummary" position="0,0" size="256,64">
+	<screen name="ScreenSummary" position="0,0" size="256,64">
 		<widget source="parent.Title" render="Label" position="124,0" size="132,46" font="FdLcD;20" halign="center" valign="top" />
 		<panel name="SummaryClockProgressPanel" />
 	</screen>

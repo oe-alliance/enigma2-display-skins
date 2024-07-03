@@ -288,7 +288,7 @@
 		<widget source="value" render="Label" position="30,380" size="720,90" font="RegularLCD;53" halign="center" backgroundColor="LCDBackground" />
 	</screen>
    
-   <screen name="SimpleSummary" position="fill" >
+   <screen name="ScreenSummary" position="fill" >
       <panel name="LCDClockTemplate" />
       <panel name="LCDIconTemplate" />
       <widget source="parent.Title" render="Label" position="45,110" size="710,270" font="SemiboldLCD;70" halign="center" valign="center" backgroundColor="LCDBackground" />

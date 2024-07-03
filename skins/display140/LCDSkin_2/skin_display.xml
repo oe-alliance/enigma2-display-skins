@@ -170,7 +170,7 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 	</screen>
-	<screen name="SimpleSummary" position="0,0" size="140,32" id="1">
+	<screen name="ScreenSummary" position="0,0" size="140,32" id="1">
 		<widget source="parent.Title" render="Label" position="5,10" size="130,20" font="VFD;16" halign="center" valign="top" />
 		<widget source="session.CurrentService" render="Pixmap" pixmap="teletext.png" position="5,0" size="8,7">
 			<convert type="ServiceInfo">HasTelext</convert>

@@ -250,7 +250,7 @@
 		<widget name="text4" position="0,49" size="256,14" font="VFD;12"/>
 	</screen>
 <!-- LCD screen Simple Summary -->
-	<screen name="SimpleSummary" position="0,0" size="256,64">
+	<screen name="ScreenSummary" position="0,0" size="256,64">
 		<widget source="parent.Title" render="RollerCharLCDLong" position="0,0" size="256,18" font="VFD;18" noWrap="1" />
 		<widget source="global.CurrentTime" render="Label" position="0,42" size="256,16" font="VFD;16">
 			<convert type="ClockToText">WithSeconds</convert>

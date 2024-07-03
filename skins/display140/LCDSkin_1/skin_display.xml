@@ -173,7 +173,7 @@
 		<widget name="text4" position="0,22" size="140,10" font="VFD;10"/>
 	</screen>
 <!-- LCD screen Simple Summary -->
-	<screen name="SimpleSummary" position="0,0" size="140,32">
+	<screen name="ScreenSummary" position="0,0" size="140,32">
 		<widget source="parent.Title" render="RollerCharLCDLong" position="0,0" size="140,32" font="VFD;14" noWrap="1" />
 	</screen>
 <!-- LCD screen PluginBrowser -->

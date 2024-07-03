@@ -670,7 +670,7 @@
 </screen>
 
 <!-- Simple -->
-<screen name="SimpleSummary" position="fill" >
+<screen name="ScreenSummary" position="fill" >
   <widget source="parent.Title" render="Label" position="20,50" size="760,379" font="VFD;55" halign="center" valign="center" />
  </screen>
 

@@ -257,7 +257,7 @@
 		<widget source="autostartstatus_summary" render="Label" position="0,139" size="220,37" font="MyLcD;21" halign="center" valign="center" transparent="1" />
 	</screen>		
 <!-- misc-->
-	<screen name="SimpleSummary" position="0,0" size="220,176">
+	<screen name="ScreenSummary" position="0,0" size="220,176">
 		<widget source="parent.Title" render="Label" position="0,0" size="220,176" font="MyLcD;37" foregroundColor="Menue-Titel" halign="center" valign="center" />
 	</screen>
 <!-- DevicesPanelSummary -->	

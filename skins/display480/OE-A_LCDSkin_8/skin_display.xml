@@ -233,7 +233,7 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 	</screen>
-	<screen name="SimpleSummary" position="0,0" size="480,320">
+	<screen name="ScreenSummary" position="0,0" size="480,320">
 		<widget source="parent.Title" render="Label" position="30,90" size="420,200" font="VFD;52" halign="center" valign="center" />
 		<widget source="global.CurrentTime" render="Label" position="320,10" size="150,35" font="VFD;32" halign="right">
 			<convert type="ClockToText">Format:%d.%m.%Y</convert>

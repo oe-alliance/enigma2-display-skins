@@ -418,7 +418,7 @@
 	<!-- Metrix Menu */ -->
 	
 	<!-- /* ########## Misc ########## -->
-	<screen name="SimpleSummary" position="5,4" size="400,240">
+	<screen name="ScreenSummary" position="5,4" size="400,240">
 		<widget source="parent.Title" render="Label" position="0,0" size="390,232" font="lack_lcd;44" halign="center" valign="center" />
 		
 		<panel name="MyRecordingPanel" />

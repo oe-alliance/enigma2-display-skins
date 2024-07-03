@@ -785,7 +785,7 @@
 -->
 
 <!-- SimpleSummary -->
-	<screen name="SimpleSummary" position="0,0" size="800,480">
+	<screen name="ScreenSummary" position="0,0" size="800,480">
 		<panel name="PanelTopBar" />
 		<widget source="parent.Title" render="Label" position="20,200" size="760,240" font="VFD;70" backgroundColor="#253f8a" halign="center" valign="center" zPosition="1"/>
 		<widget source="global.CurrentTime" render="Label" position="550,80" size="230,100" font="VFD;90" halign="center" valign="center" transparent="1" zPosition="1">
