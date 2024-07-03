@@ -73,7 +73,7 @@
 -->
 	
 	<!-- /* ########## Main ########## -->
-	<screen name="InfoBarSummary" position="0,0" size="800,480">
+	<screen name="InfoBarSummary" position="fill">
 		<widget source="session.Event_Now" render="Label" position="20,244" size="760,62" font="lack_lcd;56" halign="center" transparent="1" zPosition="1">
 			<convert type="EventName">Name</convert>
 		</widget>
@@ -89,7 +89,7 @@
 	<!-- Main */ -->
 	
 	<!-- /* ########## EMC ########## -->
-	<screen name="EMCSelectionSummary" position="0,0" size="800,480">
+	<screen name="EMCSelectionSummary" position="fill">
 		
 		<!-- /* Cover for EMC Selection: ON -->
 		<panel name="MyEMCSelectionCoverPanel" />
@@ -102,7 +102,7 @@
 		<panel name="MyRecordingPanel" />
 	</screen>
 	
-	<screen name="EMCMoviePlayerSummary" position="0,0" size="800,480">
+	<screen name="EMCMoviePlayerSummary" position="fill">
 		<panel name="MyRecordingPanel" />
 		
 		<!-- /* Cover for EMC Movie Player: ON -->
@@ -120,12 +120,12 @@
 	<!-- EMC */ -->
 	
 	<!-- /* ########## Movie Center, MediaPortal ########## -->
-	<screen name="MovieSelectionSummary" position="0,0" size="800,480">
+	<screen name="MovieSelectionSummary" position="fill">
 		<widget source="parent.Title" render="Label" position="20,16" size="760,140" font="lack_lcd;60" halign="center" valign="center" />
 		<widget source="name" render="Label" position="20,148" size="760,323" font="lack_lcd;68" halign="center" valign="center" />
 	</screen>
 	
-	<screen name="InfoBarMoviePlayerSummary" position="0,0" size="800,480">
+	<screen name="InfoBarMoviePlayerSummary" position="fill">
 		<widget source="session.CurrentService" render="Label" position="20,52" size="760,256" font="lack_lcd;56" halign="center" valign="center">
 			<convert type="ServiceName">Name</convert>
 		</widget>
@@ -160,7 +160,7 @@
 		<panel name="MyResolutionInfoPanel" />
 	</screen>
 	
-	<screen name="MovieContextMenuSummary" position="0,0" size="800,480">
+	<screen name="MovieContextMenuSummary" position="fill">
 		<widget source="parent.Title" render="Label" position="20,16" size="760,232" font="lack_lcd;88" halign="center" valign="center" />
 		<eLabel position="0,240" size="800,160" backgroundColor="openATVblueBar" />
 		<widget source="selected" render="Label" position="20,240" size="760,160" font="lack_lcd;68" halign="center" valign="center" transparent="1" zPosition="1" />
@@ -168,7 +168,7 @@
 	<!-- Movie Center, MediaPortal */ -->
 	
 	<!-- /* ########## Media Player ########## -->
-	<screen name="MediaPlayerLCDScreen" position="0,0" size="800,480">
+	<screen name="MediaPlayerLCDScreen" position="fill">
 		<panel name="MyRecordingPanel" />
 
 		<!-- /* Cover for Media Player: ON -->
@@ -186,7 +186,7 @@
 	<!-- Media Player */ -->
 	
 	<!-- /* ########## Channel Selection ########## -->
-	<screen name="ChannelSelection_summary" position="0,0" size="800,480">
+	<screen name="ChannelSelection_summary" position="fill">
 		<widget source="parent.ServiceEvent" render="Label" position="20,244" size="760,62" font="lack_lcd;56" halign="center" transparent="1" zPosition="1">
 			<convert type="EventName">Name</convert>
 		</widget>
@@ -219,7 +219,7 @@
 	<!-- Channel Selection */ -->
 	
 	<!-- /* ########## Number Zap ########## -->
-	<screen name="NumberZap_summary" position="0,0" size="800,480">
+	<screen name="NumberZap_summary" position="fill">
 		<eLabel position="0,330" size="250,100" backgroundColor="openATVblueBar" />
 		<widget source="parent.number_summary" render="Label" position="20,334" size="230,100" font="lack_lcd;88" halign="center" valign="center" transparent="1" zPosition="1" />
 		<widget source="parent.service_summary" render="Label" position="250,310" size="540,140" font="lack_lcd;60" halign="right" valign="center" />
@@ -227,7 +227,7 @@
 		<panel name="MyRecordingPanel" />
 	</screen>
 	
-	<screen name="NumberZapPicon_summary" position="0,0" size="800,480">
+	<screen name="NumberZapPicon_summary" position="fill">
 		<eLabel position="0,330" size="250,100" backgroundColor="openATVblueBar" />
 		<widget source="parent.number_summary" render="Label" position="20,334" size="230,100" font="lack_lcd;88" halign="center" valign="center" transparent="1" zPosition="1" />
 		<widget source="parent.service_summary" render="Label" position="250,310" size="540,140" font="lack_lcd;60" halign="right" valign="center" />
@@ -236,7 +236,7 @@
 		<panel name="MyRecordingPanel" />
 	</screen>
 	
-	<screen name="NumberZapExt_summary" position="0,0" size="800,480">
+	<screen name="NumberZapExt_summary" position="fill">
 		<widget source="parent.channel" render="Label" position="20,20" size="760,464" font="lack_lcd;88" halign="center" valign="center" />
 		
 		<panel name="MyRecordingPanel" />
@@ -244,7 +244,7 @@
 	<!-- Number Zap */ -->
 	
 	<!-- /* ########## Channel Selection Radio (not tested yet) ########## -->
-	<screen name="ChannelSelectionRadio_summary" position="0,0" size="800,480">
+	<screen name="ChannelSelectionRadio_summary" position="fill">
 		<widget source="session.CurrentService" render="Label" position="20,20" size="760,80" font="lack_lcd;76" halign="center">
 			<convert type="ServiceName">Name</convert>
 		</widget>
@@ -257,25 +257,25 @@
 	<!-- Channel Selection Radio */ -->
 	
 	<!-- /* ########## EPG Screens ########## -->
-	<screen name="GraphicalEPG_summary" position="0,0" size="800,480">
+	<screen name="GraphicalEPG_summary" position="fill">
 		<panel name="MyEPGPanel" />
 	</screen>
 	
-	<screen name="GraphicalInfoBarEPG_summary" position="0,0" size="800,480">
+	<screen name="GraphicalInfoBarEPG_summary" position="fill">
 		<panel name="MyEPGPanel" />
 	</screen>
 	
-	<screen name="EPGSelectionMulti_summary" position="0,0" size="800,480">
+	<screen name="EPGSelectionMulti_summary" position="fill">
 		<panel name="MyEPGPanel" />
 	</screen>
 	
-	<screen name="EPGSelection_summary" position="0,0" size="800,480">
+	<screen name="EPGSelection_summary" position="fill">
 		<panel name="MyEPGPanel" />
 	</screen>
 	<!-- EPG Screens */ -->
 	
 	<!-- /* ########## Devices ########## -->
-	<screen name="DevicesPanelSummary" position="0,0" size="800,480">
+	<screen name="DevicesPanelSummary" position="fill">
 		<widget source="parent.Title" render="Label" position="20,16" size="760,134" font="lack_lcd;88" halign="center" valign="center" />
 		<eLabel position="0,144" size="800,160" backgroundColor="openATVblueBar" />
 		<widget source="entry" render="Label" position="20,144" size="760,160" font="lack_lcd;68" halign="center" valign="center" transparent="1" zPosition="1" />
@@ -284,7 +284,7 @@
 	<!-- Devices */ -->
 	
 	<!-- /* ########## IMDb ########## -->
-	<screen name="IMDbLCDScreen" position="0,0" size="800,480">
+	<screen name="IMDbLCDScreen" position="fill">
 		<widget name="headline" position="20,16" size="760,464" font="lack_lcd;88" halign="center" valign="center" />
 		
 		<panel name="MyRecordingPanel" />
@@ -292,7 +292,7 @@
 	<!-- IMDb */ -->
 	
 	<!-- /* ########## Timer ########## -->
-	<screen name="TimerEditListSummary" position="0,0" size="800,480">
+	<screen name="TimerEditListSummary" position="fill">
 		<widget source="parent.Title" render="Label" position="20,16" size="760,150" font="lack_lcd;88" halign="center" valign="center" />
 		<eLabel position="0,160" size="800,160" backgroundColor="openATVblueBar" />
 		<widget source="name" render="Label" position="20,160" size="760,160" font="lack_lcd;68" halign="center" valign="center" transparent="1" zPosition="1" />
@@ -304,7 +304,7 @@
 		<panel name="MyRecordingPanel" />
 	</screen>
 	
-	<screen name="PowerTimerEditListSummary" position="0,0" size="800,480">
+	<screen name="PowerTimerEditListSummary" position="fill">
 		<widget source="parent.Title" render="Label" position="20,16" size="760,232" font="lack_lcd;88" halign="center" valign="center" />
 		<eLabel position="0,240" size="800,160" backgroundColor="openATVblueBar" />
 		<widget source="entry" render="Label" position="20,240" size="760,160" font="lack_lcd;68" halign="center" valign="center" transparent="1" zPosition="1" />
@@ -312,7 +312,7 @@
 		<panel name="MyRecordingPanel" />
 	</screen>
 	
-	<screen name="TimerLog_summary" position="0,0" size="800,480">
+	<screen name="TimerLog_summary" position="fill">
 		<widget source="parent.Title" render="Label" position="20,16" size="760,232" font="lack_lcd;88" halign="center" valign="center" />
 		<eLabel position="0,240" size="800,160" backgroundColor="openATVblueBar" />
 		<widget source="entry" render="Label" position="20,240" size="760,160" font="lack_lcd;68" halign="center" valign="center" transparent="1" zPosition="1" />
@@ -320,7 +320,7 @@
 		<panel name="MyRecordingPanel" />
 	</screen>
 	
-	<screen name="AutoTimerOverviewSummary" position="0,0" size="800,480">
+	<screen name="AutoTimerOverviewSummary" position="fill">
 		<widget source="parent.Title" render="Label" position="20,16" size="760,232" font="lack_lcd;68" halign="center" valign="center" />
 		<eLabel position="0,240" size="800,160" backgroundColor="openATVblueBar" />
 		<widget source="entry" render="Label" position="20,240" size="760,160" font="lack_lcd;68" halign="center" valign="center" transparent="1" zPosition="1" />
@@ -330,7 +330,7 @@
 	<!-- Timer */ -->
 	
 	<!-- /* ########## Plugin Browser ########## -->
-	<screen name="PluginBrowserSummary" position="0,0" size="800,480">
+	<screen name="PluginBrowserSummary" position="fill">
 		<widget source="parent.Title" render="Label" position="20,16" size="760,232" font="lack_lcd;88" halign="center" valign="center" />
 		<eLabel position="0,240" size="800,160" backgroundColor="openATVblueBar" />
 		<widget source="entry" render="Label" position="20,240" size="760,160" font="lack_lcd;68" halign="center" valign="center" transparent="1" zPosition="1" />
@@ -340,7 +340,7 @@
 	<!-- Plugin Browser */ -->
 	
 	<!-- /* ########## Standby ########## -->
-	<screen name="StandbySummary" position="0,0" size="800,480">
+	<screen name="StandbySummary" position="fill">
 		<widget source="global.CurrentTime" render="Label" position="0,160" size="800,160" font="lack_lcd;160" foregroundColor="StandbyColor" halign="center">
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
@@ -361,7 +361,7 @@
 	<!-- Standby */ -->
 	
 	<!-- /* ########## Network ########## -->
-	<screen name="NetworkServicesSummary" position="0,0" size="800,480">
+	<screen name="NetworkServicesSummary" position="fill">
 		<widget source="title" render="Label" position="20,16" size="760,232" font="lack_lcd;88" halign="center" valign="center" />
 		<widget source="autostartstatus_summary" render="Label" position="20,240" size="760,120" font="lack_lcd;68" halign="center" valign="center" />
 		<widget source="status_summary" render="Label" position="20,360" size="760,110" font="lack_lcd;68" halign="center" valign="center" />
@@ -372,7 +372,7 @@
 	<!-- Network */ -->
 	
 	<!-- */ ########## Servicescan ########## -->
-	<screen name="ServiceScanSummary" position="0,0" size="800,480">
+	<screen name="ServiceScanSummary" position="fill">
 		<widget source="parent.Title" render="Label" position="20,16" size="760,224" font="lack_lcd;88" halign="center" valign="center" />
 		<widget name="scan_progress" render="Progress" position="0,228" size="800,24" foregroundColor="openATVblueLine" borderColor="#ffffff" borderWidth="1" />
 		<widget name="Service" position="0,256" size="800,214" font="lack_lcd;72" halign="center" valign="center" />
@@ -380,7 +380,7 @@
 	<!-- Servicescan */ -->
 	
 	<!-- /* ########## Menus ########## -->
-	<screen name="MenuSummary" position="0,0" size="800,480">
+	<screen name="MenuSummary" position="fill">
 		<widget source="parent.title" render="Label" position="20,16" size="760,232" font="lack_lcd;88" halign="center" valign="center" />
 		<eLabel position="0,240" size="800,160" backgroundColor="openATVblueBar" />
 		<widget source="parent.menu" render="Label" position="20,240" size="760,160" font="lack_lcd;68" halign="center" valign="center" transparent="1" zPosition="1">
@@ -392,7 +392,7 @@
 	<!-- Menus */ -->
 	
 	<!-- /* ########## Setup ########## -->
-	<screen name="SetupSummary" position="0,0" size="800,480">
+	<screen name="SetupSummary" position="fill">
 		<widget source="SetupEntry" render="Label" position="20,16" size="760,232" font="lack_lcd;68" halign="center" valign="center" />
 		<eLabel position="0,240" size="800,160" backgroundColor="openATVblueBar" />
 		<widget source="SetupValue" render="Label" position="20,240" size="760,160" font="lack_lcd;68" halign="center" valign="center" transparent="1" zPosition="1" />
@@ -402,7 +402,7 @@
 	<!-- Setup */ -->
 	
 	<!-- /* ########## SkinSelector ########## -->
-	<screen name="SkinSelectorSummary" position="0,0" size="800,480">
+	<screen name="SkinSelectorSummary" position="fill">
 		<widget source="Name" render="Label" position="20,16" size="760,232" font="lack_lcd;68" halign="center" valign="center" />
 		<eLabel position="0,240" size="800,160" backgroundColor="openATVblueBar" />
 		<widget source="value" render="Label" position="20,240" size="760,160" font="lack_lcd;68" halign="center" valign="center" transparent="1" zPosition="1" />
@@ -412,7 +412,7 @@
 	<!-- Setup */ -->
 	
 	<!-- /* ########## Quick Menu ########## -->
-	<screen name="QuickMenu_summary" position="0,0" size="800,480">
+	<screen name="QuickMenu_summary" position="fill">
 		<widget source="parent.Title" render="Label" position="20,16" size="760,232" font="lack_lcd;88" halign="center" valign="center" />
 		<eLabel position="0,240" size="800,160" backgroundColor="openATVblueBar" />
 		<widget source="parent.summary_description" render="Label" position="20,240" size="760,160" font="lack_lcd;68" halign="center" valign="center" transparent="1" zPosition="1" />
@@ -422,13 +422,13 @@
 	<!-- Quick Menu */ -->
 	
 	<!-- /* ########## Metrix Menu ########## -->
-	<screen name="MainSettingsView_summary" position="0,0" size="800,480">
+	<screen name="MainSettingsView_summary" position="fill">
 		<widget source="parent.titleText" render="Label" position="20,16" size="760,232" font="lack_lcd;88" halign="center" valign="center" />
 	</screen>
 	<!-- Metrix Menu */ -->
 	
 	<!-- /* ########## Misc ########## -->
-	<screen name="SimpleSummary" position="0,0" size="800,480">
+	<screen name="SimpleSummary" position="fill">
 		<widget source="parent.Title" render="Label" position="20,16" size="760,464" font="lack_lcd;88" halign="center" valign="center" />
 		
 		<panel name="MyRecordingPanel" />
@@ -436,7 +436,7 @@
 	<!-- Misc */ -->
 	
 	<!-- /* ########## JobView Summary (not tested yet) ########## -->
-	<screen name="JobView_summary" position="0,0" size="800,480">
+	<screen name="JobView_summary" position="fill">
 		<widget source="parent.summary_job_progress" render="Label" position="20,16" size="760,120" font="lack_lcd;68" borderWidth="2" halign="center" valign="center" zPosition="2" transparent="1">
 			<convert type="ProgressToText">InPercent</convert>
 		</widget>
@@ -451,27 +451,27 @@
 		<widget source="parent.summary_description" render="Label" position="20,96" size="760,368" font="lack_lcd;44" />
 	</screen>
 	
-	<screen name="EventViewSimple_summary" position="0,0" size="800,480">
+	<screen name="EventViewSimple_summary" position="fill">
 		<widget source="parent.Title" render="Label" position="20,16" size="760,96" font="lack_lcd;48" halign="left" noWrap="1" />
 		<widget source="parent.summary_description" render="Label" position="20,96" size="760,368" font="lack_lcd;44" />
 	</screen>
 	<!-- EventView Summary */ -->
 	
 	<!-- /* ########## Software Update (not tested yet) ########## -->
-	<screen name="UpdatePlugin_summary" position="0,0" size="800,480">
+	<screen name="UpdatePlugin_summary" position="fill">
 		<widget source="parent.Title" render="Label" position="20,16" size="760,64" font="lack_lcd;56" halign="center" noWrap="1" />
 		<widget source="parent.package" render="Label" position="20,66" size="760,348" font="lack_lcd;64" halign="center" valign="center" />
 		<widget source="parent.status" render="Label" position="20,416" size="760,64" font="lack_lcd;56" halign="left" transparent="1" />
 	</screen>
 	
-	<screen name="SoftwareUpdateChanges_summary" position="0,0" size="800,480">
+	<screen name="SoftwareUpdateChanges_summary" position="fill">
 		<widget source="parent.title_summary" render="Label" position="20,16" size="760,52" font="lack_lcd;48" halign="center" noWrap="1" />
 		<widget source="parent.text_summary" render="Label" position="20,56" size="760,424" font="lack_lcd;48" halign="left" transparent="1" />
 	</screen>
 	<!-- Software Update */ -->
 	
 	<!-- /* ########## WizardSummary (not tested yet) ########## -->
-	<screen name="WizardSummary" position="0,0" size="800,480">
+	<screen name="WizardSummary" position="fill">
 		<widget source="text" render="Label" position="20,16" size="760,110" font="lack_lcd;48" halign="center" />
 		<widget source="parent.list" render="Label" position="20,170" size="760,248" font="lack_lcd;48" halign="center">
 			<convert type="StringListSelection" />
@@ -480,7 +480,7 @@
 	<!-- WizardSummary */ -->
 	
 	<!-- /* ########## LanguageWizardSummary (not tested yet) ########## -->
-	<screen name="LanguageWizardSummary" position="0,0" size="800,480">
+	<screen name="LanguageWizardSummary" position="fill">
 		<widget source="parent.summarytext" render="Label" position="20,16" size="760,110" font="lack_lcd;48" halign="center" />
 		<widget source="parent.summarylangname" render="Label" position="20,170" size="760,248" font="lack_lcd;48" halign="center" />
 	</screen>
@@ -500,33 +500,33 @@
 		<widget source="parent.summary_list" render="Label" position="fill" font="lack_lcd;48" noWrap="1" valign="top" />
 	</screen>
 	
-	<screen name="MessageBox_summary" position="0,0" size="800,480">
+	<screen name="MessageBox_summary" position="fill">
 		<widget source="parent.Text" render="Label" position="20,16" size="760,350" font="lack_lcd;60" halign="center" valign="center" />
 		<eLabel position="0,360" size="800,80" backgroundColor="openATVblueBar" />
 		<widget source="parent.selectedChoice" render="Label" position="20,364" size="760,80" font="lack_lcd;60" halign="center" valign="center" transparent="1" zPosition="1" />
 	</screen>
 	
-	<screen name="MessageBoxSimple_summary" position="0,0" size="800,480">
+	<screen name="MessageBoxSimple_summary" position="fill">
 		<panel name="MessageBox_summary" />
 	</screen>
 	
-	<screen name="MessageBoxSummary" position="0,0" size="800,480">
+	<screen name="MessageBoxSummary" position="fill">
 		<widget source="text" render="Label" position="20,16" size="760,350" font="lack_lcd;60" halign="center" valign="center" />
 		<eLabel position="0,360" size="800,80" backgroundColor="openATVblueBar" />
 		<widget source="option" render="Label" position="20,364" size="760,80" font="lack_lcd;60" halign="center" valign="center" transparent="1" zPosition="1" />
 	</screen>
 	
-	<screen name="MessageBoxSimpleSummary" position="0,0" size="800,480">
+	<screen name="MessageBoxSimpleSummary" position="fill">
 		<panel name="MessageBoxSummary" />
 	</screen>
 	
-	<screen name="AboutSummary" position="0,0" size="800,480">
+	<screen name="AboutSummary" position="fill">
 		<widget source="AboutText" render="Label" position="20,16" size="760,448" font="lack_lcd;26" />
 	</screen>
 	<!-- System */ -->
 	
 	<!-- /* ########## Info ########## -->
-	<screen name="Infopanel_summary" position="0,0" size="800,480">
+	<screen name="Infopanel_summary" position="fill">
 		<widget source="parent.Title" render="Label" position="20,16" size="760,232" font="lack_lcd;88" halign="center" valign="center" />
 		<eLabel position="0,240" size="800,160" backgroundColor="openATVblueBar" />
 		<widget source="parent.summary_description" render="Label" position="20,240" size="760,160" font="lack_lcd;68" halign="center" valign="center" transparent="1" zPosition="1" />
@@ -534,7 +534,7 @@
 	<!-- Info */ -->
 	
 	<!-- /* ########## Backup Selection ########## -->
-	<screen name="BackupSelection_summary" position="0,0" size="800,480">
+	<screen name="BackupSelection_summary" position="fill">
 		<widget source="parent.Title" render="Label" position="20,16" size="760,232" font="lack_lcd;68" halign="center" valign="center" />
 		<eLabel position="0,240" size="800,160" backgroundColor="openATVblueBar" />
 		<widget source="parent.summary_description" render="Label" position="20,240" size="760,160" font="lack_lcd;48" halign="center" valign="center" transparent="1" zPosition="1" />
@@ -542,7 +542,7 @@
 	<!-- Backup Selection */ -->
 	
 	<!-- /* ########## Restore ########## -->
-	<screen name="RestoreScreen_summary" position="0,0" size="800,480">
+	<screen name="RestoreScreen_summary" position="fill">
 		<widget source="parent.Title" render="Label" position="20,16" size="760,232" font="lack_lcd;68" halign="center" valign="center" />
 		<eLabel position="0,240" size="800,160" backgroundColor="openATVblueBar" />
 		<widget source="parent.summary_description" render="Label" position="20,240" size="760,160" font="lack_lcd;68" halign="center" valign="center" transparent="1" zPosition="1" />
@@ -550,7 +550,7 @@
 	<!-- Restore */ -->
 	
 	<!-- /* ########## Installed Plugins ########## -->
-	<screen name="installedPlugins_summary" position="0,0" size="800,480">
+	<screen name="installedPlugins_summary" position="fill">
 		<widget source="parent.Title" render="Label" position="20,16" size="760,232" font="lack_lcd;68" halign="center" valign="center" />
 		<eLabel position="0,240" size="800,160" backgroundColor="openATVblueBar" />
 		<widget source="parent.summary_description" render="Label" position="20,240" size="760,160" font="lack_lcd;68" halign="center" valign="center" transparent="1" zPosition="1" />
@@ -558,19 +558,19 @@
 	<!-- Installed Plugins */ -->
 	
 	<!-- /* ########## Restart Network ########## -->
-	<screen name="RestartNetwork_summary" position="0,0" size="800,480">
+	<screen name="RestartNetwork_summary" position="fill">
 		<widget source="parent.Title" render="Label" position="20,16" size="760,464" font="lack_lcd;68" halign="center" valign="center" />
 	</screen>
 	<!-- Restart Network */ -->
 	
 	<!-- /* ########## Restore Plugins ########## -->
-	<screen name="RestorePlugins_summary" position="0,0" size="800,480">
+	<screen name="RestorePlugins_summary" position="fill">
 		<widget source="parent.Title" render="Label" position="20,16" size="760,232" font="lack_lcd;68" halign="center" valign="center" />
 		<eLabel position="0,240" size="800,160" backgroundColor="openATVblueBar" />
 		<widget source="parent.summary_description" render="Label" position="20,240" size="760,160" font="lack_lcd;68" halign="center" valign="center" transparent="1" zPosition="1" />
 	</screen>
 	
-	<screen name="RestoreMenu_summary" position="0,0" size="800,480">
+	<screen name="RestoreMenu_summary" position="fill">
 		<widget source="parent.Title" render="Label" position="20,16" size="760,232" font="lack_lcd;68" halign="center" valign="center" />
 		<eLabel position="0,240" size="800,160" backgroundColor="openATVblueBar" />
 		<widget source="parent.summary_description" render="Label" position="20,240" size="760,160" font="lack_lcd;68" halign="center" valign="center" transparent="1" zPosition="1" />
@@ -595,13 +595,13 @@
 	<!-- DVD */ -->
 	
 	<!-- /* ########## Location Box (not tested yet) ########## -->
-	<screen name="LocationBox_summary" position="0,0" size="800,480">
+	<screen name="LocationBox_summary" position="fill">
 		<widget source="parent.text" render="Label" position="20,16" size="760,464" font="lack_lcd;88" halign="center" valign="center" />
 	</screen>
 	<!-- Location Box */ -->
 	
 	<!-- /* ########## Console (not tested yet) ########## -->
-	<screen name="Console_summary" position="0,0" size="800,480">
+	<screen name="Console_summary" position="fill">
 		<widget source="parent.Title" render="Label" position="20,16" size="760,232" font="lack_lcd;68" halign="center" valign="center" />
 		<eLabel position="0,240" size="800,160" backgroundColor="openATVblueBar" />
 		<widget source="parent.summary_description" render="Label" position="20,240" size="760,160" font="lack_lcd;68" halign="center" valign="center" transparent="1" zPosition="1" />
@@ -609,7 +609,7 @@
 	<!-- Console */ -->
 	
 	<!-- /* ########## Shoutcast (not tested yet) ########## -->
-	<screen name="SHOUTcastLCDScreen" position="0,0" size="800,480">
+	<screen name="SHOUTcastLCDScreen" position="fill">
 		<widget name="text1" position="20,16" size="760,112" font="lack_lcd;48" halign="center" valign="center"/>
 		<widget name="text2" position="20,120" size="760,200" font="lack_lcd;60" halign="center" valign="center"/>
 		<panel name="MySummaryClockPanel" />
@@ -617,7 +617,7 @@
 	<!-- Shoutcast */ -->
 	
 	<!-- /* ########## Webradio (not tested yet) ########## -->
-	<screen name="webradioFSdisplay13" position="0,0" size="800,480">
+	<screen name="webradioFSdisplay13" position="fill">
 		<widget source="Zeile1" render="Label" position="20,30" size="760,100" font="lack_lcd;68" noWrap="1" />
 		<widget source="Zeile2" render="Label" position="20,130" size="760,100" font="lack_lcd;68" noWrap="1" />
 		<widget source="Zeile3" render="Label" position="20,230" size="760,100" font="lack_lcd;68" noWrap="1" />
@@ -626,12 +626,12 @@
 	<!-- Webradio */ -->
 	
 	<!-- /* ########## VMC (not tested yet) ########## -->
-	<screen name="VMCBaseSummary" position="0,0" size="800,480"> 
+	<screen name="VMCBaseSummary" position="fill"> 
 		<widget source="parent.Title" render="Label" position="20,16" size="760,356" font="lack_lcd;82" halign="center" valign="center" />
 		<panel name="MySummaryClockPanel" />
 	</screen>
 	
-	<screen name="VMCPlayerSummary" position="0,0" size="800,480">
+	<screen name="VMCPlayerSummary" position="fill">
 		<widget source="session.CurrentService" render="Label" position="20,56" size="760,256" font="lack_lcd;76" halign="center" valign="center" transparent="1" zPosition="2">
 			<convert type="ServiceName">Name</convert>
 		</widget>
@@ -910,7 +910,7 @@
 	<!-- Icon Player Panel */ -->
 
 	<!-- /* ########## Picon Main Panel ########## -->
-	<screen name="MyPiconMainPanel" position="0,0" size="800,480">
+	<screen name="MyPiconMainPanel" position="fill">
 		<widget source="session.CurrentService" render="LcdPicon" position="240,52" size="320,192" halign="center" alphatest="blend">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
@@ -918,7 +918,7 @@
 	<!-- Picon Main Panel */ -->
 
 	<!-- /* ########## Picon EPG Panel ########## -->
-	<screen name="MyPiconEPGPanel" position="0,0" size="800,480">
+	<screen name="MyPiconEPGPanel" position="fill">
 		<widget source="parent.Service" render="LcdPicon" position="240,52" size="320,192" halign="center" alphatest="blend">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
@@ -926,7 +926,7 @@
 	<!-- Picon EPG Panel */ -->
 	
 	<!-- /* ########## Progress Info Panel ########## -->
-	<screen name="MyProgressInfoPanel" position="0,0" size="800,480">
+	<screen name="MyProgressInfoPanel" position="fill">
 		<widget source="session.Event_Now" render="Label" position="20,317" size="760,56" font="lack_lcd;56" halign="left" transparent="1">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText"></convert>
@@ -1361,7 +1361,7 @@
 	<!-- Summary Clock Panel */ -->
 	
 	<!-- /* ########## Resolution Info Panel ########## -->
-	<screen name="MyResolutionInfoPanel" position="0,0" size="800,480">
+	<screen name="MyResolutionInfoPanel" position="fill">
 		<widget source="session.CurrentService" render="Label" position="551,420" size="110,48" font="lack_lcd;48" foregroundColor="ResolutionInfoColor" halign="right" zPosition="2">
 			<convert type="ServiceInfo">VideoWidth</convert>
 		</widget>
@@ -1382,7 +1382,7 @@
 	<!-- Resolution Info Panel */ -->
 	
 	<!-- /* ########## EPG Panel ########## -->
-	<screen name="MyEPGPanel" position="0,0" size="800,480">
+	<screen name="MyEPGPanel" position="fill">
 		<widget source="parent.Event" render="Label" position="20,244" size="760,62" font="lack_lcd;56" halign="center" transparent="1" zPosition="1">
 			<convert type="EventName">Name</convert>
 		</widget>
@@ -1415,7 +1415,7 @@
 	<!-- EPG Panel */-->
 	
 	<!-- /* ########## Backdrop Panel ########## -->
-	<screen name="MyBackdropPanel" position="0,0" size="800,480">
+	<screen name="MyBackdropPanel" position="fill">
 		<!-- SD-Backdrop -->
 		<ePixmap pixmap="cinema_backdrop_1.png" position="20,52" size="554,256" />
 		<!-- HD-ready-Backdrop -->
@@ -1437,7 +1437,7 @@
 	<!-- Backdrop Panel */ -->
 	
 	<!-- /* ########## EMC Selection Cover Panel ########## -->
-	<screen name="MyEMCSelectionCoverPanel" position="0,0" size="800,480">
+	<screen name="MyEMCSelectionCoverPanel" position="fill">
 		<widget source="parent.Service" render="Label" position="20,16" size="456,390" font="lack_lcd;66" halign="center" valign="center" transparent="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
@@ -1459,7 +1459,7 @@
 	<!-- EMC Selection Cover Panel */ -->
 	
 	<!-- /* ########## EMC Selection No Cover Panel ########## -->
-	<screen name="MyEMCSelectionNoCoverPanel" position="0,0" size="800,480">
+	<screen name="MyEMCSelectionNoCoverPanel" position="fill">
 		<widget source="parent.Service" render="Label" position="20,16" size="760,390" font="lack_lcd;66" halign="center" valign="center" transparent="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
@@ -1475,7 +1475,7 @@
 	<!-- EMC Selection No Cover Panel */ -->
 	
 	<!-- /* ########## EMC Movie Player Cover Panel ########## -->
-	<screen name="MyEMCMoviePlayerCoverPanel" position="0,0" size="800,480">
+	<screen name="MyEMCMoviePlayerCoverPanel" position="fill">
 		<widget source="session.CurrentService" render="Label" position="20,52" size="554,256" font="lack_lcd;56" halign="center" valign="center" transparent="1" zPosition="3">
 			<convert type="ServiceName">Name</convert>
 		</widget>
@@ -1522,7 +1522,7 @@
 	<!-- EMC Movie Player Cover Panel */ -->
 	
 	<!-- /* ########## EMC Movie Player No Cover Panel ########## -->
-	<screen name="MyEMCMoviePlayerNoCoverPanel" position="0,0" size="800,480">
+	<screen name="MyEMCMoviePlayerNoCoverPanel" position="fill">
 		<widget source="session.CurrentService" render="Label" position="20,52" size="760,256" font="lack_lcd;56" halign="center" valign="center" transparent="1" zPosition="2">
 			<convert type="ServiceName">Name</convert>
 		</widget>
@@ -1564,7 +1564,7 @@
 	<!-- EMC Movie Player No Cover Panel */ -->
 	
 	<!-- /* ########## Media Player Cover Panel ########## -->
-	<screen name="MyMediaPlayerCoverPanel" position="0,0" size="800,480">
+	<screen name="MyMediaPlayerCoverPanel" position="fill">
 		<widget name="text1" position="20,52" size="554,256" font="lack_lcd;56" halign="left" valign="center" />
 		<eLabel position="20,310" size="760,6" backgroundColor="openATVblueLine" zPosition="3" />
 		<widget source="session.CurrentService" render="PositionGauge" position="20,306" size="760,14" zPosition="5" transparent="1">
@@ -1595,7 +1595,7 @@
 	<!-- Media Player Cover Panel */ -->
 	
 	<!-- /* ########## Media Player No Cover Panel ########## -->
-	<screen name="MyMediaPlayerNoCoverPanel" position="0,0" size="800,480">
+	<screen name="MyMediaPlayerNoCoverPanel" position="fill">
 		<widget name="text1" position="20,52" size="760,256" font="lack_lcd;56" halign="left" valign="center" />
 		<eLabel position="20,310" size="760,6" backgroundColor="openATVblueLine" zPosition="3" />
 		<widget source="session.CurrentService" render="PositionGauge" position="20,306" size="760,14" zPosition="5" transparent="1">
@@ -1626,7 +1626,7 @@
 	<!-- Media Player No Cover Panel */ -->
 	
 	<!-- /* ########## Standby Weather Panel ########## -->
-	<screen name="MyStandbyWeatherPanel" position="0,0" size="800,480">
+	<screen name="MyStandbyWeatherPanel" position="fill">
 		<!-- Weather today -->
 		<eLabel position="0,0" size="800,120" backgroundColor="WeatherBarColor" />
 		<widget source="session.CurrentService" render="Label" position="20,18" size="130,98" font="lack_lcd;98" foregroundColor="StandbyColor" backgroundColor="WeatherBarColor" halign="right" zPosition="2">

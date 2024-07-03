@@ -90,7 +90,7 @@
 </screen>
 	
 <!-- InfoBar -->
-<screen name="InfoBarSummary" position="0,0" size="800,480" >
+<screen name="InfoBarSummary" position="fill" >
   <panel name="TimeTemplate" />
   <panel name="UpdateTemplate" />
   <panel name="RecordingTemplate" />
@@ -105,7 +105,7 @@
 </screen>
 
 <!-- Channel Selection -->
-<screen name="ChannelSelection_summary" position="0,0" size="800,480" >
+<screen name="ChannelSelection_summary" position="fill" >
   <panel name="TimeTemplate" />
   <panel name="UpdateTemplate" />
   <panel name="RecordingTemplate" /> 
@@ -120,7 +120,7 @@
 </screen>
 
 <!-- EMC Player -->
-<screen name="EMCMoviePlayerSummary" position="0,0" size="800,480" >
+<screen name="EMCMoviePlayerSummary" position="fill" >
   <panel name="TimeTemplate" />
   <panel name="UpdateTemplate" />
   <panel name="RecordingTemplate" />
@@ -130,19 +130,19 @@
 </screen>
 
 <!-- EMC Selection -->
-<screen name="EMCSelection_summary" position="0,0" size="800,480" >
+<screen name="EMCSelection_summary" position="fill" >
   <panel name="UpdateTemplate" />
   <panel name="RecordingTemplate" /> 
   <widget source="parent.Service" render="Label" position="30,80" size="740,480" font="VFD;95" halign="center" valign="top">
     <convert type="ServiceName">Name</convert>
   </widget>
  </screen>
-	<screen name="EMCSelectionSummary" position="0,0" size="800,480">
+	<screen name="EMCSelectionSummary" position="fill">
 		<panel name="EMCSelection_summary" />
 	</screen>
  
 <!-- Media Player -->
-<screen name="MediaPlayerLCDScreen" position="0,0" size="800,480" >
+<screen name="MediaPlayerLCDScreen" position="fill" >
   <panel name="TimeTemplate" />
   <panel name="UpdateTemplate" />
   <panel name="RecordingTemplate" />
@@ -152,7 +152,7 @@
  </screen>
  
 <!-- Movie Player -->
-<screen name="InfoBarMoviePlayerSummary" position="0,0" size="800,480" >
+<screen name="InfoBarMoviePlayerSummary" position="fill" >
   <panel name="TimeTemplate" />
   <panel name="UpdateTemplate" />
   <panel name="RecordingTemplate" />
@@ -162,7 +162,7 @@
 </screen>
 
 <!-- Movie Selection -->
-<screen name="MovieSelection_summary" position="0,0" size="800,480" >
+<screen name="MovieSelection_summary" position="fill" >
   <panel name="UpdateTemplate" />
   <panel name="RecordingTemplate" /> 
   <widget source="parent.Service" render="Label" position="30,80" size="740,480" font="VFD;95" halign="center" valign="top">
@@ -171,14 +171,14 @@
 </screen>
 
 <!-- ChoiceBox -->
-<screen name="ChoiceBox_summary" position="0,0" size="800,480" >
+<screen name="ChoiceBox_summary" position="fill" >
   <panel name="UpdateTemplate" />
   <panel name="RecordingTemplate" />
   <widget source="parent.summary_list" render="Label" position="30,80" size="740,480" font="VFD;95" />
 </screen>
 
 <!-- Device Manager 2 -->
-<screen name="DeviceManager2Summary" position="0,0" size="800,480" >
+<screen name="DeviceManager2Summary" position="fill" >
   <panel name="UpdateTemplate" />
   <panel name="RecordingTemplate" />
   <widget source="entry" render="Label" position="30,80" size="740,480" font="VFD;95" halign="center" valign="top" />
@@ -186,7 +186,7 @@
 </screen>
 
 <!-- Menu -->
-<screen name="MenuSummary" position="0,0" size="800,480" >
+<screen name="MenuSummary" position="fill" >
   <panel name="UpdateTemplate" />
   <panel name="RecordingTemplate" />
   <widget source="parent.title" render="Label" position="30,80" size="740,480" font="VFD;95" halign="center" valign="top" />
@@ -196,14 +196,14 @@
 </screen>
 
 <!-- Message Box -->
-<screen name="MessageBox_summary" position="0,0" size="800,480" >
+<screen name="MessageBox_summary" position="fill" >
   <panel name="UpdateTemplate" />
   <panel name="RecordingTemplate" />
   <widget source="parent.Text" render="Label" position="30,80" size="740,480" font="VFD;95" halign="center" valign="top" />
   <widget source="parent.selectedChoice" render="Label" position="30,360" size="740,480" font="VFD;85" halign="center" valign="top" foregroundColor="#00FF0000"/>
 </screen>
 
-<screen name="MessageBoxSummary" position="0,0" size="800,480" >
+<screen name="MessageBoxSummary" position="fill" >
   <panel name="UpdateTemplate" />
   <panel name="RecordingTemplate" />
   <widget source="text" render="Label" position="30,80" size="740,480" font="VFD;95" halign="center" valign="top" />
@@ -211,7 +211,7 @@
 </screen>
 
 <!-- Plugin Browser -->
-<screen name="PluginBrowserSummary" position="0,0" size="800,480" >
+<screen name="PluginBrowserSummary" position="fill" >
   <panel name="UpdateTemplate" />
   <panel name="RecordingTemplate" />
   <widget source="entry" render="Label" position="30,80" size="740,480" font="VFD;95" halign="center" valign="top" />
@@ -219,7 +219,7 @@
 </screen>
 
 <!-- Service Scan -->
-<screen name="ServiceScanSummary" position="0,0" size="800,480" >
+<screen name="ServiceScanSummary" position="fill" >
   <panel name="UpdateTemplate" />
   <panel name="RecordingTemplate" />
   <widget name="Title" position="30,80" size="740,480" font="VFD;95" transparent="1" valign="center" halign="left" />
@@ -228,14 +228,14 @@
 </screen>
 
 <!-- Setup -->
-<screen name="SetupSummary" position="0,0" size="800,480" >
+<screen name="SetupSummary" position="fill" >
   <panel name="UpdateTemplate" />
   <panel name="RecordingTemplate" />
   <widget source="SetupTitle" render="Label" position="30,80" size="740,480" font="VFD;95" halign="center" valign="top" />
   <widget source="SetupEntry" render="Label" position="30,190" size="740,480" font="VFD;85" halign="center" valign="top" foregroundColor="#A4A4A4"/>
   <widget source="SetupValue" render="Label" position="30,360" size="740,480" font="VFD;85" halign="center" valign="top" foregroundColor="#00FF0000"/>
 </screen>
-<screen name="SkinSelectorSummary" position="0,0" size="800,480" >
+<screen name="SkinSelectorSummary" position="fill" >
   <panel name="UpdateTemplate" />
   <panel name="RecordingTemplate" />
   <widget source="parent.Title" render="Label" position="30,80" size="740,480" font="VFD;95" halign="center" valign="top" />
@@ -244,14 +244,14 @@
 </screen>
 
 <!-- Simple -->
-<screen name="SimpleSummary" position="0,0" size="800,480" >
+<screen name="SimpleSummary" position="fill" >
   <panel name="UpdateTemplate" />
   <panel name="RecordingTemplate" />
   <widget source="parent.Title" render="Label" position="30,80" size="740,480" font="VFD;95" halign="center" valign="top" />
 </screen>
 
 <!-- Wizard -->
-<screen name="WizardSummary" position="0,0" size="800,480" >
+<screen name="WizardSummary" position="fill" >
   <panel name="UpdateTemplate" />
   <panel name="RecordingTemplate" />
   <widget source="text" render="Label" position="30,80" size="740,480" font="VFD;95" transparent="1" halign="center" valign="top" />
@@ -261,7 +261,7 @@
 </screen>
 
 <!-- Standby -->
-<screen name="StandbySummary" position="0,0" size="800,480" >
+<screen name="StandbySummary" position="fill" >
   <panel name="UpdateTemplate" />
   <panel name="RecordingTemplate" />
    <widget source="global.CurrentTime" render="Label" position="180,120" size="440,110" font="VFD;140" halign="center" valign="top">

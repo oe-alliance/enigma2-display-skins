@@ -52,7 +52,7 @@
 	</screen>
 
 	<!-- screens -->
-	<screen name="InfoBarSummary" position="0,0" size="800,480" >
+	<screen name="InfoBarSummary" position="fill" >
 		<panel name="LCDIconTemplete" />
 		<panel name="LCDClockTemplete" />
 		<widget source="session.CurrentService" render="Label" position="45,120" size="720,80" font="Semibold;63" halign="center" valign="center" backgroundColor="LCDBackground">
@@ -65,7 +65,7 @@
 			<convert type="EventTime">Progress</convert>
 		</widget>
 	 </screen>
-	 <screen name="ChannelSelection_summary" position="0,0" size="800,480" >
+	 <screen name="ChannelSelection_summary" position="fill" >
 		<panel name="LCDIconTemplete" />
 		<panel name="LCDClockTemplete" />
 		<widget source="parent.ServiceEvent" render="Label" position="45,120" size="720,80" font="Semibold;63" halign="center" valign="bottom" backgroundColor="LCDBackground">
@@ -78,7 +78,7 @@
 			<convert type="EventTime">Progress</convert>
 		</widget>
 	</screen>
-	<screen name="InfoBarMoviePlayerSummary" position="0,0" size="800,480" >
+	<screen name="InfoBarMoviePlayerSummary" position="fill" >
 		<panel name="LCDIconTemplete" />
 		<panel name="LCDClockTemplete" />
 		<widget source="session.CurrentService" render="Label" position="45,110" size="720,240" font="Semibold;63" halign="center" valign="center" backgroundColor="LCDBackground">
@@ -88,18 +88,18 @@
 			<convert type="ServicePosition">Position</convert>
 		</widget>
 	</screen>
-	<screen name="ChoiceBox_summary" position="0,0" size="800,480" >
+	<screen name="ChoiceBox_summary" position="fill" >
 		<widget source="parent.summary_list" render="Label" position="45,40" size="720,400" font="Regular;58" valign="center"  />
 	</screen>
-	<screen name="MessageBox_summary" position="0,0" size="800,480" >
+	<screen name="MessageBox_summary" position="fill" >
 		<widget source="parent.Text" render="Label" position="30,20" size="740,300" font="Regular;58" halign="center" valign="center" />
 		<widget source="parent.selectedChoice" render="Label" position="200,320" size="400,60" font="Regular;58" halign="center" valign="center" />
 	</screen>
-	<screen name="MessageBoxSummary" position="0,0" size="800,480" >
+	<screen name="MessageBoxSummary" position="fill" >
 		<widget source="text" render="Label" position="30,20" size="740,300" font="Regular;58" halign="center" valign="center" />
 		<widget source="option" render="Label" position="200,320" size="400,60" font="Regular;58" halign="center" valign="center" />
 	</screen>
-	<screen name="MenuSummary" position="0,0" size="800,480" >
+	<screen name="MenuSummary" position="fill" >
 		<panel name="LCDIconTemplete" />
 		<panel name="LCDClockTemplete" />
 		<widget source="parent.title" render="Label" position="30,130" size="740,110" font="Semibold;63" halign="center" valign="center" backgroundColor="LCDBackground" />
@@ -107,42 +107,42 @@
 			<convert type="StringListSelection" />
 		</widget>
 	</screen>
-	<screen name="ServiceScanSummary" position="0,0" size="800,480" >
+	<screen name="ServiceScanSummary" position="fill" >
 		<widget name="Title" position="40,20" size="720,140" font="Regular;75" transparent="1" backgroundColor="LCDBackground" />
 		<widget name="Service" position="40,180" size="720,210" font="Regular;58" transparent="1" backgroundColor="LCDBackground" />
 		<widget name="scan_progress" position="95,380" zPosition="1" borderWidth="3" size="610,60" backgroundColor="LCDBackground" />
 	</screen>
-	<screen name="SetupSummary" position="0,0" size="800,480" >
+	<screen name="SetupSummary" position="fill" >
 		<panel name="LCDIconTemplete" />
 		<panel name="LCDClockTemplete" />
 		<widget source="SetupTitle" render="Label" position="30,110" size="720,90" font="Semibold;70" halign="center" backgroundColor="LCDBackground" />
 		<widget source="SetupEntry" render="Label" position="30,200" size="720,180" font="Semibold;63" halign="center" backgroundColor="LCDBackground" />
 		<widget source="SetupValue" render="Label" position="30,380" size="720,90" font="Regular;53" halign="center" backgroundColor="LCDBackground" />
 	</screen>
-	<screen name="SkinSelectorSummary" position="0,0" size="800,480" >
+	<screen name="SkinSelectorSummary" position="fill" >
 		<panel name="LCDIconTemplate" />
 		<panel name="LCDClockTemplate" />
 		<widget source="parent.Title" render="Label" position="30,110" size="720,90" font="SemiboldLCD;70" halign="center" backgroundColor="LCDBackground" />
 		<widget source="Name" render="Label" position="30,200" size="720,180" font="SemiboldLCD;63" halign="center" backgroundColor="LCDBackground" />
 		<widget source="value" render="Label" position="30,380" size="720,90" font="RegularLCD;53" halign="center" backgroundColor="LCDBackground" />
 	</screen>
-	<screen name="StandbySummary" position="0,0" size="800,480" >
+	<screen name="StandbySummary" position="fill" >
 		<panel name="LCDIconTemplete" />
 		<widget source="global.CurrentTime" render="Label" position="0,80" size="800,320" font="Regular;190" halign="center" valign="center">
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
 	</screen>
-	<screen name="SimpleSummary" position="0,0" size="800,480" >
+	<screen name="SimpleSummary" position="fill" >
 		<panel name="LCDClockTemplete" />
 		<panel name="LCDIconTemplete" />
 		<widget source="parent.Title" render="Label" position="45,110" size="710,270" font="Semibold;70" halign="center" valign="center" backgroundColor="LCDBackground" />
 	</screen>
-	<screen name="MediaPlayerLCDScreen" position="0,0" size="800,480" >
+	<screen name="MediaPlayerLCDScreen" position="fill" >
 		<widget name="text1" position="35,20" size="730,235" font="Regular;64"/>
 		<widget name="text3" position="35,265" size="730,90" font="Regular;40"/>
 		<widget name="text4" position="35,355" size="730,90" font="Regular;40"/>
 	</screen>
-	<screen name="WizardSummary" position="0,0" size="800,480" >
+	<screen name="WizardSummary" position="fill" >
 		<widget source="text" render="Label" position="40,20" size="675,120" font="Regular;72" transparent="1" backgroundColor="LCDBackground" />
 		<widget source="parent.list" render="Label" position="40,160" size="720,330" font="Regular;76">
 			<convert type="StringListSelection" />

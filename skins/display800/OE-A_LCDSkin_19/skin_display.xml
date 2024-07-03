@@ -53,7 +53,7 @@
 			<convert type="ConditionalShowHide" />
 		</widget>
 	</screen>
-	<screen name="InfoBarSummary" position="0,0" size="800,480">
+	<screen name="InfoBarSummary" position="fill">
 		<panel name="LCDIconTemplate" />
 		<ePixmap pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_19/skin_vfd_schomi_u4k_back.png" position="20,20" size="750,450" zPosition="-1" alphatest="blend" />
 		<widget source="global.CurrentTime" render="Label" position="45,100" size="250,100" font="RegularLCD;95" halign="right" backgroundColor="LCDBackground" transparent="1">
@@ -74,7 +74,7 @@
 			<convert type="EventTime">Progress</convert>
 		</widget>
 	 </screen>
-	<screen name="ChannelSelection_summary" position="0,0" size="800,480">
+	<screen name="ChannelSelection_summary" position="fill">
 		<panel name="LCDIconTemplate" />
 		<ePixmap pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_19/skin_vfd_schomi_u4k_back.png" position="20,20" size="750,450" zPosition="-1" alphatest="blend" />		
 		<ePixmap pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_19/icon_time.png" position="724,29"  size="36,36" alphatest="blend" />
@@ -91,7 +91,7 @@
 			<convert type="EventTime">Progress</convert>
 		</widget>	
 	</screen>
-	<screen name="InfoBarMoviePlayerSummary" position="0,0" size="800,480">
+	<screen name="InfoBarMoviePlayerSummary" position="fill">
 		<panel name="LCDIconTemplate" />
 		<ePixmap pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_19/skin_vfd_schomi_u4k_back.png" position="20,20" size="750,450" zPosition="-1" alphatest="blend" />		
 
@@ -112,27 +112,27 @@
 			<convert type="ServicePosition">Position</convert>
 		</widget>
 	</screen>	
-	<screen name="MovieSelection_summary" position="0,0" size="800,480">
+	<screen name="MovieSelection_summary" position="fill">
 		<panel name="LCDClockTemplate" />
 		<panel name="LCDIconTemplate" />
 		<ePixmap pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_19/skin_vfd_schomi_u4k_back.png" position="20,20" size="750,450" zPosition="-1" alphatest="blend" />		
 		<widget source="parent.Title" render="Label" position="20,110" size="750,340" font="SemiboldLCD;60" halign="center" valign="center" backgroundColor="LCDBackground" transparent="1" />
 	</screen>	
-	<screen name="ChoiceBox_summary" position="0,0" size="800,480">
+	<screen name="ChoiceBox_summary" position="fill">
 		<ePixmap pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_19/skin_vfd_schomi_u4k_back.png" position="20,20" size="750,450" zPosition="-1" alphatest="blend" />
 		<widget source="parent.summary_list" render="Label" position="45,40" size="750,450" font="RegularLCD;50" valign="top" transparent="1"  />
 	</screen>
-	<screen name="MessageBox_summary" position="0,0" size="800,480">
+	<screen name="MessageBox_summary" position="fill">
 		<ePixmap pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_19/skin_vfd_schomi_u4k_back.png" position="20,20" size="750,450" zPosition="-1" alphatest="blend" />
 		<widget source="parent.Text" render="Label" position="30,20" size="740,400" font="RegularLCD;50" valign="center" transparent="1" />
 		<widget source="parent.selectedChoice" render="Label" position="200,400" size="400,60" font="RegularLCD;58" halign="center" valign="center" foregroundColor="#0000bb00" transparent="1" />
 	</screen>
-	<screen name="MessageBoxSummary" position="0,0" size="800,480">
+	<screen name="MessageBoxSummary" position="fill">
 		<ePixmap pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_19/skin_vfd_schomi_u4k_back.png" position="20,20" size="750,450" zPosition="-1" alphatest="blend" />
 		<widget source="text" render="Label" position="30,20" size="740,400" font="RegularLCD;50" valign="center" transparent="1" />
 		<widget source="option" render="Label" position="200,400" size="400,60" font="RegularLCD;58" halign="center" valign="center" foregroundColor="#0000bb00" transparent="1" />
 	</screen>
-	<screen name="MenuSummary" position="0,0" size="800,480">
+	<screen name="MenuSummary" position="fill">
 		<panel name="LCDIconTemplate" />
 		<panel name="LCDClockTemplate" />
 		<ePixmap pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_19/skin_vfd_schomi_u4k_back.png" position="20,20" size="750,450" zPosition="-1" alphatest="blend" />		
@@ -141,13 +141,13 @@
 			<convert type="StringListSelection" />
 		</widget>
 	</screen>
-	<screen name="ServiceScanSummary" position="0,0" size="800,480">
+	<screen name="ServiceScanSummary" position="fill">
 		<ePixmap pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_19/skin_vfd_schomi_u4k_back.png" position="20,20" size="750,450" zPosition="-1" alphatest="blend" />	
 		<widget name="Title" position="40,20" size="720,140" font="RegularLCD;75" backgroundColor="LCDBackground" transparent="1" />
 		<widget name="Service" position="40,180" size="720,210" font="RegularLCD;58" backgroundColor="LCDBackground" transparent="1" />
 		<widget name="scan_progress" position="95,380" zPosition="1" borderWidth="3" size="610,60" borderColor="#00ffffff" foregroundColor="#40ff9900" backgroundColor="LCDBackground" transparent="1" />
 	</screen>
-	<screen name="SetupSummary" position="0,0" size="800,480">
+	<screen name="SetupSummary" position="fill">
 		<panel name="LCDIconTemplate" />
 		<panel name="LCDClockTemplate" />
 		<ePixmap pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_19/skin_vfd_schomi_u4k_back.png" position="20,20" size="750,450" zPosition="-1" alphatest="blend" />		
@@ -155,7 +155,7 @@
 		<widget source="SetupEntry" render="Label" position="30,180" size="750,200" font="SemiboldLCD;60" halign="center" backgroundColor="LCDBackground" transparent="1" />
 		<widget source="SetupValue" render="Label" position="30,400" size="750,70" font="RegularLCD;60" halign="center" foregroundColor="#0000bb00" backgroundColor="LCDBackground" transparent="1" />
 	</screen>
-	<screen name="SkinSelectorSummary" position="0,0" size="800,480">
+	<screen name="SkinSelectorSummary" position="fill">
 		<panel name="LCDIconTemplate" />
 		<panel name="LCDClockTemplate" />
 		<ePixmap pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_19/skin_vfd_schomi_u4k_back.png" position="20,20" size="750,450" zPosition="-1" alphatest="blend" />		
@@ -163,7 +163,7 @@
 		<widget source="Name" render="Label" position="30,180" size="750,200" font="SemiboldLCD;60" halign="center" backgroundColor="LCDBackground" transparent="1" />
 		<widget source="value" render="Label" position="30,400" size="750,70" font="RegularLCD;60" halign="center" foregroundColor="#0000bb00" backgroundColor="LCDBackground" transparent="1" />
 	</screen>
-	<screen name="StandbySummary" position="0,0" size="800,480">
+	<screen name="StandbySummary" position="fill">
 		<ePixmap pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_19/skin_vfd_schomi_u4k_back.png" position="20,20" size="750,450" zPosition="-1" alphatest="blend" />
 		<ePixmap pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_19/skin_vfd_schomi_u4k_back1.png" position="192,91" size="256,256" zPosition="1" alphatest="blend" />
 		<widget source="session.RecordState" render="FixedLabel" position="35,26" zPosition="3" size="74,44" text=" ">
@@ -204,31 +204,31 @@
 			<convert type="ClockToText">Format:%d.%m.%yy</convert>
 		</widget>		
 	</screen>
-	<screen name="SimpleSummary" position="0,0" size="800,480">
+	<screen name="SimpleSummary" position="fill">
 		<panel name="LCDClockTemplate" />
 		<panel name="LCDIconTemplate" />
 		<ePixmap pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_19/skin_vfd_schomi_u4k_back.png" position="20,20" size="750,450" zPosition="-1" alphatest="blend" />		
 		<widget source="parent.Title" render="Label" position="20,110" size="750,340" font="SemiboldLCD;70" halign="center" valign="center" backgroundColor="LCDBackground" transparent="1" />
 	</screen>
-	<screen name="MediaPlayerLCDScreen" position="0,0" size="800,480">
+	<screen name="MediaPlayerLCDScreen" position="fill">
 		<widget name="text1" position="35,20" size="730,235" font="RegularLCD;64"/>
 		<widget name="text3" position="35,265" size="730,90" font="RegularLCD;40"/>
 		<widget name="text4" position="35,355" size="730,90" font="RegularLCD;40"/>
 	</screen>
-	<screen name="WizardSummary" position="0,0" size="800,480">
+	<screen name="WizardSummary" position="fill">
 		<ePixmap pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_19/skin_vfd_schomi_u4k_back.png" position="20,20" size="750,450" zPosition="-1" alphatest="blend" />	
 		<widget source="text" render="Label" position="40,20" size="675,120" font="RegularLCD;72" backgroundColor="LCDBackground" transparent="1" />
 		<widget source="parent.list" render="Label" position="40,160" size="720,330" font="RegularLCD;76">
 			<convert type="StringListSelection" />
 		</widget>
 	</screen>
-	<screen name="PluginBrowserSummary" position="0,0" size="800,480">
+	<screen name="PluginBrowserSummary" position="fill">
 		<ePixmap pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_19/skin_vfd_schomi_u4k_back.png" position="20,20" size="750,450" zPosition="-1" alphatest="blend" />	
 		<widget source="entry" render="Label" position="40,40" size="720,200" font="SemiboldLCD;60" halign="center" valign="center" transparent="1" />
 		<eLabel position="0,242" size="800,2" backgroundColor="#f0f0f0" transparent="1" />
 		<widget source="desc" render="Label" position="40,260" size="720,200" font="RegularLCD;60" halign="center" valign="center" transparent="1" />
 	</screen>
-	<screen name="DeviceManager2Summary" position="0,0" size="800,480">
+	<screen name="DeviceManager2Summary" position="fill">
 		<ePixmap pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_19/skin_vfd_schomi_u4k_back.png" position="20,20" size="750,450" zPosition="-1" alphatest="blend" />
 		<widget source="entry" render="Label" position="40,40" size="720,200" font="SemiboldLCD;60" halign="center" valign="center" transparent="1"/>
 		<eLabel position="0,242" size="800,2" backgroundColor="#f0f0f0" />
