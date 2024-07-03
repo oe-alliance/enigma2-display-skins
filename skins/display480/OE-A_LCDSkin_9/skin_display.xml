@@ -698,15 +698,6 @@
 			<convert type="ServiceInfo">IsHD</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<!-- HD HDR -->
-		<widget source="session.CurrentService" render="FixedLabel" position="289,0" size="56,25" zPosition="2">
-			<convert type="ServiceInfo">IsHDHDR</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="session.CurrentService" pixmap="ico_hd_hdr_r_on.png" render="Pixmap" position="289,0" size="56,25" alphatest="blend" zPosition="3">
-			<convert type="ServiceInfo">IsHDHDR</convert>
-			<convert type="ConditionalShowHide"/>
-		</widget>
 		<!-- 4K -->
 		<widget source="session.CurrentService" pixmap="ico_4k_on.png" render="Pixmap" position="289,0" size="56,25" alphatest="blend" zPosition="1">
 			<convert type="ServiceInfo">Is4K</convert>
@@ -775,15 +766,6 @@
 		<!-- HD -->
 		<widget source="session.CurrentService" pixmap="ico_hd_on.png" render="Pixmap" position="138,0" size="56,25" alphatest="blend" zPosition="1">
 			<convert type="ServiceInfo">IsHD</convert>
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<!-- HD HDR -->
-		<widget source="session.CurrentService" render="FixedLabel" position="138,0" size="56,25" zPosition="2">
-			<convert type="ServiceInfo">IsHDHDR</convert>
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="session.CurrentService" pixmap="ico_hd_hdr_r_on.png" render="Pixmap" position="138,0" size="56,25" alphatest="blend" zPosition="3">
-			<convert type="ServiceInfo">IsHDHDR</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<!-- 4K -->
