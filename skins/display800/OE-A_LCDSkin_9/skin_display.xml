@@ -105,7 +105,7 @@
 </screen>
 
 <!-- Channel Selection -->
-<screen name="ChannelSelection_summary" position="fill" >
+<screen name="ChannelSelectionSummary" position="fill" >
   <panel name="TimeTemplate" />
   <panel name="UpdateTemplate" />
   <panel name="RecordingTemplate" /> 
@@ -130,7 +130,7 @@
 </screen>
 
 <!-- EMC Selection -->
-<screen name="EMCSelection_summary" position="fill" >
+<screen name="EMCSelectionSummary" position="fill" >
   <panel name="UpdateTemplate" />
   <panel name="RecordingTemplate" /> 
   <widget source="parent.Service" render="Label" position="30,80" size="740,480" font="VFD;95" halign="center" valign="top">
@@ -162,7 +162,7 @@
 </screen>
 
 <!-- Movie Selection -->
-<screen name="MovieSelection_summary" position="fill" >
+<screen name="MovieSelectionSummary" position="fill" >
   <panel name="UpdateTemplate" />
   <panel name="RecordingTemplate" /> 
   <widget source="parent.Service" render="Label" position="30,80" size="740,480" font="VFD;95" halign="center" valign="top">
@@ -171,7 +171,7 @@
 </screen>
 
 <!-- ChoiceBox -->
-<screen name="ChoiceBox_summary" position="fill" >
+<screen name="ChoiceBoxSummary" position="fill" >
   <panel name="UpdateTemplate" />
   <panel name="RecordingTemplate" />
   <widget source="parent.summary_list" render="Label" position="30,80" size="740,480" font="VFD;95" />
@@ -196,7 +196,7 @@
 </screen>
 
 <!-- Message Box -->
-<screen name="MessageBox_summary" position="fill" >
+<screen name="MessageBoxSummary" position="fill" >
   <panel name="UpdateTemplate" />
   <panel name="RecordingTemplate" />
   <widget source="parent.Text" render="Label" position="30,80" size="740,480" font="VFD;95" halign="center" valign="top" />
