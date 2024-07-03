@@ -46,18 +46,23 @@
 			<convert type="ConditionalShowHide"></convert>
 		</widget>
 	</screen>
-	<!-- menus-->
+	<!-- menus -->
 	<screen name="MenuSummary" position="fill">
 		<widget source="parent.title" render="Label" position="10,10" size="770,110" font="Big" halign="center" valign="center" foregroundColor="yellow" />
 		<widget source="parent.menu" render="Label" position="10,140" size="770,140" font="Medium" halign="center" valign="center">
 			<convert type="StringListSelection" />
 		</widget>
 	</screen>
-	<!-- setup-->
+	<!-- setup -->
 	<screen name="SetupSummary" position="fill">
 		<widget source="SetupTitle" render="Label" position="10,10" size="770,110" font="Big" halign="center" valign="center" foregroundColor="yellow" />
 		<widget source="SetupEntry" render="Label" position="10,140" size="770,140" font="Medium" halign="center" valign="center" />
 		<widget source="SetupValue" render="Label" position="10,300" size="770,110" font="Medium" halign="center" valign="center" />
+	</screen>
+	<screen name="SkinSelectorSummary" position="fill"> 
+		<widget source="parent.Title" render="Label" position="10,10" size="770,110" font="Big" halign="center" valign="center" foregroundColor="yellow" />
+		<widget source="Name" render="Label" position="10,140" size="770,140" font="Medium" halign="center" valign="center" />
+		<widget source="value" render="Label" position="10,300" size="770,110" font="Medium" halign="center" valign="center" />
 	</screen>
 	<screen name="InfoBarSummary" position="fill">
 		<panel name="SummaryClockPanel"/>
@@ -99,7 +104,7 @@
 			<convert type="RemainingToText">FOLLOW</convert>
 		</widget>
 	</screen>
-	<!-- channelselection-->
+	<!-- channelselection -->
 	<screen name="ChannelSelection_summary" position="fill">
 		<panel name="SummaryClockPanel"/>
 		<widget source="parent.ServiceEvent" render="Picon" isFrontDisplayPicon="1" position="10,10" size="220,132" transparent="1" halign="center" valign="center" alphatest="blend" >
@@ -196,7 +201,7 @@
 	<screen name="EventView_summary" position="fill">
 		<panel name="EPGSelection_summary" />
 	</screen>
-	<!-- messagebox-->
+	<!-- messagebox -->
 	<screen name="MessageBox_summary" position="fill">
 		<widget source="parent.Text" render="Label" position="10,10" size="770,380" font="Medium" halign="center" valign="center"/>
 		<widget source="parent.selectedChoice" render="Label" position="10,390" size="770,70" font="Medium" halign="center" valign="center" noWrap="1" foregroundColor="lightcyan"/>
@@ -239,7 +244,7 @@
 		<widget source="parent.number_summary" render="Label" position="10,70" size="770,120" font="FdLcD;120" halign="center" foregroundColor="lightcyan"/>
 		<widget source="parent.servicename_summary" render="Label" position="10,190" size="770,60" font="FdLcD;60" halign="center" foregroundColor="yellow"/>
 	</screen>
-	<!-- movieplayer-->
+	<!-- movieplayer -->
 	<screen name="InfoBarMoviePlayerSummary" position="fill">
 		<panel name="SummaryClockPanel"/>
 		<widget source="session.RecordState" render="FixedLabel" text="&#174;" position="380,10" foregroundColor="#ff0000" size="55,45" font="FdLcD;40" halign="left" valign="center" zPosition="22">
@@ -284,7 +289,7 @@
 			</panel>
 		</panel>
 	</screen>
-	<!-- misc-->
+	<!-- misc -->
 	<screen name="SimpleSummary" position="fill">
 		<panel name="SummaryClockPanel"/>
 		<widget source="parent.Title" render="Label" position="10,110" size="770,70" font="Medium" halign="center" valign="center" />
