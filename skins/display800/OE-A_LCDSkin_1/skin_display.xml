@@ -44,30 +44,30 @@
 			<convert type="ConfigEntryTest">config.usage.blinking_rec_symbol_during_recording,True,CheckSourceBoolean</convert>
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget> 
-		<widget source="session.RecordState" render="Pixmap" pixmap="REC_red.png" position="20,20"  size="74,44" transparent="1" zPosition="2">
+		<widget source="session.RecordState" render="Pixmap" pixmap="REC_red.png" position="20,20"  size="74,44" transparent="1" zPosition="2" alphatest="blend">
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="CRYPT_gold.png" position="100,18"  size="37,53" transparent="1" zPosition="2">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="CRYPT_gold.png" position="100,18"  size="37,53" transparent="1" zPosition="2" alphatest="blend">
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="TELETEXT_gold.png" position="150,20" size="66,51" transparent="1" zPosition="2">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="TELETEXT_gold.png" position="150,20" size="66,51" transparent="1" zPosition="2" alphatest="blend">
 			<convert type="ServiceInfo">HasTelext</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="16x9_gold.png" position="240,20" size="84,51" transparent="1" zPosition="2">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="16x9_gold.png" position="240,20" size="84,51" transparent="1" zPosition="2" alphatest="blend">
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="DOLBY_gold.png" position="340,26" size="68,40" transparent="1" zPosition="2">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="DOLBY_gold.png" position="340,26" size="68,40" transparent="1" zPosition="2" alphatest="blend">
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="ico_hbbtv_on.png" position="425,20" size="110,53" transparent="1" zPosition="2">
+		<widget source="session.CurrentService" render="Pixmap" pixmap="ico_hbbtv_on.png" position="425,20" size="110,53" transparent="1" zPosition="2" alphatest="blend">
 			<convert type="ServiceInfo">HasHBBTV</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="480,24" size="290,53" font="VFD;53" halign="right" transparent="1" zPosition="2">
+		<widget source="global.CurrentTime" render="Label" position="480,24" size="290,53" font="VFD;53" halign="right" transparent="1" zPosition="2" alphatest="blend">
 			<convert type="ClockToText">Format:%d.%m.%Y</convert>
 		</widget>
         <eLabel position="0,75" size="800,2" backgroundColor="#FF0000" zPosition="2"/>
