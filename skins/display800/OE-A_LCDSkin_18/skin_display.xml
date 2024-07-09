@@ -381,7 +381,7 @@
    <panel name="LCDIconTemplate" />
    <panel name="LCDTunerTemplate" />
    <panel name="LCDTunerTemplate2" />
-  <widget source="session.CurrentService" render="Picon" position="25,25" size="450,270" zPosition="4" transparent="1" alphatest="blend">
+  <widget source="session.CurrentService" render="Picon" alphatest="blend" position="25,25" size="450,270" zPosition="4" transparent="1" alphatest="blend">
   <convert type="ServiceName">Reference</convert>
 </widget>
 <widget source="session.Event_Now" render="RollerCharLCDLong" noWrap="1" position="30,317" size="740,85" font="VFD;65" foregroundColor="#FAFAFA" halign="left" valign="top">
@@ -413,7 +413,7 @@
    <panel name="LCDIconTemplate" />
    <panel name="LCDTunerTemplate" />
    <panel name="LCDTunerTemplate2" />
-  <widget source="parent.ServiceEvent" render="Picon" position="25,25" size="450,270" zPosition="4" transparent="1" alphatest="blend">
+  <widget source="parent.ServiceEvent" render="Picon" alphatest="blend" position="25,25" size="450,270" zPosition="4" transparent="1" alphatest="blend">
   <convert type="ServiceName">Reference</convert>
 </widget>
 <widget source="parent.ServiceEvent" render="RollerCharLCDLong" noWrap="1" position="30,317" size="740,85" font="VFD;65" foregroundColor="#FAFAFA" halign="left" valign="top">
@@ -443,7 +443,7 @@
 <screen name="EMCMoviePlayerSummary" position="fill">
 <panel name="LCDIconTemplate" />
  <!-- 
- <widget source="session.CurrentService" render="Picon" position="25,25" size="450,270" zPosition="4" transparent="1" alphatest="blend">
+ <widget source="session.CurrentService" render="Picon" alphatest="blend" position="25,25" size="450,270" zPosition="4" transparent="1" alphatest="blend">
   <convert type="MovieBarInfo">Reference</convert>
 </widget>
  -->
@@ -514,7 +514,7 @@
 <screen name="InfoBarMoviePlayerSummary" position="fill">
 <panel name="LCDIconTemplate" />
  <!-- 
-<widget source="session.CurrentService" render="Picon" position="25,25" size="450,270" zPosition="4" transparent="1" alphatest="blend">
+<widget source="session.CurrentService" render="Picon" alphatest="blend" position="25,25" size="450,270" zPosition="4" transparent="1" alphatest="blend">
   <convert type="MovieBarInfo">Reference</convert>
 </widget>
 -->
@@ -560,7 +560,7 @@
 <screen name="DVDSummary" position="fill">
 <panel name="LCDIconTemplate" />
 <!-- 
- <widget source="session.CurrentService" render="Picon" position="25,25" size="450,270" zPosition="4" transparent="1" alphatest="blend">
+ <widget source="session.CurrentService" render="Picon" alphatest="blend" position="25,25" size="450,270" zPosition="4" transparent="1" alphatest="blend">
   <convert type="MovieBarInfo">Reference</convert>
 </widget>
 -->

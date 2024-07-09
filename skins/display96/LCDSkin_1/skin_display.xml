@@ -38,7 +38,7 @@
 
 <!-- main-->
   <screen name="InfoBarSummary" position="0,0" size="96,64">
-    <widget position="0,0" render="LcdPicon" size="96,64" source="session.CurrentService" zPosition="0">
+    <widget position="0,0" render="LcdPicon" alphatest="blend" size="96,64" source="session.CurrentService" zPosition="0">
       <convert type="ServiceName">Reference</convert>
     </widget>
     <widget source="session.RecordState" render="FixedLabel" text="Rec" position="5,41" size="24,12" font="FdLcD;12" zPosition="1" noWrap="1" backgroundColor="black" foregroundColor="fullred" halign="center" valign="center">

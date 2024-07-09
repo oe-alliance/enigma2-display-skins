@@ -38,7 +38,7 @@
 
 <!-- template -->
 	<screen name="SummaryLcdPiconPanel">
-		<widget source="session.CurrentService" render="LcdPicon" position="124,0" size="132,46" zPosition="1" >
+		<widget source="session.CurrentService" render="LcdPicon" alphatest="blend" position="124,0" size="132,46" zPosition="1" >
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 	</screen>
@@ -53,7 +53,7 @@
 
 <!-- main -->
 	<screen name="InfoBarSummary" position="0,0" size="256,64">
-		<widget source="session.CurrentService" render="LcdPicon" position="124,0" size="132,46" zPosition="1" >
+		<widget source="session.CurrentService" render="LcdPicon" alphatest="blend" position="124,0" size="132,46" zPosition="1" >
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<panel name="SummaryClockProgressPanel" />
@@ -88,14 +88,14 @@
 
 <!-- channelselection -->
 	<screen name="ChannelSelectionSummary" position="0,0" size="256,64">
-		<widget source="parent.ServiceEvent" render="LcdPicon" position="124,0" size="132,46" zPosition="1" >
+		<widget source="parent.ServiceEvent" render="LcdPicon" alphatest="blend" position="124,0" size="132,46" zPosition="1" >
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<panel name="SummaryClockProgressPanel" />
 	</screen>
 
 <!--screen name="SummaryEpgPanel">
-		<widget source="parent.Service" render="LcdPicon" position="124,0" size="132,46" >
+		<widget source="parent.Service" render="LcdPicon" alphatest="blend" position="124,0" size="132,46" >
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<panel name="SummaryClockProgressPanel" />
@@ -103,31 +103,31 @@
 	
 <!-- EPG Screens -->
 	<screen name="EPGSelectionSummary" position="0,0" size="256,64">
-		<widget source="parent.Service" render="LcdPicon" position="124,0" size="132,46" >
+		<widget source="parent.Service" render="LcdPicon" alphatest="blend" position="124,0" size="132,46" >
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<panel name="SummaryClockProgressPanel" />
 	</screen>
 	<screen name="QuickEPGSummary" position="0,0" size="256,64">
-		<widget source="parent.Service" render="LcdPicon" position="124,0" size="132,46" >
+		<widget source="parent.Service" render="LcdPicon" alphatest="blend" position="124,0" size="132,46" >
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<panel name="SummaryClockProgressPanel" />
 	</screen>
 	<screen name="GraphicalEPGSummary" position="0,0" size="256,64">
-		<widget source="parent.Service" render="LcdPicon" position="124,0" size="132,46" >
+		<widget source="parent.Service" render="LcdPicon" alphatest="blend" position="124,0" size="132,46" >
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<panel name="SummaryClockProgressPanel" />
 	</screen>
 	<screen name="GraphicalEPGPIGSummary" position="0,0" size="256,64">
-		<widget source="parent.Service" render="LcdPicon" position="124,0" size="132,46" >
+		<widget source="parent.Service" render="LcdPicon" alphatest="blend" position="124,0" size="132,46" >
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<panel name="SummaryClockProgressPanel" />
 	</screen>
 	<screen name="GraphicalInfoBarEPGSummary" position="0,0" size="256,64">
-		<widget source="parent.Service" render="LcdPicon" position="124,0" size="132,46" >
+		<widget source="parent.Service" render="LcdPicon" alphatest="blend" position="124,0" size="132,46" >
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<panel name="SummaryClockProgressPanel" />

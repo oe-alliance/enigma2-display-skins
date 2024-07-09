@@ -529,7 +529,7 @@
     <panel name="LCDIconTemplate" />
 		<panel name="LCD18TunerTemplate" />
     <panel name="LCDExtremeInfoTemplate" />
-    <widget source="session.CurrentService" render="Picon" position="284,90" zPosition="4" size="220,132" transparent="1" >
+    <widget source="session.CurrentService" render="Picon" alphatest="blend" position="284,90" zPosition="4" size="220,132" transparent="1" >
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="505,22" size="200,70" font="VFD2;70" foregroundColor="#009BDEE7" halign="right" valign="top">
@@ -575,7 +575,7 @@
 <screen name="ChannelSelectionSummary" position="fill" >
 		<panel name="LCDIconTemplate" />
     <panel name="LCD18TunerTemplate" />
-		<widget source="parent.ServiceEvent" render="Picon" position="284,90" zPosition="4" size="220,132" transparent="1" >
+		<widget source="parent.ServiceEvent" render="Picon" alphatest="blend" position="284,90" zPosition="4" size="220,132" transparent="1" >
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="505,22" size="200,70" font="VFD2;70" foregroundColor="#009BDEE7" halign="right" valign="top">
@@ -613,7 +613,7 @@
 <screen name="EMCMoviePlayerSummary" position="fill" >
 <panel name="LCDIconPlayerTemplate" />
  <widget source="session.CurrentService" render="Cover" position="25,25" size="450,270" zPosition="5" transparent="0" alphatest="off" />
- <widget source="session.CurrentService" render="Picon" position="25,25" size="450,270" zPosition="4" transparent="1" >
+ <widget source="session.CurrentService" render="Picon" alphatest="blend" position="25,25" size="450,270" zPosition="4" transparent="1" >
   <convert type="MovieBarInfo">Reference</convert>
 </widget>
 <widget source="global.CurrentTime" render="Label" position="575,20" size="200,75" foregroundColor="#009BDEE7" font="VFD2;80" halign="center" valign="center">
@@ -683,7 +683,7 @@
 <screen name="InfoBarMoviePlayerSummary" position="fill" >
 <panel name="LCDIconPlayerTemplate" />
  <widget source="session.CurrentService" render="Cover" position="25,25" size="450,270" zPosition="5" transparent="0" alphatest="off" />
- <widget source="session.CurrentService" render="Picon" position="25,25" size="450,270" zPosition="4" transparent="1" >
+ <widget source="session.CurrentService" render="Picon" alphatest="blend" position="25,25" size="450,270" zPosition="4" transparent="1" >
   <convert type="MovieBarInfo">Reference</convert>
 </widget>
 <widget source="global.CurrentTime" render="Label" position="575,20" size="200,75" foregroundColor="#009BDEE7" font="VFD2;80" halign="center" valign="center">
@@ -728,7 +728,7 @@
 <screen name="DVDSummary" position="fill" >
  <panel name="LCDIconPlayerTemplate" />
  <widget source="session.CurrentService" render="Cover" position="25,25" size="450,270" zPosition="5" transparent="0" alphatest="off" />
- <widget source="session.CurrentService" render="Picon" position="25,25" size="450,270" zPosition="4" transparent="1" >
+ <widget source="session.CurrentService" render="Picon" alphatest="blend" position="25,25" size="450,270" zPosition="4" transparent="1" >
   <convert type="MovieBarInfo">Reference</convert>
 </widget>
 <widget source="global.CurrentTime" render="Label" position="575,20" size="200,75" foregroundColor="#009BDEE7" font="VFD2;80" halign="center" valign="center">

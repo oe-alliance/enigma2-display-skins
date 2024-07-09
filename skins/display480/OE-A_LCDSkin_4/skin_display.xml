@@ -81,7 +81,7 @@
 	</screen>	
 <!-- EPG Panel -->	
 	<screen name="MyEPGPanel" position="5,0" size="471,320">
-		<widget source="parent.Service" render="LcdPicon" position="147,0" size="177,120" zPosition="1" alphatest="on">
+		<widget source="parent.Service" render="LcdPicon" alphatest="blend" position="147,0" size="177,120" zPosition="1">
 			<convert type="ServiceName">Reference</convert>
 		</widget> 
 		<eLabel position="0,123" size="471,1" backgroundColor="#BDBDBD" />
@@ -179,7 +179,7 @@
 	</screen>		
 <!-- channelselection -->
 	<screen name="ChannelSelectionSummary" position="5,0" size="471,320">
-		<widget source="parent.Service" render="LcdPicon" position="147,0" size="177,120" zPosition="2" alphatest="on">
+		<widget source="parent.Service" render="LcdPicon" alphatest="blend" position="147,0" size="177,120" zPosition="2">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<eLabel position="0,123" size="471,1" backgroundColor="#BDBDBD" />

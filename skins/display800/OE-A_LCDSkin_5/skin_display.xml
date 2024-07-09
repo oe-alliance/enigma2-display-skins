@@ -74,7 +74,7 @@
 <widget source="session.RecordState" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_5/icon_REC_red.png" position="685,120"  size="120,40" alphatest="blend">
   <convert type="ConditionalShowHide" />
 </widget>
-  <widget source="session.CurrentService" render="Picon" position="20,40" size="300,180" zPosition="4" transparent="1" alphatest="blend">
+  <widget source="session.CurrentService" render="Picon" alphatest="blend" position="20,40" size="300,180" zPosition="4" transparent="1" alphatest="blend">
   <convert type="ServiceName">Reference</convert>
 </widget>
 <widget source="session.Event_Now" render="RollerCharLCDLong" noWrap="1" position="30,250" size="740,120" font="VFD;120" halign="left" valign="top">
@@ -113,7 +113,7 @@
 <widget source="session.RecordState" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_5/icon_REC_red.png" position="685,120"  size="120,40" alphatest="blend">
   <convert type="ConditionalShowHide" />
 </widget>
-<!--<widget source="session.CurrentService" render="Picon" position="20,40" size="300,180" zPosition="4" transparent="1" alphatest="blend">
+<!--<widget source="session.CurrentService" render="Picon" alphatest="blend" position="20,40" size="300,180" zPosition="4" transparent="1" alphatest="blend">
     <convert type="MovieBarInfo">Reference</convert>
 </widget> -->
 <widget backgroundColor="Background" font="VFD;100" halign="right" position="375,170" foregroundColor="#00EE00" render="Label" size="400,100" source="session.CurrentService" zPosition="1">
@@ -159,7 +159,7 @@
   <screen name="ChannelSelectionSummary" position="fill" >
 		<panel name="LCDIconTemplate" />
 		<panel name="LCDClockTemplate" />
-		<widget source="parent.ServiceEvent" render="Picon" position="284,90" zPosition="4" size="220,132" transparent="1" alphatest="blend">
+		<widget source="parent.ServiceEvent" render="Picon" alphatest="blend" position="284,90" zPosition="4" size="220,132" transparent="1" alphatest="blend">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<widget source="parent.ServiceEvent" render="Label" position="45,240" size="720,130" font="RegularLCD;63" halign="center" valign="top" backgroundColor="LCDBackground">

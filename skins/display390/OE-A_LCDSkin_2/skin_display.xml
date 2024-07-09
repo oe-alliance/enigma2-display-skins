@@ -29,7 +29,7 @@
 <!-- main-->
 	<screen name="InfoBarSummary" position="0,0" size="390,240">
 		<panel name="SummaryClockPanel" />
-		<widget source="session.CurrentService" render="LcdPicon" position="0,148" zPosition="1" size="153,92" alphatest="on">
+		<widget source="session.CurrentService" render="LcdPicon" alphatest="blend" position="0,148" zPosition="1" size="153,92">
 				<convert type="ServiceName">Reference</convert>
 			</widget>
 		<widget source="session.CurrentService" render="Label" position="top" size="*,55" font="FdLcD;50" halign="center" foregroundColor="#00ffff" >

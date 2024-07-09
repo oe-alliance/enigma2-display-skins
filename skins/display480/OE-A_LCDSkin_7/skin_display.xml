@@ -44,7 +44,7 @@
 		<widget source="global.CurrentTime" render="Label" position="320,10" size="150,35" font="VFD;32" halign="right">
 			<convert type="ClockToText">Format:%d.%m.%Y</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Picon" position="10,85" zPosition="4" size="220,132" transparent="1" alphatest="blend">
+		<widget source="session.CurrentService" render="Picon" alphatest="blend" position="10,85" zPosition="4" size="220,132" transparent="1" alphatest="blend">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="240,85" size="230,132" font="VFD;90" halign="center" valign="center">
@@ -58,7 +58,7 @@
 		</widget>
 	 </screen>
 	 <screen name="ChannelSelectionSummary" position="0,0" size="480,320">
-		 <widget position="10,85" size="220,132" source="parent.ServiceEvent" render="Picon" zPosition="1">
+		 <widget position="10,85" size="220,132" source="parent.ServiceEvent" render="Picon" alphatest="blend" zPosition="1">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="240,85" size="230,132" font="VFD;90" halign="center" valign="center">
@@ -110,7 +110,7 @@
 		<widget source="session.CurrentService" render="Label" position="240,85" size="230,120" font="VFD;60" halign="center" valign="center">
 			<convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
 		</widget>
-		 <widget position="10,85" size="220,132" source="session.CurrentService" render="Picon" zPosition="1">
+		 <widget position="10,85" size="220,132" source="session.CurrentService" render="Picon" alphatest="blend" zPosition="1">
 			<convert type="MovieBarInfo">Reference</convert>
 		</widget>
 		<widget source="session.CurrentService" render="RollerCharLCDLong" position="10,220" size="460,40" font="VFD;40" halign="left" valign="top" >

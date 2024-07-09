@@ -96,7 +96,7 @@
 	</screen>	
 <!-- EPG Panel -->	
 	<screen name="MyEPGPanel" position="0,0" size="220,176">
-		<widget source="parent.Service" render="LcdPicon" position="55,0" size="110,66" zPosition="1" alphatest="on">
+		<widget source="parent.Service" render="LcdPicon" alphatest="blend" position="55,0" size="110,66" zPosition="1">
 			<convert type="ServiceName">Reference</convert>
 		</widget> 
 		<eLabel position="0,74" size="220,2" backgroundColor="#87CEFA" zPosition="3" />
@@ -110,7 +110,7 @@
 	</screen>
 <!-- main-->
 	<screen name="InfoBarSummary" position="0,0" size="220,176">
-		<widget source="session.CurrentService" render="LcdPicon" position="40,0" zPosition="2" size="140,84" alphatest="on">
+		<widget source="session.CurrentService" render="LcdPicon" alphatest="blend" position="40,0" zPosition="2" size="140,84">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<eLabel position="0,115" size="220,2" backgroundColor="#87CEFA" zPosition="3" />
@@ -165,7 +165,7 @@
 	</screen>		
 <!-- channelselection -->
 	<screen name="ChannelSelectionSummary" position="0,0" size="220,176">
-		<widget source="parent.Service" render="LcdPicon" position="55,0" size="110,66" zPosition="2" alphatest="on">
+		<widget source="parent.Service" render="LcdPicon" alphatest="blend" position="55,0" size="110,66" zPosition="2">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<eLabel position="0,74" size="220,2" backgroundColor="#87CEFA" zPosition="3" />
@@ -196,7 +196,7 @@
 		<widget source="parent.service_summary" render="Label" position="0,74" size="220,102" font="MyLcD;34" halign="center" valign="center" transparent="1" />
 	</screen>
 	<screen name="NumberZapPiconSummary" position="0,0" size="400,240">
-		<widget source="parent.Service" render="LcdPicon" position="55,0" size="110,66" zPosition="3" alphatest="on">
+		<widget source="parent.Service" render="LcdPicon" alphatest="blend" position="55,0" size="110,66" zPosition="3">
 			<convert type="ServiceName">Reference</convert>
 		</widget> 
 		<widget source="parent.number_summary" render="Label" position="0,67" size="220,64" font="MyLcD;58" halign="center" valign="center" transparent="1" />

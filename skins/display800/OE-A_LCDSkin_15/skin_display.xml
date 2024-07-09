@@ -347,7 +347,7 @@
     <panel name="LCDIconTemplate" />
 		<panel name="LCDTunerTemplate" />
     <panel name="LCD10TunerBalkenTemplate" />
-		<widget source="session.CurrentService" render="Picon" position="284,90" zPosition="4" size="220,132" transparent="1" alphatest="blend">
+		<widget source="session.CurrentService" render="Picon" alphatest="blend" position="284,90" zPosition="4" size="220,132" transparent="1" alphatest="blend">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="30,80" size="230,85" font="VFD2;85" halign="center" valign="top">
@@ -388,7 +388,7 @@
 		<panel name="LCDIconTemplate" />
 		<panel name="LCDTunerTemplate" />
     <panel name="LCD10TunerBalkenTemplate" />
-    <widget source="parent.ServiceEvent" render="Picon" position="284,90" zPosition="4" size="220,132" transparent="1" alphatest="blend">
+    <widget source="parent.ServiceEvent" render="Picon" alphatest="blend" position="284,90" zPosition="4" size="220,132" transparent="1" alphatest="blend">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="30,80" size="230,85" font="VFD2;85" halign="center" valign="top">
@@ -425,7 +425,7 @@
 <screen name="EMCMoviePlayerSummary" position="fill" >
  <panel name="LCDClockPlayerTemplate" />
  <panel name="LCDIconPlayerTemplate" />
-<!-- <widget source="session.CurrentService" render="Picon" position="70,100" size="200,120" zPosition="4" transparent="1" alphatest="blend">
+<!-- <widget source="session.CurrentService" render="Picon" alphatest="blend" position="70,100" size="200,120" zPosition="4" transparent="1" alphatest="blend">
   <convert type="MovieBarInfo">Reference</convert>
 </widget>  -->
 <widget source="session.CurrentService" render="RollerCharLCDLong" position="30,335" size="740,70" font="RegularLCD;60" foregroundColor="#00ffff00" noWrap="1" halign="left" valign="top">
@@ -494,7 +494,7 @@
 <screen name="InfoBarMoviePlayerSummary" position="fill" >
   <panel name="LCDClockPlayerTemplate" />
   <panel name="LCDIconPlayerTemplate" />
-<!--  <widget source="session.CurrentService" render="Picon" position="20,20" size="300,180" zPosition="4" transparent="1" alphatest="blend">
+<!--  <widget source="session.CurrentService" render="Picon" alphatest="blend" position="20,20" size="300,180" zPosition="4" transparent="1" alphatest="blend">
   <convert type="MovieBarInfo">Reference</convert>
 </widget> -->
 <widget source="session.CurrentService" render="RollerCharLCDLong" position="30,325" size="740,80" font="RegularLCD;70" foregroundColor="#00ff0000" noWrap="1" halign="left" valign="top">
@@ -558,7 +558,7 @@
   <widget source="session.CurrentService" render="RollerCharLCDLong" position="30,335" size="740,70" font="VFD;60" foregroundColor="#85D4E1" noWrap="1" valign="left">
     <convert type="ServiceName">Name</convert>
   </widget>
-<!--  <widget source="session.CurrentService" render="Picon" position="35,35" size="220,132" zPosition="5" alphatest="blend">
+<!--  <widget source="session.CurrentService" render="Picon" alphatest="blend" position="35,35" size="220,132" zPosition="5" alphatest="blend">
     <convert type="MovieBarInfo">Reference</convert>
   </widget>  -->
  <eLabel name="DB" position="575,410" size="3,60" backgroundColor="#00B8B8B8" />

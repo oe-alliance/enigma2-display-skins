@@ -144,7 +144,7 @@
 	</screen>	
 <!-- EPG Panel -->	
 	<screen name="MyEPGPanel" position="0,0" size="400,240">
-		<widget source="parent.Service" render="LcdPicon" position="55,0" size="150,90" zPosition="1" alphatest="on">
+		<widget source="parent.Service" render="LcdPicon" alphatest="blend" position="55,0" size="150,90" zPosition="1">
 			<convert type="ServiceName">Reference</convert>
 		</widget> 
 		<eLabel position="0,92" size="400,1" backgroundColor="#BDBDBD" zPosition="3" />
@@ -167,7 +167,7 @@
 	</screen>
 <!-- main-->
 	<screen name="InfoBarSummary" position="0,0" size="400,240">
-		<widget source="session.CurrentService" render="LcdPicon" position="22,28" zPosition="2" size="212,127" alphatest="on">
+		<widget source="session.CurrentService" render="LcdPicon" alphatest="blend" position="22,28" zPosition="2" size="212,127">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<widget source="session.Event_Now" render="Label" position="280,35" size="120,45" font="MyLcD;45" foregroundColor="#87CEFA" transparent="1" valign="center" halign="right">
@@ -250,7 +250,7 @@
 	</screen>		
 <!-- channelselection -->
 	<screen name="ChannelSelectionSummary" position="0,0" size="400,240">
-		<widget source="parent.Service" render="LcdPicon" position="55,0" size="150,90" zPosition="2" alphatest="on">
+		<widget source="parent.Service" render="LcdPicon" alphatest="blend" position="55,0" size="150,90" zPosition="2">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<eLabel position="0,92" size="400,1" backgroundColor="#BDBDBD" zPosition="3" />
@@ -415,7 +415,7 @@
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText"></convert>
 		</widget>
-		<widget source="parent.Service" render="LcdPicon" position="159,190" size="83,50" zPosition="1" alphatest="on">
+		<widget source="parent.Service" render="LcdPicon" alphatest="blend" position="159,190" size="83,50" zPosition="1">
 			<convert type="ServiceName">Reference</convert>
 		</widget> 
 	</screen>
