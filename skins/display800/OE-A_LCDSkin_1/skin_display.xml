@@ -574,12 +574,12 @@
 		<widget source="Service" render="Label" position="200,330" size="170,50" font="VFD;50" halign="center" transparent="1" zPosition="2">
 			<convert type="EMCServicePosition">Position,ShowNoSeconds,Negate</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="20,330" size="170,50" font="VFD;50" halign="left" transparent="1" zPosition="2">
+		<!-- widget source="session.CurrentService" render="Label" position="20,330" size="170,50" font="VFD;50" halign="left" transparent="1" zPosition="2">
 			<convert type="MetrixHDServiceTime">StartTime</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="360,330" size="170,50" font="VFD;50" halign="right" transparent="1" zPosition="2">
 			<convert type="MetrixHDServiceTime">EndTime</convert>
-		</widget>
+		</widget -->
 	</screen>
 	
 <!-- E2 MoviePlayer Selecting -->

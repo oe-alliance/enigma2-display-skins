@@ -139,12 +139,12 @@
 		<widget source="session.CurrentService" render="Progress" position="0,180" size="390,5" foregroundColor="ProgressForegroundColor" transparent="1" zPosition="4">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="0,152" size="390,32" font="lack_lcd;30" halign="left" transparent="1">
+		<!-- widget source="session.CurrentService" render="Label" position="0,152" size="390,32" font="lack_lcd;30" halign="left" transparent="1">
 			<convert type="MetrixHDServiceTime">StartTime</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="0,152" size="390,32" font="lack_lcd;30" halign="right" transparent="1">
 			<convert type="MetrixHDServiceTime">EndTime</convert>
-		</widget>	
+		</widget -->	
 		<widget source="session.CurrentService" render="Label" position="0,183" size="400,32" font="lack_lcd;30" halign="left" transparent="1">
 			<convert type="ServicePosition">Length,ShowNoSeconds</convert>
 		</widget>
@@ -1291,12 +1291,12 @@
 		<widget source="Service" render="Progress" position="0,180" size="390,5" foregroundColor="ProgressForegroundColor" transparent="1" zPosition="5">
 			<convert type="EMCServicePosition">Position</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="0,152" size="390,32" font="lack_lcd;30" halign="left" transparent="1">
+		<!-- widget source="session.CurrentService" render="Label" position="0,152" size="390,32" font="lack_lcd;30" halign="left" transparent="1">
 			<convert type="MetrixHDServiceTime">StartTime</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="0,152" size="390,32" font="lack_lcd;30" halign="right" transparent="1">
 			<convert type="MetrixHDServiceTime">EndTime</convert>
-		</widget>	
+		</widget -->	
 		<widget source="Service" render="Label" position="0,183" size="400,32" font="lack_lcd;30" halign="left" transparent="1">
 			<convert type="EMCServicePosition">Length,ShowNoSeconds</convert>
 		</widget>
@@ -1351,12 +1351,12 @@
 		<widget source="session.CurrentService" render="Progress" position="0,180" size="390,5" foregroundColor="ProgressForegroundColor" transparent="1" zPosition="4">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="0,152" size="390,32" font="lack_lcd;30" halign="left" transparent="1">
+		<!-- widget source="session.CurrentService" render="Label" position="0,152" size="390,32" font="lack_lcd;30" halign="left" transparent="1">
 			<convert type="MetrixHDServiceTime">StartTime</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="0,152" size="390,32" font="lack_lcd;30" halign="right" transparent="1">
 			<convert type="MetrixHDServiceTime">EndTime</convert>
-		</widget>	
+		</widget -->	
 		<widget source="session.CurrentService" render="Label" position="0,183" size="400,32" font="lack_lcd;30" halign="left" transparent="1">
 			<convert type="ServicePosition">Length,ShowNoSeconds</convert>
 		</widget>
