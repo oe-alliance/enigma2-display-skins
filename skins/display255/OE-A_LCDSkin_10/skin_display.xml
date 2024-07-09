@@ -221,7 +221,7 @@
 	</screen>
 	
 	<screen name="MessageBoxSimpleSummary" position="0,0" size="256,64">
-		<panel name="MessageBox_summary" />
+		<panel name="MessageBoxSummary" />
 	</screen>
 
 	<screen name="AboutSummary" position="0,0" size="256,64">

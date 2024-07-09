@@ -218,6 +218,6 @@
 	</screen>
 
 	<screen name="MessageBoxSimpleSummary" position="fill">
-		<panel name="MessageBox_summary" />
+		<panel name="MessageBoxSummary" />
 	</screen>
 </skin>

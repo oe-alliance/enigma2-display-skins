@@ -845,7 +845,7 @@
 		<widget source="parent.selectedChoice" render="Label" position="20,340" size="720,60" font="VFD;60" halign="center" valign="center" />
 	</screen>
 	<screen name="MessageBoxSimpleSummary" position="0,0" size="800,480"> 
-		<panel name="MessageBox_summary" />
+		<panel name="MessageBoxSummary" />
 	</screen>
 	
 <!-- ChoiceBox -->

@@ -495,7 +495,7 @@
 	</screen>
 	
 	<screen name="MessageBoxSimpleSummary" position="0,0" size="480,320">
-		<panel name="MessageBox_summary" />
+		<panel name="MessageBoxSummary" />
 	</screen>
 	
 	<screen name="AboutSummary" position="0,0" size="480,320">
