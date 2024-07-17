@@ -54,7 +54,7 @@
 	</screen>
 	<screen name="InfoBarSummary" position="fill" >
 		<panel name="LCDIconTemplate" />
-		<widget source="session.CurrentService" render="Picon" alphatest="blend" position="45,90" zPosition="4" size="220,132" transparent="1" alphatest="blend">
+		<widget source="session.CurrentService" render="Picon" alphatest="blend" position="45,90" zPosition="4" size="220,132" transparent="1">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<ePixmap pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_6/icon_time.png" position="724,29"  size="36,36" alphatest="blend" />
@@ -74,7 +74,7 @@
 		<widget source="global.CurrentTime" render="Label" position="340,90" size="415,132" font="SemiboldLCD;120" halign="right" backgroundColor="LCDBackground">
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
-		<widget source="parent.ServiceEvent" render="Picon" alphatest="blend" position="45,90" zPosition="4" size="220,132" transparent="1" alphatest="blend">
+		<widget source="parent.ServiceEvent" render="Picon" alphatest="blend" position="45,90" zPosition="4" size="220,132" transparent="1">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<widget source="parent.ServiceEvent" render="Label" position="45,240" size="720,130" font="RegularLCD;63" halign="center" valign="top" backgroundColor="LCDBackground">

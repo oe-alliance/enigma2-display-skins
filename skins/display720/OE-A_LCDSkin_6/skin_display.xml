@@ -33,7 +33,7 @@
 
 <!-- PiconPanel-->	
 	<screen name="SummaryPiconPanel">
-		<widget source="session.CurrentService" render="LcdPicon" alphatest="blend" position="center,90" zPosition="2" size="450,270" alphatest="blend" transparent="1">
+		<widget source="session.CurrentService" render="LcdPicon" alphatest="blend" position="center,90" zPosition="2" size="450,270" transparent="1">
 			<convert type="MovieReference"/>
 		</widget>		
 	</screen>
@@ -200,7 +200,7 @@
 		<widget source="parent.RdsDecoder" render="Label" position="15,20" foregroundColor="#e5b243" size="670,220" font="FdLcD;60" halign="center" valign="top">
 			<convert type="RdsInfo">RtpText</convert>
 		</widget>
-		<widget source="parent.Service" render="LcdPicon" alphatest="blend" zPosition="13" position="142,280" size="432,259" transparent="1" alphatest="blend">	
+		<widget source="parent.Service" render="LcdPicon" alphatest="blend" zPosition="13" position="142,280" size="432,259" transparent="1">	
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 	</screen>
@@ -236,7 +236,7 @@
 			<convert type="EventTime">Remaining</convert>
 			<convert type="RemainingToText">InMinutes</convert>
 		</widget>
-		<widget source="parent.Service" render="LcdPicon" alphatest="blend" zPosition="13" position="160,355" size="320,210" transparent="1" alphatest="blend">	
+		<widget source="parent.Service" render="LcdPicon" alphatest="blend" zPosition="13" position="160,355" size="320,210" transparent="1">	
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<widget source="session.RecordState" render="FixedLabel" text="&#174;" position="20,420" foregroundColor="#ff0000" size="140,70" font="FdLcD;65" halign="center" valign="center" zPosition="22">
@@ -590,7 +590,7 @@
 		<widget source="parent.Service" render="Label" position="15,220" foregroundColor="#e5b243" size="675,120" font="FdLcDLight;55" halign="center" valign="center">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="parent.Service" render="LcdPicon" alphatest="blend" zPosition="13" position="160,355" size="320,210" transparent="1" alphatest="blend">	
+		<widget source="parent.Service" render="LcdPicon" alphatest="blend" zPosition="13" position="160,355" size="320,210" transparent="1">	
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 	
@@ -607,7 +607,7 @@
 		<widget source="parent.Service" render="Label" position="15,220" foregroundColor="#e5b243" size="675,120" font="FdLcDLight;55" halign="center" valign="center">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="parent.Service" render="LcdPicon" alphatest="blend" zPosition="13" position="160,355" size="320,210" transparent="1" alphatest="blend">	
+		<widget source="parent.Service" render="LcdPicon" alphatest="blend" zPosition="13" position="160,355" size="320,210" transparent="1">	
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 	
@@ -620,7 +620,7 @@
 		<widget source="parent.Service" render="Label" position="15,220" foregroundColor="#e5b243" size="675,120" font="FdLcDLight;55" halign="center" valign="center">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="parent.Service" render="LcdPicon" alphatest="blend" zPosition="13" position="160,355" size="320,210" transparent="1" alphatest="blend">	
+		<widget source="parent.Service" render="LcdPicon" alphatest="blend" zPosition="13" position="160,355" size="320,210" transparent="1">	
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 	

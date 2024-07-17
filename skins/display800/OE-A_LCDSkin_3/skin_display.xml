@@ -55,7 +55,7 @@
 	<screen name="InfoBarSummary" position="fill" >
 		<panel name="LCDIconTemplate" />
 		<panel name="LCDClockTemplate" />
-		<widget source="session.CurrentService" render="Picon" alphatest="blend" position="284,90" zPosition="4" size="220,132" transparent="1" alphatest="blend">
+		<widget source="session.CurrentService" render="Picon" alphatest="blend" position="284,90" zPosition="4" size="220,132" transparent="1">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<widget source="session.Event_Now" render="Label" position="45,240" size="720,130" font="RegularLCD;63" halign="center" valign="top" backgroundColor="LCDBackground">
@@ -68,7 +68,7 @@
 	 <screen name="ChannelSelectionSummary" position="fill" >
 		<panel name="LCDIconTemplate" />
 		<panel name="LCDClockTemplate" />
-		<widget source="parent.ServiceEvent" render="Picon" alphatest="blend" position="284,90" zPosition="4" size="220,132" transparent="1" alphatest="blend">
+		<widget source="parent.ServiceEvent" render="Picon" alphatest="blend" position="284,90" zPosition="4" size="220,132" transparent="1">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<widget source="parent.ServiceEvent" render="Label" position="45,240" size="720,130" font="RegularLCD;63" halign="center" valign="top" backgroundColor="LCDBackground">

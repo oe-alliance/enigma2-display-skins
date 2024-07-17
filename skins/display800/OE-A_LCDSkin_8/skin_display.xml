@@ -71,7 +71,7 @@
       <widget source="session.RecordState" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_8/icon_REC_red.png" zPosition="3" position="380,50"  size="100,40" alphatest="blend">
          <convert type="ConditionalShowHide" />
       </widget>
-      <widget source="session.CurrentService" render="Picon" alphatest="blend" position="20,40" size="360,210" zPosition="4" transparent="1" alphatest="blend">
+      <widget source="session.CurrentService" render="Picon" alphatest="blend" position="20,40" size="360,210" zPosition="4" transparent="1">
          <convert type="ServiceName">Reference</convert>
       </widget>
 
@@ -110,7 +110,7 @@
       <widget source="session.RecordState" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_8/icon_REC_red.png" zPosition="3" position="380,50"  size="100,40" alphatest="blend">
          <convert type="ConditionalShowHide" />
       </widget>
- <!--     <widget source="session.CurrentService" render="Picon" alphatest="blend" position="20,40" size="360,210" zPosition="4" transparent="1" alphatest="blend">
+ <!--     <widget source="session.CurrentService" render="Picon" alphatest="blend" position="20,40" size="360,210" zPosition="4" transparent="1">
          <convert type="MovieBarInfo">Reference</convert>
       </widget> -->
 
@@ -161,7 +161,7 @@
       <widget source="session.RecordState" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_8/icon_REC_red.png" zPosition="3" position="380,50"  size="100,40" alphatest="blend">
          <convert type="ConditionalShowHide" />
       </widget>
- <!--     <widget source="session.CurrentService" render="Picon" alphatest="blend" position="20,40" size="360,210" zPosition="4" transparent="1" alphatest="blend">
+ <!--     <widget source="session.CurrentService" render="Picon" alphatest="blend" position="20,40" size="360,210" zPosition="4" transparent="1">
          <convert type="MovieBarInfo">Reference</convert>
       </widget> -->
 
@@ -217,7 +217,7 @@
       <widget source="session.RecordState" render="Pixmap" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_8/icon_REC_red.png" zPosition="3" position="380,50"  size="100,40" alphatest="blend">
          <convert type="ConditionalShowHide" />
       </widget>
-      <widget source="parent.ServiceEvent" render="Picon" alphatest="blend" position="20,40" size="360,210" zPosition="4" transparent="1" alphatest="blend">
+      <widget source="parent.ServiceEvent" render="Picon" alphatest="blend" position="20,40" size="360,210" zPosition="4" transparent="1">
          <convert type="ServiceName">Reference</convert>
       </widget>
 

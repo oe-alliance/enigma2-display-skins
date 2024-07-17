@@ -44,7 +44,7 @@
 		<widget source="global.CurrentTime" render="Label" position="300,15" size="180,60" font="VFD;50" halign="center">
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Picon" alphatest="blend" position="40,65" zPosition="4" size="400,160" transparent="1" alphatest="blend">
+		<widget source="session.CurrentService" render="Picon" alphatest="blend" position="40,65" zPosition="4" size="400,160" transparent="1">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<widget source="session.Event_Now" render="RollerCharLCDLong" noWrap="1" position="10,225" size="460,40" font="VFD;40" halign="left" valign="top">

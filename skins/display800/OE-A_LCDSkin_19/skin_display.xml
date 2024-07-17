@@ -81,7 +81,7 @@
 		<widget source="global.CurrentTime" render="Label" position="340,90" size="415,132" font="SemiboldLCD;120" halign="right" backgroundColor="LCDBackground" transparent="1">
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
-		<widget source="parent.ServiceEvent" render="Picon" alphatest="blend" position="45,90" zPosition="4" size="220,132" transparent="1" alphatest="blend">
+		<widget source="parent.ServiceEvent" render="Picon" alphatest="blend" position="45,90" zPosition="4" size="220,132" transparent="1">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<widget source="parent.ServiceEvent" render="Label" position="45,230" size="720,180" font="RegularLCD;80" halign="center" valign="top" backgroundColor="LCDBackground" transparent="1">

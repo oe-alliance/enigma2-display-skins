@@ -381,7 +381,7 @@
    <panel name="LCDIconTemplate" />
    <panel name="LCDTunerTemplate" />
    <panel name="LCDTunerTemplate2" />
-  <widget source="session.CurrentService" render="Picon" alphatest="blend" position="25,25" size="450,270" zPosition="4" transparent="1" alphatest="blend">
+  <widget source="session.CurrentService" render="Picon" alphatest="blend" position="25,25" size="450,270" zPosition="4" transparent="1">
   <convert type="ServiceName">Reference</convert>
 </widget>
 <widget source="session.Event_Now" render="RollerCharLCDLong" noWrap="1" position="30,317" size="740,85" font="VFD;65" foregroundColor="#00CFFF" halign="left" valign="top">
@@ -413,7 +413,7 @@
    <panel name="LCDIconTemplate" />
    <panel name="LCDTunerTemplate" />
    <panel name="LCDTunerTemplate2" />
-  <widget source="parent.ServiceEvent" render="Picon" alphatest="blend" position="25,25" size="450,270" zPosition="4" transparent="1" alphatest="blend">
+  <widget source="parent.ServiceEvent" render="Picon" alphatest="blend" position="25,25" size="450,270" zPosition="4" transparent="1">
   <convert type="ServiceName">Reference</convert>
 </widget>
 <widget source="parent.ServiceEvent" render="RollerCharLCDLong" noWrap="1" position="30,317" size="740,85" font="VFD;65" foregroundColor="#00CFFF" halign="left" valign="top">
@@ -442,7 +442,7 @@
  <!-- EMCMoviePlayer  -->
 <screen name="EMCMoviePlayerSummary" position="fill">
 <panel name="LCDIconTemplate" />
-  <!-- <widget source="session.CurrentService" render="Picon" alphatest="blend" position="25,25" size="450,270" zPosition="4" transparent="1" alphatest="blend">
+  <!-- <widget source="session.CurrentService" render="Picon" alphatest="blend" position="25,25" size="450,270" zPosition="4" transparent="1">
   <convert type="MovieBarInfo">Reference</convert>
 </widget>-->
 <widget source="global.CurrentTime" render="Label" position="575,20" size="200,75" foregroundColor="LCDBackground" backgroundColor="#FE0000" font="VFD2;80" halign="center" valign="center">
@@ -511,7 +511,7 @@
 <!-- MoviePlayer_SimplePlayerMP -->
 <screen name="InfoBarMoviePlayerSummary" position="fill">
 <panel name="LCDIconTemplate" />
- <!-- <widget source="session.CurrentService" render="Picon" alphatest="blend" position="25,25" size="450,270" zPosition="4" transparent="1" alphatest="blend">
+ <!-- <widget source="session.CurrentService" render="Picon" alphatest="blend" position="25,25" size="450,270" zPosition="4" transparent="1">
   <convert type="MovieBarInfo">Reference</convert>
 </widget> -->
 <widget source="global.CurrentTime" render="Label" position="575,20" size="200,75" foregroundColor="LCDBackground" backgroundColor="#FE0000" font="VFD2;80" halign="center" valign="center">
@@ -555,7 +555,7 @@
 <!-- Abspielen von ISO -->
 <screen name="DVDSummary" position="fill">
 <panel name="LCDIconTemplate" />
-<!--  <widget source="session.CurrentService" render="Picon" alphatest="blend" position="25,25" size="450,270" zPosition="4" transparent="1" alphatest="blend">
+<!--  <widget source="session.CurrentService" render="Picon" alphatest="blend" position="25,25" size="450,270" zPosition="4" transparent="1">
   <convert type="MovieBarInfo">Reference</convert>
 </widget>  -->
 <widget source="global.CurrentTime" render="Label" position="575,20" size="200,75" foregroundColor="LCDBackground" backgroundColor="#FE0000" font="VFD2;80" halign="center" valign="center">

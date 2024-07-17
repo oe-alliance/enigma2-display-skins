@@ -76,7 +76,7 @@
 	
 <!-- main-->
 	<screen name="InfoBarSummary" position="0,0" size="720,576"> 
-		<widget source="session.CurrentService" render="LcdPicon" alphatest="blend" zPosition="13" position="10,10" size="700,500" transparent="1" alphatest="blend" halign="right" valign="top">	
+		<widget source="session.CurrentService" render="LcdPicon" alphatest="blend" zPosition="13" position="10,10" size="700,500" transparent="1" halign="right" valign="top">	
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<panel name="SummaryClockPanel" />
@@ -88,7 +88,7 @@
 		<widget source="parent.RdsDecoder" render="Label" position="15,20" foregroundColor="#e5b243" size="670,220" font="FdLcD;60" halign="center" valign="top">
 			<convert type="RdsInfo">RtpText</convert>
 		</widget>
-		<widget source="parent.Service" render="LcdPicon" alphatest="blend" zPosition="13" position="200,300" size="400,240" transparent="1" alphatest="blend">	
+		<widget source="parent.Service" render="LcdPicon" alphatest="blend" zPosition="13" position="200,300" size="400,240" transparent="1">	
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<panel name="SummaryClockPanel" />
@@ -96,7 +96,7 @@
         
 <!-- channelselection-->
 	<screen name="ChannelSelectionSummary" position="0,0" size="720,576"> 
-		<widget source="parent.Service" render="LcdPicon" alphatest="blend" zPosition="13" position="10,10" size="700,500" transparent="1" alphatest="blend" halign="right" valign="top">	
+		<widget source="parent.Service" render="LcdPicon" alphatest="blend" zPosition="13" position="10,10" size="700,500" transparent="1" halign="right" valign="top">	
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<panel name="SummaryClockPanel" />
@@ -434,7 +434,7 @@
 		<widget source="parent.Service" render="Label" position="15,220" foregroundColor="#e5b243" size="675,120" font="FdLcDLight;55" halign="center" valign="center">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="parent.Service" render="LcdPicon" alphatest="blend" zPosition="13" position="160,355" size="320,210" transparent="1" alphatest="blend">	
+		<widget source="parent.Service" render="LcdPicon" alphatest="blend" zPosition="13" position="160,355" size="320,210" transparent="1">	
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<panel name="SummaryClockPanel" />
@@ -451,7 +451,7 @@
 		<widget source="parent.Service" render="Label" position="15,220" foregroundColor="#e5b243" size="675,120" font="FdLcDLight;55" halign="center" valign="center">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="parent.Service" render="LcdPicon" alphatest="blend" zPosition="13" position="160,355" size="320,210" transparent="1" alphatest="blend">	
+		<widget source="parent.Service" render="LcdPicon" alphatest="blend" zPosition="13" position="160,355" size="320,210" transparent="1">	
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<panel name="SummaryClockPanel" />
@@ -464,7 +464,7 @@
 		<widget source="parent.Service" render="Label" position="15,220" foregroundColor="#e5b243" size="675,120" font="FdLcDLight;55" halign="center" valign="center">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="parent.Service" render="LcdPicon" alphatest="blend" zPosition="13" position="160,355" size="320,210" transparent="1" alphatest="blend">	
+		<widget source="parent.Service" render="LcdPicon" alphatest="blend" zPosition="13" position="160,355" size="320,210" transparent="1">	
 			<convert type="ServiceName">Reference</convert>
 		</widget>
 		<panel name="SummaryClockPanel" />
