@@ -265,5 +265,8 @@
     <convert type="ClockToText">Format:%d.%m.%Y</convert>
   </widget>
 </screen>
+<screen name="AboutSummary" position="fill">
+	<widget source="AboutText" render="Label" position="20,20" size="e-40,e-40" font="VFD;58" />
+</screen>
 
 </skin>

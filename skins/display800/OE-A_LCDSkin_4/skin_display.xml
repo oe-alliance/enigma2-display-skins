@@ -11,7 +11,7 @@
 	<font filename="OpenSans-Semibold.ttf" name="SemiboldLCD" scale="85" />
 	<font filename="OpenSans-SemiboldItalic.ttf" name="SemiboldLCDit" scale="85" />
 </fonts>
-	<windowstyle type="skinned" id="1">
+<windowstyle type="skinned" id="1">
     <color name="Background" color="#000000" />
     <color name="LabelForeground" color="#ffffff" />
     <color name="ListboxBackground" color="#ffffff" />
@@ -24,7 +24,11 @@
     <color name="ListboxMarkedAndSelectedForeground" color="#000000" />
     <color name="WindowTitleForeground" color="#000000" />
     <color name="WindowTitleBackground" color="#ffffff" />
-	</windowstyle>
+</windowstyle>
+	
+<screen name="AboutSummary" position="fill">
+	<widget source="AboutText" render="Label" position="20,20" size="e-40,e-40" font="RegularLCD;58" />
+</screen>
 
 <screen name="LCDClockTemplate">
 		<ePixmap pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_4/icon_time.png" position="580,29"  size="36,36" alphatest="blend" />

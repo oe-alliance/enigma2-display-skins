@@ -314,4 +314,7 @@
       <widget source="desc" render="Label" position="40,260" size="720,130" font="RegularLCD;60" halign="center" valign="top"/>
       <eLabel text="www.vuplus-support.org" position="40, 400" size="720,42" font="RegularLCD;40" halign="center" valign="center"/>
    </screen>
+	<screen name="AboutSummary" position="fill">
+		<widget source="AboutText" render="Label" position="20,20" size="e-40,e-40" font="RegularLCD;58" />
+	</screen>
 </skin>

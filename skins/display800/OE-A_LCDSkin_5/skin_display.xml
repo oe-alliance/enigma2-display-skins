@@ -25,6 +25,10 @@
     <color name="WindowTitleForeground" color="#000000" />
     <color name="WindowTitleBackground" color="#ffffff" />
 	</windowstyle>
+	
+<screen name="AboutSummary" position="fill">
+	<widget source="AboutText" render="Label" position="20,20" size="e-40,e-40" font="RegularLCD;58" />
+</screen>
 
 <screen name="LCDClockTemplate">
 		<ePixmap pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_5/icon_time.png" position="580,29"  size="36,36" alphatest="blend" />

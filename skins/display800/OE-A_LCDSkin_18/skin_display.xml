@@ -707,4 +707,8 @@
   </widget>
   </screen>
 
+<screen name="AboutSummary" position="fill">
+	<widget source="AboutText" render="Label" position="20,20" size="e-40,e-40" font="RegularLCD;58" />
+</screen>
+
 </skin>
