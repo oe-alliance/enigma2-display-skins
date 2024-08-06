@@ -119,7 +119,7 @@
 		</widget>
 	</screen>
 	<screen name="MenuSummary" position="0,0" size="480,320">
-		<widget source="parent.title" render="Label" position="15,100" size="450,90" font="VFD;52" halign="center" valign="center"/>
+		<widget source="Title" render="Label" position="15,100" size="450,90" font="VFD;52" halign="center" valign="center"/>
 		<widget source="entry" render="Label" position="15,190" size="450,120" font="VFD;52" halign="center" valign="center">
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="320,10" size="150,35" font="VFD;32" halign="right">

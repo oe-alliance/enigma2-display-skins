@@ -123,7 +123,7 @@
 
 <!-- menus-->
 	<screen name="MenuSummary" position="fill">
-		<widget source="parent.title" render="Label" position="top" size="*,61" font="FdLcD;50" halign="center" valign="top" />
+		<widget source="Title" render="Label" position="top" size="*,61" font="FdLcD;50" halign="center" valign="top" />
 		<widget source="entry" render="Label" position="top" size="*,80" font="FdLcD;35" halign="center" valign="center">
 		</widget>
 	</screen>

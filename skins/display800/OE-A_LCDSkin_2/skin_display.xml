@@ -48,7 +48,7 @@
 	</screen>
 	<!-- menus-->
 	<screen name="MenuSummary" position="fill">
-		<widget source="parent.title" render="Label" position="10,10" size="770,110" font="Big" halign="center" valign="center" foregroundColor="yellow" />
+		<widget source="Title" render="Label" position="10,10" size="770,110" font="Big" halign="center" valign="center" foregroundColor="yellow" />
 		<widget source="entry" render="Label" position="10,140" size="770,140" font="Medium" halign="center" valign="center">
 		</widget>
 	</screen>

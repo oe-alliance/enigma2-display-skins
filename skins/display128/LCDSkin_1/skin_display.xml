@@ -151,7 +151,7 @@
 		<panel name="SummaryClockPanel" />
 	</screen>
 	<screen name="MovieContextMenuSummary" position="0,0" size="128,32">
-		<widget source="parent.title" render="Label" position="0,10" size="128,16" font="FdLcD;16" halign="center" valign="bottom" zPosition="1" noWrap="1" />
+		<widget source="Title" render="Label" position="0,10" size="128,16" font="FdLcD;16" halign="center" valign="bottom" zPosition="1" noWrap="1" />
 		<widget source="selected" render="Label" position="0,21" size="128,14" font="FdLcD;14" halign="center" valign="top" zPosition="1" noWrap="1" />
 		<panel name="SummaryIconsPanel" />
 		<panel name="SummaryClockPanel" />
@@ -189,7 +189,7 @@
 
 <!-- menus-->
 	<screen name="MenuSummary" position="0,0" size="128,32">
-		<widget source="parent.title" render="Label" position="0,0" size="128,16" font="FdLcD;16" halign="center" valign="top" zPosition="1" noWrap="1" />
+		<widget source="Title" render="Label" position="0,0" size="128,16" font="FdLcD;16" halign="center" valign="top" zPosition="1" noWrap="1" />
 		<widget source="entry" render="Label" position="0,16" size="128,16" font="FdLcD;14" halign="center" valign="bottom" zPosition="1" noWrap="1" >
 		</widget>
 	</screen>

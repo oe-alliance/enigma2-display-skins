@@ -88,7 +88,7 @@
 	</screen>
 <!-- LCD screen (menus) -->
 	<screen name="MenuSummary" position="0,0" size="140,32">
-		<widget source="parent.title" render="RollerCharLCDLong" position="0,0" size="140,16" font="VFD;14" noWrap="1" />
+		<widget source="Title" render="RollerCharLCDLong" position="0,0" size="140,16" font="VFD;14" noWrap="1" />
 		<widget source="entry" render="RollerCharLCDLong" position="0,18" size="140,14" font="VFD;12" noWrap="1" >
 		</widget>
 	</screen>

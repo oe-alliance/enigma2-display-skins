@@ -107,7 +107,7 @@
 	</screen>
 <!-- LCD screen (menus) -->
 	<screen name="MenuSummary" position="0,0" size="256,64">
-		<widget source="parent.title" render="RollerCharLCDLong" position="0,0" size="256,30" font="FdLcD;28" noWrap="1" />
+		<widget source="Title" render="RollerCharLCDLong" position="0,0" size="256,30" font="FdLcD;28" noWrap="1" />
 		<widget source="entry" render="RollerCharLCDLong" position="0,32" size="256,28" font="FdLcD;26" noWrap="1" >
 		</widget>
 	</screen>

@@ -664,7 +664,7 @@
 <!-- E2 MainMenu -->
 	<screen name="MenuSummary" position="0,0" size="800,480">
 		<panel name="PanelTopBar" />
-		<widget source="parent.title" render="Label" position="20,170" size="760,90" font="VFD;80" foregroundColor="#e5b243" halign="center" valign="center" transparent="1" zPosition="1"/>
+		<widget source="Title" render="Label" position="20,170" size="760,90" font="VFD;80" foregroundColor="#e5b243" halign="center" valign="center" transparent="1" zPosition="1"/>
 		<widget source="entry" render="Label" position="20,300" size="760,180" font="VFD;70" halign="center" valign="center" backgroundColor="#253f8a" zPosition="1">
 		</widget>
 	</screen>

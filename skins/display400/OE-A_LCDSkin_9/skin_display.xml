@@ -293,7 +293,7 @@
 	</screen>
 <!-- menus-->
 	<screen name="MenuSummary" position="fill">
-		<widget source="parent.title" render="Label" position="top" size="*,119" font="FdLcD;38" halign="center" valign="center" />
+		<widget source="Title" render="Label" position="top" size="*,119" font="FdLcD;38" halign="center" valign="center" />
 		<eLabel position="top" size="*,1" backgroundColor="white" />
 		<widget source="entry" render="Label" position="top" size="*,119" font="FdLcD;38" backgroundColor="#0B173B" halign="center" valign="center">
 		</widget>
@@ -422,7 +422,7 @@
 	<screen name="IMDbLCDScreen" position="0,0" size="400,240">
 		<widget name="headline"  position="0,0" size="400,178" font="FdLcD;35" foregroundColor="#87CEFA" halign="center" valign="center" />
 		<panel name="SummaryClockPanel" />
-<!-- 		<widget source="parent.title" render="Label" position="0,88" size="400,152" zPosition="1" font="FdLcD;35" halign="center" valign="center" />  -->
+<!-- 		<widget source="Title" render="Label" position="0,88" size="400,152" zPosition="1" font="FdLcD;35" halign="center" valign="center" />  -->
 	</screen>	
 <!-- System -->
 	<screen name="ChoiceBoxSummary" position="fill" >
