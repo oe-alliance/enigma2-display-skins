@@ -1375,7 +1375,7 @@
 	<screen name="MyStandbyWeatherPanel" size="400,240">
 		<!-- Weather today -->
 		<eLabel position="0,0" size="400,60" backgroundColor="WeatherBarColor" />
-		<widget source="session.CurrentService" render="Label" position="0,2" size="68,50" font="lack_lcd;50" foregroundColor="StandbyColor" backgroundColor="WeatherBarColor" halign="right" zPosition="2">
+		<!-- widget source="session.CurrentService" render="Label" position="0,2" size="68,50" font="lack_lcd;50" foregroundColor="StandbyColor" backgroundColor="WeatherBarColor" halign="right" zPosition="2">
 			<convert type="MetrixHDWeather">currentWeatherTemp</convert>
 		</widget>
 		<eLabel text="&#176;" position="0,2" size="84,50" font="lack_lcd;50" foregroundColor="StandbyColor" backgroundColor="WeatherBarColor" halign="right" zPosition="1" />
@@ -1400,7 +1400,7 @@
 		<eLabel text="&#176;" position="380,0" size="34,30" font="lack_lcd;30" foregroundColor="StandbyColor" backgroundColor="WeatherBarColor" halign="left" zPosition="2" />
 		<widget source="session.CurrentService" render="Label" position="340,26" size="73,30" font="lack_lcd;30" foregroundColor="StandbyColor" backgroundColor="WeatherBarColor" halign="right" zPosition="1">
 			<convert type="MetrixHDWeather">forecastTomorrowTempMin</convert>
-		</widget>
+		</widget -->
 		<eLabel text="&#176;" position="380,26" size="34,30" font="lack_lcd;30" foregroundColor="StandbyColor" backgroundColor="WeatherBarColor" halign="left" zPosition="2" />
 		<!-- Record -->
 		<widget source="session.RecordState" render="Pixmap" position="0,57" pixmap="ico_rec_on.png" size="41,21" alphatest="blend" zPosition="2">
