@@ -218,7 +218,7 @@
 <screen name="ServiceScanSummary" position="0,0" size="800,480" >
   <panel name="UpdateTemplate" />
   <panel name="RecordingTemplate" />
-  <widget name="Title" position="30,80" size="740,480" font="VFD;95" transparent="1" valign="center" halign="left" />
+  <widget source="Title" render="Label" position="30,80" size="740,480" font="VFD;95" transparent="1" valign="center" halign="left" />
   <widget name="Service" position="30,190" size="740,480" font="VFD;85" transparent="1" valign="center" halign="left" foregroundColor="#A4A4A4"/>
   <widget name="scan_progress" position="30,426" zPosition="1" borderWidth="0" size="740,20" foregroundColor="#00FF0000" transparent="1" />	
 </screen>

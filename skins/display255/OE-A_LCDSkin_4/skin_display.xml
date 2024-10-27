@@ -238,7 +238,7 @@
 	</screen>
 <!-- LCD screen Service Scan -->
 	<screen name="ServiceScanSummary" position="0,0" size="256,64">
-		<widget name="Title" position="0,0" size="256,42" font="VFD;18" transparent="1" />
+		<widget source="Title" render="Label" position="0,0" size="256,42" font="VFD;18" transparent="1" />
 		<widget name="scan_progress" position="0,50" borderWidth="1" size="256,12" />
 		<widget name="Service" position="0,22" size="256,26" font="VFD;16" transparent="1" />
 	</screen>

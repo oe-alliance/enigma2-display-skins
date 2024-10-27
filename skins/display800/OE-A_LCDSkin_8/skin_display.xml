@@ -264,7 +264,7 @@
    </screen>
    
    <screen name="ServiceScanSummary" position="0,0" size="800,480" >
-      <widget name="Title" position="40,20" size="720,140" font="RegularLCD;75" transparent="1" backgroundColor="LCDBackground" />
+      <widget source="Title" render="Label" position="40,20" size="720,140" font="RegularLCD;75" transparent="1" backgroundColor="LCDBackground" />
       <widget name="Service" position="40,180" size="720,210" font="RegularLCD;58" transparent="1" backgroundColor="LCDBackground" />
       <widget name="scan_progress" position="95,380" zPosition="1" borderWidth="3" size="610,60" backgroundColor="LCDBackground" />
    </screen>

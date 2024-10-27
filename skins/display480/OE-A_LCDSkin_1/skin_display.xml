@@ -233,7 +233,7 @@
 	</screen>	
 <!-- Servicescan -->
 	<screen name="ServiceScanSummary" position="0,0" size="480,320">
-		<widget source="parent.Title" render="Label" position="0,0" size="480,113" font="FdLcD;45" foregroundColor="#87CEFA" halign="center" valign="center" />
+		<widget source="Title" render="Label" position="0,0" size="480,113" font="FdLcD;45" foregroundColor="#87CEFA" halign="center" valign="center" />
 		<widget name="scan_progress" render="Progress" pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_1/progress.png" position="0,133" size="480,46"  borderWidth="2" />
 		<widget name="Service" position="0,200" size="480,113" font="FdLcD;45" halign="center" valign="center" />
 	</screen> 		

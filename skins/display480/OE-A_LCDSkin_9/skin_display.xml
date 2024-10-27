@@ -371,7 +371,7 @@
 	
 	<!-- */ ########## Servicescan ########## -->
 	<screen name="ServiceScanSummary" position="0,0" size="480,320">
-		<widget source="parent.Title" render="Label" position="5,4" size="470,149" font="lack_lcd;54" halign="center" valign="center" />
+		<widget source="Title" render="Label" position="5,4" size="470,149" font="lack_lcd;54" halign="center" valign="center" />
 		<widget name="scan_progress" render="Progress" position="0,152" size="480,16" foregroundColor="openATVblueLine" borderColor="#ffffff" borderWidth="1" />
 		<widget name="Service" position="0,170" size="480,143" font="lack_lcd;45" halign="center" valign="center" />
 	</screen>

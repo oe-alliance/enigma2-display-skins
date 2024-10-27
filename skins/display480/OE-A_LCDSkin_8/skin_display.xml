@@ -169,7 +169,7 @@
 		</widget>
 	</screen>
 	<screen name="ServiceScanSummary" position="0,0" size="480,320">
-		<widget name="Title" position="15,10" size="450,130" font="VFD;48" transparent="1" />
+		<widget source="Title" render="Label" position="15,10" size="450,130" font="VFD;48" transparent="1" />
 		<widget name="Service" position="15,140" size="450,150" font="VFD;36" transparent="1" />
 		<widget name="scan_progress" position="0,290" zPosition="1" borderWidth="2" size="480,25" backgroundColor="dark" />
 	</screen>

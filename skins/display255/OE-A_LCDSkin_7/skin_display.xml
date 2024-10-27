@@ -203,7 +203,7 @@
 		</widget>
 	</screen>
 	<screen name="ServiceScanSummary" position="0,0" size="256,64" id="1">
-		<widget name="Title" position="0,0" size="256,26" font="VFD;20" transparent="1" />
+		<widget source="Title" render="Label" position="0,0" size="256,26" font="VFD;20" transparent="1" />
 		<widget name="Service" position="0,30" size="256,30" font="VFD;15" transparent="1" />
 		<widget name="scan_progress" position="0,59" zPosition="1" borderWidth="1" size="143,5" backgroundColor="dark" />
 	</screen>

@@ -142,7 +142,7 @@
 	</screen>
 	<screen name="ServiceScanSummary" position="0,0" size="800,480">
 		<ePixmap pixmap="/usr/share/enigma2/display/OE-A_LCDSkin_19/skin_vfd_schomi_u4k_back.png" position="20,20" size="750,450" zPosition="-1" alphatest="blend" />	
-		<widget name="Title" position="40,20" size="720,140" font="RegularLCD;75" backgroundColor="LCDBackground" transparent="1" />
+		<widget source="Title" render="Label" position="40,20" size="720,140" font="RegularLCD;75" backgroundColor="LCDBackground" transparent="1" />
 		<widget name="Service" position="40,180" size="720,210" font="RegularLCD;58" backgroundColor="LCDBackground" transparent="1" />
 		<widget name="scan_progress" position="95,380" zPosition="1" borderWidth="3" size="610,60" borderColor="#00ffffff" foregroundColor="#40ff9900" backgroundColor="LCDBackground" transparent="1" />
 	</screen>

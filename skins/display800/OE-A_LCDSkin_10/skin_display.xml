@@ -642,7 +642,7 @@
 
 <!-- ServiceScan -->
 <screen name="ServiceScanSummary" position="0,0" size="800,480" >
-  <widget name="Title" position="20,50" size="760,180" font="VFD;55" transparent="1" valign="center" halign="left" />
+  <widget source="Title" render="Label" position="20,50" size="760,180" font="VFD;55" transparent="1" valign="center" halign="left" />
   <widget name="Service" position="20,248" size="760,160" font="VFD;45" transparent="1" valign="center" halign="left" />
   <widget name="scan_progress" position="20,415" zPosition="1" borderWidth="0" size="760,15" foregroundColor="#00FF0000" transparent="1" />
   <eLabel name="progress" position="20,421" size="760,3" backgroundColor="#00FFFFFF" />	

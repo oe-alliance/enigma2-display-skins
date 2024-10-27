@@ -778,7 +778,7 @@
 	
 <!-- ServiceScanSummary -->
 	<screen name="ServiceScanSummary" position="0,0" size="800,480">
-		<widget name="Title" position="15,10" size="720,80" font="VFD;80" transparent="1" halign="center" valign="center" />
+		<widget source="Title" render="Label" position="15,10" size="720,80" font="VFD;80" transparent="1" halign="center" valign="center" />
         <eLabel position="0,100" size="800,4" backgroundColor="#FF0000" />
 		<widget name="Service" position="15,140" size="720,160" font="VFD;80" transparent="1" halign="center" valign="center" foregroundColor="#0000FF" />
 		<widget name="scan_progress" position="20,400" zPosition="1" borderWidth="2" size="720,60" foregroundColor="#900020" />
